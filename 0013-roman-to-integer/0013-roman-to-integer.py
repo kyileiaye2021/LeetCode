@@ -3,7 +3,7 @@ class Solution:
         #create a map {roman ele : numerical val}
         #create a var to store the total numerical val
         #iterate over the str s
-            #check the next index still in the range of bound and the curr char val < next char val
+            #check the next index still within the range of bound and the curr char val < next char val
                 #subtract the curr char val from the total numerical val
             #add the curr char val to the total numerical val
         #return total numerical val
