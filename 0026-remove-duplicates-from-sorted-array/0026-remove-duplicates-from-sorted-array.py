@@ -1,28 +1,45 @@
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
         
-        #may not create a new list to store the elements
-        #sort the array
-        #create a var called unique_array_index to keep track of the array index
-        #iterate over the ele in the list and check the current ele is equal to the prev ele
-        #if it's not, assigned it to the current unique_array_index
-        #update the current unique_array_index 
-
-        nums.sort()
-
-        #the list can be empty or only one element in the list
+    # Happy cases
+    # input - [1,1,2]
+    # output - 2
+    
+    # Edge cases
+    # input - []
+    # output - 0
+    
+    # input - [1]
+    # output - 1
+    
+    # Two pointer approach
+    # if len(nums) == 0:
+    #   return []
+    # p and q initialize to 1,1
+    # p pointing to the ele and iterate over the ele in the list
+    # q point to index of the unique ele 
+    # while p reaches the end of the list
+    #   check if the curr p element is not the same as the prev ele
+    #       assign p ele into the positon that q pointer currently points to
+    #       increment q by 1
+    #   increment p by 1
+    # return q
+    
+    # Time complexity - O(n)
+    # Space complexity - O(1)
     
         if len(nums) == 0:
-            return 0
-        elif len(nums) == 1:
-            return 1
+            return []
 
-        
-        unique_array_index = 1
-        for i in range(1, len(nums)):
-            if nums[i] != nums[i-1]:
-                nums[unique_array_index] = nums[i]
-                unique_array_index += 1
+        p, q = 1 , 1
 
-        return unique_array_index
-            
+        while p < len(nums):
+
+            if nums[p] != nums[p - 1]:
+                nums[q] = nums[p]
+                q += 1
+
+            p += 1
+
+        return q
+
