@@ -1,34 +1,39 @@
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         
-        #Method 1
-        #sort the list first
-        #iterate over the list 
-        #check the current element is equal to prev element
-        #if it's, return true
-        #if it's not, return false
-
-        '''
-        nums.sort()
-        for i in range(1,len(nums)):
-            if nums[i] == nums[i-1]:
-                return True
-        return False
-        '''
-        #Method 2
-        #create a hashset 
-        #iterate over the list 
-        #check if the current ele is already in the set
-        #if it's, return true
-        #if it's not, add current ele in the set
-        #if no duplicates in the list, false
-
-        hashset = set()
-        for ele in nums:
-            if ele in hashset:
-                return True
-            hashset.add(ele)
-
-        return False
-
+        # Happy cases
+        # input - [1,2,3,1]
+        # output - true
         
+        # input - [1,1,3,4,3,2,4,1]
+        # output - true
+        
+        # Edge cases
+        # input - []
+        # output - false
+        # input - [2]
+        # output - false
+        
+        # dictionary approach
+        # create a dict
+        # iterate over the list
+        #   check if the ele is in the dict
+        #       increment the ele by 1
+        #   set the ele in the dict with the val of 1
+        # iterate over the dict
+        #   check if the ele in the dict has more than 1 freq
+        #       return true 
+        # return false
+        
+        freq = {}
+        for ele in nums:
+            if ele not in freq:
+                freq[ele] = 1
+            else:
+                freq[ele] +=1
+                
+        for key, value in freq.items():
+            if value > 1:
+                return True
+            
+        return False
