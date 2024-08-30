@@ -1,32 +1,31 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        '''
-        #Brute Force Method
-        #create a list to store the indices
-        #iterate over the list 
-        #use the nested loop 
-        #for each outer iteration, add each curr element to each ele in inner loop
-        #check if it is equal to target val
-
-        index_lst = []
-        for i in range(len(nums)-1):
-            for j in range(i + 1, len(nums)):
-                if nums[i] + nums[j] == target:
-                    index_lst.append(i)
-                    index_lst.append(j)
-        return index_lst
-
-        '''
-        #Using Hashmap to store 
-        prevMap = {} #value : index
-        for i, n in enumerate(nums):
-            diff = target - n
-            if diff in prevMap:
-                return [prevMap[diff], i]
+        # Happy cases
+        # input - nums = [2,7,11,15], target = 9
+        # output - [0, 1]
+        
+        # Edge cases
+        # input - nums = [3,3], target = 6
+        # output - [0,1]
+        
+        # Hashmap Approach
+        # create a hashmap
+        # iterate over the list
+        #   check if the subtraction of curr ele from the target is in the hashmap
+        #       make a list of the curr ele index and the val of the hashmap and return
+        # add the curr ele to the hashmap with its index
+        
+        # Time complexity - O(n)
+        # Space complexity - O(n)
+        
+        hashmap = {}
+        
+        for i in range(len(nums)):
+            diff = target - nums[i]
+            if diff in hashmap:
+                return [hashmap[diff],i]
             
             else:
-                prevMap[n] = i
-
-
-
+                hashmap[nums[i]] = i
+                
         
