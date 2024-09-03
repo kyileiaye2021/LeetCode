@@ -3,42 +3,48 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        '''
-        Since there would be 3 unique elements in the list, we can use two pointers pointing to the first index and last index.
-        We may not increment i by 1 if the right pointer moves to the left by 1 because the list will not be sorted well 
-        '''
+        # happy cases
+        # input - [2,0,2,1,1,0]
+        # output - [0,0,1,1,2,2]
         
-        #0's must be at the beginning and 2's must be at the end of the list 
+        # edge cases
+        # input - [0]
+        # output - [0]
+        # input - [1]
+        # output - [1]
+        # input - [2]
+        # output - [2]
         
-        #Two pointer approach (based on quick sort but optimized version)
-        #create two pointers
+        # counting ele approach
+        # partition approach
         
-        #iterate through the list until the curr index passes the right pointer
-            #if curr ele == 0:
-                #swap the curr ele with the one that left pointer currently points to 
-                #increment the left pointer by 1
-            #elif curr ele == 2:
-                #swap curr ele with the one that right poiinter currently points to
-                #decrement the right pointer by 1
-                #decrement i (current index) by 1
-            #increment i by 1
+        # partition approach
+        # create two pointers l, r
+        # start i from 0
+        # iterate over the list until i passes r
+        #   check if the curr ele is 0
+        #       swap the curr ele with the ele that is curr pointed by l pointer
+        #       increment l by 1
+        #   else if the curr ele is 2
+        #       swap the curr ele with the ele that is curr pointed by r pointer
+        #       decrement r by 1
+        #       decrement i by 1
+        #   increment i by 1
         
-        def swap(i, j):
-            temp = nums[i]
-            nums[i] = nums[j]
-            nums[j] = temp
-            
-        l, r = 0, len(nums) - 1 
+        l, r = 0, len(nums) - 1
         i = 0
         while i <= r:
             if nums[i] == 0:
-                swap(l, i)
+                temp = nums[i]
+                nums[i] = nums[l]
+                nums[l] = temp
                 l += 1
-            
             elif nums[i] == 2:
-                swap(r, i)
+                temp = nums[i]
+                nums[i] = nums[r]
+                nums[r] = temp
                 r -= 1
                 i -= 1
-            i += 1
-        
                 
+            i += 1
+            
