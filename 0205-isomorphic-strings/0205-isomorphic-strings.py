@@ -1,62 +1,53 @@
 class Solution:
     def isIsomorphic(self, s: str, t: str) -> bool:
-        s_map = {}
-        t_map = {}
+        # Happy cases:
+        # input: s="egg", t = "add"
+        # output = true
         
+        # Edge cases
+        # input: s = "e", t = 'g'
+        # output - true
+        # input: s = 'e', t = 'gh'
+        # output - false
+        # input: s = 'foo', t = 'bar'
+        # output - false
+        # input: s = 'bar', t = 'foo'
+        # output - false
+        
+        #  if the len of s and t are not equal, return False
+        # create a hashmap for s 
+        
+        #   iterate over s
+        #       check if the curr ele of s is in hashmap
+        #           check if the mapped value of curr ele is not equal to the curr t ele
+        #               return false
+        #       set hashmap[s] = curr t ele
+        
+        # create a hashmap for t
+        # iterate over the ele in t
+        #    check if the curr ele of t is in hashmap
+        #       check if the mapped value of curr ele is not equal to the curr s
+        #           return false
+        #    set hashmap[t] = curr s ele
+        # return True
+        
+        if len(s) != len(t):
+            return False
+        
+        s_map = {}
         for i in range(len(s)):
-            if s[i] not in s_map:
+            if s[i] in s_map:
+                if t[i] != s_map[s[i]]:
+                    return False
+            else:
                 s_map[s[i]] = t[i]
-            else:
-                if s_map[s[i]] != t[i]:
-                    return False
-                
+        
+        t_map = {}
         for i in range(len(t)):
-            if t[i] not in t_map:
-                t_map[t[i]] = s[i]
-            else:
-                if t_map[t[i]] != s[i]:
+            if t[i] in t_map:
+                if s[i] != t_map[t[i]]:
                     return False
+            else:
+                t_map[t[i]] = s[i]
+        
         return True
-    
-#Test cases
-#s = 'egg', t= 'add', True
-#s = 'foo', t = 'bar' , False
-#s = 'paper', t = 'title', True
-
-#should the size of the two strings be the same? Yes
-#s = 'puppy', t = 'dead', False
-
-#can any of the str be empty str?
-# s = '', t = '', True
-#can any of the str be null?
-#s = None, t = None, False
-
-#Are there any capital letters in the strings?
-
-#Assumptions
-# The size of the two strs should be the same
-# There can be repetitive char in the str
-# One char can map to only one another char
-
-#High Level Plan
-# *Brute Force Approach
-#   Let's iterate over s. For each char in s, map it to a char in t with backtracking
-# *Mapping Approach
-#   iterate over s and create a map with s chars as the key and t chars as value 
-#   iterate over t and create a map with t chars as the key and s chars as value
-#   if the char is already in the dict, return false 
-
-#Low level plan
-#create two dictionaries
-# iterate over s 
-    #if the char not in the dict
-        #add it to the dict
-    #check the value of the curr key is the same as the ele of curr index of t
-    #return false if it's not
-
-#iterate over t
-    #if char not in the dict
-        #add it to the dict
-    #check the value of the curr key is the same as the ele of curr index of s
-    #return false if it's not
-    
