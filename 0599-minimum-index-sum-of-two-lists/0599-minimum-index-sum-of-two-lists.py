@@ -1,58 +1,48 @@
 class Solution:
     def findRestaurant(self, list1: List[str], list2: List[str]) -> List[str]:
-        # Is one of the list can be empty?
-        # Can the index sum of the two pairs of str be the same? #Yes we have to 
-        # return both
-        # Is it possible that there is no common ele in two strings? #No
-        # Are there repetitive strings in the list? #No
-        # Can there be more than 1 common ele in the list #Yes
+        # Happy case:
+        # input: list1 = ["Shogun", "KFC", "Burger"], lst2 = ["Burger", "Shogun", "KFC"]
+        # output: ["Shogun"]
         
-        #Assumption
-        # all ele in str 1 and 2 are unique
-        # there will be at least one common string in both str 1 and str 2.
+        # Edge case:
+        # input: lst1 = ["Shogun"], lst2= ["Shogun"]
+        # output: ["Shogun"]
+        # input: lst1 = ["KFC", "Burger"], lst2= ["Burger", "KFC"]
+        # output: ["KFC", "Burger"]
         
-        # High Level Planning
-        # * Brute Force Approach
-        #       * iterate over the list1 and find curr ele in lst 2
-        #       * create a list to store the index sum
-        # * Index Mapping Approach
-        #       * iteate over list 1 and fill the map {ele: index}
-        #       * iterate over list 2 and check the common ele
-        #       * check index sum
+        # Hashmap Approach
+        # create a res lst
+        # create a hashmap lst1_map
+        # iterate over the lst1 and fill the hashmap up 
+        # create another hashmap comm_str_map
+        # iterate over the lst2
+        #     check if the curr ele is in lst1_map
+        #          add it to comm_str_map with the index sum
+        # iterate over the comm_str_map
+        #     get the min_index_sum
+        # iterate over the comm_str_map
+        #     check if the curr key value is the same as min_index_sum
+        #       append the curr key in the res
+        # return res
         
-        #Low level Planniing
-        #create a index map for list1
-        #iterate over list1 to fill up the index_map1
-        #create a index map for sum
-        #create a min_index_sum
-        #iterate over list2
-            #check if the curr ele in index_map1
-                # add the curr ele index and index_map1 curr key value
-                # add the key index pair to sum_index map dict
-                # also check the curr sum is min_index_sum and update that var
-        #create a list        
-        #iterate over dict 
-            #check the curr key value is the same as min_index_sum
-                #append to the list
+        res = []
+        lst1_map = {}
+        for i in range(len(list1)):
+            lst1_map[list1[i]] = i
+                
+        comm_str_map = {}
+        for i in range(len(list2)):
+            if list2[i] in lst1_map:
+                comm_str_map[list2[i]] = lst1_map[list2[i]] + i
         
-        #filling up indices of eles in list1 into dict
-        index_map1 = {} 
-        for i, ele in enumerate(list1):
-            index_map1[ele] = i
-        
-        index_sum_map = {} #common ele dict with sum index
         min_index_sum = float('inf')
-        for i, ele in enumerate(list2):
-            if ele in index_map1: 
-                temp_index = i + index_map1[ele] 
-                index_sum_map[ele] = temp_index
+        for key in comm_str_map:
+            if comm_str_map[key] < min_index_sum:
+                min_index_sum = comm_str_map[key]
+            
+        for key in comm_str_map:
+            if comm_str_map[key] == min_index_sum:
+                res.append(key)
                 
-                if temp_index < min_index_sum:
-                    min_index_sum = temp_index
+        return res
         
-        min_index_sum_ele_lst = [] 
-        for key, value in index_sum_map.items():
-            if value == min_index_sum:
-                min_index_sum_ele_lst.append(key)
-                
-        return min_index_sum_ele_lst
