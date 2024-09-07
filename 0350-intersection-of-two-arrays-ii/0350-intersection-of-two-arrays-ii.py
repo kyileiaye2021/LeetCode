@@ -1,45 +1,44 @@
 class Solution:
     def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
         
-        # Can there be no intersection numbers in two arrays? #no
-        # Can either of the arrays be empty or null? #no
+        # Happy cases
+        # input: nums1 = [1,2,2,1], nums2 = [2,2]
+        # output: [2,2]
         
-        # High Level Planning
-        # * Brute Force Approach
-        #   * Iterate over the list nums1 and check if the curr ele in nums2. If
-        #     it is, put it in the new list
-        # * Two pointer approach
-        #   * move unique ele to the end of the array and delete those unique ele
-        #   * remove the checked ele in the array to avoid double counting
+        # Edge cases
+        # input: nums1= [1,2,4], nums2 = [3,5]
+        # output: []
+        # input: nums1 = [2], nums2 = [4]
+        # output: []
         
-        # Low Level Planning
-        # * Two Pointer Approach
-        # * create a list to store the intersection elements
-        # * create a pointer to store the common number index
-        # * create a dict to store nums2 ele and its occurence
-        # * iterate over the list nums1
-        #   * check if the curr ele is in nums2_dict key and its value is > 0
-        #       * put the ele in the position that the common number index currently 
-        #         points to
-        #       * increment common number index by 1
-        #       * decrement the occurence of that num in nums2 dict
-        # * delete the list from the common number index to the end
-        # * return the list
+        # Hashmap Approach
+        # create a list res_lst to store the intersection ele
+        # create a hashmap freq_map for nums1
+        # iterate over nums1
+        #   check if the curr ele is in freq_map
+        #       increment the value of curr ele by 1
+        #   else: set it in the map with value 1
+        # iterate over the nums2
+        #   check if the curr ele is in freq_map
+        #       check if the value of the curr ele in hashmap is greater than 0
+        #           decrement it by 1
+        #           append the ele in the res_lst
+        # return the res_lst
         
-        #intersection_lst = []
-        common_num_index = 0
-        nums2_dict = {}
-        for ele in nums2:
-            if ele not in nums2_dict:
-                nums2_dict[ele] = 1
-            else:
-                nums2_dict[ele] += 1
-                
+        # Time complexity - O(m + n)
+        # Space complexity - O(m + n)
+        res_lst = []
+        freq_map = {}
         for ele in nums1:
-            if ele in nums2_dict and nums2_dict[ele] > 0:
-                nums1[common_num_index] = ele
-                common_num_index +=1
-                nums2_dict[ele] -= 1
-        del nums1[common_num_index:]
-        return nums1
+            if ele not in freq_map:
+                freq_map[ele] = 1
+            else:
+                freq_map[ele] += 1
+                
+        for ele in nums2:
+            if ele in freq_map:
+                if freq_map[ele] > 0:
+                    freq_map[ele] -= 1
+                    res_lst.append(ele)
         
+        return res_lst
