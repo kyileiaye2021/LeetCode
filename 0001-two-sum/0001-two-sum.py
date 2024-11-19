@@ -1,31 +1,33 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        # Happy cases
-        # input - nums = [2,7,11,15], target = 9
-        # output - [0, 1]
-        
-        # Edge cases
-        # input - nums = [3,3], target = 6
-        # output - [0,1]
-        
-        # Hashmap Approach
-        # create a hashmap
+        # happy cases
+        # input: nums = [2,7,9] , target = 9
+        # output: [0,1]
+
+        # input : nums = [1,2,4], target = 5
+        # output: [0,2]
+
+        # edge cases
+        # input: nums = [1, 1], target = 2
+        # output: [0, 1]
+
+        # Brute Force
+        # Two pointer with the hashmap
+
+        # low level steps
+        # create a hashmap [ele, index]
         # iterate over the list
-        #   check if the subtraction of curr ele from the target is in the hashmap
-        #       make a list of the curr ele index and the val of the hashmap and return
-        # add the curr ele to the hashmap with its index
-        
-        # Time complexity - O(n)
-        # Space complexity - O(n)
-        
-        hashmap = {}
-        
+        #   diff between target and the curr ele
+        #   check if the diff is already in hashmap
+        #       return a pair of curr ele index and the diff ele index
+        #   if not in the hashmap
+        #       add the curr ele with its index in the hashmap
+
+        map = {}
         for i in range(len(nums)):
             diff = target - nums[i]
-            if diff in hashmap:
-                return [hashmap[diff],i]
-            
+            if diff in map:
+                return [i, map[diff]]
+
             else:
-                hashmap[nums[i]] = i
-                
-        
+                map[nums[i]] = i
