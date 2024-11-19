@@ -3,46 +3,74 @@ class Solution:
         """
         Do not return anything, modify nums1 in-place instead.
         """
-        #create two pointers: last indices of nums1 an nums2
-        #iterate over the nums1 from the last ele
-        #compare the nums1 and nums2
-        #insert the larger ele in the current position
-        #if the index of nums1 is less than 0 and the index of nums2 isn't, insert the curr ele of nums2
+        # happy cases
+        # input: nums1 = [1,2,3,0], nums2 = [1]
+        # output: nums1 = [1,1,2,3]
 
-        '''
-        nums1_curr_index = m-1
-        nums2_curr_index = n-1
-        current_list_index = m + n - 1
+        # edge cases
+        # input: nums1 = [0], nums2 = [1]
+        # output: nums1 = [1]
 
+        # input: nums1 = [1], nums2 = []
+        # output: nums1 = [1]
 
-        while nums1_curr_index >= 0 and nums2_curr_index >= 0:
-            if nums1[nums1_curr_index] < nums2[nums2_curr_index]:
-                nums1[current_list_index] = nums2[nums2_curr_index]
-                nums2_curr_index -= 1
-            else:
-                nums1[current_list_index] = nums1[nums1_curr_index]
-                nums1_curr_index -= 1
-            current_list_index -= 1
+        # Brute Force
+        # two pointer 
 
-        while nums2_curr_index >= 0:
-            nums1[current_list_index] = nums2[nums2_curr_index]
-            nums2_curr_index -= 1
-            current_list_index -= 1
-        '''
+        # low level steps
+        # m, n - pointers
+        # get smaller num from m and n
+        # assigned position to the last index in the list
+        # iterate until the smaller num becomes 0
+        #   check if the m ele of nums1 is greater than or equal to nums2
+        #       put the m ele to the assigned pos
+        #       decrement assigned pos by 1
+        #       decrement m by 1
+        #   else:
+        #       put the n ele to the assigneed pos
+        #       decrement n by 1
+        #       decrement assigned pos by 1
 
-        last = m + n - 1
-        while m > 0 and n > 0:
-            if nums1[m - 1] < nums2[n - 1]:
-                nums1[last] = nums2[n - 1]
-                n -= 1
-        
-            else:
-                nums1[last] = nums1[m - 1]
+        # if m > 0:
+        # iterate until assigned pos becomes 0
+        #   put the m ele to assigned pos
+        #   decrement assigned pos by 1
+        #   decrement m by 1
+
+        # if n > 0:
+        # iterate until assigned pos becomes 0
+        #   put n ele to assigned pos
+        #   decrement assigned pos by 1
+        #   decrement n by 1
+
+        assigned = m + n - 1
+
+        m = m - 1 
+        n = n - 1
+        while m >= 0 and n >= 0:
+            if nums1[m] > nums2[n]:
+                nums1[assigned] = nums1[m]
                 m -= 1
             
-            last -= 1
-        
-        while n > 0:
-            nums1[last] = nums2[n - 1]
+            else:
+                nums1[assigned] = nums2[n]
+                n -= 1
+
+            assigned -= 1
+
+        while m >= 0:
+            nums1[assigned] = nums1[m]
+            m -= 1
+            assigned -= 1
+
+        while n >= 0:
+            nums1[assigned] = nums2[n]
             n -= 1
-            last -= 1
+            assigned -= 1
+
+
+
+
+
+
+        
