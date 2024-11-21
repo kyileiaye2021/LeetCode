@@ -1,34 +1,32 @@
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
-        # Happy case
-        # input - nums=[3,2,2,3], and val = 3
-        # output - 2 , [2,2,_,_]
-        
-        # Edge case
-        # input - nums=[], and val = 2
-        # output - 0, []
-        
-        # input - nums=[3,4,5], val = 2
-        # output - 3, [3,4,5]
-        
-        
-        # Two pointer approach
-        # create two pointer p and q
-        # iterate until p reaches the end of the nums list
-        #   check if p ele is not the same as val
-        #       assign p ele to the position where q is curr pointing to
-        #       increment q by 1
-        #   increment p by 1
-        # return q
-        
-        # Time complexity: O(n)
-        # Space complexity: O(1)
-        
-        p, q = 0, 0
-        while p < len(nums):
-            if nums[p] != val:
-                nums[q] = nums[p]
-                q += 1
-            p += 1
-            
-        return q
+        # happy cases
+        # input: [3,2,2,3], val = 3
+        # output: 2,  [2,2]
+
+        # edge cases
+        # input: [], val = 1
+        # output: 0, []
+        # input: [1], val = 1
+        # output: 0, []
+
+        # brute force
+        # two pointer 
+
+        # low level steps
+        # initialize two pointers to 0 (i, j)
+        # iterate over the list until i reaches to the end of the list
+        #   check if the i ele is not equal to the val
+        #       increment both i and j by 1
+        #   else:: increment i by 1
+        # return j
+
+        i, j = 0, 0
+
+        while i < len(nums):
+            if nums[i] != val:
+                nums[j] = nums[i]
+                j += 1
+            i += 1
+
+        return j
