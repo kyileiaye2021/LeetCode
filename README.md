@@ -26,8 +26,17 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/0001-two-sum) |
+| [0383-ransom-note](https://github.com/kyileiaye2021/LeetCode/tree/master/0383-ransom-note) |
 ## Sorting
 |  |
 | ------- |
 | [0088-merge-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0088-merge-sorted-array) |
+## String
+|  |
+| ------- |
+| [0383-ransom-note](https://github.com/kyileiaye2021/LeetCode/tree/master/0383-ransom-note) |
+## Counting
+|  |
+| ------- |
+| [0383-ransom-note](https://github.com/kyileiaye2021/LeetCode/tree/master/0383-ransom-note) |
 <!---LeetCode Topics End-->
