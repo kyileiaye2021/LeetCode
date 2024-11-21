@@ -1,53 +1,50 @@
 class Solution:
     def isIsomorphic(self, s: str, t: str) -> bool:
-        # Happy cases:
-        # input: s="egg", t = "add"
-        # output = true
-        
-        # Edge cases
-        # input: s = "e", t = 'g'
-        # output - true
-        # input: s = 'e', t = 'gh'
-        # output - false
-        # input: s = 'foo', t = 'bar'
-        # output - false
-        # input: s = 'bar', t = 'foo'
-        # output - false
-        
-        #  if the len of s and t are not equal, return False
-        # create a hashmap for s 
-        
-        #   iterate over s
-        #       check if the curr ele of s is in hashmap
-        #           check if the mapped value of curr ele is not equal to the curr t ele
-        #               return false
-        #       set hashmap[s] = curr t ele
-        
-        # create a hashmap for t
-        # iterate over the ele in t
-        #    check if the curr ele of t is in hashmap
-        #       check if the mapped value of curr ele is not equal to the curr s
-        #           return false
-        #    set hashmap[t] = curr s ele
-        # return True
-        
-        if len(s) != len(t):
-            return False
-        
-        s_map = {}
+        # happy cases 
+        # input: s = "egg", t = "add"
+        # output: true
+
+        # edge cases
+        # input: s = "e", t = "a"
+        # output: true
+
+        # input: s = "foo", t = "bar"
+        # output: false
+
+        # input: s = "bar", t = "foo"
+        # output: false
+
+        # brute force
+        # hashmap
+
+        # low level steps
+        # create a hashmap for mapping each char of s to each char of t
+        # go over string s
+        #   if the current char of s is in the map
+        #       check if the curr corresponding char of t is not the same as the value of the map
+        #       return False
+        #   if it is not in the map, we need to add the curr char mapped with the curr correspondiing char of t
+        #           
+
+        # time - O(n)
+        # space - O(n)
+        map1 = {}
+        map2 = {}
+
         for i in range(len(s)):
-            if s[i] in s_map:
-                if t[i] != s_map[s[i]]:
+            if s[i] in map1:
+                if t[i] != map1[s[i]]:
+                    return False
+
+            else:
+                map1[s[i]] = t[i] 
+
+        for i in range(len(s)):
+            if t[i] in map2:
+                if s[i] != map2[t[i]]:
                     return False
             else:
-                s_map[s[i]] = t[i]
-        
-        t_map = {}
-        for i in range(len(t)):
-            if t[i] in t_map:
-                if s[i] != t_map[t[i]]:
-                    return False
-            else:
-                t_map[t[i]] = s[i]
-        
+                map2[t[i]] = s[i]
+
         return True
+
