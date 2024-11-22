@@ -1,48 +1,62 @@
 class Solution:
     def findRestaurant(self, list1: List[str], list2: List[str]) -> List[str]:
-        # Happy case:
-        # input: list1 = ["Shogun", "KFC", "Burger"], lst2 = ["Burger", "Shogun", "KFC"]
-        # output: ["Shogun"]
+        # happy cases
+        # input: list1 - ['a','b', 'c'], list2 - ['a', 'c', 'd']
+        # output: ['a']
+
+        # edge cases
+        # input: list1- ['a'], list2 - ['a']
+        # output: ['a']
+
+        # input: list1 - ['a', 'b'], list2 - ['b', 'a']
+        # output: ['a', 'b'] or ['b', 'a']
+
+        # Brute Force
+        # hashmap
+
+        # craete an empty common string hashmap
+        # iterate over the ele in list1
+        #   check if the  curr ele in list2
+        #       add that ele with its index
+
+        # iterate over list2 
+        #   check if the curr ele is in common string hashmap
+        #       update the value of the corresponding key to the sum of index
+
+        # create a res list
+        # create a min var 
+        # iterate over the hashmap
+        #   check if the curr value is smaller than min 
+        #       update min var
+        # iterate over the hashmap
+        #   check if the value is equal to the min
+        #   append the key to the res lisst
+
+        # return res list 
+
+        # Time - O(n)
+        # Space - O(n)
         
-        # Edge case:
-        # input: lst1 = ["Shogun"], lst2= ["Shogun"]
-        # output: ["Shogun"]
-        # input: lst1 = ["KFC", "Burger"], lst2= ["Burger", "KFC"]
-        # output: ["KFC", "Burger"]
-        
-        # Hashmap Approach
-        # create a res lst
-        # create a hashmap lst1_map
-        # iterate over the lst1 and fill the hashmap up 
-        # create another hashmap comm_str_map
-        # iterate over the lst2
-        #     check if the curr ele is in lst1_map
-        #          add it to comm_str_map with the index sum
-        # iterate over the comm_str_map
-        #     get the min_index_sum
-        # iterate over the comm_str_map
-        #     check if the curr key value is the same as min_index_sum
-        #       append the curr key in the res
-        # return res
-        
+        common = {}
+        for i, ele in enumerate(list1):
+            if ele in list2:
+                common[ele] = i
+
+        for i, ele in enumerate(list2):
+            if ele in common:
+                common[ele] += i
+
         res = []
-        lst1_map = {}
-        for i in range(len(list1)):
-            lst1_map[list1[i]] = i
-                
-        comm_str_map = {}
-        for i in range(len(list2)):
-            if list2[i] in lst1_map:
-                comm_str_map[list2[i]] = lst1_map[list2[i]] + i
-        
-        min_index_sum = float('inf')
-        for key in comm_str_map:
-            if comm_str_map[key] < min_index_sum:
-                min_index_sum = comm_str_map[key]
-            
-        for key in comm_str_map:
-            if comm_str_map[key] == min_index_sum:
+        min_sum = float('inf')
+
+        for sum in common.values():
+            min_sum = min(min_sum, sum)
+
+        for key, value in common.items():
+            if value == min_sum:
                 res.append(key)
-                
+
         return res
-        
+
+
+
