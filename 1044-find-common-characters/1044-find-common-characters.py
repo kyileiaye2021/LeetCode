@@ -16,12 +16,13 @@ class Solution:
         for w in words:
             curr_map = Counter(w)
             
-            for key in map:
+            for key in curr_map:
 
-                map[key] = min(curr_map[key], map[key])
+                curr_map[key] = min(curr_map[key], map[key])
+            map = curr_map
 
         res = []
-        for key, value in map.items():
+        for key, value in curr_map.items():
             while value > 0:
                 res.append(key)
                 value -= 1
