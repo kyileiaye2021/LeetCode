@@ -1,44 +1,56 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        
-        #Can there be empty string?: no
-        #({[]}) #true
-        #(){}[] #true
-        
-        '''
-        Stack and hashmap
-        * create a hashmap {closing parenthesis : opening parenthesis}
-        * create a stack to store opening parenthesis in the str
-        * iterate over the string
-            * check if the curr char is in the hashmap
-                * check if the last item of the stack is the corresponding opening                     parenthesis of the curr char
-                    * get rid of that opening parenthesis from the stack
-                * if the closing parenthesis doesn't have opening parenthesis
-                    * return False
-                
-            * if the curr char is not in hashmap (open parenthesis)
-                * put it in the stack
-        * return True if there is no ele in the stack
-        '''
-        
-        open_paren_stack = []
-        parenthesis_map = {')':'(', '}':'{', ']':'['}
-        
-        for c in s:
-            if c in parenthesis_map: #if the curr char is close parenthesis
-                if open_paren_stack and open_paren_stack[-1] == parenthesis_map[c]:
-                    open_paren_stack.pop()
-                
+        # happy cases
+        # input: s = "()"
+        # output: true
+
+        # input: s = "(}"
+        # output: false
+
+        # input: s = "({)}"
+        # output: false
+
+        # edge cases
+        # input: s = "("
+        # output: false
+
+        # input: s = "}"
+        # output: false
+
+        # input: "}{"
+        # output: false
+
+        # hashmap {'(':")"}
+        # create a stack
+        # iterate over the char in the str
+        #   if the cur char is open bracket
+        #       add it to the stack
+        #   else:
+        #       check if the stack is not empty and the current last char of stack matches the close bracket
+        #           pop that last ele 
+        #       else: return false
+
+
+        map = {'(': ')', '{': '}', '[':']'}
+        open_brackets = []
+
+        for ele in s:
+            if ele in map: # open brackets
+                open_brackets.append(ele)
+            else: # close brackets
+                if len(open_brackets) > 0:
+                    last = open_brackets[-1]
+                    if ele == map[last]:
+                        open_brackets.pop()
+                    else: 
+                        return False
                 else:
                     return False
-            else: #if the curr char is open parenthesis
-                open_paren_stack.append(c)
-            
-        if len(open_paren_stack) == 0:
-            return True
-        else:
+
+        if len(open_brackets) > 0:
             return False
-        
-                
-                
-        
+        return True
+
+
+
+
