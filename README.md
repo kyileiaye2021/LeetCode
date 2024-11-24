@@ -48,6 +48,7 @@ All leetCode problems done will be documented here.
 ## String
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/kyileiaye2021/LeetCode/tree/master/0020-valid-parentheses) |
 | [0205-isomorphic-strings](https://github.com/kyileiaye2021/LeetCode/tree/master/0205-isomorphic-strings) |
 | [0242-valid-anagram](https://github.com/kyileiaye2021/LeetCode/tree/master/0242-valid-anagram) |
 | [0383-ransom-note](https://github.com/kyileiaye2021/LeetCode/tree/master/0383-ransom-note) |
@@ -71,4 +72,8 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0387-first-unique-character-in-a-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0387-first-unique-character-in-a-string) |
+## Stack
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/kyileiaye2021/LeetCode/tree/master/0020-valid-parentheses) |
 <!---LeetCode Topics End-->
