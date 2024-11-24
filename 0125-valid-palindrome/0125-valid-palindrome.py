@@ -1,38 +1,45 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        # Two pointer approach
-        # * create left and right pointers
-        # * iterate over the str unitl left pointer passes right one
-        #   * check if the left is not equal to right
-        #       * check if the left is non-alphanumeric
-        #           * shift left by 1 to right
-        #       * check if the right is non-alphanumeric
-        #           * shift right by 1 to left
-        #       * check if the right and left are both non_alphanumeric
-        #           * shift right and left by 1
-        #       * if both left and right are alphanumeric
-        #           *return False
-        #   * otherwise: shift both left and right by 1
-        
-        s = s.lower()
-        left = 0
-        right = len(s) - 1
-        
-        while left < right:
-            if s[left] != s[right]:
-                if s[left].isalnum() and s[right].isalnum():
-                    return False
-                elif not s[left].isalnum() and s[right].isalnum():
-                    left += 1
-                elif not s[right].isalnum() and s[left].isalnum():
-                    right -= 1
-                else:
-                    right -= 1
-                    left += 1
-            else:
-                right -= 1
-                left += 1
-                
-        return True
+        # happy case
+        # input: s = 'A man, nama'
+        # output: True amannama
 
-                
+        # input: s = 'Bar'
+        # output: False
+
+        # edge case
+        # input: s = ""
+        # output: True
+
+        # input: s = "a"
+        # output: False
+
+        # i, j
+        # while i is less than j
+        #   if i ele is a whitespace or special char:
+        #       increment i by 1
+        #   elif j ele is a whitespace or special char:
+        #       decrement j by 1
+        #   check if the i char is the same as j char
+        #       increment i by 1
+        #       decrement j by 1
+        #   if they are not same 
+        #       return False
+
+        # time - O(logn)
+        # space - O(1)
+
+        i, j = 0, len(s)-1
+        while i <= j: 
+            if not s[i].isalnum(): # if the ele is not alnum
+                i += 1
+            elif not s[j].isalnum():
+                j -= 1
+            else:
+                if s[i].lower() == s[j].lower():
+                    i += 1
+                    j -= 1
+                else:
+                    return False
+
+        return True
