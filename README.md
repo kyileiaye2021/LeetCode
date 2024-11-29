@@ -33,6 +33,7 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/0001-two-sum) |
+| [0013-roman-to-integer](https://github.com/kyileiaye2021/LeetCode/tree/master/0013-roman-to-integer) |
 | [0202-happy-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0202-happy-number) |
 | [0205-isomorphic-strings](https://github.com/kyileiaye2021/LeetCode/tree/master/0205-isomorphic-strings) |
 | [0242-valid-anagram](https://github.com/kyileiaye2021/LeetCode/tree/master/0242-valid-anagram) |
@@ -50,6 +51,7 @@ All leetCode problems done will be documented here.
 ## String
 |  |
 | ------- |
+| [0013-roman-to-integer](https://github.com/kyileiaye2021/LeetCode/tree/master/0013-roman-to-integer) |
 | [0020-valid-parentheses](https://github.com/kyileiaye2021/LeetCode/tree/master/0020-valid-parentheses) |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0125-valid-palindrome](https://github.com/kyileiaye2021/LeetCode/tree/master/0125-valid-palindrome) |
@@ -71,6 +73,7 @@ All leetCode problems done will be documented here.
 ## Math
 |  |
 | ------- |
+| [0013-roman-to-integer](https://github.com/kyileiaye2021/LeetCode/tree/master/0013-roman-to-integer) |
 | [0202-happy-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0202-happy-number) |
 ## Queue
 |  |
