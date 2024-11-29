@@ -5,35 +5,51 @@
 #         self.next = next
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
-        
-        # create a head of the merged linked list
-        # create a temp pointer to keep track of the head of the merged lst
-        # iterate over the lists until one of the list ends
-        #   check if the curr val of which list is smaller
-        #       link it to the next of the merged linked list
-        # if there are nodes in one of the lists, add them to the merged list
-        # retur temp.next
-        
-        merged_lst = ListNode()
-        temp_head = merged_lst
-        
-        while list1 and list2:
-            if list1.val < list2.val:
-                merged_lst.next = list1
-                list1 = list1.next
+
+        # happy case
+        # input: list1 = [1], list2 = [1,2]
+        # output: [1,1,2]
+
+        # input: list1 = [2,3], list2 = [2]
+        # output: [2,2,3]
+
+        # edge case
+        # input: list1 = [], list2 = [2]
+        # output: [2]
+
+        # input; list1 = [1], list2 = []
+        # output: [1]
+
+        # first, create a empty node
+        # create two pointers
+        # iterate until one pointer reaches to the end of the linked list
+        #   check if the which pointer has smaller value
+        #       append the smaller node to the empty node
+        #       move the corresponding pointer to the next node
+        # return the next of the empty node
+
+        new_node = ListNode()
+        merged = new_node
+
+        i, j = list1, list2
+
+        while i and j:
+            if i.val > j.val:
+                new_node.next = j
+                j = j.next
             else:
-                merged_lst.next = list2
-                list2 = list2.next
-            merged_lst = merged_lst.next
-            
-        while list1:
-            merged_lst.next = list1
-            list1 = list1.next
-            merged_lst = merged_lst.next
-            
-        while list2:
-            merged_lst.next = list2
-            list2 = list2.next
-            merged_lst = merged_lst.next
-            
-        return temp_head.next
+                new_node.next = i
+                i = i.next
+            new_node = new_node.next
+
+        while i:
+            new_node.next = i
+            new_node = new_node.next
+            i = i.next
+
+        while j:
+            new_node.next = j
+            new_node = new_node.next
+            j = j.next
+
+        return merged.next
