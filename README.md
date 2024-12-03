@@ -108,4 +108,20 @@ All leetCode problems done will be documented here.
 | [0203-remove-linked-list-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0203-remove-linked-list-elements) |
 | [0206-reverse-linked-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0206-reverse-linked-list) |
 | [0234-palindrome-linked-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0234-palindrome-linked-list) |
+## Tree
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0226-invert-binary-tree) |
+## Depth-First Search
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0226-invert-binary-tree) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0226-invert-binary-tree) |
+## Binary Tree
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0226-invert-binary-tree) |
 <!---LeetCode Topics End-->
