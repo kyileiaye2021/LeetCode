@@ -1,41 +1,36 @@
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        # Happy cases
-        # input - ["eat", "tea", "tan"]
-        # output - [["eat", "tea"], ["tan"]]
-        
-        # Edge cases:
-        # input - [""]
-        # output - [[""]]
-        
-        # input - ["a"]
-        # output - [["a"]]
-        
-        # create a hashmap {countChar : [list of anagram]}
-        # iterate over the list
-        #   create a list of 0s representing the counter of a to z
-        #   iterate over the curr char
-        #       increment the index where the char exists by subtracting the ascii value of a from ascii value of the curr char
-        #   append the curr str to the value list of corresponding list
-        
-        res = {}
-        
-        for s in strs:
-            
-            lst = [0] * 26
-            
-            for c in s:
-                
-                lst[ord(c) - ord('a')] += 1 # using ascii value to increment the ele indexed position
-                
-            lst = tuple(lst) # list cannot be the key of hashmap
-            if lst not in res:
-                res[lst] = [s]
+        # create a dictionary {[size 26 with default val to 0: a list of anagrams]}
+        # iterate over each str in the list
+        #   create a list of size 26 with default val to 0
+        #   iterate over each char in the curr str
+        #       update the list[curr char - 97] by incrementing by 1
+        #   check if the curr list is in the dictionary
+        #       append the curr str to the list corresponding to that list in the dictionary
+        #   else: create a list with curr str 
+        # create a res list
+        # iterate over the values of dictionary
+        #   append the list of anagrams to the res list
+        # return the res list
+
+
+        anagram_dict = {}
+
+        for ele in strs:
+            curr_list = [0] * 26 
+
+            for char in ele:
+                curr_list[ord(char) - 97] += 1
+
+            curr_list = tuple(curr_list) # list cannot be a key of the dictionary so convert it to a tuple 
+            if curr_list in anagram_dict:
+                anagram_dict[curr_list].append(ele)
             
             else:
-                res[lst].append(s)
-                
-        return res.values()
-            
-        
-    
+                anagram_dict[curr_list] = [ele]
+
+        res = []
+        for val in anagram_dict.values():
+            res.append(val)
+
+        return res
