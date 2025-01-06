@@ -14,6 +14,7 @@ All leetCode problems done will be documented here.
 | [0088-merge-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0088-merge-sorted-array) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/kyileiaye2021/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0283-move-zeroes](https://github.com/kyileiaye2021/LeetCode/tree/master/0283-move-zeroes) |
+| [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0349-intersection-of-two-arrays](https://github.com/kyileiaye2021/LeetCode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0599-minimum-index-sum-of-two-lists](https://github.com/kyileiaye2021/LeetCode/tree/master/0599-minimum-index-sum-of-two-lists) |
@@ -49,6 +50,7 @@ All leetCode problems done will be documented here.
 | [0202-happy-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0202-happy-number) |
 | [0205-isomorphic-strings](https://github.com/kyileiaye2021/LeetCode/tree/master/0205-isomorphic-strings) |
 | [0242-valid-anagram](https://github.com/kyileiaye2021/LeetCode/tree/master/0242-valid-anagram) |
+| [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0349-intersection-of-two-arrays](https://github.com/kyileiaye2021/LeetCode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0383-ransom-note](https://github.com/kyileiaye2021/LeetCode/tree/master/0383-ransom-note) |
@@ -61,6 +63,7 @@ All leetCode problems done will be documented here.
 | [0049-group-anagrams](https://github.com/kyileiaye2021/LeetCode/tree/master/0049-group-anagrams) |
 | [0088-merge-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0088-merge-sorted-array) |
 | [0242-valid-anagram](https://github.com/kyileiaye2021/LeetCode/tree/master/0242-valid-anagram) |
+| [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0349-intersection-of-two-arrays](https://github.com/kyileiaye2021/LeetCode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [1019-squares-of-a-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
@@ -81,6 +84,7 @@ All leetCode problems done will be documented here.
 ## Counting
 |  |
 | ------- |
+| [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0383-ransom-note](https://github.com/kyileiaye2021/LeetCode/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0387-first-unique-character-in-a-string) |
 ## Binary Search
@@ -146,4 +150,17 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/kyileiaye2021/LeetCode/tree/master/0053-maximum-subarray) |
+| [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
+## Bucket Sort
+|  |
+| ------- |
+| [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
+## Quickselect
+|  |
+| ------- |
+| [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
 <!---LeetCode Topics End-->
