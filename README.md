@@ -14,6 +14,7 @@ All leetCode problems done will be documented here.
 | [0053-maximum-subarray](https://github.com/kyileiaye2021/LeetCode/tree/master/0053-maximum-subarray) |
 | [0088-merge-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0088-merge-sorted-array) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/kyileiaye2021/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
+| [0128-longest-consecutive-sequence](https://github.com/kyileiaye2021/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0238-product-of-array-except-self](https://github.com/kyileiaye2021/LeetCode/tree/master/0238-product-of-array-except-self) |
 | [0283-move-zeroes](https://github.com/kyileiaye2021/LeetCode/tree/master/0283-move-zeroes) |
 | [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
@@ -49,6 +50,7 @@ All leetCode problems done will be documented here.
 | [0013-roman-to-integer](https://github.com/kyileiaye2021/LeetCode/tree/master/0013-roman-to-integer) |
 | [0036-valid-sudoku](https://github.com/kyileiaye2021/LeetCode/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/kyileiaye2021/LeetCode/tree/master/0049-group-anagrams) |
+| [0128-longest-consecutive-sequence](https://github.com/kyileiaye2021/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0141-linked-list-cycle](https://github.com/kyileiaye2021/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0202-happy-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0202-happy-number) |
 | [0205-isomorphic-strings](https://github.com/kyileiaye2021/LeetCode/tree/master/0205-isomorphic-strings) |
@@ -174,4 +176,8 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/kyileiaye2021/LeetCode/tree/master/0036-valid-sudoku) |
+## Union Find
+|  |
+| ------- |
+| [0128-longest-consecutive-sequence](https://github.com/kyileiaye2021/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 <!---LeetCode Topics End-->
