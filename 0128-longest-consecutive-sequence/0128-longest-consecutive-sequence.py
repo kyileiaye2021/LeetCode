@@ -1,40 +1,49 @@
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
-        # Happy case:
-        # input - nums = [100,200,1,2,3]
-        # output - 3
-        
-        # Edge cases:
-        # input - nums = []
-        # output - 0
-        # input - nums = [1]
-        # output - 1
-        # input - nums = [1, 0, 0]
-        # output - 2
-        
-        # O(n)
-        # create a set for the nums
-        # create a var longest to trace the longest seq
-        # iterate over the ele in the nums
-        #   check if ele - 1 is not in the set
-        #       y = ele + 1
-        #       check while y is in the set
-        #           increment y by 1
-        #       update the longest
-        # return longest
-        
-        numSet = set(nums)
-        longest = 0
-        
+                # happy cases
+        # nums = [1,2,5,3]
+        # output = 3 [1,2,3]
+
+        # edge cases
+        # nums = []
+        # output = 0
+        # nums = [5]
+        # output = 1 [5]
+        # nums = [5, 10]
+        # output = 1 [5], [10]
+
+        # create a set for the entire array
+        # create a var called max_len to keep track of the max len the seq
+        # iterate over each ele in the set:
+        #   check if there is a left neighbor for the curr ele
+        #       continue
+        #   otherwise:
+        #       create a list and create a var curr_len to keep track of the curr seq len
+        #       add the curr ele to the list and increment the curr_len by 1
+        #       while there are right neighbors in the set,
+        #           add the curr ele to the list and increment the curr_len by 1
+        #       update the max_len with max(counter, max_len)
+        # return max_len
+
+        nums = set(nums)
+        max_len = 0
+
         for ele in nums:
-            if ele - 1 not in numSet:
-                y = 1
-                while ele+1 in numSet:
-                    y += 1
-                    ele = ele + 1
-                    
-                longest = max(y, longest)
-        return longest
-                
-        
-        
+            if ele - 1 in nums:
+                continue
+
+            else:
+                curr_lst = []
+                curr_len = 0
+                curr_lst.append(ele)
+                curr_len += 1
+
+                ele += 1
+                while ele in nums:
+                    curr_lst.append(ele)
+                    curr_len += 1
+                    ele += 1
+
+                max_len = max(curr_len, max_len)
+
+        return max_len
