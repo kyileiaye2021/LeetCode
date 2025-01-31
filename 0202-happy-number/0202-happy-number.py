@@ -6,8 +6,22 @@ class Solution:
         # input: n = 10
         # output: true
 
-        # input: n = 12
+        # input: n = 2
         # output: false
+        # 2 
+        # 2^2 = 4
+        # 4^2 = 16
+        # 1^2 + 6^2 = 37
+        # 3^2 + 7^2 = 58
+        # 5^2 + 8^2 = 89
+        # 8^2 + 9^2 = 64 + 81 = 145
+        # 1^2 + 4^2 + 5^2 = 1 + 16 + 25 = 41
+        # 4^2 + 1^2 = 16 + 1 = 17
+        # 1^2 + 7^2 = 50
+        # 25
+        # 4 + 25 = 29
+        # 4 + 81 = 85
+        
 
         # edge cases
         # input: n = 1
@@ -32,30 +46,43 @@ class Solution:
         #   else if sum is less than 10: return false
         #   else: update num with sum
 
-        visited = []
+        # visited = []
 
-        if n == 1:
-            return True
+        # if n == 1:
+        #     return True
 
-        sum = 0
-        while n != 1:
-            if n not in visited:
-                visited.append(n)
-            else:
-                return False
+        # sum = 0
+        # while n != 1:
+        #     if n not in visited:
+        #         visited.append(n)
+        #     else:
+        #         return False
+        #     while n != 0:
+        #         digit = n % 10
+        #         n = n // 10
+        #         sum += (digit**2)
+
+        #     if sum == 1:
+        #         return True
+
+        #     else:
+        #         n = sum
+        #         sum = 0
+
+        visited = set()
+
+        while n not in visited:
+            sum = 0
+            visited.add(n)
             while n != 0:
-                digit = n % 10
+                rem = n % 10
                 n = n // 10
-                sum += (digit**2)
+                sum += rem**2
 
             if sum == 1:
                 return True
+            n = sum
 
-            else:
-                n = sum
-                sum = 0
-
-
-    
+        return False
 
         
