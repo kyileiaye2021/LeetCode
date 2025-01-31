@@ -25,25 +25,46 @@ class Solution:
         #       update the max_len with max(counter, max_len)
         # return max_len
 
+        # nums = set(nums)
+        # max_len = 0
+
+        # for ele in nums:
+        #     if ele - 1 in nums:
+        #         continue
+
+        #     else:
+        #         curr_lst = []
+        #         curr_len = 0
+        #         curr_lst.append(ele)
+        #         curr_len += 1
+
+        #         ele += 1
+        #         while ele in nums:
+        #             curr_lst.append(ele)
+        #             curr_len += 1
+        #             ele += 1
+
+        #         max_len = max(curr_len, max_len)
+
+        # return max_len
+
+        max_seq_len = 0
         nums = set(nums)
-        max_len = 0
 
-        for ele in nums:
-            if ele - 1 in nums:
-                continue
+        for n in nums:
 
-            else:
-                curr_lst = []
-                curr_len = 0
-                curr_lst.append(ele)
-                curr_len += 1
+            curr_seq_len = 0
 
-                ele += 1
-                while ele in nums:
-                    curr_lst.append(ele)
-                    curr_len += 1
-                    ele += 1
+            if n-1 not in nums:
+                start = n
+                curr_seq_len += 1
+                n = n + 1
 
-                max_len = max(curr_len, max_len)
+                while n in nums:
+                    n = n + 1
+                    curr_seq_len += 1
 
-        return max_len
+                max_seq_len = max(max_seq_len , curr_seq_len)
+
+        return max_seq_len
+
