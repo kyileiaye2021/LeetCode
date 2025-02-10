@@ -9,12 +9,14 @@ class Solution:
         max_sum = nums[0]
         curr_sum = 0
 
-        for ele in nums:
+        i, j = 0, 0
+
+        while j < len(nums):
             if curr_sum < 0:
                 curr_sum = 0
-            curr_sum += ele
+            curr_sum += nums[j]
+
             max_sum = max(max_sum, curr_sum)
-
-        return max_sum
-
+            j += 1
         
+        return max_sum
