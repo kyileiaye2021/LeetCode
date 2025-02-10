@@ -11,11 +11,11 @@ class Solution:
         while j < len(prices):
             if prices[j] < prices[i]:
                 i = j
-                j += 1
-
+            
             else:
                 profit = prices[j] - prices[i]
                 max_profit = max(profit, max_profit)
-                j += 1
+                
+            j += 1
 
         return max_profit
