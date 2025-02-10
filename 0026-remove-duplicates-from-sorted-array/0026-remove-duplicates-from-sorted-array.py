@@ -1,11 +1,27 @@
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
+
+        # happy case
+        # input - [1,2,2,4,5]
+        # output - [1,2,4,5,_] , 4
+
+        # edge case
+        # input - [1,1,1,1]
+        # output - [1,_,_,_], 1
+
+        # Brute Force
+        # Two pointer 
+
         i, j = 1, 1
-        while i < len(nums):
-            if nums[i] != nums[i - 1]:
-                nums[j] = nums[i]
-                j += 1
 
-            i += 1
+        while j < len(nums):
+            if nums[j] != nums[j - 1]:
+                nums[i] = nums[j]
+                i += 1
 
-        return j
+            j += 1
+
+        return i
+
+        
+        
