@@ -26,10 +26,7 @@ class Solution:
 
                 return_val_l = self.valid(s, l + 1,r)
                 return_val_r = self.valid(s, l, r-1)
-                if return_val_l or return_val_r:
-                    return True
-                else:
-                    return False
+                return return_val_l or return_val_r
 
             else:
                 l += 1
