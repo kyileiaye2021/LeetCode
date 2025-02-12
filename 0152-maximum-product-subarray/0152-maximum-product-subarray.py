@@ -26,15 +26,38 @@ class Solution:
 
         # we need to keep track of currMin and currMax because of the negative numbers
 
+        # max_product = nums[0]
+        # currMin = 1
+        # currMax = 1
+
+        # for i in range(len(nums)):
+
+        #     tmp = currMin 
+        #     currMin = min(currMin * nums[i], currMax * nums[i], nums[i])
+        #     currMax = max(tmp * nums[i], currMax * nums[i], nums[i])
+        #     max_product = max(currMin, currMax, max_product)
+
+        # return max_product
+        # time = O(n)
+        # space = O(1)
+
+        # another approach
+        left_to_right = 1
+        right_to_left = 1
         max_product = nums[0]
-        currMin = 1
-        currMax = 1
 
         for i in range(len(nums)):
+            if left_to_right == 0: # reset the neutral val to start a new subarray
+                left_to_right = 1
 
-            tmp = currMin 
-            currMin = min(currMin * nums[i], currMax * nums[i], nums[i])
-            currMax = max(tmp * nums[i], currMax * nums[i], nums[i])
-            max_product = max(currMin, currMax, max_product)
+            left_to_right *= nums[i]
+            max_product = max(max_product, left_to_right)
+
+        for i in range(len(nums)-1, -1, -1):
+            if right_to_left == 0:
+                right_to_left = 1
+
+            right_to_left *= nums[i]
+            max_product = max(max_product, right_to_left)
 
         return max_product
