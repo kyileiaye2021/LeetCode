@@ -129,6 +129,7 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/kyileiaye2021/LeetCode/tree/master/0020-valid-parentheses) |
+| [0155-min-stack](https://github.com/kyileiaye2021/LeetCode/tree/master/0155-min-stack) |
 | [0234-palindrome-linked-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0234-palindrome-linked-list) |
 ## String Matching
 |  |
@@ -202,4 +203,8 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0680-valid-palindrome-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0680-valid-palindrome-ii) |
+## Design
+|  |
+| ------- |
+| [0155-min-stack](https://github.com/kyileiaye2021/LeetCode/tree/master/0155-min-stack) |
 <!---LeetCode Topics End-->
