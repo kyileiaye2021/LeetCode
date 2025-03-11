@@ -22,6 +22,7 @@ All leetCode problems done will be documented here.
 | [0128-longest-consecutive-sequence](https://github.com/kyileiaye2021/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0152-maximum-product-subarray](https://github.com/kyileiaye2021/LeetCode/tree/master/0152-maximum-product-subarray) |
 | [0189-rotate-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0189-rotate-array) |
+| [0209-minimum-size-subarray-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
 | [0238-product-of-array-except-self](https://github.com/kyileiaye2021/LeetCode/tree/master/0238-product-of-array-except-self) |
 | [0283-move-zeroes](https://github.com/kyileiaye2021/LeetCode/tree/master/0283-move-zeroes) |
 | [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
@@ -127,6 +128,7 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0074-search-a-2d-matrix](https://github.com/kyileiaye2021/LeetCode/tree/master/0074-search-a-2d-matrix) |
+| [0209-minimum-size-subarray-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
 | [0349-intersection-of-two-arrays](https://github.com/kyileiaye2021/LeetCode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0792-binary-search](https://github.com/kyileiaye2021/LeetCode/tree/master/0792-binary-search) |
@@ -205,6 +207,7 @@ All leetCode problems done will be documented here.
 ## Prefix Sum
 |  |
 | ------- |
+| [0209-minimum-size-subarray-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
 | [0238-product-of-array-except-self](https://github.com/kyileiaye2021/LeetCode/tree/master/0238-product-of-array-except-self) |
 ## Matrix
 |  |
@@ -227,6 +230,7 @@ All leetCode problems done will be documented here.
 ## Sliding Window
 |  |
 | ------- |
+| [0209-minimum-size-subarray-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
 | [0424-longest-repeating-character-replacement](https://github.com/kyileiaye2021/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0567-permutation-in-string) |
 <!---LeetCode Topics End-->
