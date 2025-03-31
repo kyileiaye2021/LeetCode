@@ -5,24 +5,27 @@
 #         self.next = next
 class Solution:
     def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        # happy cases
-        # input: head = [1,2,3,4,5]
-        # output: [3,4,5]
+        # happy case
+        # head = [1,2,3,4,5]
+        # output = 3
 
-        # input: head = [1,2,3,4,5,6]
-        # output: [4,5,6]
+        # head = [1,2,3,4]
+        # output = 3
 
-        # edge cases
-        # input: head = [1]
-        # output: [1]
+        # edge case
+        # head = [1]
+        # output = 1
 
-        # input: head = [1,2]
-        # output: [2]
-
-        # slow and fast pointer
-        slow, fast = head, head
-
-        while fast and fast.next:
+        # fast slow pointer approach
+        # fast, slow = head, head
+        # traverse the linked list from the head until the fast pointer becomees none
+        #   move slow by 1 node
+        #   move fast by 2 nodes
+        # return slow
+        
+        # 1 -> 2 -> 3 -> 4
+        fast, slow = head, head
+        while fast != None and fast.next != None:
             slow = slow.next
             fast = fast.next.next
 
