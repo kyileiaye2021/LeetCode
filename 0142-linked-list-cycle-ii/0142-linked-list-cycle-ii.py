@@ -35,21 +35,31 @@ class Solution:
         # return -1
 
         # fast and slow can meet at any point in the cycle. How can we find the beginning of the cycle?
+        if not head or not head.next:
+            return None
 
         fast, slow = head, head
         
+        # checking detection of cycle 
         while fast and fast.next:
 
             slow = slow.next 
             fast = fast.next.next
 
             if fast == slow:
-                fast = head
+                break
 
-                while fast != slow:
-                    fast = fast.next
-                    slow = slow.next
+        # if no cycle is detected, 
+        if not fast or not fast.next:
+            return None
 
-                return fast
+        fast = head # looking for first node in the cycle
+        while fast != slow:
+            fast = fast.next
+            slow = slow.next
 
-        return None
+        return fast
+
+
+        # time - O(n)
+        # space - O(1)
