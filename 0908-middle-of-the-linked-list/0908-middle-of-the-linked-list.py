@@ -30,3 +30,6 @@ class Solution:
             fast = fast.next.next
 
         return slow
+
+        # Time - O(n)
+        # Space - O(1)
