@@ -5,51 +5,72 @@
 #         self.next = next
 class Solution:
     def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+        # Happy cases
+        # input: list1=[1,2,4], list2 = [1,3,4]
+        # output: [1,1,2,3,4,4]
 
-        # happy case
-        # input: list1 = [1], list2 = [1,2]
-        # output: [1,1,2]
+        # input: list1 = [3,5], list2 = [1]
+        # output: [1, 3,5]
 
-        # input: list1 = [2,3], list2 = [2]
-        # output: [2,2,3]
+        # Edge case
+        # input: list1 = [], list2 = [1,6]
+        # output: [1,6]
+        
+        # input: list1 = [7,9,11], list2 = []
+        # output: [7,9,11]
 
-        # edge case
-        # input: list1 = [], list2 = [2]
-        # output: [2]
+        # input: list1=[], list2=[]
+        # output : []
 
-        # input; list1 = [1], list2 = []
-        # output: [1]
+        # Two pointer approach 
+        # if head of list1 is empty, return head of list2
+        # if head of list2 is empty, return the head of list1
+        # if both heads are empty, return empty list
+        # p, q pointers
+        # create a dummy node
+        # temp = dummy
+        # traverse until p reaches end of list1 and q reaches the end of list2
+        #   check if the p ele is less than q ele
+        #       set the dummy.next to p 
+        #   else
+        #       set the dummy.next to q
+        #   dummy = dummy.next
+        # traverse until p reaches the end of list1
+        #   set the dummy.next to p
+        #   dummy = dummy.next
+        # traverse until q reaches the end of list2
+        #   set the dummy.next to q
+        #   dummy = dummy.next
+        # return temp.next
 
-        # first, create a empty node
-        # create two pointers
-        # iterate until one pointer reaches to the end of the linked list
-        #   check if the which pointer has smaller value
-        #       append the smaller node to the empty node
-        #       move the corresponding pointer to the next node
-        # return the next of the empty node
+        if not list1:
+            return list2
 
-        new_node = ListNode()
-        merged = new_node
+        if not list2:
+            return list1
 
-        i, j = list1, list2
+        p, q = list1, list2
+        dummy = ListNode(0)
+        temp = dummy
+        while p and q:
+            if p.val < q.val:
+                dummy.next = p
+                p = p.next
 
-        while i and j:
-            if i.val > j.val:
-                new_node.next = j
-                j = j.next
             else:
-                new_node.next = i
-                i = i.next
-            new_node = new_node.next
+                dummy.next = q
+                q = q.next
 
-        while i:
-            new_node.next = i
-            new_node = new_node.next
-            i = i.next
+            dummy = dummy.next
 
-        while j:
-            new_node.next = j
-            new_node = new_node.next
-            j = j.next
+        while p:
+            dummy.next = p
+            p = p.next
+            dummy = dummy.next
 
-        return merged.next
+        while q:
+            dummy.next = q
+            q = q.next
+            dummy = dummy.next
+
+        return temp.next
