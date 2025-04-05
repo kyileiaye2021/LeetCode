@@ -72,6 +72,7 @@ All leetCode problems done will be documented here.
 | [0917-boats-to-save-people](https://github.com/kyileiaye2021/LeetCode/tree/master/0917-boats-to-save-people) |
 | [1019-squares-of-a-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
 | [1894-merge-strings-alternately](https://github.com/kyileiaye2021/LeetCode/tree/master/1894-merge-strings-alternately) |
+| [2216-delete-the-middle-node-of-a-linked-list](https://github.com/kyileiaye2021/LeetCode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
 ## Hash Table
 |  |
 | ------- |
@@ -181,6 +182,7 @@ All leetCode problems done will be documented here.
 | [0206-reverse-linked-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0206-reverse-linked-list) |
 | [0234-palindrome-linked-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0234-palindrome-linked-list) |
 | [0908-middle-of-the-linked-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0908-middle-of-the-linked-list) |
+| [2216-delete-the-middle-node-of-a-linked-list](https://github.com/kyileiaye2021/LeetCode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
 ## Recursion
 |  |
 | ------- |
