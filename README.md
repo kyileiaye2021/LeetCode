@@ -159,6 +159,7 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0387-first-unique-character-in-a-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0387-first-unique-character-in-a-string) |
+| [0969-number-of-recent-calls](https://github.com/kyileiaye2021/LeetCode/tree/master/0969-number-of-recent-calls) |
 ## Stack
 |  |
 | ------- |
@@ -256,6 +257,7 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0155-min-stack](https://github.com/kyileiaye2021/LeetCode/tree/master/0155-min-stack) |
+| [0969-number-of-recent-calls](https://github.com/kyileiaye2021/LeetCode/tree/master/0969-number-of-recent-calls) |
 ## Sliding Window
 |  |
 | ------- |
@@ -268,4 +270,8 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0014-longest-common-prefix](https://github.com/kyileiaye2021/LeetCode/tree/master/0014-longest-common-prefix) |
+## Data Stream
+|  |
+| ------- |
+| [0969-number-of-recent-calls](https://github.com/kyileiaye2021/LeetCode/tree/master/0969-number-of-recent-calls) |
 <!---LeetCode Topics End-->
