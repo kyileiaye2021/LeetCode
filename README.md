@@ -22,6 +22,7 @@ All leetCode problems done will be documented here.
 | [0128-longest-consecutive-sequence](https://github.com/kyileiaye2021/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0152-maximum-product-subarray](https://github.com/kyileiaye2021/LeetCode/tree/master/0152-maximum-product-subarray) |
 | [0189-rotate-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0189-rotate-array) |
+| [0200-number-of-islands](https://github.com/kyileiaye2021/LeetCode/tree/master/0200-number-of-islands) |
 | [0209-minimum-size-subarray-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
 | [0219-contains-duplicate-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0219-contains-duplicate-ii) |
 | [0238-product-of-array-except-self](https://github.com/kyileiaye2021/LeetCode/tree/master/0238-product-of-array-except-self) |
@@ -205,11 +206,13 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0101-symmetric-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0101-symmetric-tree) |
+| [0200-number-of-islands](https://github.com/kyileiaye2021/LeetCode/tree/master/0200-number-of-islands) |
 | [0226-invert-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0226-invert-binary-tree) |
 ## Breadth-First Search
 |  |
 | ------- |
 | [0101-symmetric-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0101-symmetric-tree) |
+| [0200-number-of-islands](https://github.com/kyileiaye2021/LeetCode/tree/master/0200-number-of-islands) |
 | [0226-invert-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0226-invert-binary-tree) |
 ## Binary Tree
 |  |
@@ -244,10 +247,12 @@ All leetCode problems done will be documented here.
 | ------- |
 | [0036-valid-sudoku](https://github.com/kyileiaye2021/LeetCode/tree/master/0036-valid-sudoku) |
 | [0074-search-a-2d-matrix](https://github.com/kyileiaye2021/LeetCode/tree/master/0074-search-a-2d-matrix) |
+| [0200-number-of-islands](https://github.com/kyileiaye2021/LeetCode/tree/master/0200-number-of-islands) |
 ## Union Find
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/kyileiaye2021/LeetCode/tree/master/0128-longest-consecutive-sequence) |
+| [0200-number-of-islands](https://github.com/kyileiaye2021/LeetCode/tree/master/0200-number-of-islands) |
 ## Greedy
 |  |
 | ------- |
