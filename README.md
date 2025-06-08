@@ -37,6 +37,7 @@ All leetCode problems done will be documented here.
 | [0917-boats-to-save-people](https://github.com/kyileiaye2021/LeetCode/tree/master/0917-boats-to-save-people) |
 | [1019-squares-of-a-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
 | [1036-rotting-oranges](https://github.com/kyileiaye2021/LeetCode/tree/master/1036-rotting-oranges) |
+| [1039-find-the-town-judge](https://github.com/kyileiaye2021/LeetCode/tree/master/1039-find-the-town-judge) |
 | [1044-find-common-characters](https://github.com/kyileiaye2021/LeetCode/tree/master/1044-find-common-characters) |
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/kyileiaye2021/LeetCode/tree/master/1528-kids-with-the-greatest-number-of-candies) |
 ## Dynamic Programming
@@ -101,6 +102,7 @@ All leetCode problems done will be documented here.
 | [0424-longest-repeating-character-replacement](https://github.com/kyileiaye2021/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0567-permutation-in-string) |
 | [0599-minimum-index-sum-of-two-lists](https://github.com/kyileiaye2021/LeetCode/tree/master/0599-minimum-index-sum-of-two-lists) |
+| [1039-find-the-town-judge](https://github.com/kyileiaye2021/LeetCode/tree/master/1039-find-the-town-judge) |
 | [1044-find-common-characters](https://github.com/kyileiaye2021/LeetCode/tree/master/1044-find-common-characters) |
 ## Sorting
 |  |
@@ -294,4 +296,5 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0133-clone-graph](https://github.com/kyileiaye2021/LeetCode/tree/master/0133-clone-graph) |
+| [1039-find-the-town-judge](https://github.com/kyileiaye2021/LeetCode/tree/master/1039-find-the-town-judge) |
 <!---LeetCode Topics End-->
