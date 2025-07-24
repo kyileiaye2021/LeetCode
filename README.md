@@ -41,6 +41,7 @@ All leetCode problems done will be documented here.
 | [1039-find-the-town-judge](https://github.com/kyileiaye2021/LeetCode/tree/master/1039-find-the-town-judge) |
 | [1044-find-common-characters](https://github.com/kyileiaye2021/LeetCode/tree/master/1044-find-common-characters) |
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/kyileiaye2021/LeetCode/tree/master/1528-kids-with-the-greatest-number-of-candies) |
+| [1798-max-number-of-k-sum-pairs](https://github.com/kyileiaye2021/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -76,6 +77,7 @@ All leetCode problems done will be documented here.
 | [0908-middle-of-the-linked-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0908-middle-of-the-linked-list) |
 | [0917-boats-to-save-people](https://github.com/kyileiaye2021/LeetCode/tree/master/0917-boats-to-save-people) |
 | [1019-squares-of-a-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
+| [1798-max-number-of-k-sum-pairs](https://github.com/kyileiaye2021/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [1894-merge-strings-alternately](https://github.com/kyileiaye2021/LeetCode/tree/master/1894-merge-strings-alternately) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/kyileiaye2021/LeetCode/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
 | [2236-maximum-twin-sum-of-a-linked-list](https://github.com/kyileiaye2021/LeetCode/tree/master/2236-maximum-twin-sum-of-a-linked-list) |
@@ -105,6 +107,7 @@ All leetCode problems done will be documented here.
 | [0599-minimum-index-sum-of-two-lists](https://github.com/kyileiaye2021/LeetCode/tree/master/0599-minimum-index-sum-of-two-lists) |
 | [1039-find-the-town-judge](https://github.com/kyileiaye2021/LeetCode/tree/master/1039-find-the-town-judge) |
 | [1044-find-common-characters](https://github.com/kyileiaye2021/LeetCode/tree/master/1044-find-common-characters) |
+| [1798-max-number-of-k-sum-pairs](https://github.com/kyileiaye2021/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 ## Sorting
 |  |
 | ------- |
@@ -121,6 +124,7 @@ All leetCode problems done will be documented here.
 | [0658-find-k-closest-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0917-boats-to-save-people](https://github.com/kyileiaye2021/LeetCode/tree/master/0917-boats-to-save-people) |
 | [1019-squares-of-a-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
+| [1798-max-number-of-k-sum-pairs](https://github.com/kyileiaye2021/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 ## String
 |  |
 | ------- |
