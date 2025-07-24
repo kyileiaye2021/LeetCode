@@ -15,25 +15,44 @@ class Solution:
         # nums = [1,2], k = 5
         # output: 0
 
-        nums.sort()
+        # O(nlogn) time complexity
+        # O(1) space complexity
+
+        # nums.sort()
+
+        # count = 0
+
+        # l, r = 0, len(nums) - 1
+
+        # while l < r:
+
+        #     curr_sum = nums[l] + nums[r]
+        #     if curr_sum == k:
+        #         count += 1
+        #         l += 1
+        #         r -= 1
+
+        #     elif curr_sum > k:
+        #         r -= 1
+
+        #     else:
+        #         l += 1
+
+        # return count
 
         count = 0
+        freq_map = {}
 
-        l, r = 0, len(nums) - 1
+        for ele in nums:
 
-        while l < r:
+            diff = k - ele
+            if diff in freq_map and freq_map[diff] > 0:
 
-            curr_sum = nums[l] + nums[r]
-            if curr_sum == k:
+                freq_map[diff] -= 1
                 count += 1
-                l += 1
-                r -= 1
-
-            elif curr_sum > k:
-                r -= 1
 
             else:
-                l += 1
+                freq_map[ele] = freq_map.get(ele, 0) + 1
 
         return count
 
