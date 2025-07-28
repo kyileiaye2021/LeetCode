@@ -5,43 +5,44 @@
 #         self.next = next
 class Solution:
     def deleteMiddle(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        # Happy cases
-        # input: [1,2,3]
-        # output: [1,3]
-
-        # input: [1,2,6,5]
-        # output: [1,2,5]
-
-        # Edge cases
-        # input: [1]
-        # output: []
-
-        # input: [3,-1]
-        # output: [3]
-
-        # Two Pass - first find of the len of the list and find the middle by doing len/2
-        #          - in the second pass, go thru list until the middle position and remove the middle node
-
-        # Slow/fast pointer 
-        # set curr to head
-        # prev node = None
-        # go thru the list with f/s pointers until curr becomes none or curr.next becomes none
-        #   update prev to s
-        #   move s by 1 node
-        #   move f by 2 nodes 
-        # remove the s pointer node -> set prev.next to s.neext
-        # return head
-
-        if not head or not head.next:
-            return None
-
+        # [1, 2, 3, 4, 5] 
+        #  psf
+        #     ps  f
+        #        s     f       
+        
+        # [1, 2, 3, 4]
+        # p.  s  f
+        #     p  s     f
+        
+        # s = 1
+        # f = 2
+        # s = 2
+        # f = 4 
+        # s = 3
+        # f = null
+        
+        # slow and fast pointer
+        # [1,3,4,7,1,2,6]
+        #psf
+        #  p s f
+        #    p s f
+        #      p s   f 
+        #                f=None  
+        
+        
+        # [1, 2, 3, 4]
+        # p.  s. f
+        #      p  s    f=None 
         slow, fast = head, head
         prev = None
-
-        while fast and fast.next:
+        
+        while(fast and fast.next):
             prev = slow
             slow = slow.next
             fast = fast.next.next
 
-        prev.next = slow.next
-        return head
+        if(prev):
+            prev.next = slow.next
+            return head
+        else:
+            return None
