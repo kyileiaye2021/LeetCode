@@ -216,6 +216,7 @@ All leetCode problems done will be documented here.
 | [0101-symmetric-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0101-symmetric-tree) |
 | [0226-invert-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0226-invert-binary-tree) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
+| [1544-count-good-nodes-in-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -225,6 +226,7 @@ All leetCode problems done will be documented here.
 | [0226-invert-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0226-invert-binary-tree) |
 | [0695-max-area-of-island](https://github.com/kyileiaye2021/LeetCode/tree/master/0695-max-area-of-island) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
+| [1544-count-good-nodes-in-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -235,12 +237,14 @@ All leetCode problems done will be documented here.
 | [0695-max-area-of-island](https://github.com/kyileiaye2021/LeetCode/tree/master/0695-max-area-of-island) |
 | [1036-rotting-oranges](https://github.com/kyileiaye2021/LeetCode/tree/master/1036-rotting-oranges) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
+| [1544-count-good-nodes-in-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Binary Tree
 |  |
 | ------- |
 | [0101-symmetric-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0101-symmetric-tree) |
 | [0226-invert-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0226-invert-binary-tree) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
+| [1544-count-good-nodes-in-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Divide and Conquer
 |  |
 | ------- |
