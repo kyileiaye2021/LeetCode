@@ -5,20 +5,30 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def dfs(self, root, targetSum, currSum, currList, allList):
+    def dfs(self, root, targetSum, currList, allList):
         if not root:
             return 
 
-        currSum += root.val
-        currList.append(root.val)
-        print(f'CurrList: {currList}')
         if not root.left and not root.right:
-            if currSum == targetSum:
-                allList.append(list(currList))
+            if targetSum == root.val:
+                allList += [currList + [root.val]]
+
+        self.dfs(root.left, targetSum - root.val, currList + [root.val], allList)
+        self.dfs(root.right, targetSum - root.val, currList + [root.val], allList)
+    # def dfs(self, root, targetSum, currSum, currList, allList):
+    #     if not root:
+    #         return 
+
+    #     currSum += root.val
+    #     currList.append(root.val)
+    #     print(f'CurrList: {currList}')
+    #     if not root.left and not root.right:
+    #         if currSum == targetSum:
+    #             allList.append(list(currList))
         
-        self.dfs(root.left, targetSum, currSum, currList, allList)
-        self.dfs(root.right, targetSum, currSum, currList, allList)
-        currList.pop()
+    #     self.dfs(root.left, targetSum, currSum, currList, allList)
+    #     self.dfs(root.right, targetSum, currSum, currList, allList)
+    #     currList.pop()
         
     def pathSum(self, root: Optional[TreeNode], targetSum: int) -> List[List[int]]:
         # base case
@@ -31,10 +41,14 @@ class Solution:
         # go to the left subtree
         # go to the right subtree
 
-        currList = collections.deque()
+        # currList = collections.deque()
+        # allList = []
+        # currSum = 0
+        # self.dfs(root, targetSum, currSum, currList, allList)
+        # return allList 
+        currList = []
         allList = []
-        currSum = 0
-        self.dfs(root, targetSum, currSum, currList, allList)
-        return allList 
+        self.dfs(root, targetSum, currList, allList)
+        return allList
 
     
