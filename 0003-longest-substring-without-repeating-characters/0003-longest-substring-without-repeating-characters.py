@@ -1,34 +1,67 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        # Assumption
-        # the res is a substring with no unique character
+        # happy cases
+        # s = abcabcbb
+        # output: 3
         
-        # Low Level Plan
-        # *Two pointer technique
-        #   * the left pointer will point to the first index
-        #   * create a dict to store the curr char and its frequency
-        #   * the right pointer traverse the whole string
-        #       * if it's not in the dict
-        #           * add the curr char to the dict
-        #           * shift the right pointer
-        #       *else: shift left to where the right pointer curr points to
-        #       * move the right pointer
-        #       * reset the new dict
+        # s = 'abccbadeab'
+        # output: 4
         
+        # edge cases
+        # s = 'bbb'
+        # outupt: 1
         
-        left = 0
-        right = 0
-        check_duplicates = set()
-        longest_length = 0
+        # s = 'abcde'
+        # output: 5
         
-        for right in range(len(s)):
-            while s[right] in check_duplicates:
-                check_duplicates.remove(s[left]) # shrink the window
-                left += 1 
+        # two pointers sliding window
+        # when there are duplicates 
+       
+        # max_len = 0
+        # l, r = -1, 0
+
+        # # hold unique characters most recent index
+        # visited = {} # {ele: index}
+        
+        # while r < len(s):
+        #     if s[r] in visited and visited[s[r]] > l:
+        #         l = visited[s[r]]
+        #     visited[s[r]] = r
             
-            check_duplicates.add(s[right])
-            longest_length = max(longest_length, right - left + 1)
+        #     curlen = r - l
+        #     if (curlen > max_len):
+        #         max_len = curlen
+        #     r += 1
+        
+        # return max_len
+        
+        # Set solution
+        # bcaa
+        # #    r
+        l = 0
+        r = 0
+        max_len = 0
+        curr_len = 0
+        visited = set()
+        while r < len(s):
             
-        return longest_length
-                
+            if s[r] in visited:
+                while s[r] in visited:
+                    visited.remove(s[l])
+                    l += 1
+                    curr_len -= 1
     
+                visited.add(s[r])
+                curr_len += 1
+                
+            else:
+                curr_len += 1
+                visited.add(s[r])
+                max_len = max(curr_len, max_len)
+            r += 1
+            
+        return max_len
+        
+         
+            
+        
