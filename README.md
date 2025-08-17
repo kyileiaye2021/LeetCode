@@ -219,6 +219,7 @@ All leetCode problems done will be documented here.
 | [0112-path-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/0112-path-sum) |
 | [0113-path-sum-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0113-path-sum-ii) |
 | [0226-invert-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0226-invert-binary-tree) |
+| [0784-insert-into-a-binary-search-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0784-insert-into-a-binary-search-tree) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1474-longest-zigzag-path-in-a-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1474-longest-zigzag-path-in-a-binary-tree) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
@@ -259,6 +260,7 @@ All leetCode problems done will be documented here.
 | [0112-path-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/0112-path-sum) |
 | [0113-path-sum-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0113-path-sum-ii) |
 | [0226-invert-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0226-invert-binary-tree) |
+| [0784-insert-into-a-binary-search-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0784-insert-into-a-binary-search-tree) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1474-longest-zigzag-path-in-a-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1474-longest-zigzag-path-in-a-binary-tree) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
@@ -338,4 +340,8 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0113-path-sum-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0113-path-sum-ii) |
+## Binary Search Tree
+|  |
+| ------- |
+| [0784-insert-into-a-binary-search-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0784-insert-into-a-binary-search-tree) |
 <!---LeetCode Topics End-->
