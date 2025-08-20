@@ -1,70 +1,33 @@
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
-                # happy cases
-        # nums = [1,2,5,3]
-        # output = 3 [1,2,3]
 
-        # edge cases
-        # nums = []
-        # output = 0
-        # nums = [5]
-        # output = 1 [5]
-        # nums = [5, 10]
-        # output = 1 [5], [10]
+        # iterate thru the list
+        #   curr len = 0
+        #   check while the neighbor ele is in the list
+        #       count the curr len   
+        #   update longest 
+        # return longest
 
-        # create a set for the entire array
-        # create a var called max_len to keep track of the max len the seq
-        # iterate over each ele in the set:
-        #   check if there is a left neighbor for the curr ele
-        #       continue
-        #   otherwise:
-        #       create a list and create a var curr_len to keep track of the curr seq len
-        #       add the curr ele to the list and increment the curr_len by 1
-        #       while there are right neighbors in the set,
-        #           add the curr ele to the list and increment the curr_len by 1
-        #       update the max_len with max(counter, max_len)
-        # return max_len
-
-        # nums = set(nums)
-        # max_len = 0
-
-        # for ele in nums:
-        #     if ele - 1 in nums:
-        #         continue
-
-        #     else:
-        #         curr_lst = []
-        #         curr_len = 0
-        #         curr_lst.append(ele)
-        #         curr_len += 1
-
-        #         ele += 1
-        #         while ele in nums:
-        #             curr_lst.append(ele)
-        #             curr_len += 1
-        #             ele += 1
-
-        #         max_len = max(curr_len, max_len)
-
-        # return max_len
-
-        max_seq_len = 0
+        longest = 0
         nums = set(nums)
 
-        for n in nums:
+        for ele in nums:
 
-            curr_seq_len = 0
+            curr_len = 1
+            if ele - 1 not in nums: # this num is a start
+                
+                ele = ele + 1
+                while ele in nums:
+                    curr_len += 1
+                    ele += 1
 
-            if n-1 not in nums:
-                start = n
-                curr_seq_len += 1
-                n = n + 1
+            # end = ele
+            # while end - 1 in nums:
+            #     curr_len += 1
+            #     end = end - 1
 
-                while n in nums:
-                    n = n + 1
-                    curr_seq_len += 1
+            longest = max(longest, curr_len)
+            print(f"longest: {longest}")
 
-                max_seq_len = max(max_seq_len , curr_seq_len)
-
-        return max_seq_len
+        return longest
 
