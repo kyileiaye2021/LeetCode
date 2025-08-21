@@ -232,6 +232,7 @@ All leetCode problems done will be documented here.
 ## Tree
 |  |
 | ------- |
+| [0098-validate-binary-search-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0098-validate-binary-search-tree) |
 | [0101-symmetric-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0101-symmetric-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0110-balanced-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0110-balanced-binary-tree) |
@@ -248,6 +249,7 @@ All leetCode problems done will be documented here.
 ## Depth-First Search
 |  |
 | ------- |
+| [0098-validate-binary-search-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0098-validate-binary-search-tree) |
 | [0101-symmetric-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0101-symmetric-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0110-balanced-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0110-balanced-binary-tree) |
@@ -289,6 +291,7 @@ All leetCode problems done will be documented here.
 ## Binary Tree
 |  |
 | ------- |
+| [0098-validate-binary-search-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0098-validate-binary-search-tree) |
 | [0101-symmetric-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0101-symmetric-tree) |
 | [0104-maximum-depth-of-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0110-balanced-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0110-balanced-binary-tree) |
@@ -389,6 +392,7 @@ All leetCode problems done will be documented here.
 ## Binary Search Tree
 |  |
 | ------- |
+| [0098-validate-binary-search-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0098-validate-binary-search-tree) |
 | [0230-kth-smallest-element-in-a-bst](https://github.com/kyileiaye2021/LeetCode/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0784-insert-into-a-binary-search-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0784-insert-into-a-binary-search-tree) |
