@@ -17,14 +17,15 @@ class Solution:
         
         # return ans
         
-        graph = {i: set() for i in range(numCourses)}
+        graph = defaultdict(list)# {i: set() for i in range(numCourses)}
         # all courses that i depends on 
         allPrereq = {i: set() for i in range(numCourses)}
         # the number of courses that this course depends on
         indeg = [0] * numCourses
         
         for prereq, course in prerequisites:
-            graph[prereq].add(course)
+            # graph[prereq].add(course)
+            graph[prereq].append(course)
             indeg[course] += 1
         
         independent = [i for i in range(numCourses) if not indeg[i]]
