@@ -1,45 +1,57 @@
 class Solution:
+    def dfs(self, r, c, grid):
+        grid[r][c] = '0'
+
+        dirs = [[0, 1], [0, -1], [1, 0], [-1, 0]]
+
+        for dx, dy in dirs:
+            new_r = r + dx
+            new_c = c + dy
+
+            if new_r in range(len(grid)) and new_c in range(len(grid[0])) and grid[new_r][new_c] == '1':
+                self.dfs(new_r, new_c, grid)
+
     def numIslands(self, grid: List[List[str]]) -> int:
         # dfs
-        # dfs func  (grid, r, c)
-        #   mark the curr cell as visited
-        #   for each neighbor of the curr cell
-        #       check if they are within the boundary and they are not visited
-        #           check if they are 1
-        #               call dfs on those cells
-        # 
-        # count = 0
-        # num of r, c 
-        # visited set to check the visited vertices
-        # iterate thru each cell
-        #   check if the curr cell is not visited and the curr cell is 1
-        #       call dfs func
-        #       increment the count 
-        # return count 
-        
-        def dfs(r, c):
-            # base case
-            if r < 0 or r >= rows or c < 0 or c >= cols or grid[r][c] == '0':
-                return
-                
-            grid[r][c] = '0'
-            
-            dfs(r, c+1)
-            dfs(r, c-1)
-            dfs(r+1, c)
-            dfs(r-1, c)
-    
-    
-        count = 0
+        # mark the cell as 0
+        # go to neighbors
+        # for each neighbor 
+        #   check they are within boundary and they are 1
+        #       call dfs func on the cell
+
+        # iterate thru the ele in the 2d grid
+        #   if the cell is 1 
+        #       call dfs func on the cell
+        # happy cases
+
+
         rows = len(grid)
-        cols = len(grid[0])    
-        
+        cols = len(grid[0])
+        count = 0
+
         for r in range(rows):
             for c in range(cols):
                 if grid[r][c] == '1':
-                    dfs(r,c)
+                    self.dfs(r, c, grid)
                     count += 1
-                
+
         return count
-        
-            
+
+#         Input: grid = [
+#   ["1","1","1","1","0"],
+#   ["1","1","0","1","0"],
+#   ["1","1","0","0","0"],
+#   ["0","0","0","0","0"]
+# ]
+
+# output: 1
+
+
+        # edge cases
+#         Input: grid = [
+#   ["0","0","1","1","0"],
+#   ["1","1","0","1","0"],
+#   ["1","1","0","0","0"],
+#   ["0","0","0","0","0"]
+# ]
+
