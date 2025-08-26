@@ -39,6 +39,7 @@ All leetCode problems done will be documented here.
 | [0599-minimum-index-sum-of-two-lists](https://github.com/kyileiaye2021/LeetCode/tree/master/0599-minimum-index-sum-of-two-lists) |
 | [0658-find-k-closest-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0695-max-area-of-island](https://github.com/kyileiaye2021/LeetCode/tree/master/0695-max-area-of-island) |
+| [0753-open-the-lock](https://github.com/kyileiaye2021/LeetCode/tree/master/0753-open-the-lock) |
 | [0792-binary-search](https://github.com/kyileiaye2021/LeetCode/tree/master/0792-binary-search) |
 | [0917-boats-to-save-people](https://github.com/kyileiaye2021/LeetCode/tree/master/0917-boats-to-save-people) |
 | [1019-squares-of-a-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
@@ -120,6 +121,7 @@ All leetCode problems done will be documented here.
 | [0424-longest-repeating-character-replacement](https://github.com/kyileiaye2021/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0567-permutation-in-string) |
 | [0599-minimum-index-sum-of-two-lists](https://github.com/kyileiaye2021/LeetCode/tree/master/0599-minimum-index-sum-of-two-lists) |
+| [0753-open-the-lock](https://github.com/kyileiaye2021/LeetCode/tree/master/0753-open-the-lock) |
 | [1039-find-the-town-judge](https://github.com/kyileiaye2021/LeetCode/tree/master/1039-find-the-town-judge) |
 | [1044-find-common-characters](https://github.com/kyileiaye2021/LeetCode/tree/master/1044-find-common-characters) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/kyileiaye2021/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
@@ -164,6 +166,7 @@ All leetCode problems done will be documented here.
 | [0599-minimum-index-sum-of-two-lists](https://github.com/kyileiaye2021/LeetCode/tree/master/0599-minimum-index-sum-of-two-lists) |
 | [0647-palindromic-substrings](https://github.com/kyileiaye2021/LeetCode/tree/master/0647-palindromic-substrings) |
 | [0680-valid-palindrome-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0680-valid-palindrome-ii) |
+| [0753-open-the-lock](https://github.com/kyileiaye2021/LeetCode/tree/master/0753-open-the-lock) |
 | [1044-find-common-characters](https://github.com/kyileiaye2021/LeetCode/tree/master/1044-find-common-characters) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/kyileiaye2021/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 | [1894-merge-strings-alternately](https://github.com/kyileiaye2021/LeetCode/tree/master/1894-merge-strings-alternately) |
@@ -292,6 +295,7 @@ All leetCode problems done will be documented here.
 | [0547-number-of-provinces](https://github.com/kyileiaye2021/LeetCode/tree/master/0547-number-of-provinces) |
 | [0662-maximum-width-of-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
 | [0695-max-area-of-island](https://github.com/kyileiaye2021/LeetCode/tree/master/0695-max-area-of-island) |
+| [0753-open-the-lock](https://github.com/kyileiaye2021/LeetCode/tree/master/0753-open-the-lock) |
 | [0871-keys-and-rooms](https://github.com/kyileiaye2021/LeetCode/tree/master/0871-keys-and-rooms) |
 | [1036-rotting-oranges](https://github.com/kyileiaye2021/LeetCode/tree/master/1036-rotting-oranges) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
