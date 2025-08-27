@@ -1,27 +1,27 @@
 class Solution:
+    def dfs(self,rooms, visited, r):
+        visited.add(r)
+
+        for key in rooms[r]:
+            if key not in visited:
+                self.dfs(rooms, visited, key)
+
     def canVisitAllRooms(self, rooms: List[List[int]]) -> bool:
-        
-        # queue and set
-        # store the room 0 to queue
-        # do it until we find the queue empty
-            # pop out and iterate thru every ele in the room 0
-            #   if the ele is not in set
-            #       add the ele to the queue
-        # check if the len of the set is equal to the len of the array
 
-        queue = collections.deque()
-        queue.append(0)
+        # dfs
+        # mark the room as visited
+        # go to the neighbors
+
+        # visited 
+        # hashmap {room no.: keys}
+        # iterate thru the room hashmap
+        #   if the room is not visited
+        #       call dfs on the room
+        # check if the size of visited is the same as num of rooms
+
         visited = set()
-
-        while queue:
-            curr_room = queue.popleft()
-            visited.add(curr_room)
-
-            for key in rooms[curr_room]:
-                if key not in visited:
-                    queue.append(key)
+        r = 0 # only the room 0 is unlocked
+        self.dfs(rooms, visited, r)
 
         return len(visited) == len(rooms)
-
-
         
