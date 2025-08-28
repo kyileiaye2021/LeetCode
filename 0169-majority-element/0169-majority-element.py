@@ -13,12 +13,26 @@ class Solution:
         # nums = [1]
         # output: 1
 
-        # hashmap 
-        freq_map = defaultdict(int)
-        for n in nums:
-            freq_map[n] += 1
+        # # hashmap 
+        # freq_map = defaultdict(int)
+        # for n in nums:
+        #     freq_map[n] += 1
         
-        majority = len(nums) // 2
-        for n, freq in freq_map.items():
-            if freq > majority:
-                return n
+        # majority = len(nums) // 2
+        # for n, freq in freq_map.items():
+        #     if freq > majority:
+        #         return n
+
+        # moore voting algorithm
+        count = 0
+        candidate = 0
+
+        for n in nums:
+            if count == 0:
+                candidate = n
+
+            if n == candidate:
+                count += 1
+            else:
+                count -= 1
+        return candidate
