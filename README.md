@@ -25,6 +25,7 @@ All leetCode problems done will be documented here.
 | [0128-longest-consecutive-sequence](https://github.com/kyileiaye2021/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0130-surrounded-regions](https://github.com/kyileiaye2021/LeetCode/tree/master/0130-surrounded-regions) |
 | [0152-maximum-product-subarray](https://github.com/kyileiaye2021/LeetCode/tree/master/0152-maximum-product-subarray) |
+| [0169-majority-element](https://github.com/kyileiaye2021/LeetCode/tree/master/0169-majority-element) |
 | [0189-rotate-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0189-rotate-array) |
 | [0198-house-robber](https://github.com/kyileiaye2021/LeetCode/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/kyileiaye2021/LeetCode/tree/master/0200-number-of-islands) |
@@ -112,6 +113,7 @@ All leetCode problems done will be documented here.
 | [0141-linked-list-cycle](https://github.com/kyileiaye2021/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0142-linked-list-cycle-ii) |
 | [0160-intersection-of-two-linked-lists](https://github.com/kyileiaye2021/LeetCode/tree/master/0160-intersection-of-two-linked-lists) |
+| [0169-majority-element](https://github.com/kyileiaye2021/LeetCode/tree/master/0169-majority-element) |
 | [0202-happy-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0202-happy-number) |
 | [0205-isomorphic-strings](https://github.com/kyileiaye2021/LeetCode/tree/master/0205-isomorphic-strings) |
 | [0219-contains-duplicate-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0219-contains-duplicate-ii) |
@@ -138,6 +140,7 @@ All leetCode problems done will be documented here.
 | [0056-merge-intervals](https://github.com/kyileiaye2021/LeetCode/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/kyileiaye2021/LeetCode/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0088-merge-sorted-array) |
+| [0169-majority-element](https://github.com/kyileiaye2021/LeetCode/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0242-valid-anagram](https://github.com/kyileiaye2021/LeetCode/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
@@ -179,6 +182,7 @@ All leetCode problems done will be documented here.
 ## Counting
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/kyileiaye2021/LeetCode/tree/master/0169-majority-element) |
 | [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0383-ransom-note](https://github.com/kyileiaye2021/LeetCode/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0387-first-unique-character-in-a-string) |
@@ -332,6 +336,7 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/kyileiaye2021/LeetCode/tree/master/0053-maximum-subarray) |
+| [0169-majority-element](https://github.com/kyileiaye2021/LeetCode/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
 ## Heap (Priority Queue)
