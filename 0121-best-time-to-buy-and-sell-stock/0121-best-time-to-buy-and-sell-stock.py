@@ -1,21 +1,22 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        
-        # if current jth ele is > than the ith ele
-        #   move i to j and j by 1
-        # else:
-        #   calculate profiit and keep track of the max profit
+        # two pointers
+        # i, j 
+        # max profit = 0
+        # while j is < len
+        #   find diff
+        #   check if the diff bet i and j is <= 0
+        #       move i 
+        #   update max profit
+        #   move j
 
         i, j = 0, 1
         max_profit = 0
         while j < len(prices):
-            if prices[j] < prices[i]:
+            cur_profit = prices[j] - prices[i]
+            if cur_profit <= 0:
                 i = j
-            
-            else:
-                profit = prices[j] - prices[i]
-                max_profit = max(profit, max_profit)
-                
+            max_profit = max(cur_profit, max_profit)
             j += 1
-
         return max_profit
+
