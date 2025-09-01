@@ -3,52 +3,51 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        # nums = [1,2,3], k = 3
-        # output: [1, 2, 3]
-        # two pointers
-        # i, j = len(nums) - 1
-        # create an arr of size k
-        # iterate thru the nums from the last until j < 0
-        #   if k > 0
-        #       store the ele in the arr
-        #   else:
-        #       assign the ele to the i
-        #       decrement i 
-        #   decrement j
+        # nums = [-1, -100, 3, 99]
+        # k = 2
+        # output: [3, 9, -1, -100]
 
-        # iterate thru arr from the last
-        #   put the ele to i 
-        #   decrement i
+        # nums = [-1, -100, 3, 99]
+        # k = 15
+        # [99, -1, 100, 3]
+        # [3, 99, -1, 100]
+        # [-100, 3, 99, -1] <--
+        # [-1, -100, 3, 99]
+        # [99, -1, 100, 3]
+        # mod k by len of nums
 
-        # first reverse the whole array
-        # there are two portions in the arr: [0: k-1 and k up to last ele]
-        # original - [1,2,3,4,5], k = 3
-        #  [1,2 | 3, 4, 5]
-        #  [5, 4, 3, 2, 1]
-        #  [5, 4, 3 | 2, 1]
-        #  [3, 4, 5 | 1, 2]
-        # reverse the entire array with two pointers
-        # reverse the first portion [0 : k - 1]
-        # reverse the second portion [k : len(nums)]
-        # edge cases
-        # k > len(nums) --> k = k % len(nums)
+        # [99, 3, -100, -1]
+        # [-100, 3, 99, -1]
 
-        k = k % len(nums)
-        l, r = 0, len(nums) - 1
-        while l < r:
-            nums[l], nums[r] = nums[r], nums[l]
-            l += 1
-            r -= 1
+        # k = 3
+        # swapping with 2 pointers
+        # i, j
+        # reverse the list
+        #   swap i and j ele
+        # for the 1st k portion 
+        #   reverse the list
+        # for the rest of the portion
+        #   reverse the list
 
-        l, r = 0, k - 1
-        while l < r:
-            nums[l], nums[r] = nums[r], nums[l]
-            l += 1
-            r -= 1
+        n = len(nums)
+        k = k % n
 
-        l, r = k, len(nums) - 1
-        while l < r:
-            nums[l], nums[r] = nums[r], nums[l]
-            l += 1
-            r -= 1
-            
+        i, j = 0, n - 1
+        while i < j:
+            nums[i], nums[j] = nums[j], nums[i]
+            i += 1
+            j -= 1
+
+        i, j = 0, k - 1
+        while i < j:
+            nums[i], nums[j] = nums[j], nums[i]
+            i += 1
+            j -= 1
+
+        i, j = k, n - 1
+        while i < j:
+            nums[i], nums[j] = nums[j], nums[i]
+            i += 1
+            j -= 1
+
+        
