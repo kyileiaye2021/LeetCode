@@ -23,7 +23,7 @@ class Solution:
         l, r = 0, 0
         steps = 0
 
-        while r < len(nums) - 1:
+        while r < len(nums) - 1: # we need to stop when we reach last index
             # for each layer, we are reseting the farthest to 0 
             farthest = 0
 
