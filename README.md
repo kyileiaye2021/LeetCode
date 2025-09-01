@@ -14,6 +14,7 @@ All leetCode problems done will be documented here.
 | [0026-remove-duplicates-from-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0027-remove-element](https://github.com/kyileiaye2021/LeetCode/tree/master/0027-remove-element) |
 | [0036-valid-sudoku](https://github.com/kyileiaye2021/LeetCode/tree/master/0036-valid-sudoku) |
+| [0045-jump-game-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0045-jump-game-ii) |
 | [0049-group-anagrams](https://github.com/kyileiaye2021/LeetCode/tree/master/0049-group-anagrams) |
 | [0053-maximum-subarray](https://github.com/kyileiaye2021/LeetCode/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/kyileiaye2021/LeetCode/tree/master/0055-jump-game) |
@@ -58,6 +59,7 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/kyileiaye2021/LeetCode/tree/master/0005-longest-palindromic-substring) |
+| [0045-jump-game-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0045-jump-game-ii) |
 | [0053-maximum-subarray](https://github.com/kyileiaye2021/LeetCode/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/kyileiaye2021/LeetCode/tree/master/0055-jump-game) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/kyileiaye2021/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -387,6 +389,7 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/kyileiaye2021/LeetCode/tree/master/0011-container-with-most-water) |
+| [0045-jump-game-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/kyileiaye2021/LeetCode/tree/master/0055-jump-game) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0680-valid-palindrome-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0680-valid-palindrome-ii) |
