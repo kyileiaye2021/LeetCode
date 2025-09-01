@@ -1,41 +1,36 @@
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
-        # two pointer technique
-        # keep track of the bool val (skip)
+        # two pointer
+        # bool var to keep track of the ele appears twice or not
+        # found = bool var false
+        # i , j 
+        # iterate the nums with j 
+        #   check if j ele == j - 1 ele
+        #       if found is false
+        #           set found to true
+        #           move i by 1
+        #          
+        #  else:
+        #      assign j ele to i
+        #      move i by 1
+    
+        #  move j by 1
+        # return i 
 
-        # nums = [1,1,1,2,2,3]
+        i, j = 1, 1
+        found = False
+        while j < len(nums):
+            if nums[j] == nums[j - 1]:
+                if not found:
+                    found = True
+                    nums[i] = nums[j]
+                    i += 1
 
-        # nums = [1, 2, 2, 3]
+            else:
+                found = False
+                nums[i] = nums[j]
+                i += 1
 
-        # l, r = 1, 1
-        # iterate thru the nums until the r is > len(nums)
-        #   check if the r ele is equal to r - 1
-        #       check if skip is false
-        #           move l and r by 1
-        #       else:
-        #           move r by 1
-        #   else:
-        #       reassign the skip to False
-        #       move r by 1
+            j += 1
 
-        l, r = 1, 1
-        skip = False
-        while r < len(nums):
-
-            if nums[r] == nums[r - 1]:
-                if not skip:
-                    skip = True
-                    nums[l] = nums[r]
-                    l += 1
-            else: 
-                skip = False
-                nums[l] = nums[r]
-                l += 1
-
-            r += 1
-            
-        return l
-
-
-
-
+        return i
