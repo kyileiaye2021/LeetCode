@@ -36,6 +36,7 @@ All leetCode problems done will be documented here.
 | [0215-kth-largest-element-in-an-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0219-contains-duplicate-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0219-contains-duplicate-ii) |
 | [0238-product-of-array-except-self](https://github.com/kyileiaye2021/LeetCode/tree/master/0238-product-of-array-except-self) |
+| [0274-h-index](https://github.com/kyileiaye2021/LeetCode/tree/master/0274-h-index) |
 | [0283-move-zeroes](https://github.com/kyileiaye2021/LeetCode/tree/master/0283-move-zeroes) |
 | [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0349-intersection-of-two-arrays](https://github.com/kyileiaye2021/LeetCode/tree/master/0349-intersection-of-two-arrays) |
@@ -149,6 +150,7 @@ All leetCode problems done will be documented here.
 | [0169-majority-element](https://github.com/kyileiaye2021/LeetCode/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0242-valid-anagram](https://github.com/kyileiaye2021/LeetCode/tree/master/0242-valid-anagram) |
+| [0274-h-index](https://github.com/kyileiaye2021/LeetCode/tree/master/0274-h-index) |
 | [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0349-intersection-of-two-arrays](https://github.com/kyileiaye2021/LeetCode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
@@ -450,4 +452,8 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0399-evaluate-division](https://github.com/kyileiaye2021/LeetCode/tree/master/0399-evaluate-division) |
+## Counting Sort
+|  |
+| ------- |
+| [0274-h-index](https://github.com/kyileiaye2021/LeetCode/tree/master/0274-h-index) |
 <!---LeetCode Topics End-->
