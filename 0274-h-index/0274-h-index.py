@@ -46,13 +46,17 @@ class Solution:
         #         return n - i
         # return citations[0]
         
-        # descending order and keep track of how many papers have at least ith ciations
-        citations.sort(reverse=True)
-        count = 1
-
-        for ct in citations:
-            if ct >= count:
-                count += 1
+        # creating bucket sort
+        n = len(citations)
+        bucket = [0] * (n + 1)
+        for c in citations:
+            if c > n:
+                bucket[n] += 1
             else:
-                return count - 1
-        return count - 1
+                bucket[c] += 1
+
+        paper_count = 0
+        for i in range(len(bucket) - 1, -1, -1):
+            paper_count += bucket[i]
+            if paper_count >= i:
+                return i
