@@ -3,33 +3,52 @@ class Solution:
     #     return True if s in map else False
 
     def numDecodings(self, s: str) -> int:
+        # Tabulation approach
+        n = len(s)
+        dp = [0] * (n + 1)
+        # base case
+        dp[n] = 1
 
-        dp = {len(s): 1}
-        res = 0
+        for i in range(n - 1, -1, -1):
 
-        def dfs(i):
-            # base cases
-            if i in dp:
-                return dp[i]
+            if s[i] != '0': # another base case
+
+                dp[i] = dp[i + 1] # single digit
+
+                # double digit
+                if i + 1 < n and (s[i] == '1' or (s[i] == '2' and s[i + 1] in "0123456")):
+                    dp[i] += dp[i + 2]
+        print(dp)
+        return dp[0]
+
+
+        # # Memoization approach
+        # dp = {len(s): 1}
+        # res = 0
+
+        # def dfs(i):
+        #     # base cases
+        #     if i in dp:
+        #         return dp[i]
             
-            if s[i] == '0':
-                return 0
+        #     if s[i] == '0':
+        #         return 0
         
-            # if the input val not in dp, find it and store it in dp
-            # single digit
-            res = dfs(i + 1)
+        #     # if the input val not in dp, find it and store it in dp
+        #     # single digit
+        #     res = dfs(i + 1)
 
-            # double digit
-            if i + 1 < len(s) and ((s[i] == '1') or (s[i] == '2' and s[i + 1] in "0123456")):
-                res += dfs(i + 2)
+        #     # double digit
+        #     if i + 1 < len(s) and ((s[i] == '1') or (s[i] == '2' and s[i + 1] in "0123456")):
+        #         res += dfs(i + 2)
             
-            # update the dp 
-            dp[i] = res
-            print(f"{i}: {res}")
-            print(dp)
-            return res
+        #     # update the dp 
+        #     dp[i] = res
+        #     print(f"{i}: {res}")
+        #     print(dp)
+        #     return res
 
-        return dfs(0)
+        # return dfs(0)
 
 
         # input: s = "1"
