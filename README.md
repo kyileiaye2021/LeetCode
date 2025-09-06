@@ -122,6 +122,7 @@ All leetCode problems done will be documented here.
 | [0142-linked-list-cycle-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0142-linked-list-cycle-ii) |
 | [0160-intersection-of-two-linked-lists](https://github.com/kyileiaye2021/LeetCode/tree/master/0160-intersection-of-two-linked-lists) |
 | [0169-majority-element](https://github.com/kyileiaye2021/LeetCode/tree/master/0169-majority-element) |
+| [0187-repeated-dna-sequences](https://github.com/kyileiaye2021/LeetCode/tree/master/0187-repeated-dna-sequences) |
 | [0202-happy-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0202-happy-number) |
 | [0205-isomorphic-strings](https://github.com/kyileiaye2021/LeetCode/tree/master/0205-isomorphic-strings) |
 | [0219-contains-duplicate-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0219-contains-duplicate-ii) |
@@ -172,6 +173,7 @@ All leetCode problems done will be documented here.
 | [0049-group-anagrams](https://github.com/kyileiaye2021/LeetCode/tree/master/0049-group-anagrams) |
 | [0091-decode-ways](https://github.com/kyileiaye2021/LeetCode/tree/master/0091-decode-ways) |
 | [0125-valid-palindrome](https://github.com/kyileiaye2021/LeetCode/tree/master/0125-valid-palindrome) |
+| [0187-repeated-dna-sequences](https://github.com/kyileiaye2021/LeetCode/tree/master/0187-repeated-dna-sequences) |
 | [0205-isomorphic-strings](https://github.com/kyileiaye2021/LeetCode/tree/master/0205-isomorphic-strings) |
 | [0242-valid-anagram](https://github.com/kyileiaye2021/LeetCode/tree/master/0242-valid-anagram) |
 | [0344-reverse-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0344-reverse-string) |
@@ -407,6 +409,7 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/kyileiaye2021/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0187-repeated-dna-sequences](https://github.com/kyileiaye2021/LeetCode/tree/master/0187-repeated-dna-sequences) |
 | [0209-minimum-size-subarray-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
 | [0219-contains-duplicate-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0219-contains-duplicate-ii) |
 | [0424-longest-repeating-character-replacement](https://github.com/kyileiaye2021/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
@@ -458,4 +461,16 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0274-h-index](https://github.com/kyileiaye2021/LeetCode/tree/master/0274-h-index) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0187-repeated-dna-sequences](https://github.com/kyileiaye2021/LeetCode/tree/master/0187-repeated-dna-sequences) |
+## Rolling Hash
+|  |
+| ------- |
+| [0187-repeated-dna-sequences](https://github.com/kyileiaye2021/LeetCode/tree/master/0187-repeated-dna-sequences) |
+## Hash Function
+|  |
+| ------- |
+| [0187-repeated-dna-sequences](https://github.com/kyileiaye2021/LeetCode/tree/master/0187-repeated-dna-sequences) |
 <!---LeetCode Topics End-->
