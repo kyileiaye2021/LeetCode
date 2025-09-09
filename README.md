@@ -41,6 +41,7 @@ All leetCode problems done will be documented here.
 | [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0349-intersection-of-two-arrays](https://github.com/kyileiaye2021/LeetCode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0380-insert-delete-getrandom-o1](https://github.com/kyileiaye2021/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0399-evaluate-division](https://github.com/kyileiaye2021/LeetCode/tree/master/0399-evaluate-division) |
 | [0599-minimum-index-sum-of-two-lists](https://github.com/kyileiaye2021/LeetCode/tree/master/0599-minimum-index-sum-of-two-lists) |
 | [0658-find-k-closest-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0658-find-k-closest-elements) |
@@ -131,6 +132,7 @@ All leetCode problems done will be documented here.
 | [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0349-intersection-of-two-arrays](https://github.com/kyileiaye2021/LeetCode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0380-insert-delete-getrandom-o1](https://github.com/kyileiaye2021/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0383-ransom-note](https://github.com/kyileiaye2021/LeetCode/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0387-first-unique-character-in-a-string) |
 | [0424-longest-repeating-character-replacement](https://github.com/kyileiaye2021/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
@@ -216,6 +218,7 @@ All leetCode problems done will be documented here.
 | [0013-roman-to-integer](https://github.com/kyileiaye2021/LeetCode/tree/master/0013-roman-to-integer) |
 | [0189-rotate-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0189-rotate-array) |
 | [0202-happy-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0202-happy-number) |
+| [0380-insert-delete-getrandom-o1](https://github.com/kyileiaye2021/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
 ## Queue
 |  |
 | ------- |
@@ -406,6 +409,7 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0155-min-stack](https://github.com/kyileiaye2021/LeetCode/tree/master/0155-min-stack) |
+| [0380-insert-delete-getrandom-o1](https://github.com/kyileiaye2021/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0969-number-of-recent-calls](https://github.com/kyileiaye2021/LeetCode/tree/master/0969-number-of-recent-calls) |
 ## Sliding Window
 |  |
@@ -475,4 +479,8 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0187-repeated-dna-sequences](https://github.com/kyileiaye2021/LeetCode/tree/master/0187-repeated-dna-sequences) |
+## Randomized
+|  |
+| ------- |
+| [0380-insert-delete-getrandom-o1](https://github.com/kyileiaye2021/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
 <!---LeetCode Topics End-->
