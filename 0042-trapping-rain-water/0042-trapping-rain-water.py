@@ -33,38 +33,48 @@ class Solution:
 
         # first thing - we have to get the max left and max right
         # second - we have to get the min of max_left and max_right
-        n = len(height)
-        max_left = [0] * n
-        max_right = [0] * n
-        min_num = [0] * n
+        # n = len(height)
+        # max_left = [0] * n
+        # max_right = [0] * n
+        # min_num = [0] * n
 
-        curr_l = 0
-        for i, h in enumerate(height):
-            max_left[i] = curr_l
-            curr_l = max(curr_l, height[i])
+        # curr_l = 0
+        # for i, h in enumerate(height):
+        #     max_left[i] = curr_l
+        #     curr_l = max(curr_l, height[i])
 
-        print(max_left)
+        # curr_r = 0
+        # for i in range(n-1, -1, -1):
+        #     max_right[i] = curr_r
+        #     curr_r = max(curr_r, height[i])
 
-        curr_r = 0
-        for i in range(n-1, -1, -1):
-            max_right[i] = curr_r
-            curr_r = max(curr_r, height[i])
+        # for i in range(n):
+        #     min_num[i] = min(max_left[i], max_right[i])
 
-        print(max_right)
+        # res = 0
+        # for i, h in enumerate(height):
+        #     if (min_num[i] - h) > 0:
+        #         res += min_num[i] - h
 
-        for i in range(n):
-            min_num[i] = min(max_left[i], max_right[i])
+        # return res
 
-        print(min_num)
+        l, r = 0, len(height) - 1
+        max_left = height[l]
+        max_right = height[r]
 
         res = 0
-        for i, h in enumerate(height):
-            if (min_num[i] - h) > 0:
-                res += min_num[i] - h
+        while l < r:
+            if max_left < max_right:
+                l += 1
+                max_left = max(max_left, height[l])
+                res += (max_left - height[l])
+                
+            else:
+                r -= 1
+                max_right = max(max_right, height[r])
+                res += (max_right - height[r])
 
         return res
-
-        
 
 
 
