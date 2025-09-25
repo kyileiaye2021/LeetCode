@@ -43,7 +43,7 @@ class Codec:
                 i[0] += 1
                 return None
 
-            new_node = TreeNode(data[i[0]])
+            new_node = TreeNode(int(data[i[0]]))
             i[0] += 1
             new_node.left = dfs(i)
             new_node.right = dfs(i)
