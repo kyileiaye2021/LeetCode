@@ -49,6 +49,7 @@ All leetCode problems done will be documented here.
 | [0380-insert-delete-getrandom-o1](https://github.com/kyileiaye2021/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0399-evaluate-division](https://github.com/kyileiaye2021/LeetCode/tree/master/0399-evaluate-division) |
 | [0599-minimum-index-sum-of-two-lists](https://github.com/kyileiaye2021/LeetCode/tree/master/0599-minimum-index-sum-of-two-lists) |
+| [0621-task-scheduler](https://github.com/kyileiaye2021/LeetCode/tree/master/0621-task-scheduler) |
 | [0658-find-k-closest-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0695-max-area-of-island](https://github.com/kyileiaye2021/LeetCode/tree/master/0695-max-area-of-island) |
 | [0721-accounts-merge](https://github.com/kyileiaye2021/LeetCode/tree/master/0721-accounts-merge) |
@@ -148,6 +149,7 @@ All leetCode problems done will be documented here.
 | [0424-longest-repeating-character-replacement](https://github.com/kyileiaye2021/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0567-permutation-in-string) |
 | [0599-minimum-index-sum-of-two-lists](https://github.com/kyileiaye2021/LeetCode/tree/master/0599-minimum-index-sum-of-two-lists) |
+| [0621-task-scheduler](https://github.com/kyileiaye2021/LeetCode/tree/master/0621-task-scheduler) |
 | [0721-accounts-merge](https://github.com/kyileiaye2021/LeetCode/tree/master/0721-accounts-merge) |
 | [0753-open-the-lock](https://github.com/kyileiaye2021/LeetCode/tree/master/0753-open-the-lock) |
 | [1039-find-the-town-judge](https://github.com/kyileiaye2021/LeetCode/tree/master/1039-find-the-town-judge) |
@@ -170,6 +172,7 @@ All leetCode problems done will be documented here.
 | [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0349-intersection-of-two-arrays](https://github.com/kyileiaye2021/LeetCode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0621-task-scheduler](https://github.com/kyileiaye2021/LeetCode/tree/master/0621-task-scheduler) |
 | [0658-find-k-closest-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0721-accounts-merge](https://github.com/kyileiaye2021/LeetCode/tree/master/0721-accounts-merge) |
 | [0917-boats-to-save-people](https://github.com/kyileiaye2021/LeetCode/tree/master/0917-boats-to-save-people) |
@@ -217,6 +220,7 @@ All leetCode problems done will be documented here.
 | [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0383-ransom-note](https://github.com/kyileiaye2021/LeetCode/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0387-first-unique-character-in-a-string) |
+| [0621-task-scheduler](https://github.com/kyileiaye2021/LeetCode/tree/master/0621-task-scheduler) |
 ## Binary Search
 |  |
 | ------- |
@@ -386,6 +390,7 @@ All leetCode problems done will be documented here.
 | [0023-merge-k-sorted-lists](https://github.com/kyileiaye2021/LeetCode/tree/master/0023-merge-k-sorted-lists) |
 | [0215-kth-largest-element-in-an-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0621-task-scheduler](https://github.com/kyileiaye2021/LeetCode/tree/master/0621-task-scheduler) |
 | [0658-find-k-closest-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0658-find-k-closest-elements) |
 ## Bucket Sort
 |  |
@@ -431,6 +436,7 @@ All leetCode problems done will be documented here.
 | [0134-gas-station](https://github.com/kyileiaye2021/LeetCode/tree/master/0134-gas-station) |
 | [0135-candy](https://github.com/kyileiaye2021/LeetCode/tree/master/0135-candy) |
 | [0179-largest-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0179-largest-number) |
+| [0621-task-scheduler](https://github.com/kyileiaye2021/LeetCode/tree/master/0621-task-scheduler) |
 | [0680-valid-palindrome-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0680-valid-palindrome-ii) |
 | [0917-boats-to-save-people](https://github.com/kyileiaye2021/LeetCode/tree/master/0917-boats-to-save-people) |
 ## Design
