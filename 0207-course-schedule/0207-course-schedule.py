@@ -1,35 +1,54 @@
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
-        # topological sorting using kahn's algorithm
+
+        # topological sort
+        # indegree array [0] * n
+
+        # {course : next courses}
+        # iterate (next, prereq) thru the pairs in prereq
+        #   indegree[next] += 1
+
         # bfs
-        # create a queue
-        # create a hashmap {prereq: courses}
-        # keep track of the indeg values of courses
-        # store the courses with no prereq into the queue
-        #   pop out the course
-        #   for each next course of the cur course
-        #       check if the indeg of next course becomes 0, add them to the queu
-        
-        course_graph = defaultdict(list)
-        indeg = [0] * numCourses
+        # queue
+        # add the courses with no prereq to the queue
 
-        for (course, prereq) in prerequisites:
-            course_graph[prereq].append(course)
-            indeg[course] += 1
+        # iterate thru the 0 - n - 1 courses
+        #   check if the curr course is not in the next course values
+        #       add them to the queue
+        #       numCourse -= 1
 
-        queue = collections.deque()
-        course_count = 0
+        # until queue is empty
+        #   pop out those courses
+        #   go to next courses
+        #       decrement the indegree
+        #       check if indegree becomes 0
+        #           add the next course in queue
+        #           numCourses -= 1
+
+        # return true if numCourses == 0 else return false
+
+        course_map = defaultdict(list)
+        indegree = [0] * numCourses
+        for next_course, prereq in prerequisites:
+            course_map[prereq].append(next_course)
+            indegree[next_course] += 1
+
+        queue = deque()
         for i in range(numCourses):
-            if indeg[i] == 0:
+            if indegree[i] == 0:
                 queue.append(i)
+                numCourses -= 1
 
         while queue:
             curr_course = queue.popleft()
-            course_count += 1
-            for next_course in course_graph[curr_course]:
-                indeg[next_course] -= 1
-                if indeg[next_course] == 0:
+            for next_course in course_map[curr_course]:
+                indegree[next_course] -= 1
+                if indegree[next_course] == 0:
                     queue.append(next_course)
+                    numCourses -= 1
 
-        return numCourses == course_count
-    
+        return True if numCourses == 0 else False
+        
+
+
+
