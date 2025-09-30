@@ -326,6 +326,7 @@ All leetCode problems done will be documented here.
 | [0417-pacific-atlantic-water-flow](https://github.com/kyileiaye2021/LeetCode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0547-number-of-provinces](https://github.com/kyileiaye2021/LeetCode/tree/master/0547-number-of-provinces) |
 | [0662-maximum-width-of-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
+| [0684-redundant-connection](https://github.com/kyileiaye2021/LeetCode/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/kyileiaye2021/LeetCode/tree/master/0695-max-area-of-island) |
 | [0721-accounts-merge](https://github.com/kyileiaye2021/LeetCode/tree/master/0721-accounts-merge) |
 | [0871-keys-and-rooms](https://github.com/kyileiaye2021/LeetCode/tree/master/0871-keys-and-rooms) |
@@ -351,6 +352,7 @@ All leetCode problems done will be documented here.
 | [0417-pacific-atlantic-water-flow](https://github.com/kyileiaye2021/LeetCode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0547-number-of-provinces](https://github.com/kyileiaye2021/LeetCode/tree/master/0547-number-of-provinces) |
 | [0662-maximum-width-of-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0662-maximum-width-of-binary-tree) |
+| [0684-redundant-connection](https://github.com/kyileiaye2021/LeetCode/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/kyileiaye2021/LeetCode/tree/master/0695-max-area-of-island) |
 | [0721-accounts-merge](https://github.com/kyileiaye2021/LeetCode/tree/master/0721-accounts-merge) |
 | [0753-open-the-lock](https://github.com/kyileiaye2021/LeetCode/tree/master/0753-open-the-lock) |
@@ -428,6 +430,7 @@ All leetCode problems done will be documented here.
 | [0200-number-of-islands](https://github.com/kyileiaye2021/LeetCode/tree/master/0200-number-of-islands) |
 | [0399-evaluate-division](https://github.com/kyileiaye2021/LeetCode/tree/master/0399-evaluate-division) |
 | [0547-number-of-provinces](https://github.com/kyileiaye2021/LeetCode/tree/master/0547-number-of-provinces) |
+| [0684-redundant-connection](https://github.com/kyileiaye2021/LeetCode/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/kyileiaye2021/LeetCode/tree/master/0695-max-area-of-island) |
 | [0721-accounts-merge](https://github.com/kyileiaye2021/LeetCode/tree/master/0721-accounts-merge) |
 ## Greedy
@@ -477,6 +480,7 @@ All leetCode problems done will be documented here.
 | [0210-course-schedule-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0210-course-schedule-ii) |
 | [0399-evaluate-division](https://github.com/kyileiaye2021/LeetCode/tree/master/0399-evaluate-division) |
 | [0547-number-of-provinces](https://github.com/kyileiaye2021/LeetCode/tree/master/0547-number-of-provinces) |
+| [0684-redundant-connection](https://github.com/kyileiaye2021/LeetCode/tree/master/0684-redundant-connection) |
 | [0871-keys-and-rooms](https://github.com/kyileiaye2021/LeetCode/tree/master/0871-keys-and-rooms) |
 | [1039-find-the-town-judge](https://github.com/kyileiaye2021/LeetCode/tree/master/1039-find-the-town-judge) |
 | [1558-course-schedule-iv](https://github.com/kyileiaye2021/LeetCode/tree/master/1558-course-schedule-iv) |
