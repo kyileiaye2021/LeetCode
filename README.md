@@ -66,6 +66,7 @@ All leetCode problems done will be documented here.
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/kyileiaye2021/LeetCode/tree/master/1528-kids-with-the-greatest-number-of-candies) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/kyileiaye2021/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/kyileiaye2021/LeetCode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
+| [2067-maximum-number-of-points-with-cost](https://github.com/kyileiaye2021/LeetCode/tree/master/2067-maximum-number-of-points-with-cost) |
 | [3639-zero-array-transformation-i](https://github.com/kyileiaye2021/LeetCode/tree/master/3639-zero-array-transformation-i) |
 ## Dynamic Programming
 |  |
@@ -84,6 +85,7 @@ All leetCode problems done will be documented here.
 | [0647-palindromic-substrings](https://github.com/kyileiaye2021/LeetCode/tree/master/0647-palindromic-substrings) |
 | [1063-best-sightseeing-pair](https://github.com/kyileiaye2021/LeetCode/tree/master/1063-best-sightseeing-pair) |
 | [1474-longest-zigzag-path-in-a-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1474-longest-zigzag-path-in-a-binary-tree) |
+| [2067-maximum-number-of-points-with-cost](https://github.com/kyileiaye2021/LeetCode/tree/master/2067-maximum-number-of-points-with-cost) |
 ## Two Pointers
 |  |
 | ------- |
@@ -432,6 +434,7 @@ All leetCode problems done will be documented here.
 | [0695-max-area-of-island](https://github.com/kyileiaye2021/LeetCode/tree/master/0695-max-area-of-island) |
 | [1036-rotting-oranges](https://github.com/kyileiaye2021/LeetCode/tree/master/1036-rotting-oranges) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/kyileiaye2021/LeetCode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
+| [2067-maximum-number-of-points-with-cost](https://github.com/kyileiaye2021/LeetCode/tree/master/2067-maximum-number-of-points-with-cost) |
 ## Union Find
 |  |
 | ------- |
