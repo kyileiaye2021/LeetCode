@@ -62,6 +62,7 @@ All leetCode problems done will be documented here.
 | [1036-rotting-oranges](https://github.com/kyileiaye2021/LeetCode/tree/master/1036-rotting-oranges) |
 | [1039-find-the-town-judge](https://github.com/kyileiaye2021/LeetCode/tree/master/1039-find-the-town-judge) |
 | [1044-find-common-characters](https://github.com/kyileiaye2021/LeetCode/tree/master/1044-find-common-characters) |
+| [1063-best-sightseeing-pair](https://github.com/kyileiaye2021/LeetCode/tree/master/1063-best-sightseeing-pair) |
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/kyileiaye2021/LeetCode/tree/master/1528-kids-with-the-greatest-number-of-candies) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/kyileiaye2021/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/kyileiaye2021/LeetCode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
@@ -81,6 +82,7 @@ All leetCode problems done will be documented here.
 | [0198-house-robber](https://github.com/kyileiaye2021/LeetCode/tree/master/0198-house-robber) |
 | [0392-is-subsequence](https://github.com/kyileiaye2021/LeetCode/tree/master/0392-is-subsequence) |
 | [0647-palindromic-substrings](https://github.com/kyileiaye2021/LeetCode/tree/master/0647-palindromic-substrings) |
+| [1063-best-sightseeing-pair](https://github.com/kyileiaye2021/LeetCode/tree/master/1063-best-sightseeing-pair) |
 | [1474-longest-zigzag-path-in-a-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1474-longest-zigzag-path-in-a-binary-tree) |
 ## Two Pointers
 |  |
