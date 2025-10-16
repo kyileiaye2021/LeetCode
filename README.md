@@ -20,6 +20,7 @@ All leetCode problems done will be documented here.
 | [0053-maximum-subarray](https://github.com/kyileiaye2021/LeetCode/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/kyileiaye2021/LeetCode/tree/master/0055-jump-game) |
 | [0056-merge-intervals](https://github.com/kyileiaye2021/LeetCode/tree/master/0056-merge-intervals) |
+| [0073-set-matrix-zeroes](https://github.com/kyileiaye2021/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/kyileiaye2021/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/kyileiaye2021/LeetCode/tree/master/0075-sort-colors) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
@@ -141,6 +142,7 @@ All leetCode problems done will be documented here.
 | [0013-roman-to-integer](https://github.com/kyileiaye2021/LeetCode/tree/master/0013-roman-to-integer) |
 | [0036-valid-sudoku](https://github.com/kyileiaye2021/LeetCode/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/kyileiaye2021/LeetCode/tree/master/0049-group-anagrams) |
+| [0073-set-matrix-zeroes](https://github.com/kyileiaye2021/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0128-longest-consecutive-sequence](https://github.com/kyileiaye2021/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0133-clone-graph](https://github.com/kyileiaye2021/LeetCode/tree/master/0133-clone-graph) |
 | [0138-copy-list-with-random-pointer](https://github.com/kyileiaye2021/LeetCode/tree/master/0138-copy-list-with-random-pointer) |
@@ -457,6 +459,7 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/kyileiaye2021/LeetCode/tree/master/0036-valid-sudoku) |
+| [0073-set-matrix-zeroes](https://github.com/kyileiaye2021/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/kyileiaye2021/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0130-surrounded-regions](https://github.com/kyileiaye2021/LeetCode/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/kyileiaye2021/LeetCode/tree/master/0200-number-of-islands) |
