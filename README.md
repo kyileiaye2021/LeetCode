@@ -40,6 +40,7 @@ All leetCode problems done will be documented here.
 | [0209-minimum-size-subarray-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
 | [0215-kth-largest-element-in-an-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0219-contains-duplicate-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0219-contains-duplicate-ii) |
+| [0229-majority-element-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0229-majority-element-ii) |
 | [0238-product-of-array-except-self](https://github.com/kyileiaye2021/LeetCode/tree/master/0238-product-of-array-except-self) |
 | [0274-h-index](https://github.com/kyileiaye2021/LeetCode/tree/master/0274-h-index) |
 | [0283-move-zeroes](https://github.com/kyileiaye2021/LeetCode/tree/master/0283-move-zeroes) |
@@ -151,6 +152,7 @@ All leetCode problems done will be documented here.
 | [0202-happy-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0202-happy-number) |
 | [0205-isomorphic-strings](https://github.com/kyileiaye2021/LeetCode/tree/master/0205-isomorphic-strings) |
 | [0219-contains-duplicate-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0219-contains-duplicate-ii) |
+| [0229-majority-element-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0229-majority-element-ii) |
 | [0242-valid-anagram](https://github.com/kyileiaye2021/LeetCode/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0349-intersection-of-two-arrays](https://github.com/kyileiaye2021/LeetCode/tree/master/0349-intersection-of-two-arrays) |
@@ -180,6 +182,7 @@ All leetCode problems done will be documented here.
 | [0169-majority-element](https://github.com/kyileiaye2021/LeetCode/tree/master/0169-majority-element) |
 | [0179-largest-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0179-largest-number) |
 | [0215-kth-largest-element-in-an-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
+| [0229-majority-element-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0229-majority-element-ii) |
 | [0242-valid-anagram](https://github.com/kyileiaye2021/LeetCode/tree/master/0242-valid-anagram) |
 | [0274-h-index](https://github.com/kyileiaye2021/LeetCode/tree/master/0274-h-index) |
 | [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
@@ -233,6 +236,7 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/kyileiaye2021/LeetCode/tree/master/0169-majority-element) |
+| [0229-majority-element-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0229-majority-element-ii) |
 | [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0383-ransom-note](https://github.com/kyileiaye2021/LeetCode/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0387-first-unique-character-in-a-string) |
