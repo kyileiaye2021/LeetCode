@@ -222,6 +222,7 @@ All leetCode problems done will be documented here.
 | [0387-first-unique-character-in-a-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0387-first-unique-character-in-a-string) |
 | [0392-is-subsequence](https://github.com/kyileiaye2021/LeetCode/tree/master/0392-is-subsequence) |
 | [0399-evaluate-division](https://github.com/kyileiaye2021/LeetCode/tree/master/0399-evaluate-division) |
+| [0402-remove-k-digits](https://github.com/kyileiaye2021/LeetCode/tree/master/0402-remove-k-digits) |
 | [0424-longest-repeating-character-replacement](https://github.com/kyileiaye2021/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0539-minimum-time-difference](https://github.com/kyileiaye2021/LeetCode/tree/master/0539-minimum-time-difference) |
 | [0541-reverse-string-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0541-reverse-string-ii) |
@@ -279,6 +280,7 @@ All leetCode problems done will be documented here.
 | [0143-reorder-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0143-reorder-list) |
 | [0155-min-stack](https://github.com/kyileiaye2021/LeetCode/tree/master/0155-min-stack) |
 | [0234-palindrome-linked-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0234-palindrome-linked-list) |
+| [0402-remove-k-digits](https://github.com/kyileiaye2021/LeetCode/tree/master/0402-remove-k-digits) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/kyileiaye2021/LeetCode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [2236-maximum-twin-sum-of-a-linked-list](https://github.com/kyileiaye2021/LeetCode/tree/master/2236-maximum-twin-sum-of-a-linked-list) |
 ## String Matching
@@ -493,6 +495,7 @@ All leetCode problems done will be documented here.
 | [0134-gas-station](https://github.com/kyileiaye2021/LeetCode/tree/master/0134-gas-station) |
 | [0135-candy](https://github.com/kyileiaye2021/LeetCode/tree/master/0135-candy) |
 | [0179-largest-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0179-largest-number) |
+| [0402-remove-k-digits](https://github.com/kyileiaye2021/LeetCode/tree/master/0402-remove-k-digits) |
 | [0621-task-scheduler](https://github.com/kyileiaye2021/LeetCode/tree/master/0621-task-scheduler) |
 | [0680-valid-palindrome-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0680-valid-palindrome-ii) |
 | [0917-boats-to-save-people](https://github.com/kyileiaye2021/LeetCode/tree/master/0917-boats-to-save-people) |
@@ -582,6 +585,7 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/kyileiaye2021/LeetCode/tree/master/0042-trapping-rain-water) |
+| [0402-remove-k-digits](https://github.com/kyileiaye2021/LeetCode/tree/master/0402-remove-k-digits) |
 ## Merge Sort
 |  |
 | ------- |
