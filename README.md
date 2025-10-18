@@ -233,6 +233,7 @@ All leetCode problems done will be documented here.
 | [0753-open-the-lock](https://github.com/kyileiaye2021/LeetCode/tree/master/0753-open-the-lock) |
 | [0793-swap-adjacent-in-lr-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0793-swap-adjacent-in-lr-string) |
 | [1044-find-common-characters](https://github.com/kyileiaye2021/LeetCode/tree/master/1044-find-common-characters) |
+| [1128-remove-all-adjacent-duplicates-in-string](https://github.com/kyileiaye2021/LeetCode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/kyileiaye2021/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 | [1894-merge-strings-alternately](https://github.com/kyileiaye2021/LeetCode/tree/master/1894-merge-strings-alternately) |
 ## Counting
@@ -278,6 +279,7 @@ All leetCode problems done will be documented here.
 | [0143-reorder-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0143-reorder-list) |
 | [0155-min-stack](https://github.com/kyileiaye2021/LeetCode/tree/master/0155-min-stack) |
 | [0234-palindrome-linked-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0234-palindrome-linked-list) |
+| [1128-remove-all-adjacent-duplicates-in-string](https://github.com/kyileiaye2021/LeetCode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [2236-maximum-twin-sum-of-a-linked-list](https://github.com/kyileiaye2021/LeetCode/tree/master/2236-maximum-twin-sum-of-a-linked-list) |
 ## String Matching
 |  |
