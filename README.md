@@ -152,6 +152,7 @@ All leetCode problems done will be documented here.
 | [0138-copy-list-with-random-pointer](https://github.com/kyileiaye2021/LeetCode/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/kyileiaye2021/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0142-linked-list-cycle-ii) |
+| [0146-lru-cache](https://github.com/kyileiaye2021/LeetCode/tree/master/0146-lru-cache) |
 | [0160-intersection-of-two-linked-lists](https://github.com/kyileiaye2021/LeetCode/tree/master/0160-intersection-of-two-linked-lists) |
 | [0169-majority-element](https://github.com/kyileiaye2021/LeetCode/tree/master/0169-majority-element) |
 | [0187-repeated-dna-sequences](https://github.com/kyileiaye2021/LeetCode/tree/master/0187-repeated-dna-sequences) |
@@ -306,6 +307,7 @@ All leetCode problems done will be documented here.
 | [0141-linked-list-cycle](https://github.com/kyileiaye2021/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0142-linked-list-cycle-ii) |
 | [0143-reorder-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0143-reorder-list) |
+| [0146-lru-cache](https://github.com/kyileiaye2021/LeetCode/tree/master/0146-lru-cache) |
 | [0160-intersection-of-two-linked-lists](https://github.com/kyileiaye2021/LeetCode/tree/master/0160-intersection-of-two-linked-lists) |
 | [0203-remove-linked-list-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0203-remove-linked-list-elements) |
 | [0206-reverse-linked-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0206-reverse-linked-list) |
@@ -516,6 +518,7 @@ All leetCode problems done will be documented here.
 ## Design
 |  |
 | ------- |
+| [0146-lru-cache](https://github.com/kyileiaye2021/LeetCode/tree/master/0146-lru-cache) |
 | [0155-min-stack](https://github.com/kyileiaye2021/LeetCode/tree/master/0155-min-stack) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0380-insert-delete-getrandom-o1](https://github.com/kyileiaye2021/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
@@ -610,4 +613,8 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0054-spiral-matrix](https://github.com/kyileiaye2021/LeetCode/tree/master/0054-spiral-matrix) |
+## Doubly-Linked List
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/kyileiaye2021/LeetCode/tree/master/0146-lru-cache) |
 <!---LeetCode Topics End-->
