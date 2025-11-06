@@ -74,6 +74,7 @@ All leetCode problems done will be documented here.
 | [1798-max-number-of-k-sum-pairs](https://github.com/kyileiaye2021/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/kyileiaye2021/LeetCode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 | [2067-maximum-number-of-points-with-cost](https://github.com/kyileiaye2021/LeetCode/tree/master/2067-maximum-number-of-points-with-cost) |
+| [2352-design-an-atm-machine](https://github.com/kyileiaye2021/LeetCode/tree/master/2352-design-an-atm-machine) |
 | [3639-zero-array-transformation-i](https://github.com/kyileiaye2021/LeetCode/tree/master/3639-zero-array-transformation-i) |
 ## Dynamic Programming
 |  |
@@ -515,6 +516,7 @@ All leetCode problems done will be documented here.
 | [0621-task-scheduler](https://github.com/kyileiaye2021/LeetCode/tree/master/0621-task-scheduler) |
 | [0680-valid-palindrome-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0680-valid-palindrome-ii) |
 | [0917-boats-to-save-people](https://github.com/kyileiaye2021/LeetCode/tree/master/0917-boats-to-save-people) |
+| [2352-design-an-atm-machine](https://github.com/kyileiaye2021/LeetCode/tree/master/2352-design-an-atm-machine) |
 ## Design
 |  |
 | ------- |
@@ -523,6 +525,7 @@ All leetCode problems done will be documented here.
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0380-insert-delete-getrandom-o1](https://github.com/kyileiaye2021/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0969-number-of-recent-calls](https://github.com/kyileiaye2021/LeetCode/tree/master/0969-number-of-recent-calls) |
+| [2352-design-an-atm-machine](https://github.com/kyileiaye2021/LeetCode/tree/master/2352-design-an-atm-machine) |
 ## Sliding Window
 |  |
 | ------- |
