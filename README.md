@@ -84,6 +84,7 @@ All leetCode problems done will be documented here.
 | [0045-jump-game-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0045-jump-game-ii) |
 | [0053-maximum-subarray](https://github.com/kyileiaye2021/LeetCode/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/kyileiaye2021/LeetCode/tree/master/0055-jump-game) |
+| [0070-climbing-stairs](https://github.com/kyileiaye2021/LeetCode/tree/master/0070-climbing-stairs) |
 | [0091-decode-ways](https://github.com/kyileiaye2021/LeetCode/tree/master/0091-decode-ways) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/kyileiaye2021/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
@@ -269,6 +270,7 @@ All leetCode problems done will be documented here.
 | ------- |
 | [0002-add-two-numbers](https://github.com/kyileiaye2021/LeetCode/tree/master/0002-add-two-numbers) |
 | [0013-roman-to-integer](https://github.com/kyileiaye2021/LeetCode/tree/master/0013-roman-to-integer) |
+| [0070-climbing-stairs](https://github.com/kyileiaye2021/LeetCode/tree/master/0070-climbing-stairs) |
 | [0189-rotate-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0189-rotate-array) |
 | [0202-happy-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0202-happy-number) |
 | [0380-insert-delete-getrandom-o1](https://github.com/kyileiaye2021/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
@@ -624,4 +626,8 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/kyileiaye2021/LeetCode/tree/master/0146-lru-cache) |
+## Memoization
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/kyileiaye2021/LeetCode/tree/master/0070-climbing-stairs) |
 <!---LeetCode Topics End-->
