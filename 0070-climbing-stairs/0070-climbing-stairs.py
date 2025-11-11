@@ -1,58 +1,32 @@
 class Solution:
     def climbStairs(self, n: int) -> int:
-        
-        
-        # Happy Case
-        # in - n = 2
-        # out - 2
 
-        # in - n = 3
-        # out - 3
+        # base case
+        # if n is 1 or 2 return n
+        # call recursive func on the n - 1 and n -2
 
-        # in - n = 4
-        # * 1,1,1,1
-        # * 1,1,2
-        # * 1, 2, 1
-        # * 2, 1, 1
-        # * 2, 2
-        # out - 5
+        # def recur(n):
+        #     if n == 1 or n == 2:
+        #         return n
 
-        # in - 5
-        # * 1,1,1,1,1
-        # * 1,2,2
-        # * 2, 1, 2
-        # * 2,2, 1
-        # * 1,1, 1, 2
-        # * 1, 2, 1, 1
-        # * 1,1,2,1
-        # * 2, 1,1, 1
-        # out - 8
+        #     return recur(n - 1) + recur(n - 2)
+        
+        # return recur(n)
 
-        '''Edge cases'''
-        # in - n = 0
-        # out - 1
+        # memoization
+        def recur(n, memo):
+            # base case
+            if n == 1 or n == 2:
+                return n
 
-        # in - n = 1
-        # out - 1
+            if memo[n] != -1:
+                return memo[n]
+
+            memo[n] = recur(n - 1, memo) + recur(n - 2, memo)
+            return memo[n]
+
+        memo = [-1] * (n + 1)
+        return recur(n, memo)
+
         
-        '''Dynamic Programming'''
-        # check if n is 0 or 1
-        #   return 1
-        # iterate from 2 to n 
-        #   ways to reach curr step is the sum of prev1 steps and prev2 steps
-        #   update prev1 val with prev2 val
-        #   update prev2 val with curr val
-        # return prev2
-        
-        if n == 0 or n == 1:
-            return 1
-        
-        prev1, prev2 = 1, 1
-        
-        for _ in range(2, n + 1):
-            curr = prev1 + prev2
-            prev1 = prev2
-            prev2 = curr
-            
-        return prev2
         
