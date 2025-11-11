@@ -1,17 +1,15 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
-        profit = [0] * len(prices)
+        profit = 0
         cheapest = float('inf')
 
         for i in range(len(prices)):
             if cheapest != float('inf'):
-                profit[i] = max(0, prices[i] - cheapest)
-            else:
-                profit[i] = 0
-
+                profit = max(profit, prices[i] - cheapest)
+        
             cheapest = min(prices[i], cheapest)
 
-        return max(profit)
+        return profit
 
        # store the max profit for each day so far
 
