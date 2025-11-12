@@ -95,6 +95,7 @@ All leetCode problems done will be documented here.
 | [0124-binary-tree-maximum-path-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0152-maximum-product-subarray](https://github.com/kyileiaye2021/LeetCode/tree/master/0152-maximum-product-subarray) |
 | [0198-house-robber](https://github.com/kyileiaye2021/LeetCode/tree/master/0198-house-robber) |
+| [0338-counting-bits](https://github.com/kyileiaye2021/LeetCode/tree/master/0338-counting-bits) |
 | [0392-is-subsequence](https://github.com/kyileiaye2021/LeetCode/tree/master/0392-is-subsequence) |
 | [0647-palindromic-substrings](https://github.com/kyileiaye2021/LeetCode/tree/master/0647-palindromic-substrings) |
 | [1063-best-sightseeing-pair](https://github.com/kyileiaye2021/LeetCode/tree/master/1063-best-sightseeing-pair) |
@@ -599,6 +600,7 @@ All leetCode problems done will be documented here.
 | ------- |
 | [0187-repeated-dna-sequences](https://github.com/kyileiaye2021/LeetCode/tree/master/0187-repeated-dna-sequences) |
 | [0190-reverse-bits](https://github.com/kyileiaye2021/LeetCode/tree/master/0190-reverse-bits) |
+| [0338-counting-bits](https://github.com/kyileiaye2021/LeetCode/tree/master/0338-counting-bits) |
 ## Rolling Hash
 |  |
 | ------- |
