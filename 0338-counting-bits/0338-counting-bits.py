@@ -28,19 +28,27 @@ class Solution:
 
         res  = [0] * (n + 1) # O(n) space
         res[0] = 0
+        offset = 1
 
-        for i in range(1, n + 1): # O(n) time??
-            curr = i
+        for i in range(1, n + 1):
+            # setting offset
+            if offset * 2 == i:
+                offset = i
 
-            while curr != 0:
+            res[i] = 1 + res[i - offset]
 
-                if res[curr] != 0: # if the res is already stored in the res, retrieve and reuse it
-                    res[i] += res[curr]
-                    curr = 0
+        # for i in range(1, n + 1): # O(nlogn) time??
+        #     curr = i
 
-                else:
-                    res[i] += curr % 2
-                    curr = curr // 2
+        #     while curr != 0: # O(logn) because curr is divided by 2 in each loop
+
+        #         if res[curr] != 0: # if the res is already stored in the res, retrieve and reuse it
+        #             res[i] += res[curr]
+        #             curr = 0
+
+        #         else:
+        #             res[i] += curr % 2
+        #             curr = curr // 2
 
         return res 
 
