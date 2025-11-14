@@ -62,6 +62,7 @@ All leetCode problems done will be documented here.
 | [0695-max-area-of-island](https://github.com/kyileiaye2021/LeetCode/tree/master/0695-max-area-of-island) |
 | [0721-accounts-merge](https://github.com/kyileiaye2021/LeetCode/tree/master/0721-accounts-merge) |
 | [0733-flood-fill](https://github.com/kyileiaye2021/LeetCode/tree/master/0733-flood-fill) |
+| [0747-min-cost-climbing-stairs](https://github.com/kyileiaye2021/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 | [0753-open-the-lock](https://github.com/kyileiaye2021/LeetCode/tree/master/0753-open-the-lock) |
 | [0792-binary-search](https://github.com/kyileiaye2021/LeetCode/tree/master/0792-binary-search) |
 | [0912-random-pick-with-weight](https://github.com/kyileiaye2021/LeetCode/tree/master/0912-random-pick-with-weight) |
@@ -99,6 +100,7 @@ All leetCode problems done will be documented here.
 | [0338-counting-bits](https://github.com/kyileiaye2021/LeetCode/tree/master/0338-counting-bits) |
 | [0392-is-subsequence](https://github.com/kyileiaye2021/LeetCode/tree/master/0392-is-subsequence) |
 | [0647-palindromic-substrings](https://github.com/kyileiaye2021/LeetCode/tree/master/0647-palindromic-substrings) |
+| [0747-min-cost-climbing-stairs](https://github.com/kyileiaye2021/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 | [1063-best-sightseeing-pair](https://github.com/kyileiaye2021/LeetCode/tree/master/1063-best-sightseeing-pair) |
 | [1236-n-th-tribonacci-number](https://github.com/kyileiaye2021/LeetCode/tree/master/1236-n-th-tribonacci-number) |
 | [1474-longest-zigzag-path-in-a-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1474-longest-zigzag-path-in-a-binary-tree) |
