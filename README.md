@@ -99,6 +99,7 @@ All leetCode problems done will be documented here.
 | [0392-is-subsequence](https://github.com/kyileiaye2021/LeetCode/tree/master/0392-is-subsequence) |
 | [0647-palindromic-substrings](https://github.com/kyileiaye2021/LeetCode/tree/master/0647-palindromic-substrings) |
 | [1063-best-sightseeing-pair](https://github.com/kyileiaye2021/LeetCode/tree/master/1063-best-sightseeing-pair) |
+| [1236-n-th-tribonacci-number](https://github.com/kyileiaye2021/LeetCode/tree/master/1236-n-th-tribonacci-number) |
 | [1474-longest-zigzag-path-in-a-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1474-longest-zigzag-path-in-a-binary-tree) |
 | [2067-maximum-number-of-points-with-cost](https://github.com/kyileiaye2021/LeetCode/tree/master/2067-maximum-number-of-points-with-cost) |
 ## Two Pointers
@@ -281,6 +282,7 @@ All leetCode problems done will be documented here.
 | [0380-insert-delete-getrandom-o1](https://github.com/kyileiaye2021/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0539-minimum-time-difference](https://github.com/kyileiaye2021/LeetCode/tree/master/0539-minimum-time-difference) |
 | [0912-random-pick-with-weight](https://github.com/kyileiaye2021/LeetCode/tree/master/0912-random-pick-with-weight) |
+| [1236-n-th-tribonacci-number](https://github.com/kyileiaye2021/LeetCode/tree/master/1236-n-th-tribonacci-number) |
 ## Queue
 |  |
 | ------- |
@@ -636,4 +638,5 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/kyileiaye2021/LeetCode/tree/master/0070-climbing-stairs) |
+| [1236-n-th-tribonacci-number](https://github.com/kyileiaye2021/LeetCode/tree/master/1236-n-th-tribonacci-number) |
 <!---LeetCode Topics End-->
