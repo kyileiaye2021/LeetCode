@@ -95,6 +95,7 @@ All leetCode problems done will be documented here.
 | [0124-binary-tree-maximum-path-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0152-maximum-product-subarray](https://github.com/kyileiaye2021/LeetCode/tree/master/0152-maximum-product-subarray) |
 | [0198-house-robber](https://github.com/kyileiaye2021/LeetCode/tree/master/0198-house-robber) |
+| [0279-perfect-squares](https://github.com/kyileiaye2021/LeetCode/tree/master/0279-perfect-squares) |
 | [0338-counting-bits](https://github.com/kyileiaye2021/LeetCode/tree/master/0338-counting-bits) |
 | [0392-is-subsequence](https://github.com/kyileiaye2021/LeetCode/tree/master/0392-is-subsequence) |
 | [0647-palindromic-substrings](https://github.com/kyileiaye2021/LeetCode/tree/master/0647-palindromic-substrings) |
@@ -279,6 +280,7 @@ All leetCode problems done will be documented here.
 | [0070-climbing-stairs](https://github.com/kyileiaye2021/LeetCode/tree/master/0070-climbing-stairs) |
 | [0189-rotate-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0189-rotate-array) |
 | [0202-happy-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0202-happy-number) |
+| [0279-perfect-squares](https://github.com/kyileiaye2021/LeetCode/tree/master/0279-perfect-squares) |
 | [0380-insert-delete-getrandom-o1](https://github.com/kyileiaye2021/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0539-minimum-time-difference](https://github.com/kyileiaye2021/LeetCode/tree/master/0539-minimum-time-difference) |
 | [0912-random-pick-with-weight](https://github.com/kyileiaye2021/LeetCode/tree/master/0912-random-pick-with-weight) |
@@ -410,6 +412,7 @@ All leetCode problems done will be documented here.
 | [0207-course-schedule](https://github.com/kyileiaye2021/LeetCode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0210-course-schedule-ii) |
 | [0226-invert-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0226-invert-binary-tree) |
+| [0279-perfect-squares](https://github.com/kyileiaye2021/LeetCode/tree/master/0279-perfect-squares) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0399-evaluate-division](https://github.com/kyileiaye2021/LeetCode/tree/master/0399-evaluate-division) |
 | [0417-pacific-atlantic-water-flow](https://github.com/kyileiaye2021/LeetCode/tree/master/0417-pacific-atlantic-water-flow) |
