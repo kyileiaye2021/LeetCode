@@ -1,41 +1,32 @@
 class Solution:
-    def backtrack(self, i, candidates, target, curr_lst, res_lst):
-
-        # unique combination
-        #  if the num is included in one path, exclude it in another path
+    def dp_helper(self, candidates, i, remaining, memo):
 
         # base case
-        # if curr sum becomes target
-        #   make a copy of curr lst and add it to res list
-        #   return 
-        # if curr i becomes the len of candidates or curr sum exceed target
-        #   return 
+        if remaining == 0:
+            # find the path that sum up to target
+            return [[]]
 
-        # add the curr ith ele to the curr list
-        # add the curr ith ele to the sum
-        # call recursive func on the curr sum and list
-        # remove the curr ith ele from the curr list
-        # remove the curr ith ele from the sum
-        # call recursive func on the curr sum and list
+        if i >= len(candidates) or remaining < 0:
+            # if the path sum exceed the target
+            return []
 
-        # if the path sum becomes target, store it in the res
-        if target == 0:
-            res_lst.append(curr_lst.copy())
-            return
+        # dp case
+        if (i, remaining) in memo:
+            return memo[(i, remaining)]
 
-        if i >= len(candidates) or target < 0:
-            return 
+        # include the curr ith ele
+        include_combo = self.dp_helper(candidates, i, (remaining - candidates[i]), memo)
+        include_combo = [[candidates[i]] + combo for combo in include_combo]
 
-        # include the curr ith ele 
-        curr_lst.append(candidates[i])
-        target -= candidates[i]
-        self.backtrack(i, candidates, target, curr_lst, res_lst)
+        # exclude the curr ith ele
+        exclude_combo = self.dp_helper(candidates, i + 1, remaining, memo)
 
-        # backtrack and exclude the curr ith ele
-        curr_lst.pop()
-        target += candidates[i]
-        self.backtrack(i + 1 , candidates, target, curr_lst, res_lst)
+        # combine the two paths
+        total_combo = include_combo + exclude_combo
+        memo[(i, remaining)] = total_combo
 
+        return memo[(i, remaining)]
+        
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
 
         # happy cases
@@ -57,12 +48,13 @@ class Solution:
         # create a res list
         # curr sum = 0
         # curr list - empty list
-    
-        curr_lst = []
-        res_lst = []
-        self.backtrack(0, candidates, target, curr_lst, res_lst)
-        return res_lst
+        memo:Dict[Tuple(int, int): List[List[int]]] = {}
+        return self.dp_helper(candidates, 0, target, memo)
+        
 
+
+    
+        
 
 
 
