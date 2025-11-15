@@ -1,5 +1,5 @@
 class Solution:
-    def backtrack(self, i, candidates, target, curr_sum, curr_lst, res_lst):
+    def backtrack(self, i, candidates, target, curr_lst, res_lst):
 
         # unique combination
         #  if the num is included in one path, exclude it in another path
@@ -19,22 +19,22 @@ class Solution:
         # call recursive func on the curr sum and list
 
         # if the path sum becomes target, store it in the res
-        if curr_sum == target:
+        if target == 0:
             res_lst.append(curr_lst.copy())
             return
 
-        if i >= len(candidates) or curr_sum > target:
+        if i >= len(candidates) or target < 0:
             return 
 
         # include the curr ith ele 
         curr_lst.append(candidates[i])
-        curr_sum += candidates[i]
-        self.backtrack(i, candidates, target, curr_sum, curr_lst, res_lst)
+        target -= candidates[i]
+        self.backtrack(i, candidates, target, curr_lst, res_lst)
 
         # backtrack and exclude the curr ith ele
         curr_lst.pop()
-        curr_sum -= candidates[i]
-        self.backtrack(i + 1 , candidates, target, curr_sum, curr_lst, res_lst)
+        target += candidates[i]
+        self.backtrack(i + 1 , candidates, target, curr_lst, res_lst)
 
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
 
@@ -57,11 +57,10 @@ class Solution:
         # create a res list
         # curr sum = 0
         # curr list - empty list
-        curr_sum = 0
-        i = 0
+    
         curr_lst = []
         res_lst = []
-        self.backtrack(0, candidates, target, curr_sum, curr_lst, res_lst)
+        self.backtrack(0, candidates, target, curr_lst, res_lst)
         return res_lst
 
 
