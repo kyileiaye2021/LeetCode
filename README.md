@@ -160,6 +160,7 @@ All leetCode problems done will be documented here.
 | [0036-valid-sudoku](https://github.com/kyileiaye2021/LeetCode/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/kyileiaye2021/LeetCode/tree/master/0049-group-anagrams) |
 | [0073-set-matrix-zeroes](https://github.com/kyileiaye2021/LeetCode/tree/master/0073-set-matrix-zeroes) |
+| [0076-minimum-window-substring](https://github.com/kyileiaye2021/LeetCode/tree/master/0076-minimum-window-substring) |
 | [0127-word-ladder](https://github.com/kyileiaye2021/LeetCode/tree/master/0127-word-ladder) |
 | [0128-longest-consecutive-sequence](https://github.com/kyileiaye2021/LeetCode/tree/master/0128-longest-consecutive-sequence) |
 | [0133-clone-graph](https://github.com/kyileiaye2021/LeetCode/tree/master/0133-clone-graph) |
@@ -227,6 +228,7 @@ All leetCode problems done will be documented here.
 | [0020-valid-parentheses](https://github.com/kyileiaye2021/LeetCode/tree/master/0020-valid-parentheses) |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0049-group-anagrams](https://github.com/kyileiaye2021/LeetCode/tree/master/0049-group-anagrams) |
+| [0076-minimum-window-substring](https://github.com/kyileiaye2021/LeetCode/tree/master/0076-minimum-window-substring) |
 | [0091-decode-ways](https://github.com/kyileiaye2021/LeetCode/tree/master/0091-decode-ways) |
 | [0125-valid-palindrome](https://github.com/kyileiaye2021/LeetCode/tree/master/0125-valid-palindrome) |
 | [0127-word-ladder](https://github.com/kyileiaye2021/LeetCode/tree/master/0127-word-ladder) |
@@ -551,6 +553,7 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/kyileiaye2021/LeetCode/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0076-minimum-window-substring](https://github.com/kyileiaye2021/LeetCode/tree/master/0076-minimum-window-substring) |
 | [0187-repeated-dna-sequences](https://github.com/kyileiaye2021/LeetCode/tree/master/0187-repeated-dna-sequences) |
 | [0209-minimum-size-subarray-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
 | [0219-contains-duplicate-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0219-contains-duplicate-ii) |
