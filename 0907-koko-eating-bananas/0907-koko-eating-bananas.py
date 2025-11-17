@@ -17,7 +17,7 @@ class Solution:
         r = largest
         best = 0
 
-        while l <= r:
+        while l < r:
             mid = (l + r) // 2
 
             total = 0
@@ -28,8 +28,8 @@ class Solution:
             
             if total <= h: # faster speed
                 # need to decrease rate
-                best = mid
-                r = mid - 1
+                # best = mid
+                r = mid
 
             elif total > h: # slow speed
                 # need to increase rate
@@ -38,5 +38,5 @@ class Solution:
             # else:
             #     return mid
 
-        return best
+        return r
 
