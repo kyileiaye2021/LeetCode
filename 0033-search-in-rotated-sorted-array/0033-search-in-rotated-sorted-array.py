@@ -59,15 +59,11 @@ class Solution:
                     r = mid - 1
 
             else: 
-                if target > nums[mid]:
-                    if target > nums[r]:
-                        r = mid - 1
-                    else:
-                        l = mid + 1
-                
-                else:
+                if target < nums[mid] or target > nums[r]:
                     r = mid - 1
-
+                else:
+                    l = mid + 1
+                
         return -1
 
         
