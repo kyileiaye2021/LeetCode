@@ -50,13 +50,13 @@ class Solution:
             # if mid < l val --> right side
 
             if nums[mid] >= nums[l]:
-                if target > nums[mid]:
+                if target > nums[mid] or target < nums[l]:
                     l = mid + 1
                 else:
-                    if target < nums[l]:
-                        l = mid + 1
-                    else:
-                        r = mid - 1
+                    # if target < nums[l]:
+                    #     l = mid + 1
+                    # else:
+                    r = mid - 1
 
             else: 
                 if target > nums[mid]:
