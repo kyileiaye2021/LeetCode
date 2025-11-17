@@ -22,7 +22,7 @@ class Solution:
         return memo[(i, amount)]
 
     def change(self, amount: int, coins: List[int]) -> int:
-        memo:Dict[Tuple(int, int): int] = {}
+        memo:Dict[Tuple(int, int),int] = {}
         return self.dp_helper(0, amount, coins, memo)
         
         # recursion
