@@ -71,6 +71,7 @@ All leetCode problems done will be documented here.
 | [0747-min-cost-climbing-stairs](https://github.com/kyileiaye2021/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 | [0753-open-the-lock](https://github.com/kyileiaye2021/LeetCode/tree/master/0753-open-the-lock) |
 | [0792-binary-search](https://github.com/kyileiaye2021/LeetCode/tree/master/0792-binary-search) |
+| [0907-koko-eating-bananas](https://github.com/kyileiaye2021/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [0912-random-pick-with-weight](https://github.com/kyileiaye2021/LeetCode/tree/master/0912-random-pick-with-weight) |
 | [0917-boats-to-save-people](https://github.com/kyileiaye2021/LeetCode/tree/master/0917-boats-to-save-people) |
 | [1019-squares-of-a-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
@@ -286,6 +287,7 @@ All leetCode problems done will be documented here.
 | [0350-intersection-of-two-arrays-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0658-find-k-closest-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0792-binary-search](https://github.com/kyileiaye2021/LeetCode/tree/master/0792-binary-search) |
+| [0907-koko-eating-bananas](https://github.com/kyileiaye2021/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [0912-random-pick-with-weight](https://github.com/kyileiaye2021/LeetCode/tree/master/0912-random-pick-with-weight) |
 ## Math
 |  |
