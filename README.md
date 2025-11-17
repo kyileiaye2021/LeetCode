@@ -409,6 +409,7 @@ All leetCode problems done will be documented here.
 | [0721-accounts-merge](https://github.com/kyileiaye2021/LeetCode/tree/master/0721-accounts-merge) |
 | [0733-flood-fill](https://github.com/kyileiaye2021/LeetCode/tree/master/0733-flood-fill) |
 | [0801-is-graph-bipartite](https://github.com/kyileiaye2021/LeetCode/tree/master/0801-is-graph-bipartite) |
+| [0820-find-eventual-safe-states](https://github.com/kyileiaye2021/LeetCode/tree/master/0820-find-eventual-safe-states) |
 | [0871-keys-and-rooms](https://github.com/kyileiaye2021/LeetCode/tree/master/0871-keys-and-rooms) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1474-longest-zigzag-path-in-a-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1474-longest-zigzag-path-in-a-binary-tree) |
@@ -444,6 +445,7 @@ All leetCode problems done will be documented here.
 | [0733-flood-fill](https://github.com/kyileiaye2021/LeetCode/tree/master/0733-flood-fill) |
 | [0753-open-the-lock](https://github.com/kyileiaye2021/LeetCode/tree/master/0753-open-the-lock) |
 | [0801-is-graph-bipartite](https://github.com/kyileiaye2021/LeetCode/tree/master/0801-is-graph-bipartite) |
+| [0820-find-eventual-safe-states](https://github.com/kyileiaye2021/LeetCode/tree/master/0820-find-eventual-safe-states) |
 | [0871-keys-and-rooms](https://github.com/kyileiaye2021/LeetCode/tree/master/0871-keys-and-rooms) |
 | [1036-rotting-oranges](https://github.com/kyileiaye2021/LeetCode/tree/master/1036-rotting-oranges) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
@@ -593,6 +595,7 @@ All leetCode problems done will be documented here.
 | [0547-number-of-provinces](https://github.com/kyileiaye2021/LeetCode/tree/master/0547-number-of-provinces) |
 | [0684-redundant-connection](https://github.com/kyileiaye2021/LeetCode/tree/master/0684-redundant-connection) |
 | [0801-is-graph-bipartite](https://github.com/kyileiaye2021/LeetCode/tree/master/0801-is-graph-bipartite) |
+| [0820-find-eventual-safe-states](https://github.com/kyileiaye2021/LeetCode/tree/master/0820-find-eventual-safe-states) |
 | [0871-keys-and-rooms](https://github.com/kyileiaye2021/LeetCode/tree/master/0871-keys-and-rooms) |
 | [1039-find-the-town-judge](https://github.com/kyileiaye2021/LeetCode/tree/master/1039-find-the-town-judge) |
 | [1558-course-schedule-iv](https://github.com/kyileiaye2021/LeetCode/tree/master/1558-course-schedule-iv) |
@@ -614,6 +617,7 @@ All leetCode problems done will be documented here.
 | ------- |
 | [0207-course-schedule](https://github.com/kyileiaye2021/LeetCode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0210-course-schedule-ii) |
+| [0820-find-eventual-safe-states](https://github.com/kyileiaye2021/LeetCode/tree/master/0820-find-eventual-safe-states) |
 | [1558-course-schedule-iv](https://github.com/kyileiaye2021/LeetCode/tree/master/1558-course-schedule-iv) |
 ## Shortest Path
 |  |
