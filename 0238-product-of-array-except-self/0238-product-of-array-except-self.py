@@ -1,46 +1,44 @@
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
-        # space - O(n)
-        # time - O(3n)
-        # prefix = [1] * len(nums)
-        # postfix = [1] * len(nums)
+        # happy cases
+        # nums = [1,2,3,4]
+        # output  = [24, 12, 8, 6]
 
-        # # [1,1,2,6]
-        # # [1,-1,-1,0,0]
-        # pre_product = 1
-        # for i in range(len(nums)):
-        #     prefix[i] = pre_product
-        #     pre_product *= nums[i]
+        # edge cases
+        # nums = []
+        # output: []
 
-        # # [24,12,4,1]
-        # # [0,0,-9,3,1]
-        # post_product = 1
-        # for i in range(len(nums)-1, -1, -1):
-        #     postfix[i] = post_product
-        #     post_product *= nums[i]
+        # nums = [2, 0]
+        # output: [0, 2]
 
-        # # [24, 12,8,6]
-        # for i in range(len(prefix)):
-        #     nums[i] = prefix[i] * postfix[i]
+        # nums = [-1, -1, -1]
+        # output: [1, 1, 1]
 
-        # return nums
+        # nums = [-1, 0, -2]
+        # output: [0, 2, 0]
 
-        # Space complexity O(1)
+        # brute force
+        # nested loop (O(n^2))
 
-        res = [1] * len(nums)
-        prefix = 1
-        postfix = 1
+        # prefix sum 2 arrays O(n) time , O(n) space
+
+        left = [1] * len(nums)
+        left[0] = nums[0]
+        right = [1] * len(nums)
+        right[len(nums) - 1] = nums[len(nums) - 1]
+
+        for i in range(1, len(nums)):
+            left[i] = left[i - 1] * nums[i]
+
+        for i in range(len(nums) - 2, -1, -1):
+            right[i] = right[i + 1] * nums[i]
 
         for i in range(len(nums)):
-            res[i] = prefix
-            prefix *= nums[i]
+            if 0 < i < len(nums) - 1:
+                nums[i] = left[i - 1] * right[i + 1]
+            if i == 0:
+                nums[i] = right[i + 1]
+            if i == len(nums) - 1:
+                nums[i] = left[i - 1]
 
-        for i in range(len(nums)-1, -1, -1):
-            res[i] *= postfix
-            postfix *= nums[i]
-
-        return res
-            
-
-
-
+        return nums
