@@ -1,38 +1,50 @@
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
-        # Check duplicates in 
-        # each row 
-        # each col
-        # each square
+        
+        # edge case
+        # if every entry is '.', return true
 
-        # Data structure for checking duplicates: set()
-        # need to create hashmap because every row has same nums 
-        # so need to know which row/col contains duplicates
+        # row_set = {1: {}}
+        # col_set = {2: {}}
+        # square_set = {(0,0): {}}
 
-        # hashmap for each row {row index: set()}
-        # hashmap for each col {col index: set()}
-        # set for each square {(row/3, col/3): set()} # need to divide by 3 to know which square the cell falls in
+        # iterate thru the rows:
+        #   iterate thru the cols:
+        #       if the entry is '.', continue
+        #       temp row = row // 2
+        #       temp col = col // 2
+        #       check if the curr entry is already in the row set of ith row 
+        #       or  the curr entry at jth col at that row is in the col set
+        #       or the curr entry is already in the (temp row, temp col) in square_set
+        #           return false
+        #       add the curr entry to the row set at ith row
+        #       add the curr entry to the col set at jth col
+        #       add the curr entry to the (temp row, temp col) in the square set
+        # return True
 
-        row_set = collections.defaultdict(set)
-        col_set = collections.defaultdict(set)
-        square_set = collections.defaultdict(set)
+        rows = len(board)
+        cols = len(board[0])
 
-        # Time - O(n^2)
-        # Space - O(n^2)
-        for i in range(9):
+        # rows_set = {i: set() for i in range(rows)}
+        # cols_set = {i: set() for i in range(cols)}
+        rows_set = defaultdict(set)
+        cols_set = defaultdict(set)
+        square_set= defaultdict(set)
+        print(square_set)
 
-            for j in range(9):
+        for i in range(rows):
 
+            for j in range(cols):
                 if board[i][j] == '.':
                     continue
 
-                # if there is a duplicate in row, col, square
-                if board[i][j] in row_set[i] or board[i][j] in col_set[j] or board[i][j] in square_set[(i // 3, j // 3)]:
+                temp_row = i // 3
+                temp_col = j // 3
+                if board[i][j] in rows_set[i] or board[i][j] in cols_set[j] or board[i][j] in square_set[(temp_row, temp_col)]:
                     return False
 
-                else:
-                    row_set[i].add(board[i][j])
-                    col_set[j].add(board[i][j])
-                    square_set[(i // 3, j // 3)].add(board[i][j])
+                rows_set[i].add(board[i][j])
+                cols_set[j].add(board[i][j])
+                square_set[(temp_row, temp_col)].add(board[i][j])
 
         return True
