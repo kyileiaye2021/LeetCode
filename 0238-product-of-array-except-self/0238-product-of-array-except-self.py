@@ -21,24 +21,18 @@ class Solution:
         # nested loop (O(n^2))
 
         # prefix sum 2 arrays O(n) time , O(n) space
+        # prefix sum var left, and right
 
-        left = [1] * len(nums)
-        left[0] = nums[0]
-        right = [1] * len(nums)
-        right[len(nums) - 1] = nums[len(nums) - 1]
-
-        for i in range(1, len(nums)):
-            left[i] = left[i - 1] * nums[i]
-
-        for i in range(len(nums) - 2, -1, -1):
-            right[i] = right[i + 1] * nums[i]
-
+        left = 1
+        right = 1
+        res = [1] * len(nums)
         for i in range(len(nums)):
-            if 0 < i < len(nums) - 1:
-                nums[i] = left[i - 1] * right[i + 1]
-            if i == 0:
-                nums[i] = right[i + 1]
-            if i == len(nums) - 1:
-                nums[i] = left[i - 1]
+            res[i] = left
+            left = left * nums[i]
 
-        return nums
+        for i in range(len(nums) - 1, -1, -1):
+            res[i] *= right
+            right = right * nums[i]
+
+        return res
+    
