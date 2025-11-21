@@ -89,6 +89,7 @@ All leetCode problems done will be documented here.
 | [2067-maximum-number-of-points-with-cost](https://github.com/kyileiaye2021/LeetCode/tree/master/2067-maximum-number-of-points-with-cost) |
 | [2102-find-the-middle-index-in-array](https://github.com/kyileiaye2021/LeetCode/tree/master/2102-find-the-middle-index-in-array) |
 | [2352-design-an-atm-machine](https://github.com/kyileiaye2021/LeetCode/tree/master/2352-design-an-atm-machine) |
+| [2358-number-of-ways-to-split-array](https://github.com/kyileiaye2021/LeetCode/tree/master/2358-number-of-ways-to-split-array) |
 | [3639-zero-array-transformation-i](https://github.com/kyileiaye2021/LeetCode/tree/master/3639-zero-array-transformation-i) |
 ## Dynamic Programming
 |  |
@@ -518,6 +519,7 @@ All leetCode problems done will be documented here.
 | [1603-running-sum-of-1d-array](https://github.com/kyileiaye2021/LeetCode/tree/master/1603-running-sum-of-1d-array) |
 | [1833-find-the-highest-altitude](https://github.com/kyileiaye2021/LeetCode/tree/master/1833-find-the-highest-altitude) |
 | [2102-find-the-middle-index-in-array](https://github.com/kyileiaye2021/LeetCode/tree/master/2102-find-the-middle-index-in-array) |
+| [2358-number-of-ways-to-split-array](https://github.com/kyileiaye2021/LeetCode/tree/master/2358-number-of-ways-to-split-array) |
 | [3639-zero-array-transformation-i](https://github.com/kyileiaye2021/LeetCode/tree/master/3639-zero-array-transformation-i) |
 ## Matrix
 |  |
