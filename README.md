@@ -68,6 +68,7 @@ All leetCode problems done will be documented here.
 | [0658-find-k-closest-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0695-max-area-of-island](https://github.com/kyileiaye2021/LeetCode/tree/master/0695-max-area-of-island) |
 | [0721-accounts-merge](https://github.com/kyileiaye2021/LeetCode/tree/master/0721-accounts-merge) |
+| [0724-find-pivot-index](https://github.com/kyileiaye2021/LeetCode/tree/master/0724-find-pivot-index) |
 | [0733-flood-fill](https://github.com/kyileiaye2021/LeetCode/tree/master/0733-flood-fill) |
 | [0747-min-cost-climbing-stairs](https://github.com/kyileiaye2021/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 | [0753-open-the-lock](https://github.com/kyileiaye2021/LeetCode/tree/master/0753-open-the-lock) |
@@ -519,6 +520,7 @@ All leetCode problems done will be documented here.
 | [0238-product-of-array-except-self](https://github.com/kyileiaye2021/LeetCode/tree/master/0238-product-of-array-except-self) |
 | [0304-range-sum-query-2d-immutable](https://github.com/kyileiaye2021/LeetCode/tree/master/0304-range-sum-query-2d-immutable) |
 | [0560-subarray-sum-equals-k](https://github.com/kyileiaye2021/LeetCode/tree/master/0560-subarray-sum-equals-k) |
+| [0724-find-pivot-index](https://github.com/kyileiaye2021/LeetCode/tree/master/0724-find-pivot-index) |
 | [0912-random-pick-with-weight](https://github.com/kyileiaye2021/LeetCode/tree/master/0912-random-pick-with-weight) |
 | [1206-corporate-flight-bookings](https://github.com/kyileiaye2021/LeetCode/tree/master/1206-corporate-flight-bookings) |
 | [1524-number-of-sub-arrays-with-odd-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
