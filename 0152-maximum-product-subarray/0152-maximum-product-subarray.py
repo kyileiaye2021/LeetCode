@@ -1,63 +1,34 @@
 class Solution:
     def maxProduct(self, nums: List[int]) -> int:
-        # happy case
-        # nums = [1,2, -1]
-        # output = 6
-
-        # edge case
-        # nums = [1,0]
-        # output = 1
-
-        # nums = [-1,0,-2]
-        # output = 0
-
-        # brute approach O(n^2)
-        # sliding window with two pointers 
-
-        # a var to keep track of max product
-        # prev_window_product = 1
-        # iterate thru each ele in the list
-        #   check if the prev_window_product  is less than 0:
-        #       reset it to 1
-        #   product the curr ele with prev_window_product and update it
-        #   update max product
-
+        # max product => to maintain the max product of sub arr
+        # curr product => 1
+        # iterate thru the nums
+        #   multiply curr product with curr nums
+        #   update max product if curr product is > max product
+        #   check if curr product becomes neg
+        #       reset curr product to 1
         # return max product
-
-        # we need to keep track of currMin and currMax because of the negative numbers
-
-        # max_product = nums[0]
-        # currMin = 1
-        # currMax = 1
-
-        # for i in range(len(nums)):
-
-        #     tmp = currMin 
-        #     currMin = min(currMin * nums[i], currMax * nums[i], nums[i])
-        #     currMax = max(tmp * nums[i], currMax * nums[i], nums[i])
-        #     max_product = max(currMin, currMax, max_product)
-
+        # max_product = float('-inf')
+        # curr_product = 1
+        # for n in nums:
+        #     curr_product = curr_product * n
+        #     max_product = max(max_product, curr_product, n)
         # return max_product
-        # time = O(n)
-        # space = O(1)
 
-        # another approach
-        left_to_right = 1
-        right_to_left = 1
-        max_product = nums[0]
+        currMin = 1
+        currMax = 1
+        max_product = max(nums)
 
         for i in range(len(nums)):
-            if left_to_right == 0: # reset the neutral val to start a new subarray
-                left_to_right = 1
+            if nums[i] == 0:
+                currMin = 1
+                currMax = 1
+                continue
+            
+            temp = currMax
+            currMax = max(currMax * nums[i], currMin * nums[i], nums[i])
+            currMin = min(temp * nums[i], currMin * nums[i], nums[i])
 
-            left_to_right *= nums[i]
-            max_product = max(max_product, left_to_right)
-
-        for i in range(len(nums)-1, -1, -1):
-            if right_to_left == 0:
-                right_to_left = 1
-
-            right_to_left *= nums[i]
-            max_product = max(max_product, right_to_left)
+            max_product = max(max_product, currMax)
 
         return max_product
