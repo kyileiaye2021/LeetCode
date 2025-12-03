@@ -34,8 +34,8 @@ class Solution:
         s_len = len(s)
         t_len = len(t)
 
-        if s_len != t_len:
-            return False
+        # if s_len != t_len:
+        #     return False
 
         for i in range(s_len):
             if s[i] in s_map:
