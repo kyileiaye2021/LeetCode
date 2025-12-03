@@ -1,50 +1,52 @@
 class Solution:
     def isIsomorphic(self, s: str, t: str) -> bool:
-        # happy cases 
-        # input: s = "egg", t = "add"
-        # output: true
 
-        # edge cases
-        # input: s = "e", t = "a"
-        # output: true
+        # s = "egg", t = "add"
+        # true
 
-        # input: s = "foo", t = "bar"
-        # output: false
+        # s = "foo", t = "bar"
+        # false
 
-        # input: s = "bar", t = "foo"
-        # output: false
+        # s = "bar", t = "foo"
+        # false   
 
-        # brute force
+        # s = "bad", t = "felt"
+        # false
+
+        # s = "felt", t = "bad"
+        # false
+
         # hashmap
+        # s_map = {e:a, g:d}, t_map = {a:e, d:g}     
+        # check if the size of the two inputs are not the same -> return false
+        # iterate thru the s
+        #   check if the ele is in s_map
+        #       check if the value of the curr key is not the same
+        #           return False
+        #   else
+        #       check if the curr t is already in the t map
+        #           return false
+        # return true
 
-        # low level steps
-        # create a hashmap for mapping each char of s to each char of t
-        # go over string s
-        #   if the current char of s is in the map
-        #       check if the curr corresponding char of t is not the same as the value of the map
-        #       return False
-        #   if it is not in the map, we need to add the curr char mapped with the curr correspondiing char of t
-        #           
+        s_map = {}
+        t_map = {}
 
-        # time - O(n)
-        # space - O(n)
-        map1 = {}
-        map2 = {}
+        s_len = len(s)
+        t_len = len(t)
 
-        for i in range(len(s)):
-            if s[i] in map1:
-                if t[i] != map1[s[i]]:
+        if s_len != t_len:
+            return False
+
+        for i in range(s_len):
+            if s[i] in s_map:
+                if s_map[s[i]] != t[i]:
                     return False
 
             else:
-                map1[s[i]] = t[i] 
-
-        for i in range(len(s)):
-            if t[i] in map2:
-                if s[i] != map2[t[i]]:
+                if t[i] in t_map:
                     return False
-            else:
-                map2[t[i]] = s[i]
+
+                s_map[s[i]] = t[i]
+                t_map[t[i]] = s[i]
 
         return True
-
