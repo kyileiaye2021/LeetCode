@@ -3,32 +3,54 @@ class Solution:
         """
         Do not return anything, modify nums1 in-place instead.
         """
-        # two pointer approach with simultaneous operation
 
-        l, r = m - 1, n - 1
-        assigned_index = m + n - 1
+        # since we have to assign ele in nums1 in place
+        # there are 0s at the end of nums, we have to sort by large one and assign those
+        #
+        # i, j = m - 1, n - 1
+        # if n = 0, return nums1
+        # if m = 0, return nums2
+        # k - end index of nums1
 
-        while l >= 0 and r >= 0:
-            if nums1[l] > nums2[r]:
-                nums1[assigned_index] = nums1[l]
-                l -= 1
-                assigned_index -= 1
+        # while i >= 0 and j >= 0
+        #   check if i ele > jele
+        #       assign i ele to k 
+        #       decrement i
+        #   else
+        #       assign j ele to k
+        #       decrement j
+        #   decrement k
+
+        i = m - 1
+        j = n - 1
+        # if n == 0:
+        #     return nums1
+
+        # if m == 0:
+        #     nums1 = nums2
+
+        k = len(nums1) - 1
+
+        while i >= 0 and j >= 0:
+            if nums1[i] > nums2[j]:
+                nums1[k] = nums1[i]
+                i -= 1
 
             else:
-                nums1[assigned_index] = nums2[r]
-                r -= 1
-                assigned_index -= 1
+                nums1[k] = nums2[j]
+                j -= 1
 
-        while l >= 0:
-            nums1[assigned_index] = nums1[l]
-            l -= 1
-            assigned_index -= 1
+            k -= 1
 
-        while r >= 0:
-            nums1[assigned_index] = nums2[r]
-            r -= 1
-            assigned_index -= 1
+        while i >= 0:
+            nums1[k] = nums1[i]
+            i -= 1
+            k -= 1
 
-        return nums1
+        while j >= 0:
+            nums1[k] = nums2[j]
+            j -= 1
+            k -= 1
 
-
+        
+        
