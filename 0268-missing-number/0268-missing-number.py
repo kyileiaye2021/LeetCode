@@ -10,13 +10,20 @@ class Solution:
         # nums = [0]
         # output: 1
 
-        n = len(nums)
-        num_list = [i for i in range(n+1)]
-        num_set = set(num_list)
+        # n = len(nums)
+        # num_list = [i for i in range(n+1)]
+        # num_set = set(num_list)
 
-        for i in range(len(nums)):
-            if nums[i] in num_set:
-                num_set.remove(nums[i])
+        # for i in range(len(nums)):
+        #     if nums[i] in num_set:
+        #         num_set.remove(nums[i])
         
-        remaining = num_set.pop()
-        return remaining
+        # remaining = num_set.pop()
+        # return remaining
+
+        res = len(nums)
+        for i in range(len(nums)):
+            res += (i - nums[i])
+
+        return res
+
