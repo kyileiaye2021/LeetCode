@@ -52,6 +52,7 @@ All leetCode problems done will be documented here.
 | [0219-contains-duplicate-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0219-contains-duplicate-ii) |
 | [0229-majority-element-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0229-majority-element-ii) |
 | [0238-product-of-array-except-self](https://github.com/kyileiaye2021/LeetCode/tree/master/0238-product-of-array-except-self) |
+| [0268-missing-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0268-missing-number) |
 | [0274-h-index](https://github.com/kyileiaye2021/LeetCode/tree/master/0274-h-index) |
 | [0283-move-zeroes](https://github.com/kyileiaye2021/LeetCode/tree/master/0283-move-zeroes) |
 | [0303-range-sum-query-immutable](https://github.com/kyileiaye2021/LeetCode/tree/master/0303-range-sum-query-immutable) |
@@ -200,6 +201,7 @@ All leetCode problems done will be documented here.
 | [0219-contains-duplicate-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0219-contains-duplicate-ii) |
 | [0229-majority-element-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0229-majority-element-ii) |
 | [0242-valid-anagram](https://github.com/kyileiaye2021/LeetCode/tree/master/0242-valid-anagram) |
+| [0268-missing-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0268-missing-number) |
 | [0290-word-pattern](https://github.com/kyileiaye2021/LeetCode/tree/master/0290-word-pattern) |
 | [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0349-intersection-of-two-arrays](https://github.com/kyileiaye2021/LeetCode/tree/master/0349-intersection-of-two-arrays) |
@@ -233,6 +235,7 @@ All leetCode problems done will be documented here.
 | [0217-contains-duplicate](https://github.com/kyileiaye2021/LeetCode/tree/master/0217-contains-duplicate) |
 | [0229-majority-element-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0229-majority-element-ii) |
 | [0242-valid-anagram](https://github.com/kyileiaye2021/LeetCode/tree/master/0242-valid-anagram) |
+| [0268-missing-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0268-missing-number) |
 | [0274-h-index](https://github.com/kyileiaye2021/LeetCode/tree/master/0274-h-index) |
 | [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0349-intersection-of-two-arrays](https://github.com/kyileiaye2021/LeetCode/tree/master/0349-intersection-of-two-arrays) |
@@ -307,6 +310,7 @@ All leetCode problems done will be documented here.
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/kyileiaye2021/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0209-minimum-size-subarray-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/0209-minimum-size-subarray-sum) |
+| [0268-missing-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0268-missing-number) |
 | [0349-intersection-of-two-arrays](https://github.com/kyileiaye2021/LeetCode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0658-find-k-closest-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0658-find-k-closest-elements) |
@@ -321,6 +325,7 @@ All leetCode problems done will be documented here.
 | [0070-climbing-stairs](https://github.com/kyileiaye2021/LeetCode/tree/master/0070-climbing-stairs) |
 | [0189-rotate-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0189-rotate-array) |
 | [0202-happy-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0202-happy-number) |
+| [0268-missing-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0268-missing-number) |
 | [0279-perfect-squares](https://github.com/kyileiaye2021/LeetCode/tree/master/0279-perfect-squares) |
 | [0380-insert-delete-getrandom-o1](https://github.com/kyileiaye2021/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0539-minimum-time-difference](https://github.com/kyileiaye2021/LeetCode/tree/master/0539-minimum-time-difference) |
@@ -671,6 +676,7 @@ All leetCode problems done will be documented here.
 | ------- |
 | [0187-repeated-dna-sequences](https://github.com/kyileiaye2021/LeetCode/tree/master/0187-repeated-dna-sequences) |
 | [0190-reverse-bits](https://github.com/kyileiaye2021/LeetCode/tree/master/0190-reverse-bits) |
+| [0268-missing-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0268-missing-number) |
 | [0338-counting-bits](https://github.com/kyileiaye2021/LeetCode/tree/master/0338-counting-bits) |
 ## Rolling Hash
 |  |
