@@ -92,6 +92,7 @@ All leetCode problems done will be documented here.
 | [1603-running-sum-of-1d-array](https://github.com/kyileiaye2021/LeetCode/tree/master/1603-running-sum-of-1d-array) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/kyileiaye2021/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [1833-find-the-highest-altitude](https://github.com/kyileiaye2021/LeetCode/tree/master/1833-find-the-highest-altitude) |
+| [2022-convert-1d-array-into-2d-array](https://github.com/kyileiaye2021/LeetCode/tree/master/2022-convert-1d-array-into-2d-array) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/kyileiaye2021/LeetCode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 | [2067-maximum-number-of-points-with-cost](https://github.com/kyileiaye2021/LeetCode/tree/master/2067-maximum-number-of-points-with-cost) |
 | [2102-find-the-middle-index-in-array](https://github.com/kyileiaye2021/LeetCode/tree/master/2102-find-the-middle-index-in-array) |
@@ -557,6 +558,7 @@ All leetCode problems done will be documented here.
 | [0733-flood-fill](https://github.com/kyileiaye2021/LeetCode/tree/master/0733-flood-fill) |
 | [1036-rotting-oranges](https://github.com/kyileiaye2021/LeetCode/tree/master/1036-rotting-oranges) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/kyileiaye2021/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
+| [2022-convert-1d-array-into-2d-array](https://github.com/kyileiaye2021/LeetCode/tree/master/2022-convert-1d-array-into-2d-array) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/kyileiaye2021/LeetCode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 | [2067-maximum-number-of-points-with-cost](https://github.com/kyileiaye2021/LeetCode/tree/master/2067-maximum-number-of-points-with-cost) |
 ## Union Find
@@ -695,6 +697,7 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0054-spiral-matrix](https://github.com/kyileiaye2021/LeetCode/tree/master/0054-spiral-matrix) |
+| [2022-convert-1d-array-into-2d-array](https://github.com/kyileiaye2021/LeetCode/tree/master/2022-convert-1d-array-into-2d-array) |
 ## Doubly-Linked List
 |  |
 | ------- |
