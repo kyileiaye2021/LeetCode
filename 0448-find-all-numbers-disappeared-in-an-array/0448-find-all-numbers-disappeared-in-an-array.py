@@ -18,12 +18,28 @@ class Solution:
         #   remove the ele if nums is in set
         # convert the set to list and return 
 
-        n = len(nums)
-        nums_list = [i for i in range(1, n + 1)]
-        nums_set = set(nums_list)
+        # n = len(nums)
+        # nums_list = [i for i in range(1, n + 1)]
+        # nums_set = set(nums_list)
+
+        # for i in range(len(nums)):
+        #     if nums[i] in nums_set:
+        #         nums_set.remove(nums[i])
+
+        # return list(nums_set)
+
+        # visited indices and unvisited indices
+        # [n-1] where n is ele in the list
+        # mark negatives of the ele at pos of visited indices
+        res = []
+        for i in range(len(nums)):
+            visited_index = abs(nums[i]) - 1
+            nums[visited_index] = -abs(nums[visited_index])
 
         for i in range(len(nums)):
-            if nums[i] in nums_set:
-                nums_set.remove(nums[i])
+            if nums[i] > 0:
+                res.append(i + 1) # we want ele corresponding to that index
 
-        return list(nums_set)
+        return res
+
+
