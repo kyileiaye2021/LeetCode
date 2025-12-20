@@ -26,14 +26,12 @@ class Solution:
                     row_set.add(i)
                     col_set.add(j)
 
-        for i in range(len(matrix)):
+        for i in row_set:
             for j in range(len(matrix[0])):
-                if i in row_set:
-                    matrix[i][j] = 0
+                matrix[i][j] = 0
         
-        for j in range(len(matrix[0])):
+        for j in col_set:
             for i in range(len(matrix)):
-                if j in col_set:
-                    matrix[i][j] = 0
+                matrix[i][j] = 0
 
         print(matrix)
