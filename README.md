@@ -37,6 +37,7 @@ All leetCode problems done will be documented here.
 | [0130-surrounded-regions](https://github.com/kyileiaye2021/LeetCode/tree/master/0130-surrounded-regions) |
 | [0134-gas-station](https://github.com/kyileiaye2021/LeetCode/tree/master/0134-gas-station) |
 | [0135-candy](https://github.com/kyileiaye2021/LeetCode/tree/master/0135-candy) |
+| [0136-single-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0136-single-number) |
 | [0152-maximum-product-subarray](https://github.com/kyileiaye2021/LeetCode/tree/master/0152-maximum-product-subarray) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
@@ -674,6 +675,7 @@ All leetCode problems done will be documented here.
 ## Bit Manipulation
 |  |
 | ------- |
+| [0136-single-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0136-single-number) |
 | [0187-repeated-dna-sequences](https://github.com/kyileiaye2021/LeetCode/tree/master/0187-repeated-dna-sequences) |
 | [0190-reverse-bits](https://github.com/kyileiaye2021/LeetCode/tree/master/0190-reverse-bits) |
 | [0268-missing-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0268-missing-number) |
