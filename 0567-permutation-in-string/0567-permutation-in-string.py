@@ -1,49 +1,45 @@
 class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:
-
-        # happy cases
-        # s1 = "a", s2 = "eab"
-        # true
-
-        # s1 = "ab", s2 = "ebag"
-        # true
-
-        # s1 = "abc", s2 = "acbaaab"
-        # true
-
-        # edge cases
-        # s1 = "a", s2 = "a"
-        # true
-
-        # s1 = "ab", s2 = "a"
+        # s1 = "abcde", s2 = "abeuelkj"
         # false
 
-        # s1 = "aaa", s2 = "abaab"
+        # s1 = "bc", s2 = "abbccbter"
+        # true
+
+        # s1 = "a", s2 = "abb"
+        # true
+
+        # s1 = "avb", s2 = "bb"
         # false
 
-        # two pointers
+        # s1 = "hh", s2 = "ahgu"
+        # false
+
         # hashmap for s1
-        # create hashmap for substr of len s1 in s2
-        # check if s1 dict == s2 dict return true
-        # l and r - 0, len(s1)
-        # iterate thru the s2 while r < len(s2)
-        #   remove l ele from s2 dict
-        #   add r ele to s2 dict
-        #   check if s1 dict == s2 dict
-        #       return True
-        # return False
+        # iterate thru the s2
+        #   if curr ele not in s1 hashmap
+        #       reset the hashmap to empty hashmap
+        #       moving l and r
+        #   else
+        #       adding the curr ele to s2 hashmap
+        #       move the right ele
+        #       if hashmap == s1 hashmap
+        #           return true
+        # return false
 
-        s1_dict = Counter(s1)
-        s2_dict = Counter(s2[:len(s1)])
-        if s1_dict == s2_dict:
+        s1_hashmap = Counter(s1)
+        k = len(s1)
+        s2_hashmap = Counter(s2[:k])
+        if s1_hashmap == s2_hashmap:
             return True
 
-        l, r = 0, len(s1)
-        while r < len(s2):
-            s2_dict[s2[l]] -= 1
-            s2_dict[s2[r]] += 1
-            if s1_dict == s2_dict:
+        for i in range(k, len(s2)):
+            s2_hashmap[s2[i - k]] -= 1
+            if s2_hashmap[s2[i - k]] == 0:
+                del s2_hashmap[s2[i - k]] 
+
+            s2_hashmap[s2[i]] = s2_hashmap.get(s2[i], 0) + 1
+            if s1_hashmap == s2_hashmap:
                 return True
-            r += 1
-            l += 1
+
         return False
