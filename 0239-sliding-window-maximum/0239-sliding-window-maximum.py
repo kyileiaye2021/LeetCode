@@ -32,7 +32,6 @@ class Solution:
         # if l pointer ele is = to first ele of deque
         #   pop out that from deque
 
-        l = 0
         queue = deque()
         res = []
 
@@ -45,13 +44,12 @@ class Solution:
             queue.append(r)
 
             # remove left ele if they are out of window
-            if l > queue[0]:
+            if queue[0] <= r - k:
                 queue.popleft()
 
             # if window size becomes k, get the max elel of the window
             if r >= k - 1:
                 res.append(nums[queue[0]])
-                l += 1
 
 
         return res
