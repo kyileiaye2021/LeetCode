@@ -1,55 +1,62 @@
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
-
-        # hashmap for t and one for s
-        # len of t hashmap  =>. need
-        # min_window = inf
-        # l, r
-        # check = 0
-
-        # while r is within the bound
-        #   while check is equal to need
-        #       curr window = r - l + 1
-        #       update min window
-        #       decrement the freq of l ele in s hashmap
-        #       if l ele freq is 0, remove from s hashmap
-        #       decrement the check
-        #       move l by 1
-
-        #   add the r ele to s hashmap
-        #   if r ele in t hashmap and t[r ele ] is the same as the s[r ele]
-        #       increment check by 1
+        # hashmap for t and curr window in s
+        # l,r
+        # hashmap for t 
+        # min window size = largest ele
+        # min window substring = ""
+        # have and need
+        # while r < len(s)
+        #   check if the curr char in t hashmap
+        #       add the curr char in s hashmap
+        #       if curr char freq in t == that in s
+        #           increment the have
+        #   while have == need
+        #       curr window size 
+        #       curr window substr
+        #       if curr window size < min window 
+        #           update min window size and min window substring
+        #       check if l pointer ele in s hashmap
+        #           decrement that freq 
+        #           if s hashmap freq < t hashmap freq
+        #               have -= 1
+        #       l += 1
         #   r += 1
-        t_map = Counter(t)
-        print(t_map)
-        need = len(t_map)
-        min_len = float('inf')
-        min_window = ""
-        l, r = 0, 0
-        check = 0
-        s_map = {}
+        # return min window substring
+
+        l = 0
+        r = 0
+        min_window_size = float('inf')
+        min_window_substr = ""
+        have = 0
+        t_hashmap = Counter(t)
+        need = len(t_hashmap)
+        s_hashmap = {}
 
         while r < len(s):
+            if s[r] in t_hashmap:
+                s_hashmap[s[r]] = s_hashmap.get(s[r], 0) + 1
+                if t_hashmap[s[r]] == s_hashmap[s[r]]:
+                    have += 1
 
-
-            s_map[s[r]] = s_map.get(s[r], 0) + 1
-            if s[r] in t_map and s_map[s[r]] == t_map[s[r]]:
-                check += 1
-            r += 1
-            while check == need:
-                curr_window = r - l
-
-                print(curr_window)
-                if curr_window < min_len:
-                    min_window = s[l : r]
-                    min_len = min(min_len, curr_window)
+            while have == need:
+                curr_window_size = r - l + 1
+                if curr_window_size < min_window_size:
+                    min_window_size = curr_window_size
+                    min_window_substr = s[l : r + 1]
                 
-                s_map[s[l]] -= 1
-                if s[l] in t_map and s_map[s[l]] < t_map[s[l]]:
-                    check -= 1
+                # removing l char
+                if s[l] in s_hashmap:
+                    s_hashmap[s[l]] -= 1
+                    if s_hashmap[s[l]] < t_hashmap[s[l]]:
+                        have -= 1
+
                 l += 1
-                print(check)
 
-        return min_window
+            r += 1
 
-        
+        return  min_window_substr
+
+
+
+
