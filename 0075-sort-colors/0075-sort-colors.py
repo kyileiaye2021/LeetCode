@@ -3,49 +3,56 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
+        # red - 0
+        # white = 1
+        # blue - 2
 
-        # happy cases
-        # input: nums = [1,2,0,2,1]
-        # output: [0,1,1,2,2]
-
-        # input: nums = [2,1,0,2,2]
-        # output: [0, 1,,2,2,2]
-
-        # edge cases
         # input: [2,0,1]
         # output: [0,1,2]
 
-        # input: []
-        # output: []
+        # input: [2,0,1,2]
+        # output: [0,1,2,2]
 
-        # brute force (nested for loop)
-        # two pointers - i, j
-        # iterate thru the list with k
-        #   if curr ele is 0
-        #       swap with ith position 
-        #       increment i by 1
-        #       decrement k by 1
-        #   elif curr ele is 2
-        #       swap with jth position 
-        #       decrement j by 1
-        #       decrement k by 1
-        #   increment k by 1
+        # input; [1,1,1,0]
+        # output: [0,1,1,1]
 
-        i = 0
-        j = len(nums) - 1
-        k = 0
+        # input: [2]
+        # output: [2]
 
-        while k <= j:
-            if nums[k] == 0:
-                nums[i], nums[k] = nums[k], nums[i]
-                i += 1
-
-            elif nums[k] == 2:
-                nums[j], nums[k] = nums[k], nums[j]
-                j -= 1
-                k -= 1
-            
-            k += 1
-
+        # two pointers
+        # l r
+        # l - index for 0
+        # r = index for 2
+        # l = 0, r = len(nums) - 1
+        # i = curr index
+        # iterate thru the arr
+        #   check if curr ele is 2
+        #       swap with the curr ele and r pointer ele
+        #       r -= 1
+        #   check if curr ele is 0
+        #       swap with curr ele and l pointer ele
+        #       l += 1
+        #       i += 1
         
+        l = 0
+        r = len(nums) - 1
+        i = 0
+        while i <= r:
+            if nums[i] == 2:
+                nums[i], nums[r] = nums[r], nums[i]
+                r -= 1
+            elif nums[i] == 0:
+                nums[i], nums[l] = nums[l], nums[i]
+                l += 1
+                i += 1
+            else:
+                i += 1
+        
+        # [0,2,1] i = 0, l = 0, r = 2
+        # [0,2,1] i = 1, l = 1, r = 2
+        # [0,1,2] i = 1, l = 1, r = 1
+        # [0,1,2], i = 2, l = 1, r = 1
+        
+
+
         
