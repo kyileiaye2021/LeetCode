@@ -5,36 +5,35 @@
 #         self.next = next
 class Solution:
     def isPalindrome(self, head: Optional[ListNode]) -> bool:
-        # traverse the nodes in linked list and get the middle node
-        # reverse the second part of the linked list
-        # iterate over elements in each part
-        #   compare if the values of the curr nodes are not the same
-        #       return False
-        # return True
 
-        slow = head
-        fast = head
+        # 1 -> 2 -> 1 -> 2 -> 1
+        # 1 -> 2 -> 1
+        # 1 -> 2
+        
+        dummy = ListNode(0)
+        dummy.next = head
+        slow = dummy
+        fast = dummy
 
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
 
-        prev = None
-        while slow:
-            next_node = slow.next
-            slow.next = prev
-            prev = slow
-            slow = next_node
+        temp = slow.next
+        slow.next = None
 
-        while prev:
+        prev = None
+        while temp:
+            next_node = temp.next
+            temp.next = prev
+            prev = temp
+            temp = next_node
+
+        while head and prev:
             if head.val != prev.val:
                 return False
             head = head.next
             prev = prev.next
         
         return True
-
-
-        
-
         
