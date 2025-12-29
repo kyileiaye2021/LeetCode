@@ -162,6 +162,7 @@ All leetCode problems done will be documented here.
 | [0141-linked-list-cycle](https://github.com/kyileiaye2021/LeetCode/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0142-linked-list-cycle-ii) |
 | [0143-reorder-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0143-reorder-list) |
+| [0148-sort-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0148-sort-list) |
 | [0151-reverse-words-in-a-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0151-reverse-words-in-a-string) |
 | [0160-intersection-of-two-linked-lists](https://github.com/kyileiaye2021/LeetCode/tree/master/0160-intersection-of-two-linked-lists) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/kyileiaye2021/LeetCode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
@@ -248,6 +249,7 @@ All leetCode problems done will be documented here.
 | [0056-merge-intervals](https://github.com/kyileiaye2021/LeetCode/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/kyileiaye2021/LeetCode/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0088-merge-sorted-array) |
+| [0148-sort-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0148-sort-list) |
 | [0169-majority-element](https://github.com/kyileiaye2021/LeetCode/tree/master/0169-majority-element) |
 | [0179-largest-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0179-largest-number) |
 | [0215-kth-largest-element-in-an-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
@@ -396,6 +398,7 @@ All leetCode problems done will be documented here.
 | [0142-linked-list-cycle-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0142-linked-list-cycle-ii) |
 | [0143-reorder-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0143-reorder-list) |
 | [0146-lru-cache](https://github.com/kyileiaye2021/LeetCode/tree/master/0146-lru-cache) |
+| [0148-sort-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0148-sort-list) |
 | [0160-intersection-of-two-linked-lists](https://github.com/kyileiaye2021/LeetCode/tree/master/0160-intersection-of-two-linked-lists) |
 | [0203-remove-linked-list-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0203-remove-linked-list-elements) |
 | [0206-reverse-linked-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0206-reverse-linked-list) |
@@ -540,6 +543,7 @@ All leetCode problems done will be documented here.
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/kyileiaye2021/LeetCode/tree/master/0023-merge-k-sorted-lists) |
 | [0053-maximum-subarray](https://github.com/kyileiaye2021/LeetCode/tree/master/0053-maximum-subarray) |
+| [0148-sort-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0148-sort-list) |
 | [0169-majority-element](https://github.com/kyileiaye2021/LeetCode/tree/master/0169-majority-element) |
 | [0190-reverse-bits](https://github.com/kyileiaye2021/LeetCode/tree/master/0190-reverse-bits) |
 | [0215-kth-largest-element-in-an-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
@@ -738,6 +742,7 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/kyileiaye2021/LeetCode/tree/master/0023-merge-k-sorted-lists) |
+| [0148-sort-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0148-sort-list) |
 ## Simulation
 |  |
 | ------- |
