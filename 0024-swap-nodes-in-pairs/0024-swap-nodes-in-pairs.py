@@ -53,52 +53,78 @@ class Solution:
         # add l1 nodes if l1
 
         # add l2 nodes if l2
-        if not head:
-            return head
-        dummy = ListNode(-1)
-        dummy.next = head
 
-        sec_lst = ListNode(0)
-        temp = sec_lst
+        # create two separate lists
+        # if not head:
+        #     return head
+        # dummy = ListNode(-1)
+        # dummy.next = head
 
-        slow = fast = dummy
-        while fast and fast.next:
-            if fast.val != -1:
-                temp.next = fast
-                temp = temp.next
-                slow.next = fast.next
-            slow = slow.next
-            fast = fast.next.next
+        # sec_lst = ListNode(0)
+        # temp = sec_lst
 
-        if fast:
-            slow.next = fast.next
-        else:
-            slow.next = None
+        # slow = fast = dummy
+        # while fast and fast.next:
+        #     if fast.val != -1:
+        #         temp.next = fast
+        #         temp = temp.next
+        #         slow.next = fast.next
+        #     slow = slow.next
+        #     fast = fast.next.next
 
-        temp.next = fast
+        # if fast:
+        #     slow.next = fast.next
+        # else:
+        #     slow.next = None
 
-        res = ListNode(0)
-        curr = res
-        l1 = head
-        l2 = sec_lst.next
+        # temp.next = fast
 
-        while l1 and l2:
-            curr.next = l2
-            l2 = l2.next
-            curr = curr.next
+        # # combine two lists alternatively
+        # res = ListNode(0)
+        # curr = res
+        # l1 = head
+        # l2 = sec_lst.next
 
-            curr.next = l1
-            l1 = l1.next
-            curr = curr.next
+        # while l1 and l2:
+        #     curr.next = l2
+        #     l2 = l2.next
+        #     curr = curr.next
+
+        #     curr.next = l1
+        #     l1 = l1.next
+        #     curr = curr.next
         
-        if l1:
-            curr.next = l1
+        # if l1:
+        #     curr.next = l1
 
-        if l2:
-            curr.next = l2
+        # if l2:
+        #     curr.next = l2
 
-        return res.next
+        # return res.next
             
+        # dummy node connected to head
+        # prev = dummy
+        # while prev.next and prev.next.next
+        #   swap the two nodes
+        #   go to the next two nodes
         
+        dummy = ListNode(0)
+        dummy.next = head
+        prev = dummy
+
+        while prev.next and prev.next.next:
+            first = prev.next
+            second = first.next
+
+            first.next = second.next
+            second.next = first
+            prev.next = second
+
+            prev = first
+
+        return dummy.next
+
+        
+
 
         
