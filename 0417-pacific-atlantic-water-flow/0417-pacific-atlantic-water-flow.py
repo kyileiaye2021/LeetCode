@@ -1,73 +1,77 @@
 class Solution:
-    def dfs(self, r, c, visited, heights, dir):
-            
+    def dfs(self, heights, r, c, visited, directions):
         visited.add((r, c))
+        
+        for i, j in directions:
+            new_r = r + i
+            new_c = c + j
 
-        for dx, dy in dir:
-            new_r = r + dx
-            new_c = c + dy
+            if new_r in range(len(heights)) and new_c in range(len(heights[0])) and (new_r, new_c) not in visited and heights[new_r][new_c] >= heights[r][c]:
+                self.dfs(heights, new_r, new_c, visited, directions)
 
-            if new_r in range(len(heights)) and new_c in range(len(heights[0])) and (new_r,new_c) not in visited and heights[new_r][new_c] >= heights[r][c]:
-                self.dfs(new_r, new_c,visited, heights, dir)
-            
-
+        
     def pacificAtlantic(self, heights: List[List[int]]) -> List[List[int]]:
-        # start from edges 
-        # mark the cell as visited
-        # go to the neighbors
-        #   if the neighbor is within the bound and the neighbor is greater than or == curr cell
-        #       add the neighbor cell to the corresponding ocean
+        # dfs
+        # visit the curr cell
+        # iterate thru its neighbor
+        #   check if the curr neighbor is less than or equal to the curr cell and not visited
+        #       call dfs on it
 
-        # Pacific
-        # visited_pacific
-        # iterate thru the ele in the 1st row
-        #   if the curr cell not visited
-        #       call dfs on curr cell
-        # iterate thru the rows in 1st col
-        #   if the curr cell not visited
-        #       call dfs on curr cell
 
-        # atlantic 
-        # visited_atlantic
-        # itereate thru the ele in the last row
-        #   if curr cell not visited
-        #       call dfs on curr cell
-        # iterate thru the ele in the last col
-        #   if curr cell not visited
-        #       call dfs on curr cell 
+        # pacific cells
+        # for pacific ocena
+        # iterate thru the first row
+        #   for each cell, if the cell is not visited, we will call dfs on it
+        # iterate thru the first col
+        #   for each cell, if the cell is not visited, we will call dfs on it
 
-        # res list
-        # iterate thru the pacific set 
-        #   check if the curr cell is also in atlantic 
-        #       add it to res
+        # atlantic cells
+        # for atlantic ocean
+        # iterate thru the last row
+        #   for each cell, if the cell is not visited, we will call dfs on it
+        # iterate thru the last col
+        #   for each cell, if the cell is not visited, we will call dfs on it
 
-        # return res
+        # iterate thru one of the visited cells
+        #     if the cell is already in the other set
+        #           add it to the res list
+
+        # return res list
 
         rows = len(heights)
         cols = len(heights[0])
-        dir = [[0,1], [0,-1], [1,0], [-1,0]]
-
-        # pacific ocean
-        visited_p = set()
-        visited_a = set()
-        for c in range(cols):
-            if (0,c) not in visited_p:
-                self.dfs(0, c, visited_p, heights, dir) # pacific
-
-            if (rows - 1, c) not in visited_a:
-                self.dfs(rows - 1, c, visited_a, heights, dir) # atlantic
-
-
-        for r in range(rows):
-            if (r, 0) not in visited_p:
-                self.dfs(r, 0, visited_p, heights, dir) # pacific
-
-            if (r, cols - 1) not in visited_a:
-                self.dfs(r, cols - 1, visited_a, heights, dir) # atlantic
-
+        pacific = set()
+        atlantic = set()
         res = []
-        for (r, c) in visited_p:
-            if (r, c) in visited_a:
-                res.append([r,c])
+
+        directions = [[0,1], [1, 0], [0, -1], [-1, 0]]
+
+        # for pacific 
+        # first row
+        for c in range(cols):
+            if (0, c) not in pacific:
+                self.dfs(heights, 0, c, pacific, directions)
+
+        # first col
+        for r in range(rows):
+            if (r, 0) not in pacific:
+                self.dfs(heights, r, 0, pacific, directions)
+
+        # for atlantic
+        # last row
+        for c in range(cols):
+            if (rows - 1, c) not in atlantic:
+                self.dfs(heights, rows - 1, c, atlantic, directions)
+
+        # last col
+        for r in range(rows):
+            if (r, cols - 1) not in atlantic:
+                self.dfs(heights, r, cols - 1, atlantic, directions)
+        
+        for (r, c) in pacific:
+            if (r, c) in atlantic:
+                res.append([r, c])
 
         return res
+
+
