@@ -469,6 +469,7 @@ All leetCode problems done will be documented here.
 | [0230-kth-smallest-element-in-a-bst](https://github.com/kyileiaye2021/LeetCode/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0310-minimum-height-trees](https://github.com/kyileiaye2021/LeetCode/tree/master/0310-minimum-height-trees) |
 | [0399-evaluate-division](https://github.com/kyileiaye2021/LeetCode/tree/master/0399-evaluate-division) |
 | [0417-pacific-atlantic-water-flow](https://github.com/kyileiaye2021/LeetCode/tree/master/0417-pacific-atlantic-water-flow) |
 | [0547-number-of-provinces](https://github.com/kyileiaye2021/LeetCode/tree/master/0547-number-of-provinces) |
@@ -506,6 +507,7 @@ All leetCode problems done will be documented here.
 | [0226-invert-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0226-invert-binary-tree) |
 | [0279-perfect-squares](https://github.com/kyileiaye2021/LeetCode/tree/master/0279-perfect-squares) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0310-minimum-height-trees](https://github.com/kyileiaye2021/LeetCode/tree/master/0310-minimum-height-trees) |
 | [0322-coin-change](https://github.com/kyileiaye2021/LeetCode/tree/master/0322-coin-change) |
 | [0399-evaluate-division](https://github.com/kyileiaye2021/LeetCode/tree/master/0399-evaluate-division) |
 | [0417-pacific-atlantic-water-flow](https://github.com/kyileiaye2021/LeetCode/tree/master/0417-pacific-atlantic-water-flow) |
@@ -688,6 +690,7 @@ All leetCode problems done will be documented here.
 | [0133-clone-graph](https://github.com/kyileiaye2021/LeetCode/tree/master/0133-clone-graph) |
 | [0207-course-schedule](https://github.com/kyileiaye2021/LeetCode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0210-course-schedule-ii) |
+| [0310-minimum-height-trees](https://github.com/kyileiaye2021/LeetCode/tree/master/0310-minimum-height-trees) |
 | [0399-evaluate-division](https://github.com/kyileiaye2021/LeetCode/tree/master/0399-evaluate-division) |
 | [0547-number-of-provinces](https://github.com/kyileiaye2021/LeetCode/tree/master/0547-number-of-provinces) |
 | [0684-redundant-connection](https://github.com/kyileiaye2021/LeetCode/tree/master/0684-redundant-connection) |
@@ -714,6 +717,7 @@ All leetCode problems done will be documented here.
 | ------- |
 | [0207-course-schedule](https://github.com/kyileiaye2021/LeetCode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0210-course-schedule-ii) |
+| [0310-minimum-height-trees](https://github.com/kyileiaye2021/LeetCode/tree/master/0310-minimum-height-trees) |
 | [0820-find-eventual-safe-states](https://github.com/kyileiaye2021/LeetCode/tree/master/0820-find-eventual-safe-states) |
 | [1558-course-schedule-iv](https://github.com/kyileiaye2021/LeetCode/tree/master/1558-course-schedule-iv) |
 ## Shortest Path
