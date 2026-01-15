@@ -6,26 +6,47 @@
 #         self.right = right
 class Solution:
     def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
-        if not root:
-            return []
+        #BFS
+        # if not root:
+        #     return []
             
-        queue = deque()
-        queue.append(root)
+        # queue = deque()
+        # queue.append(root)
+        # res = []
+
+        # while queue:
+        #     curr_len = len(queue)
+        #     last_node = queue[-1]
+        #     res.append(last_node.val)
+
+        #     for _ in range(curr_len):
+        #         curr_node = queue.popleft()
+                
+        #         if curr_node.left:
+        #             queue.append(curr_node.left)
+        #         if curr_node.right:
+        #             queue.append(curr_node.right)
+                
+        # return res
+
+        #DFS
+        # base case: if node is null
+        # return 
+        # if the first node at that level save the node val. in the res list
+        # go to right subtree first then left
         res = []
+        def dfs(node, depth):
 
-        while queue:
-            curr_len = len(queue)
-            last_node = queue[-1]
-            res.append(last_node.val)
+            if not node:
+                return
 
-            for _ in range(curr_len):
-                curr_node = queue.popleft()
-                
-                if curr_node.left:
-                    queue.append(curr_node.left)
-                if curr_node.right:
-                    queue.append(curr_node.right)
-                
+            if depth == len(res):
+                res.append(node.val)
+
+            dfs(node.right, depth + 1)
+            dfs(node.left, depth + 1)
+
+        dfs(root, 0) 
         return res
             
         
