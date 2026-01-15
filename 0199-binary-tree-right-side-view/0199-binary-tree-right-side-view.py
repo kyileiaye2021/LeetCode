@@ -6,49 +6,26 @@
 #         self.right = right
 class Solution:
     def rightSideView(self, root: Optional[TreeNode]) -> List[int]:
-        # bfs
-        # queue
-        # add the root node to the queue
-        # res list
-
-        # until queue is empty
-
-        # get the num of nodes in each layer
-        # popped  = False
-        # iterate thru that num
-            #   pop the ele from the right
-            #   if not popped: add it to the res and change it to true
-            #   check if there is left subtree
-            #       add it to the queue
-            #   check if there is right subtree
-            #       add it to the queue
-        # return the res
-
+        if not root:
+            return []
+            
         queue = deque()
+        queue.append(root)
         res = []
 
-        if not root:
-            return res
-
-        queue.append(root)
-
         while queue:
+            curr_len = len(queue)
+            last_node = queue[-1]
+            res.append(last_node.val)
 
-            right_most = queue[-1]
-            res.append(right_most.val)
-
-            length = len(queue)
-            for i in range(length):
-                cur_node = queue.popleft()
-                    
-                if cur_node.left:
-                    queue.append(cur_node.left)
-
-                if cur_node.right:
-                    queue.append(cur_node.right)
-
+            for _ in range(curr_len):
+                curr_node = queue.popleft()
+                
+                if curr_node.left:
+                    queue.append(curr_node.left)
+                if curr_node.right:
+                    queue.append(curr_node.right)
+                
         return res
-
-                
-
-                
+            
+        
