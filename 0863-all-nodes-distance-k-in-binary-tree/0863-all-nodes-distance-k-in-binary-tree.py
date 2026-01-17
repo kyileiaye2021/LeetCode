@@ -34,11 +34,11 @@ class Solution:
                 curr = queue.popleft()
                 
                 if curr.left:
-                    parent[curr.left.val] = curr
+                    parent[curr.left] = curr
                     queue.append(curr.left)
 
                 if curr.right:
-                    parent[curr.right.val] = curr
+                    parent[curr.right] = curr
                     queue.append(curr.right)
                 
         
@@ -57,8 +57,8 @@ class Solution:
                 if curr.right and curr.right.val not in visited:
                     queue.append(curr.right)
                 
-                if curr.val in parent and parent[curr.val].val not in visited:
-                    queue.append(parent[curr.val])
+                if curr in parent and parent[curr].val not in visited:
+                    queue.append(parent[curr])
 
             k -= 1
 
