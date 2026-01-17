@@ -49,15 +49,15 @@ class Solution:
         while k > 0 and queue:
             for _ in range(len(queue)):
                 curr = queue.popleft()
-                visited.add(curr.val)
+                visited.add(curr)
 
-                if curr.left and curr.left.val not in visited:
+                if curr.left and curr.left not in visited:
                     queue.append(curr.left)
                 
-                if curr.right and curr.right.val not in visited:
+                if curr.right and curr.right not in visited:
                     queue.append(curr.right)
                 
-                if curr in parent and parent[curr].val not in visited:
+                if curr in parent and parent[curr] not in visited:
                     queue.append(parent[curr])
 
             k -= 1
