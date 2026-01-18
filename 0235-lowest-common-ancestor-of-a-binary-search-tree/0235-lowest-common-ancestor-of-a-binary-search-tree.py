@@ -7,27 +7,30 @@
 
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
-        # edge cases
-        # input: 6, p = 6, q = 6
-        # output - 6
-
-        # inputs: 6, p = 6, q = 7
-        #           \
-        #            7
-        # output: 6
-
-        # base case
-        # if p or q is root node, return root node
-        # if p and q are less than the root node
+        
+        # dfs
+        # if not root
+        # return none
+        # if curr root between p and q inclusively
+        #   return the node
+        # if the curr root is less than both p and q,
+        #   go to right subtree
+        # if curr root > p andq
         #   go to left subtree
-        # if p and q are greater than the root node
-        #   go to the right subtree
-        if p.val == root.val or q.val == root.val or (p.val > root.val and q.val < root.val) or (p.val < root.val and q.val > root.val) :
-            return root
 
-        if p.val < root.val and q.val < root.val:
-            return self.lowestCommonAncestor(root.left, p, q)
+        def dfs(root):
+            if not root:
+                return None
 
-        elif p.val > root.val and q.val > root.val:
-            return self.lowestCommonAncestor(root.right, p, q)
+            if p.val <= root.val <= q.val or q.val <= root.val <= p.val:
+                return root
 
+            elif root.val < p.val and root.val < q.val:
+                return dfs(root.right)
+
+            else:
+                return dfs(root.left)
+
+        return dfs(root)
+
+        
