@@ -1,26 +1,32 @@
 class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
-        res = []
-    
-        intervals.sort() # sort the list of tuples by first elements in tuples
-        print(f"sorted: {intervals}")
-        res.append(intervals[0])
-        
-        for i in range(1, len(intervals)):
-            
-            top_tuple = res[-1]
-            if intervals[i][0] >= top_tuple[0] and intervals[i][0] <= top_tuple[1]: # if overlapped
-                
-                # for second ele in the tuple
-                if intervals[i][1] >= top_tuple[1]:
-                    res.pop()
-                    res.append((top_tuple[0], intervals[i][1]))
-                    
-                # else:
-                #     res.add((top_tuple[0], top_tuple[1]))
-                    
-            else: # if not overlapped
-                res.append(intervals[i])
-        
-        res = list(res)
+
+        # list to store the curr time intervals
+        # add the first interval into the curr time
+        # iterate the intervals from second ele
+        #   start <= last start
+        #   start <= last end
+        #   update the last interval with the min of start and min of end
+        # add the curr interval to curr time
+        # update the start and last
+        intervals.sort()
+        res = [intervals[0]]
+        s = intervals[0][0]
+        e = intervals[0][1]
+        for start, end in intervals:
+            # merge
+            if start <= s or start <= e:
+                s = min(start, s)
+                e = max(end, e)
+
+                res[-1] = [s, e]
+
+            else:
+                res.append([start, end])
+                s = start
+                e = end
+
         return res
+
+
+        
