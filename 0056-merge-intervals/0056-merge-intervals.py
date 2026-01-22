@@ -15,7 +15,7 @@ class Solution:
         e = intervals[0][1]
         for start, end in intervals:
             # merge
-            if start <= s or start <= e:
+            if start <= e:
                 s = min(start, s)
                 e = max(end, e)
 
