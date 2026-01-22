@@ -8,18 +8,21 @@ class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
         # dfs
         # base case
-        # if the root is none: return 0
+        #   if root. is none
+        #       return 0
 
-        # take the max len of (left subtree, right subtree)
+        # recursive case
+        #   left = 1 + go to left sub tree
+        #   right =  1 + go to right sub tree
+        # return max (left, right)
 
-        # return 1 + max len
+        def dfs(root):
+            if not root:
+                return 0
 
-        if not root:
-            return 0
+            left = 1 + dfs(root.left)
+            right = 1 + dfs(root.right)
 
-        return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
+            return max(left, right)
 
-
-
-
-
+        return dfs(root)
