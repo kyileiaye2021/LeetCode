@@ -91,6 +91,7 @@ All leetCode problems done will be documented here.
 | [0907-koko-eating-bananas](https://github.com/kyileiaye2021/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [0912-random-pick-with-weight](https://github.com/kyileiaye2021/LeetCode/tree/master/0912-random-pick-with-weight) |
 | [0917-boats-to-save-people](https://github.com/kyileiaye2021/LeetCode/tree/master/0917-boats-to-save-people) |
+| [0973-k-closest-points-to-origin](https://github.com/kyileiaye2021/LeetCode/tree/master/0973-k-closest-points-to-origin) |
 | [0977-squares-of-a-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0977-squares-of-a-sorted-array) |
 | [1019-squares-of-a-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
 | [1036-rotting-oranges](https://github.com/kyileiaye2021/LeetCode/tree/master/1036-rotting-oranges) |
@@ -273,6 +274,7 @@ All leetCode problems done will be documented here.
 | [0658-find-k-closest-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0721-accounts-merge](https://github.com/kyileiaye2021/LeetCode/tree/master/0721-accounts-merge) |
 | [0917-boats-to-save-people](https://github.com/kyileiaye2021/LeetCode/tree/master/0917-boats-to-save-people) |
+| [0973-k-closest-points-to-origin](https://github.com/kyileiaye2021/LeetCode/tree/master/0973-k-closest-points-to-origin) |
 | [0977-squares-of-a-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0977-squares-of-a-sorted-array) |
 | [1019-squares-of-a-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
 | [1481-least-number-of-unique-integers-after-k-removals](https://github.com/kyileiaye2021/LeetCode/tree/master/1481-least-number-of-unique-integers-after-k-removals) |
@@ -366,6 +368,7 @@ All leetCode problems done will be documented here.
 | [0380-insert-delete-getrandom-o1](https://github.com/kyileiaye2021/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0539-minimum-time-difference](https://github.com/kyileiaye2021/LeetCode/tree/master/0539-minimum-time-difference) |
 | [0912-random-pick-with-weight](https://github.com/kyileiaye2021/LeetCode/tree/master/0912-random-pick-with-weight) |
+| [0973-k-closest-points-to-origin](https://github.com/kyileiaye2021/LeetCode/tree/master/0973-k-closest-points-to-origin) |
 | [1236-n-th-tribonacci-number](https://github.com/kyileiaye2021/LeetCode/tree/master/1236-n-th-tribonacci-number) |
 | [1524-number-of-sub-arrays-with-odd-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
 ## Queue
@@ -585,6 +588,7 @@ All leetCode problems done will be documented here.
 | [0190-reverse-bits](https://github.com/kyileiaye2021/LeetCode/tree/master/0190-reverse-bits) |
 | [0215-kth-largest-element-in-an-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0973-k-closest-points-to-origin](https://github.com/kyileiaye2021/LeetCode/tree/master/0973-k-closest-points-to-origin) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -594,6 +598,7 @@ All leetCode problems done will be documented here.
 | [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0621-task-scheduler](https://github.com/kyileiaye2021/LeetCode/tree/master/0621-task-scheduler) |
 | [0658-find-k-closest-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0658-find-k-closest-elements) |
+| [0973-k-closest-points-to-origin](https://github.com/kyileiaye2021/LeetCode/tree/master/0973-k-closest-points-to-origin) |
 ## Bucket Sort
 |  |
 | ------- |
@@ -603,6 +608,7 @@ All leetCode problems done will be documented here.
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0215-kth-largest-element-in-an-array) |
 | [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
+| [0973-k-closest-points-to-origin](https://github.com/kyileiaye2021/LeetCode/tree/master/0973-k-closest-points-to-origin) |
 ## Prefix Sum
 |  |
 | ------- |
@@ -803,4 +809,8 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0239-sliding-window-maximum](https://github.com/kyileiaye2021/LeetCode/tree/master/0239-sliding-window-maximum) |
+## Geometry
+|  |
+| ------- |
+| [0973-k-closest-points-to-origin](https://github.com/kyileiaye2021/LeetCode/tree/master/0973-k-closest-points-to-origin) |
 <!---LeetCode Topics End-->
