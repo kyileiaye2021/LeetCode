@@ -11,8 +11,9 @@ class Solution:
         min_heap = []
         for p, q in points:
             dist = sqrt(p**2 + q**2)
+            min_heap.append((dist, [p, q]))
 
-            heapq.heappush(min_heap, (dist, [p, q]))
+        heapq.heapify(min_heap)
 
         res = []
         for _ in range(k):
