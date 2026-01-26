@@ -114,6 +114,7 @@ All leetCode problems done will be documented here.
 | [2102-find-the-middle-index-in-array](https://github.com/kyileiaye2021/LeetCode/tree/master/2102-find-the-middle-index-in-array) |
 | [2352-design-an-atm-machine](https://github.com/kyileiaye2021/LeetCode/tree/master/2352-design-an-atm-machine) |
 | [2358-number-of-ways-to-split-array](https://github.com/kyileiaye2021/LeetCode/tree/master/2358-number-of-ways-to-split-array) |
+| [2542-maximum-subsequence-score](https://github.com/kyileiaye2021/LeetCode/tree/master/2542-maximum-subsequence-score) |
 | [3639-zero-array-transformation-i](https://github.com/kyileiaye2021/LeetCode/tree/master/3639-zero-array-transformation-i) |
 ## Dynamic Programming
 |  |
@@ -280,6 +281,7 @@ All leetCode problems done will be documented here.
 | [1019-squares-of-a-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
 | [1481-least-number-of-unique-integers-after-k-removals](https://github.com/kyileiaye2021/LeetCode/tree/master/1481-least-number-of-unique-integers-after-k-removals) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/kyileiaye2021/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
+| [2542-maximum-subsequence-score](https://github.com/kyileiaye2021/LeetCode/tree/master/2542-maximum-subsequence-score) |
 ## String
 |  |
 | ------- |
@@ -601,6 +603,7 @@ All leetCode problems done will be documented here.
 | [0658-find-k-closest-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0973-k-closest-points-to-origin](https://github.com/kyileiaye2021/LeetCode/tree/master/0973-k-closest-points-to-origin) |
 | [1642-furthest-building-you-can-reach](https://github.com/kyileiaye2021/LeetCode/tree/master/1642-furthest-building-you-can-reach) |
+| [2542-maximum-subsequence-score](https://github.com/kyileiaye2021/LeetCode/tree/master/2542-maximum-subsequence-score) |
 ## Bucket Sort
 |  |
 | ------- |
@@ -678,6 +681,7 @@ All leetCode problems done will be documented here.
 | [1481-least-number-of-unique-integers-after-k-removals](https://github.com/kyileiaye2021/LeetCode/tree/master/1481-least-number-of-unique-integers-after-k-removals) |
 | [1642-furthest-building-you-can-reach](https://github.com/kyileiaye2021/LeetCode/tree/master/1642-furthest-building-you-can-reach) |
 | [2352-design-an-atm-machine](https://github.com/kyileiaye2021/LeetCode/tree/master/2352-design-an-atm-machine) |
+| [2542-maximum-subsequence-score](https://github.com/kyileiaye2021/LeetCode/tree/master/2542-maximum-subsequence-score) |
 ## Design
 |  |
 | ------- |
