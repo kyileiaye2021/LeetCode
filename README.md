@@ -22,6 +22,7 @@ All leetCode problems done will be documented here.
 | [0045-jump-game-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0045-jump-game-ii) |
 | [0048-rotate-image](https://github.com/kyileiaye2021/LeetCode/tree/master/0048-rotate-image) |
 | [0049-group-anagrams](https://github.com/kyileiaye2021/LeetCode/tree/master/0049-group-anagrams) |
+| [0051-n-queens](https://github.com/kyileiaye2021/LeetCode/tree/master/0051-n-queens) |
 | [0053-maximum-subarray](https://github.com/kyileiaye2021/LeetCode/tree/master/0053-maximum-subarray) |
 | [0054-spiral-matrix](https://github.com/kyileiaye2021/LeetCode/tree/master/0054-spiral-matrix) |
 | [0055-jump-game](https://github.com/kyileiaye2021/LeetCode/tree/master/0055-jump-game) |
@@ -747,6 +748,7 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0039-combination-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/0039-combination-sum) |
+| [0051-n-queens](https://github.com/kyileiaye2021/LeetCode/tree/master/0051-n-queens) |
 | [0113-path-sum-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0113-path-sum-ii) |
 ## Binary Search Tree
 |  |
