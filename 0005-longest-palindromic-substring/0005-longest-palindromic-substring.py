@@ -40,7 +40,7 @@ class Solution:
                 l -= 1
                 r += 1
 
-        # for i in range(len(s) - 1):
+        for i in range(len(s) - 1):
             l = i
             r = i + 1
             while l >= 0 and r < len(s) and s[l] == s[r]:
