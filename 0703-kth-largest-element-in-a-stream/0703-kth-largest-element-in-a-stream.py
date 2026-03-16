@@ -7,7 +7,6 @@ class KthLargest:
 
         heapq.heapify(nums)
         self.k = k
-        self.max_heap = []
         self.min_heap = []
         for n in nums:
             heapq.heappush(self.min_heap, n) 
@@ -15,31 +14,13 @@ class KthLargest:
 
         # min heap (size k)
         while len(self.min_heap) > self.k:
-            heapq.heappush(self.max_heap, -heapq.heappop(self.min_heap))
+            heapq.heappop(self.min_heap)
 
-    def add(self, val: int) -> int:
-        # if val is greater than the min_heap[0]
-        #   add the val to min heap
-        #   until the size of min heap == k
-        #       pop out the ele to max heap
-        # return min_heap[0]
-
-        # if val > self.min_heap[0]:
-        #     heapq.heappush(self.min_heap, val)
-        #     while len(self.min_heap) > self.k:
-        #         heapq.heappush(self.max_heap, -heapq.heappop(self.min_heap))
-        
-        # else:
-        #     heapq.heappush(self.max_heap, -val)
-
-        # while len(self.min_heap) < k: # if the ele in min_heap 
-        #     heapq.heappush(self.min_heap, -heapq.heappop(self.max_heap))
-
-        # return self.min_heap[0] 
+    def add(self, val: int) -> int: 
 
         heapq.heappush(self.min_heap, val)
         while len(self.min_heap) > self.k:
-            heapq.heappush(self.max_heap, -heapq.heappop(self.min_heap))
+            heapq.heappop(self.min_heap)
         
         return self.min_heap[0]
 
