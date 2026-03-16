@@ -122,6 +122,7 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/kyileiaye2021/LeetCode/tree/master/0005-longest-palindromic-substring) |
+| [0022-generate-parentheses](https://github.com/kyileiaye2021/LeetCode/tree/master/0022-generate-parentheses) |
 | [0042-trapping-rain-water](https://github.com/kyileiaye2021/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0045-jump-game-ii) |
 | [0053-maximum-subarray](https://github.com/kyileiaye2021/LeetCode/tree/master/0053-maximum-subarray) |
@@ -297,6 +298,7 @@ All leetCode problems done will be documented here.
 | [0013-roman-to-integer](https://github.com/kyileiaye2021/LeetCode/tree/master/0013-roman-to-integer) |
 | [0014-longest-common-prefix](https://github.com/kyileiaye2021/LeetCode/tree/master/0014-longest-common-prefix) |
 | [0020-valid-parentheses](https://github.com/kyileiaye2021/LeetCode/tree/master/0020-valid-parentheses) |
+| [0022-generate-parentheses](https://github.com/kyileiaye2021/LeetCode/tree/master/0022-generate-parentheses) |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0030-substring-with-concatenation-of-all-words](https://github.com/kyileiaye2021/LeetCode/tree/master/0030-substring-with-concatenation-of-all-words) |
 | [0049-group-anagrams](https://github.com/kyileiaye2021/LeetCode/tree/master/0049-group-anagrams) |
@@ -761,6 +763,7 @@ All leetCode problems done will be documented here.
 ## Backtracking
 |  |
 | ------- |
+| [0022-generate-parentheses](https://github.com/kyileiaye2021/LeetCode/tree/master/0022-generate-parentheses) |
 | [0039-combination-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/0039-combination-sum) |
 | [0051-n-queens](https://github.com/kyileiaye2021/LeetCode/tree/master/0051-n-queens) |
 | [0113-path-sum-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0113-path-sum-ii) |
