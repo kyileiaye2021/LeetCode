@@ -339,6 +339,7 @@ All leetCode problems done will be documented here.
 | [1143-longest-common-subsequence](https://github.com/kyileiaye2021/LeetCode/tree/master/1143-longest-common-subsequence) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/kyileiaye2021/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 | [1894-merge-strings-alternately](https://github.com/kyileiaye2021/LeetCode/tree/master/1894-merge-strings-alternately) |
+| [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/kyileiaye2021/LeetCode/tree/master/2116-check-if-a-parentheses-string-can-be-valid) |
 ## Counting
 |  |
 | ------- |
@@ -403,6 +404,7 @@ All leetCode problems done will be documented here.
 | [0402-remove-k-digits](https://github.com/kyileiaye2021/LeetCode/tree/master/0402-remove-k-digits) |
 | [0844-backspace-string-compare](https://github.com/kyileiaye2021/LeetCode/tree/master/0844-backspace-string-compare) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/kyileiaye2021/LeetCode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
+| [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/kyileiaye2021/LeetCode/tree/master/2116-check-if-a-parentheses-string-can-be-valid) |
 | [2236-maximum-twin-sum-of-a-linked-list](https://github.com/kyileiaye2021/LeetCode/tree/master/2236-maximum-twin-sum-of-a-linked-list) |
 ## String Matching
 |  |
@@ -700,6 +702,7 @@ All leetCode problems done will be documented here.
 | [0917-boats-to-save-people](https://github.com/kyileiaye2021/LeetCode/tree/master/0917-boats-to-save-people) |
 | [1481-least-number-of-unique-integers-after-k-removals](https://github.com/kyileiaye2021/LeetCode/tree/master/1481-least-number-of-unique-integers-after-k-removals) |
 | [1642-furthest-building-you-can-reach](https://github.com/kyileiaye2021/LeetCode/tree/master/1642-furthest-building-you-can-reach) |
+| [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/kyileiaye2021/LeetCode/tree/master/2116-check-if-a-parentheses-string-can-be-valid) |
 | [2352-design-an-atm-machine](https://github.com/kyileiaye2021/LeetCode/tree/master/2352-design-an-atm-machine) |
 | [2542-maximum-subsequence-score](https://github.com/kyileiaye2021/LeetCode/tree/master/2542-maximum-subsequence-score) |
 ## Design
