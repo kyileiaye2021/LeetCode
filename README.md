@@ -772,6 +772,7 @@ All leetCode problems done will be documented here.
 | [0022-generate-parentheses](https://github.com/kyileiaye2021/LeetCode/tree/master/0022-generate-parentheses) |
 | [0039-combination-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/0039-combination-sum) |
 | [0051-n-queens](https://github.com/kyileiaye2021/LeetCode/tree/master/0051-n-queens) |
+| [0077-combinations](https://github.com/kyileiaye2021/LeetCode/tree/master/0077-combinations) |
 | [0113-path-sum-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0113-path-sum-ii) |
 ## Binary Search Tree
 |  |
