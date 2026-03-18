@@ -17,6 +17,7 @@ All leetCode problems done will be documented here.
 | [0033-search-in-rotated-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0033-search-in-rotated-sorted-array) |
 | [0036-valid-sudoku](https://github.com/kyileiaye2021/LeetCode/tree/master/0036-valid-sudoku) |
 | [0039-combination-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/0039-combination-sum) |
+| [0040-combination-sum-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0040-combination-sum-ii) |
 | [0041-first-missing-positive](https://github.com/kyileiaye2021/LeetCode/tree/master/0041-first-missing-positive) |
 | [0042-trapping-rain-water](https://github.com/kyileiaye2021/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0045-jump-game-ii) |
@@ -771,6 +772,7 @@ All leetCode problems done will be documented here.
 | [0017-letter-combinations-of-a-phone-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0022-generate-parentheses](https://github.com/kyileiaye2021/LeetCode/tree/master/0022-generate-parentheses) |
 | [0039-combination-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/0039-combination-sum) |
+| [0040-combination-sum-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0040-combination-sum-ii) |
 | [0051-n-queens](https://github.com/kyileiaye2021/LeetCode/tree/master/0051-n-queens) |
 | [0077-combinations](https://github.com/kyileiaye2021/LeetCode/tree/master/0077-combinations) |
 | [0113-path-sum-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0113-path-sum-ii) |
