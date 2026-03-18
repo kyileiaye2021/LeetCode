@@ -105,6 +105,7 @@ All leetCode problems done will be documented here.
 | [1206-corporate-flight-bookings](https://github.com/kyileiaye2021/LeetCode/tree/master/1206-corporate-flight-bookings) |
 | [1283-find-the-smallest-divisor-given-a-threshold](https://github.com/kyileiaye2021/LeetCode/tree/master/1283-find-the-smallest-divisor-given-a-threshold) |
 | [1481-least-number-of-unique-integers-after-k-removals](https://github.com/kyileiaye2021/LeetCode/tree/master/1481-least-number-of-unique-integers-after-k-removals) |
+| [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/kyileiaye2021/LeetCode/tree/master/1482-minimum-number-of-days-to-make-m-bouquets) |
 | [1524-number-of-sub-arrays-with-odd-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/kyileiaye2021/LeetCode/tree/master/1528-kids-with-the-greatest-number-of-candies) |
 | [1603-running-sum-of-1d-array](https://github.com/kyileiaye2021/LeetCode/tree/master/1603-running-sum-of-1d-array) |
@@ -373,6 +374,7 @@ All leetCode problems done will be documented here.
 | [0907-koko-eating-bananas](https://github.com/kyileiaye2021/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [0912-random-pick-with-weight](https://github.com/kyileiaye2021/LeetCode/tree/master/0912-random-pick-with-weight) |
 | [1283-find-the-smallest-divisor-given-a-threshold](https://github.com/kyileiaye2021/LeetCode/tree/master/1283-find-the-smallest-divisor-given-a-threshold) |
+| [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/kyileiaye2021/LeetCode/tree/master/1482-minimum-number-of-days-to-make-m-bouquets) |
 ## Math
 |  |
 | ------- |
