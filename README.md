@@ -31,6 +31,7 @@ All leetCode problems done will be documented here.
 | [0073-set-matrix-zeroes](https://github.com/kyileiaye2021/LeetCode/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/kyileiaye2021/LeetCode/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/kyileiaye2021/LeetCode/tree/master/0075-sort-colors) |
+| [0078-subsets](https://github.com/kyileiaye2021/LeetCode/tree/master/0078-subsets) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0088-merge-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0088-merge-sorted-array) |
@@ -779,6 +780,7 @@ All leetCode problems done will be documented here.
 | [0040-combination-sum-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0040-combination-sum-ii) |
 | [0051-n-queens](https://github.com/kyileiaye2021/LeetCode/tree/master/0051-n-queens) |
 | [0077-combinations](https://github.com/kyileiaye2021/LeetCode/tree/master/0077-combinations) |
+| [0078-subsets](https://github.com/kyileiaye2021/LeetCode/tree/master/0078-subsets) |
 | [0113-path-sum-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0113-path-sum-ii) |
 ## Binary Search Tree
 |  |
@@ -807,6 +809,7 @@ All leetCode problems done will be documented here.
 ## Bit Manipulation
 |  |
 | ------- |
+| [0078-subsets](https://github.com/kyileiaye2021/LeetCode/tree/master/0078-subsets) |
 | [0136-single-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0136-single-number) |
 | [0187-repeated-dna-sequences](https://github.com/kyileiaye2021/LeetCode/tree/master/0187-repeated-dna-sequences) |
 | [0190-reverse-bits](https://github.com/kyileiaye2021/LeetCode/tree/master/0190-reverse-bits) |
