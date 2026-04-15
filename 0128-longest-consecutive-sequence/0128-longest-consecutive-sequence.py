@@ -1,33 +1,19 @@
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
-
-        # iterate thru the list
-        #   curr len = 0
-        #   check while the neighbor ele is in the list
-        #       count the curr len   
-        #   update longest 
-        # return longest
-
-        longest = 0
+        max_len = 0
         nums = set(nums)
+        for n in nums:
+            # start of subseq
+            if n - 1 not in nums:
+                cur_len = 1
+                start = n
+                while start + 1 in nums:
+                    cur_len += 1
+                    start = start + 1
 
-        for ele in nums:
+                max_len = max(cur_len, max_len)
 
-            curr_len = 1
-            if ele - 1 not in nums: # this num is a start
-                
-                ele = ele + 1
-                while ele in nums:
-                    curr_len += 1
-                    ele += 1
+        return max_len
 
-            # end = ele
-            # while end - 1 in nums:
-            #     curr_len += 1
-            #     end = end - 1
 
-            longest = max(longest, curr_len)
-            print(f"longest: {longest}")
-
-        return longest
-
+        
