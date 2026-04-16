@@ -1,31 +1,26 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        # sliding window
-        # l, r = 0
-        # set
-        # iterate the s with r 
-        #   if the curr ele not in set
-        #       add it to set and increment r
-        #   else
-        #       update the max window if needed
-        #       remove the l ele until the curr ele is in the set
-        # return the max window
-        l = 0
-        r = 0
-        unique = set()
-        max_window = 0
-        while r < len(s):
-            
-            if s[r] in unique:
-                while s[r] in unique:
-                    unique.remove(s[l])
-                    l += 1
 
-            unique.add(s[r])
-            max_window = max(max_window, r - l + 1)
-            r += 1
+        # sliding window 2 pointers
+        # set in window to check duplicates
+
+        # l , r
+
+        l = 0
+        visited = set()
+        max_window = 0
+        for r in range(len(s)):
+            while s[r] in visited:
+                visited.remove(s[l])
+                l += 1
+
+            visited.add(s[r])
+            cur_window = r - l + 1
+            max_window = max(cur_window, max_window)
 
         return max_window
+                
+            
 
-        
+
         
