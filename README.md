@@ -123,6 +123,7 @@ All leetCode problems done will be documented here.
 | [2352-design-an-atm-machine](https://github.com/kyileiaye2021/LeetCode/tree/master/2352-design-an-atm-machine) |
 | [2358-number-of-ways-to-split-array](https://github.com/kyileiaye2021/LeetCode/tree/master/2358-number-of-ways-to-split-array) |
 | [2542-maximum-subsequence-score](https://github.com/kyileiaye2021/LeetCode/tree/master/2542-maximum-subsequence-score) |
+| [2747-count-zero-request-servers](https://github.com/kyileiaye2021/LeetCode/tree/master/2747-count-zero-request-servers) |
 | [3639-zero-array-transformation-i](https://github.com/kyileiaye2021/LeetCode/tree/master/3639-zero-array-transformation-i) |
 ## Dynamic Programming
 |  |
@@ -260,6 +261,7 @@ All leetCode problems done will be documented here.
 | [1044-find-common-characters](https://github.com/kyileiaye2021/LeetCode/tree/master/1044-find-common-characters) |
 | [1481-least-number-of-unique-integers-after-k-removals](https://github.com/kyileiaye2021/LeetCode/tree/master/1481-least-number-of-unique-integers-after-k-removals) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/kyileiaye2021/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
+| [2747-count-zero-request-servers](https://github.com/kyileiaye2021/LeetCode/tree/master/2747-count-zero-request-servers) |
 ## Sorting
 |  |
 | ------- |
@@ -296,6 +298,7 @@ All leetCode problems done will be documented here.
 | [1481-least-number-of-unique-integers-after-k-removals](https://github.com/kyileiaye2021/LeetCode/tree/master/1481-least-number-of-unique-integers-after-k-removals) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/kyileiaye2021/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [2542-maximum-subsequence-score](https://github.com/kyileiaye2021/LeetCode/tree/master/2542-maximum-subsequence-score) |
+| [2747-count-zero-request-servers](https://github.com/kyileiaye2021/LeetCode/tree/master/2747-count-zero-request-servers) |
 ## String
 |  |
 | ------- |
@@ -746,6 +749,7 @@ All leetCode problems done will be documented here.
 | [0713-subarray-product-less-than-k](https://github.com/kyileiaye2021/LeetCode/tree/master/0713-subarray-product-less-than-k) |
 | [0904-fruit-into-baskets](https://github.com/kyileiaye2021/LeetCode/tree/master/0904-fruit-into-baskets) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/kyileiaye2021/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
+| [2747-count-zero-request-servers](https://github.com/kyileiaye2021/LeetCode/tree/master/2747-count-zero-request-servers) |
 ## Trie
 |  |
 | ------- |
