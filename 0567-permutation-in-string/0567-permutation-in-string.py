@@ -1,45 +1,61 @@
 class Solution:
     def checkInclusion(self, s1: str, s2: str) -> bool:
-        # s1 = "abcde", s2 = "abeuelkj"
-        # false
 
-        # s1 = "bc", s2 = "abbccbter"
+        # s1 = "abcb", s2 = "eibdbbacoo"
         # true
 
-        # s1 = "a", s2 = "abb"
+        # s1 = "abcb", s2 = "eidbdadc"
+        # false
+
+        # s1 = "ba", s2 = "eid"
+        # false
+
+        # s1 = "", s2 = "gg"
         # true
 
-        # s1 = "avb", s2 = "bb"
+        # s1 = "hello", s2 = ""
         # false
 
-        # s1 = "hh", s2 = "ahgu"
-        # false
+        # s1 = "", s2 = ""
+        # true
+
+        # sliding window with 2 pointers
+        if len(s1) > len(s2):
+            return False
 
         # hashmap for s1
-        # iterate thru the s2
-        #   if curr ele not in s1 hashmap
-        #       reset the hashmap to empty hashmap
-        #       moving l and r
+        # iterate thru s2
+        #   if cur char not in s1 hashmap
+        #       move i and j
         #   else
-        #       adding the curr ele to s2 hashmap
-        #       move the right ele
-        #       if hashmap == s1 hashmap
-        #           return true
-        # return false
+        #       decrement the curr char freq in s1 hashmap
+        #       move j
+        #       
 
-        s1_hashmap = Counter(s1)
+        # k = len(s1)
+        # check first k ele 
+
+        # iterate from k to the end
+        #   create hashmap for each window
+        #   check the hashmap are the same
+        #       return true
+        
         k = len(s1)
-        s2_hashmap = Counter(s2[:k])
-        if s1_hashmap == s2_hashmap:
-            return True
-
-        for i in range(k, len(s2)):
-            s2_hashmap[s2[i - k]] -= 1
-            if s2_hashmap[s2[i - k]] == 0:
-                del s2_hashmap[s2[i - k]] 
-
-            s2_hashmap[s2[i]] = s2_hashmap.get(s2[i], 0) + 1
-            if s1_hashmap == s2_hashmap:
+        s1_hashmap = Counter(s1)
+        
+        for i in range(len(s2) - k + 1):
+            if Counter(s2[i: i +k]) == s1_hashmap:
                 return True
 
         return False
+
+
+
+
+
+
+
+
+
+
+        
