@@ -1,29 +1,51 @@
 class Solution:
     def maxArea(self, height: List[int]) -> int:
 
-        # two pointers
-        # iterate thru the ele until two pointers cross each other
-        #   get the len
-        #   get the lower height
-        #   calculate the area
-        #   update the max area if needed
-        #   move the lower height bar
-        # return max area
+        # happy cases
+        # [1,8,6,2,5,4,8,3,7]
+        # 49
 
-        # [2,1,3]
+        # [1,1]
+        # 1
+
+        # [1,0,1]
+        # 2
+
+        # [0,0]
+        # 0
+
+        # [0, 1, 0]
+        # 0
+
+        # [1,1,1]
+        # 1
+
+        # brute force - O(n^2)
+        # two pointers - 
+        # l and r 
+        # calculate the area
+        
+        l = 0
+        r = len(height) - 1
         max_area = 0
-        l, r = 0, len(height) - 1
+
         while l < r:
-            x = r - l
-            y = min(height[l], height[r])
-            area = x * y
+            area = min(height[l], height[r]) * (r - l)
             max_area = max(max_area, area)
 
-            if height[l] < height[r]:
-                l += 1
-            else:
+            if height[l] > height[r]:
                 r -= 1
+
+            else:
+                l += 1
+
+            
         return max_area
 
+            
 
+
+
+
+        
         
