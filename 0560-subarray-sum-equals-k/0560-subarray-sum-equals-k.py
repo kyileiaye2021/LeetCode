@@ -1,20 +1,18 @@
 class Solution:
     def subarraySum(self, nums: List[int], k: int) -> int:
-        # sliding window
-        # prefix sum
-        # we can't slide the window by chopping off the prev ele as the negative nums are also included
-        
-        hashmap = {0: 1} # prefix sum : count
-        curSum = 0
+
+        prefix_count = {0:1}
         res = 0
+        prefix_sum = 0
 
-        for i in range(len(nums)):
-            curSum += nums[i]
-            diff = curSum - k 
+        for n in nums:
+            prefix_sum += n
 
-            if diff in hashmap:
-                res += hashmap[diff]
-
-            hashmap[curSum] = 1 + hashmap.get(curSum, 0)
+            if prefix_sum - k in prefix_count:
+                res += prefix_count[prefix_sum - k]
+            
+            prefix_count[prefix_sum] = prefix_count.get(prefix_sum, 0) + 1
 
         return res
+
+            
