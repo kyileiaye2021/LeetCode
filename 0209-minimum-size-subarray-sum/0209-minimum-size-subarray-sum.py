@@ -1,30 +1,29 @@
 class Solution:
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
+
+        # brute force
+        # sliding window with 2 pointers
+        # i , j 
+        # if reach the target: return window size
+        # if exceed the target: chop off the first ele until the subarray sum becomes target
+        
+        # [1, 4, 4]
+        # target = 4
+        # output: 1
+
+        # [1,2,2,4]
+        # target = 4
+        # output: 1
+
         l = 0
-        r = 0
         total = 0
         min_window = float('inf')
-
-        while r < len(nums):
-                    
+        for r in range(len(nums)):
             total += nums[r]
-            if total >= target:
-                curr_window = r - l + 1
-                min_window = min(curr_window, min_window)
-                # total -= nums[l]
-                # l += 1
 
             while total >= target:
-
+                min_window = min(min_window, r - l + 1)
                 total -= nums[l]
                 l += 1
 
-                # check again if total is still greater than target after shrinking the window size
-                if total >= target:
-                    curr_window = r - l + 1
-                    min_window = min(curr_window, min_window)
-
-            r += 1
-
-        return 0 if min_window == float('inf') else min_window
-
+        return min_window if min_window != float('inf') else 0
