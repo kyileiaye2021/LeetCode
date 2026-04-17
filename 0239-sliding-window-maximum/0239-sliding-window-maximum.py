@@ -1,63 +1,46 @@
 class Solution:
     def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
-        # O(k * n)
-        # find max ele in first k ele
-        # add it to the res
-        # iterate thru the ele k + 1 ele
-        #   remove the i - k ele
-        #   add the kth ele and update the max ele
-        #   add the max ele to the res
-        # return res
-        
+        # curr window
+        # 1,3,-1 max = 3
+        # 3,-1,1
+        # if chopped ele ->not max => compare the max with the curr ele
+        # else find max among the window
+
         # res = []
-        # max_ele = max(nums[:k])
-        # res.append(max_ele)
-        # print('First ele: ', res)
+        # cur_max = max(nums[:k])
+        # res.append(cur_max)
+        # l = 0
 
-        # for i in range(k, len(nums)):
-        #     curr_window = nums[i - k + 1: i + 1]
-        #     max_ele= max(curr_window)
-        #     res.append(max_ele)
+        # for r in range(k, len(nums)):
+        #     chopped = nums[l]
+        #     l += 1
+        #     if chopped != cur_max:
+        #         cur_max = max(cur_max, nums[r])
+        #     else:
+        #         cur_max = max(nums[l:r + 1])
+        #     res.append(cur_max)
 
         # return res
 
-        # sliding window and deque
-        # iterate thru the ele
-        #   while curr ele is greater than the last ele of deque
-        #       pop the ele out
-        #   add the curr ele to the deque
-        #   k -= 1
-        #   when k == 0:
-        #       update the max ele 
-        # if l pointer ele is = to first ele of deque
-        #   pop out that from deque
-
-        queue = deque()
+        dq = deque()
+        l = 0
         res = []
 
-        for r in range(len(nums)):
+        for r, n in enumerate(nums):
+            # while adding remove the smaller ele bc those are not important
+            while dq and nums[dq[-1]] < n:
+                dq.pop()
 
-            # add the ele to the deque 
-            while queue and nums[r] > nums[queue[-1]]:
-                queue.pop()
+            dq.append(r)
+
+            # shrink the window first bc sometimes we may take the one that can be outside the curr window
+            if l > dq[0]:
+                dq.popleft()
+                
+            # if there is a valid window
+            if r + 1 >= k:
+                idx = dq[0]
+                res.append(nums[idx])
+                l += 1
             
-            queue.append(r)
-
-            # remove left ele if they are out of window
-            if queue[0] <= r - k:
-                queue.popleft()
-
-            # if window size becomes k, get the max elel of the window
-            if r >= k - 1:
-                res.append(nums[queue[0]])
-
-
         return res
-
-
-    
-
-            
-
-        
-        
