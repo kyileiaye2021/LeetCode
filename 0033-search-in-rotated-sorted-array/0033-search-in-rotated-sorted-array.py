@@ -26,37 +26,24 @@ class Solution:
         r = len(nums) - 1
         while l <= r:
             mid = (l + r) // 2
+            if target == nums[mid]:
+                return mid
 
             if nums[mid] >= nums[l]:
                 # left side
-
-                if nums[mid] > target:
-                    if nums[l] > target: # go the right side
-                        l = mid + 1
-                    
-                    else:
-                        r = mid - 1
-                
-                elif nums[mid] < target:
+                if nums[mid] < target or target < nums[l]:
                     l = mid + 1
-                
+    
                 else:
-                    return mid
+                    r = mid - 1
                
             else:
                 # right side
-                if nums[mid] < target:
-                    if nums[r] < target:
-                        r = mid -1
-                    
-                    else:
-                        l = mid + 1
-                
-                elif nums[mid] > target:
+                if nums[mid] > target or nums[r] < target:
                     r = mid - 1
                 
                 else:
-                    return mid
+                    l = mid + 1
 
         
         return -1
