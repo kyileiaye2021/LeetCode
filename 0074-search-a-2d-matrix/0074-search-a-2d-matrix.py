@@ -1,83 +1,65 @@
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
-        # happy case 
-        # input: matrix = [[1,2],[3,4]], target: 2
-        # output: true
+        # first find the row 
+        # binary search in that row
 
-        # input: matrix = [[1,2],[3,4]], target: 5
-        # output: false
+        # t = 0
+        # bottom = len(matrix)
+        # while t <= b:
+        #   mid = t + b // 2
+        #   if mid ele == target:
+        #       row = mid
+        #   elif mid ele > target:
+        #       b = mid - 1
+        #   else
+        #       t = mid
 
-        # edge case
-        # input: matrix = [[1]], target = 1
-        # output: true
+        # l = row
+        # r =  row + col
 
-        # input: matrix = [[1], [2]], target = 2
-        # output: true
-
-        # input: matrix = [[1,2]], target = 1
-        # output: true
-
-        # Brute Force - O(n^2)
-        # Binary Search 1- O(mlogn)
-        # Binary Search - O(log (m*n))
-
-        # m =len(matrix)
-        # low, high - 0, m
-        # row_to_iterate = 0
-        # until low passes high
-        #   find the mid index
-        #   check if the mid ele is equal to the target
-        #       return True
-        #   elif mid ele is greater than the target
-        #       update high
-        #   else: 
-        #       row_to_iterate = max(mid, row_to_iterate)
-        #       update low    
-
-        # l, r = 0, len(matrix[row_to_iterate])
-        # # until low passes high
-        #   find the mid index
-        #   check if the mid ele is equal to the target
-        #       return True
-        #   elif mid ele is greater than the target
-        #       update l
-        #   else: 
-        #       update r  
+        # while l <= r:
+        # mid = l + r // 2
+        # if mid ele < target:
+        #   l = mid + 1
+        # elif mid ele > target:
+        #   r = mid - 1
+        # else
+        #   return True
 
         # return False
 
-        low,high = 0, len(matrix)-1
-        row_to_iterate = 0
-        while low <= high:
-            mid = (low + high) // 2
+        t = 0
+        b = len(matrix) - 1
+        row = 0
+        while t <= b:
+            mid = (t + b) // 2
 
             if matrix[mid][0] == target:
                 return True
 
             elif matrix[mid][0] > target:
-                high = mid - 1
+                b = mid - 1
 
             else:
-                row_to_iterate = max(row_to_iterate, mid)
-                low = mid + 1
+                row = mid
+                t = mid + 1
 
-        l, r = 0, len(matrix[row_to_iterate])-1
+        l = 0
+        r = len(matrix[0]) - 1
         while l <= r:
             mid = (l + r) // 2
+            print(mid)
 
-            if matrix[row_to_iterate][mid] == target:
-                return True
-
-            elif matrix[row_to_iterate][mid] > target:
+            if matrix[row][mid] > target:
                 r = mid - 1
+            
+            elif matrix[row][mid] < target:
+                l = mid + 1
 
             else:
-                l = mid + 1
+                return True
 
         return False
 
-        # Time complexity - O(log(m*n))
-        # Space complexity - O(1)
-    
+            
 
-        
