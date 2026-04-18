@@ -114,6 +114,7 @@ All leetCode problems done will be documented here.
 | [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/kyileiaye2021/LeetCode/tree/master/1482-minimum-number-of-days-to-make-m-bouquets) |
 | [1524-number-of-sub-arrays-with-odd-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
 | [1528-kids-with-the-greatest-number-of-candies](https://github.com/kyileiaye2021/LeetCode/tree/master/1528-kids-with-the-greatest-number-of-candies) |
+| [1552-magnetic-force-between-two-balls](https://github.com/kyileiaye2021/LeetCode/tree/master/1552-magnetic-force-between-two-balls) |
 | [1603-running-sum-of-1d-array](https://github.com/kyileiaye2021/LeetCode/tree/master/1603-running-sum-of-1d-array) |
 | [1642-furthest-building-you-can-reach](https://github.com/kyileiaye2021/LeetCode/tree/master/1642-furthest-building-you-can-reach) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/kyileiaye2021/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
@@ -299,6 +300,7 @@ All leetCode problems done will be documented here.
 | [0977-squares-of-a-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0977-squares-of-a-sorted-array) |
 | [1019-squares-of-a-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
 | [1481-least-number-of-unique-integers-after-k-removals](https://github.com/kyileiaye2021/LeetCode/tree/master/1481-least-number-of-unique-integers-after-k-removals) |
+| [1552-magnetic-force-between-two-balls](https://github.com/kyileiaye2021/LeetCode/tree/master/1552-magnetic-force-between-two-balls) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/kyileiaye2021/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [2542-maximum-subsequence-score](https://github.com/kyileiaye2021/LeetCode/tree/master/2542-maximum-subsequence-score) |
 | [2747-count-zero-request-servers](https://github.com/kyileiaye2021/LeetCode/tree/master/2747-count-zero-request-servers) |
@@ -388,6 +390,7 @@ All leetCode problems done will be documented here.
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/kyileiaye2021/LeetCode/tree/master/1011-capacity-to-ship-packages-within-d-days) |
 | [1283-find-the-smallest-divisor-given-a-threshold](https://github.com/kyileiaye2021/LeetCode/tree/master/1283-find-the-smallest-divisor-given-a-threshold) |
 | [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/kyileiaye2021/LeetCode/tree/master/1482-minimum-number-of-days-to-make-m-bouquets) |
+| [1552-magnetic-force-between-two-balls](https://github.com/kyileiaye2021/LeetCode/tree/master/1552-magnetic-force-between-two-balls) |
 ## Math
 |  |
 | ------- |
