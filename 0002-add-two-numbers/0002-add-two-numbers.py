@@ -5,47 +5,76 @@
 #         self.next = next
 class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        # l1 = [2,3,4]
+        # l2 = [4,3,1]
+        # output: [6,6,5]
 
-        # travere two lists with 2 pointers
-        #   add the nodes and carry and divide by 10 
-        #   create a new node with remainder and add it to dummy
-        #   add the dividend to the carry
+        # l1 = [5,6,7]
+        # l2 = [5,6,7]
+        # output: [0,3,5,1]
+
+        # l1 = [0]
+        # l2 = [0]
+        # output: [0]
+
+        # l1 = [9,9,9]
+        # l2 = [9,9]
+        # output: [8, 9, 0, 1]
+
+        # l1 = [0]
+        # l2 = [1]
+        # output: [1]
+
+        # 5 + 5 = 10 % 10 = 0
+        # carry = 10// 10 = 1
+
+        # traverse l1 and l2 together
         
-        carry = 0
         dummy = ListNode(0)
-        temp = dummy
+        res = dummy
 
-        while l1 and l2:
-            curr_sum = l1.val + l2.val + carry
-            carry = curr_sum // 10
-            curr_node = curr_sum % 10
-            new_node = ListNode(curr_node)
-            temp.next = new_node
-            temp = temp.next
-            l1 = l1.next
-            l2 = l2.next
-        
-        while l1:
-            curr_sum = l1.val + carry
-            carry = curr_sum // 10
-            curr_node = curr_sum % 10
-            new_node = ListNode(curr_node)
-            temp.next = new_node
-            temp = temp.next
-            l1 = l1.next
+        p1 = l1
+        p2 = l2
+        cur_sum = 0
+        carry = 0
 
-        while l2:
-            curr_sum = l2.val + carry
-            carry = curr_sum // 10
-            curr_node = curr_sum % 10
-            new_node = ListNode(curr_node)
-            temp.next = new_node
-            temp = temp.next
-            l2 = l2.next
+        while p1 and p2:
+            cur_sum = p1.val + p2.val + carry
+            carry = 0
+            if cur_sum > 9:
+                carry = cur_sum // 10
+                cur_sum = cur_sum % 10
+            
+            new_node = ListNode(cur_sum)
+            res.next = new_node
+            res = res.next
+            p1 = p1.next
+            p2 = p2.next
+
+        while p1:
+            cur_sum = p1.val + carry
+            carry = 0
+            if cur_sum > 0:
+                carry = cur_sum // 10
+                cur_sum = cur_sum % 10
+            new_node = ListNode(cur_sum)
+            res.next = new_node
+            res = res.next
+            p1 = p1.next
+
+        while p2:
+            cur_sum = p2.val + carry
+            carry = 0
+            if cur_sum > 0:
+                carry = cur_sum // 10
+                cur_sum = cur_sum % 10
+            new_node = ListNode(cur_sum)
+            res.next = new_node
+            res = res.next
+            p2 = p2.next
 
         if carry > 0:
             new_node = ListNode(carry)
-            temp.next = new_node
-            temp = temp.next
-            
+            res.next = new_node
+
         return dummy.next
