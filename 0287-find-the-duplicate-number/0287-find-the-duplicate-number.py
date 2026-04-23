@@ -1,12 +1,16 @@
 class Solution:
     def findDuplicate(self, nums: List[int]) -> int:
-
+        # hash set
+        # O(N) space
+        
         # brute force
-        # sort - O(nlogn)
-        # fast slow pointer
+        # O(n^2) time
 
-        slow = 0
-        fast = 0
+        # sorting and check the continuous ele
+        # O(nlogn) time
+        
+        slow = nums[0]
+        fast = nums[0]
 
         while True:
             slow = nums[slow]
@@ -14,12 +18,14 @@ class Solution:
             if slow == fast:
                 break
 
-        temp = 0
-        while True:
+        print(fast)
+        temp = nums[0]
+
+        while temp != fast:
             temp = nums[temp]
-            slow = nums[slow]
+            fast = nums[fast]
+        
+        return temp
 
-            if temp == slow:
-                break
-        return slow
 
+    
