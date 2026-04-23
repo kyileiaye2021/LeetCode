@@ -498,6 +498,7 @@ All leetCode problems done will be documented here.
 | [0784-insert-into-a-binary-search-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
+| [1448-count-good-nodes-in-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1448-count-good-nodes-in-binary-tree) |
 | [1474-longest-zigzag-path-in-a-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1474-longest-zigzag-path-in-a-binary-tree) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Depth-First Search
@@ -540,6 +541,7 @@ All leetCode problems done will be documented here.
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [0871-keys-and-rooms](https://github.com/kyileiaye2021/LeetCode/tree/master/0871-keys-and-rooms) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
+| [1448-count-good-nodes-in-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1448-count-good-nodes-in-binary-tree) |
 | [1474-longest-zigzag-path-in-a-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1474-longest-zigzag-path-in-a-binary-tree) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 | [1558-course-schedule-iv](https://github.com/kyileiaye2021/LeetCode/tree/master/1558-course-schedule-iv) |
@@ -584,6 +586,7 @@ All leetCode problems done will be documented here.
 | [1036-rotting-oranges](https://github.com/kyileiaye2021/LeetCode/tree/master/1036-rotting-oranges) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/kyileiaye2021/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
+| [1448-count-good-nodes-in-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1448-count-good-nodes-in-binary-tree) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 | [1558-course-schedule-iv](https://github.com/kyileiaye2021/LeetCode/tree/master/1558-course-schedule-iv) |
 | [1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero](https://github.com/kyileiaye2021/LeetCode/tree/master/1576-reorder-routes-to-make-all-paths-lead-to-the-city-zero) |
@@ -616,6 +619,7 @@ All leetCode problems done will be documented here.
 | [0784-insert-into-a-binary-search-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0784-insert-into-a-binary-search-tree) |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
+| [1448-count-good-nodes-in-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1448-count-good-nodes-in-binary-tree) |
 | [1474-longest-zigzag-path-in-a-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1474-longest-zigzag-path-in-a-binary-tree) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/1544-count-good-nodes-in-binary-tree) |
 ## Divide and Conquer
