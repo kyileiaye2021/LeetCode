@@ -8,59 +8,46 @@ class Solution:
         """
         Do not return anything, modify head in-place instead.
         """
-        # if the list is just one node return that node
-        # separate the list into two lists
-        # add the nodes alternatively from the two lists
-        # return dummy.next
 
-        # separate the list into two
-        if not head.next:
-            return head
-
-        dummy = ListNode(0)
-        dummy.next = head
-        slow = dummy 
-        fast = dummy
-
+        # 2 separate linked list
+        # reverse the second linked list
+        # add them alternatively
+        # find the middle with fast and slow pointer
+        
+        slow = fast = head
         while fast and fast.next:
             fast = fast.next.next
             slow = slow.next
-        
-        l2_head = slow.next
+
+        # reverse the list
+        cur = slow.next
+        prev = None
+        while cur:
+            new_node = cur.next
+            cur.next = prev
+            prev = cur
+            cur = new_node
+
+        # end of the first linked list
         slow.next = None
 
-        # reverse the second list
-        prev = None
-        curr = l2_head
+        dummy = ListNode(0)
+        res = dummy
 
-        while curr:
-            next_node = curr.next
-            curr.next = prev
-            prev = curr
-            curr = next_node
-
-        
-
-        # recombining the two lists
-        l1 = head
-        l2 = prev
-
-        res = ListNode(0)
-        while l1 and l2:
-            res.next = l1
+        temp = head
+        while temp and prev:
+            res.next = temp
             res = res.next
-            l1 = l1.next
+            temp = temp.next
 
-            res.next = l2
+            res.next = prev
             res = res.next
-            l2 = l2.next
+            prev = prev.next
 
-        if l1:
-            res.next = l1
+        if temp:
+            res.next = temp
 
-        if l2:
-            res.next = l2
+        if prev:
+            res.next = prev
 
-        return res.next
-
-
+        return dummy.next
