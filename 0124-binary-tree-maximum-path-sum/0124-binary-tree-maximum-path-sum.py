@@ -5,20 +5,21 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def dfs(self, root, res):
-        if not root:
-            return 0
-        left = self.dfs(root.left, res)
-        right = self.dfs(root.right, res)
-
-        left = max(0, left)
-        right = max(0, right)
-
-        res[0] = max(res[0], (left + right + root.val))
-        return root.val + max(left, right)
-
     def maxPathSum(self, root: Optional[TreeNode]) -> int:
-        res = [root.val]
-        self.dfs(root, res)
-        return res[0]
-        
+        max_path_sum = float('-inf')
+        def dfs(root):
+            nonlocal max_path_sum
+            if not root:
+                return 0
+
+            left = max(dfs(root.left), 0)
+            right = max(dfs(root.right), 0)
+
+            # cur_path_sum = max(root.val, root.val + left, root.val + right, root.val + left + right)
+            cur_path_sum = left + right + root.val 
+            max_path_sum = max(max_path_sum, cur_path_sum)
+
+            return root.val + max(left , right)
+
+        dfs(root)
+        return max_path_sum
