@@ -1,31 +1,20 @@
 class Solution:
     def findKthLargest(self, nums: List[int], k: int) -> int:
-        # happy cases
-        # [3,2,1,5,6,4]
+        # nums = [3,2,1,5,6,4], k = 2
         # 5
 
-        # [3,2,3,1,2,4,5,5,6], k = 4
-        # [6,5,5,4,3,3,2,2,1]
-        # 4
+        # nums = [3,2,3,1,2,4,5,5,6], k = 4
+        # [6,5,5,4,3,3,2,2,1], 4
 
-        # [1], k = 1
-        # 1
+        # sort the arr --> O(nlogn)
+        # bucket sort --> O(n)
+        # maxheap --> O(klogn)
 
-        # [-9,-4,-3], k = 2
-        # -4
+        hq = [-n for n in nums]
+        heapq.heapify(hq)
 
-        # [3,3,3,3,3], k = 3
-        # 3
-
-        # max heap
-        # heapify the array
-        # pop out the array for k times
-        nums = [-n for n in nums]
-        heapq.heapify(nums)
         res = 0
-
         for _ in range(k):
-            res = -heapq.heappop(nums)
+            res = -heapq.heappop(hq)
 
         return res
-
