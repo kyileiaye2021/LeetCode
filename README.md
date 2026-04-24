@@ -40,6 +40,7 @@ All leetCode problems done will be documented here.
 | [0090-subsets-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0090-subsets-ii) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/kyileiaye2021/LeetCode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/kyileiaye2021/LeetCode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0118-pascals-triangle](https://github.com/kyileiaye2021/LeetCode/tree/master/0118-pascals-triangle) |
 | [0119-pascals-triangle-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0119-pascals-triangle-ii) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/kyileiaye2021/LeetCode/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -486,6 +487,7 @@ All leetCode problems done will be documented here.
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/kyileiaye2021/LeetCode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/kyileiaye2021/LeetCode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0107-binary-tree-level-order-traversal-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0107-binary-tree-level-order-traversal-ii) |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0110-balanced-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0110-balanced-binary-tree) |
 | [0111-minimum-depth-of-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0111-minimum-depth-of-binary-tree) |
 | [0112-path-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/0112-path-sum) |
@@ -609,6 +611,7 @@ All leetCode problems done will be documented here.
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/kyileiaye2021/LeetCode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/kyileiaye2021/LeetCode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
 | [0107-binary-tree-level-order-traversal-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0107-binary-tree-level-order-traversal-ii) |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0110-balanced-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0110-balanced-binary-tree) |
 | [0111-minimum-depth-of-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0111-minimum-depth-of-binary-tree) |
 | [0112-path-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/0112-path-sum) |
@@ -637,6 +640,7 @@ All leetCode problems done will be documented here.
 | [0053-maximum-subarray](https://github.com/kyileiaye2021/LeetCode/tree/master/0053-maximum-subarray) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/kyileiaye2021/LeetCode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0106-construct-binary-tree-from-inorder-and-postorder-traversal](https://github.com/kyileiaye2021/LeetCode/tree/master/0106-construct-binary-tree-from-inorder-and-postorder-traversal) |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0148-sort-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0148-sort-list) |
 | [0169-majority-element](https://github.com/kyileiaye2021/LeetCode/tree/master/0169-majority-element) |
 | [0190-reverse-bits](https://github.com/kyileiaye2021/LeetCode/tree/master/0190-reverse-bits) |
@@ -819,6 +823,7 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0098-validate-binary-search-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0098-validate-binary-search-tree) |
+| [0108-convert-sorted-array-to-binary-search-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0230-kth-smallest-element-in-a-bst](https://github.com/kyileiaye2021/LeetCode/tree/master/0230-kth-smallest-element-in-a-bst) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/kyileiaye2021/LeetCode/tree/master/0703-kth-largest-element-in-a-stream) |
