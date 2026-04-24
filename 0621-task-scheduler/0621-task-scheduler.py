@@ -1,36 +1,33 @@
 class Solution:
     def leastInterval(self, tasks: List[str], n: int) -> int:
-        # max heap to operate on the most freq task
-        # time= 0
-        # store the remaining task with the time when they will come back to be completed
-        # until max heap is none or q is none
-        #   increment time
-        #   decrement the freq of the curr task
-        #   the remaining task with the time will be stored in queue 
-        #   if the time becomes the time when the same task can be completed
-        #       push the remaining freq of the task back to the heapq
-        # return time
 
-        freq_map = Counter(tasks)
-        max_heap = [-f for f in freq_map.values()]
-        heapq.heapify(max_heap)
+        # start from most freq num of tasks
+        # keep track of start time with tasks
+        # hashmap to keep track of freq
+        # heap to keep track of tasks
+        # another heap to keep track of remaining tasks
 
+        freq = Counter(tasks)
+        max_heap= []
+
+        for t, f in freq.items():
+            heapq.heappush(max_heap,-f)
+
+        queue = deque() # to store the remaining items
         time = 0
-        queue = deque()
 
         while max_heap or queue:
             time += 1
-
             if max_heap:
-                curr = -heapq.heappop(max_heap)
-                remaining = curr - 1
-                if remaining > 0:
-                    queue.append([remaining, time + n])
+                remaining_task = -heapq.heappop(max_heap) - 1
+                time_to_process = time + n
+                if remaining_task > 0:
+                    queue.append((time_to_process, remaining_task))
 
-            if queue and time == queue[0][1]:
-                rem_freq = -queue.popleft()[0]
-                heapq.heappush(max_heap, rem_freq)
-
+            if queue and queue[0][0] == time:
+                time_to_process, task = queue.popleft()
+                heapq.heappush(max_heap, -task)
+        
         return time
 
-            
+        
