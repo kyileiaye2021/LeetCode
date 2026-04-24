@@ -12,14 +12,14 @@ class Solution:
             if not root:
                 return 0
 
-            left = max(dfs(root.left), 0)
-            right = max(dfs(root.right), 0)
+            left = dfs(root.left)
+            right = dfs(root.right)
 
-            # cur_path_sum = max(root.val, root.val + left, root.val + right, root.val + left + right)
-            cur_path_sum = left + right + root.val 
+            cur_path_sum = max(root.val, root.val + left, root.val + right, root.val + left + right)
+            # cur_path_sum = left + right + root.val 
             max_path_sum = max(max_path_sum, cur_path_sum)
 
-            return root.val + max(left , right)
+            return root.val + max(left , right, 0)
 
         dfs(root)
         return max_path_sum
