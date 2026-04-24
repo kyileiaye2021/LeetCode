@@ -265,6 +265,7 @@ All leetCode problems done will be documented here.
 | [0692-top-k-frequent-words](https://github.com/kyileiaye2021/LeetCode/tree/master/0692-top-k-frequent-words) |
 | [0721-accounts-merge](https://github.com/kyileiaye2021/LeetCode/tree/master/0721-accounts-merge) |
 | [0753-open-the-lock](https://github.com/kyileiaye2021/LeetCode/tree/master/0753-open-the-lock) |
+| [0767-reorganize-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0767-reorganize-string) |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [0904-fruit-into-baskets](https://github.com/kyileiaye2021/LeetCode/tree/master/0904-fruit-into-baskets) |
 | [1039-find-the-town-judge](https://github.com/kyileiaye2021/LeetCode/tree/master/1039-find-the-town-judge) |
@@ -301,6 +302,7 @@ All leetCode problems done will be documented here.
 | [0658-find-k-closest-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0692-top-k-frequent-words](https://github.com/kyileiaye2021/LeetCode/tree/master/0692-top-k-frequent-words) |
 | [0721-accounts-merge](https://github.com/kyileiaye2021/LeetCode/tree/master/0721-accounts-merge) |
+| [0767-reorganize-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0767-reorganize-string) |
 | [0917-boats-to-save-people](https://github.com/kyileiaye2021/LeetCode/tree/master/0917-boats-to-save-people) |
 | [0973-k-closest-points-to-origin](https://github.com/kyileiaye2021/LeetCode/tree/master/0973-k-closest-points-to-origin) |
 | [0977-squares-of-a-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0977-squares-of-a-sorted-array) |
@@ -352,6 +354,7 @@ All leetCode problems done will be documented here.
 | [0692-top-k-frequent-words](https://github.com/kyileiaye2021/LeetCode/tree/master/0692-top-k-frequent-words) |
 | [0721-accounts-merge](https://github.com/kyileiaye2021/LeetCode/tree/master/0721-accounts-merge) |
 | [0753-open-the-lock](https://github.com/kyileiaye2021/LeetCode/tree/master/0753-open-the-lock) |
+| [0767-reorganize-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0767-reorganize-string) |
 | [0784-letter-case-permutation](https://github.com/kyileiaye2021/LeetCode/tree/master/0784-letter-case-permutation) |
 | [0793-swap-adjacent-in-lr-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0793-swap-adjacent-in-lr-string) |
 | [0844-backspace-string-compare](https://github.com/kyileiaye2021/LeetCode/tree/master/0844-backspace-string-compare) |
@@ -371,6 +374,7 @@ All leetCode problems done will be documented here.
 | [0387-first-unique-character-in-a-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0387-first-unique-character-in-a-string) |
 | [0621-task-scheduler](https://github.com/kyileiaye2021/LeetCode/tree/master/0621-task-scheduler) |
 | [0692-top-k-frequent-words](https://github.com/kyileiaye2021/LeetCode/tree/master/0692-top-k-frequent-words) |
+| [0767-reorganize-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0767-reorganize-string) |
 | [1481-least-number-of-unique-integers-after-k-removals](https://github.com/kyileiaye2021/LeetCode/tree/master/1481-least-number-of-unique-integers-after-k-removals) |
 ## Binary Search
 |  |
@@ -666,6 +670,7 @@ All leetCode problems done will be documented here.
 | [0658-find-k-closest-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0692-top-k-frequent-words](https://github.com/kyileiaye2021/LeetCode/tree/master/0692-top-k-frequent-words) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/kyileiaye2021/LeetCode/tree/master/0703-kth-largest-element-in-a-stream) |
+| [0767-reorganize-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0767-reorganize-string) |
 | [0973-k-closest-points-to-origin](https://github.com/kyileiaye2021/LeetCode/tree/master/0973-k-closest-points-to-origin) |
 | [1642-furthest-building-you-can-reach](https://github.com/kyileiaye2021/LeetCode/tree/master/1642-furthest-building-you-can-reach) |
 | [1845-seat-reservation-manager](https://github.com/kyileiaye2021/LeetCode/tree/master/1845-seat-reservation-manager) |
@@ -744,6 +749,7 @@ All leetCode problems done will be documented here.
 | [0402-remove-k-digits](https://github.com/kyileiaye2021/LeetCode/tree/master/0402-remove-k-digits) |
 | [0621-task-scheduler](https://github.com/kyileiaye2021/LeetCode/tree/master/0621-task-scheduler) |
 | [0680-valid-palindrome-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0680-valid-palindrome-ii) |
+| [0767-reorganize-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0767-reorganize-string) |
 | [0917-boats-to-save-people](https://github.com/kyileiaye2021/LeetCode/tree/master/0917-boats-to-save-people) |
 | [1481-least-number-of-unique-integers-after-k-removals](https://github.com/kyileiaye2021/LeetCode/tree/master/1481-least-number-of-unique-integers-after-k-removals) |
 | [1642-furthest-building-you-can-reach](https://github.com/kyileiaye2021/LeetCode/tree/master/1642-furthest-building-you-can-reach) |
