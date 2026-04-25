@@ -17,21 +17,15 @@ class Solution:
 
         # pacific ocean
         pacific = set()
+        altantic = set()
         # first row
         for c in range(cols):
             dfs(0, c, pacific)
+            dfs(rows - 1, c, altantic)
+
         # first col
         for r in range(rows):
             dfs(r, 0, pacific)
-
-        # atlantic ocean
-        altantic = set()
-        for c in range(cols):
-            # last row
-            dfs(rows - 1, c, altantic)
-        
-        # last col
-        for r in range(rows):
             dfs(r, cols - 1, altantic)
 
         res = []
