@@ -1,53 +1,54 @@
 class Solution:
     def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
-
-        # create variations for each word in the wordList
-        #   add each variation with its word
-
-        # queue
-        # add the beginword to the queue with the len of 1
-        # total len = 1
-
-        # until queue is empty
-        #   pop out the curr word and len 
-        #   update the total len
-        #   create variations for the curr word
-        #   for each variation
-        #       go to its related words 
-        #           add them to the queue and len + 1
-        # return total len
-
+        # adj list {variation:  word}
+        # add beginWord to wordList
+        # iterate thru wordList
+        #   iterate thru c and make variations
+        #   map variated word to cur word
+        if endWord not in wordList:
+            return 0
+        variations = defaultdict(list)
         wordList.append(beginWord)
-        var_map = defaultdict(list)
-        visited = set()
-
         for w in wordList:
             for i in range(len(w)):
-                cur_var = w[:i] + '*' + w[i + 1 :]
-                var_map[cur_var].append(w)
-
+                cur_variation = w[:i] + '*' + w[i + 1:]
+                variations[cur_variation].append(w)
         # bfs
+        # count = 0
+        # visited = set()
+        # start beginWord into the queue
+        #   pop the cur word 
+        #   if cur word == endWord
+        #       return count 
+        #   for c in cur word
+        #   make variation s for each c
+        #   for each mapped word for each variation
+        #       if mapped word is not visited
+        #           add them to queue
+        #   increment count
+        # return count
+
         queue = deque()
-        queue.append((beginWord, 1))
+        visited = set()
+        count = 1
+        queue.append(beginWord)
         visited.add(beginWord)
 
         while queue:
-            curr_word, curr_len = queue.popleft()
+            queue_len = len(queue)
 
-            if curr_word == endWord:
-                return curr_len
+            for _ in range(queue_len):
+                cur_word = queue.popleft()
+                if cur_word == endWord:
+                    return count
 
-            for i in range(len(curr_word)):
-                curr_var = curr_word[ : i] + '*' + curr_word[i + 1: ]
-                
-                for nei in var_map[curr_var]:
-                    if nei not in visited:
-                        queue.append((nei, curr_len + 1))
-                        visited.add(nei)
-
+                # finding variations for the cur word
+                for i in range(len(cur_word)):
+                    cur_variation = cur_word[:i] + '*' + cur_word[i+1:]
+                    for nei in variations[cur_variation]:
+                        if nei not in visited:
+                            queue.append(nei)
+                            visited.add(nei)
+            count += 1
         return 0
-                
 
-
-
-        
