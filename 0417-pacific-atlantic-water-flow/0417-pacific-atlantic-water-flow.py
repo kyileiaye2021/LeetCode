@@ -28,12 +28,13 @@ class Solution:
             dfs(r, 0, pacific)
             dfs(r, cols - 1, altantic)
 
-        res = []
-        for r, c in pacific:
-            if (r, c) in altantic:
-                res.append([r,c])
+        # res = []
+        # for r, c in pacific:
+        #     if (r, c) in altantic:
+        #         res.append([r,c])
 
-        return res
+        # return res
+        return list(pacific & altantic)
 
 
         
