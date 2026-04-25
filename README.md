@@ -128,6 +128,7 @@ All leetCode problems done will be documented here.
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/kyileiaye2021/LeetCode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 | [2067-maximum-number-of-points-with-cost](https://github.com/kyileiaye2021/LeetCode/tree/master/2067-maximum-number-of-points-with-cost) |
 | [2102-find-the-middle-index-in-array](https://github.com/kyileiaye2021/LeetCode/tree/master/2102-find-the-middle-index-in-array) |
+| [2115-find-all-possible-recipes-from-given-supplies](https://github.com/kyileiaye2021/LeetCode/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
 | [2352-design-an-atm-machine](https://github.com/kyileiaye2021/LeetCode/tree/master/2352-design-an-atm-machine) |
 | [2358-number-of-ways-to-split-array](https://github.com/kyileiaye2021/LeetCode/tree/master/2358-number-of-ways-to-split-array) |
 | [2542-maximum-subsequence-score](https://github.com/kyileiaye2021/LeetCode/tree/master/2542-maximum-subsequence-score) |
@@ -273,6 +274,7 @@ All leetCode problems done will be documented here.
 | [1044-find-common-characters](https://github.com/kyileiaye2021/LeetCode/tree/master/1044-find-common-characters) |
 | [1481-least-number-of-unique-integers-after-k-removals](https://github.com/kyileiaye2021/LeetCode/tree/master/1481-least-number-of-unique-integers-after-k-removals) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/kyileiaye2021/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
+| [2115-find-all-possible-recipes-from-given-supplies](https://github.com/kyileiaye2021/LeetCode/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
 | [2747-count-zero-request-servers](https://github.com/kyileiaye2021/LeetCode/tree/master/2747-count-zero-request-servers) |
 ## Sorting
 |  |
@@ -364,6 +366,7 @@ All leetCode problems done will be documented here.
 | [1143-longest-common-subsequence](https://github.com/kyileiaye2021/LeetCode/tree/master/1143-longest-common-subsequence) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/kyileiaye2021/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 | [1894-merge-strings-alternately](https://github.com/kyileiaye2021/LeetCode/tree/master/1894-merge-strings-alternately) |
+| [2115-find-all-possible-recipes-from-given-supplies](https://github.com/kyileiaye2021/LeetCode/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
 | [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/kyileiaye2021/LeetCode/tree/master/2116-check-if-a-parentheses-string-can-be-valid) |
 ## Counting
 |  |
@@ -852,6 +855,7 @@ All leetCode problems done will be documented here.
 | [0310-minimum-height-trees](https://github.com/kyileiaye2021/LeetCode/tree/master/0310-minimum-height-trees) |
 | [0820-find-eventual-safe-states](https://github.com/kyileiaye2021/LeetCode/tree/master/0820-find-eventual-safe-states) |
 | [1558-course-schedule-iv](https://github.com/kyileiaye2021/LeetCode/tree/master/1558-course-schedule-iv) |
+| [2115-find-all-possible-recipes-from-given-supplies](https://github.com/kyileiaye2021/LeetCode/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
 ## Shortest Path
 |  |
 | ------- |
@@ -924,4 +928,8 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/kyileiaye2021/LeetCode/tree/master/0128-longest-consecutive-sequence) |
+## Graph Theory
+|  |
+| ------- |
+| [2115-find-all-possible-recipes-from-given-supplies](https://github.com/kyileiaye2021/LeetCode/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
 <!---LeetCode Topics End-->
