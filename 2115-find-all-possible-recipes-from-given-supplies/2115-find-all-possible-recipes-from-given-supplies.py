@@ -23,30 +23,65 @@ class Solution:
         #         supplies.add(recipes[r])
 
         # return res
-        can_cook = {s:True for s in supplies} # items : T
-        recipes_index = {r: i for i, r in enumerate(recipes)}
-        def dfs(r):
-            if r in can_cook:
-                return can_cook[r]
+        # can_cook = {s:True for s in supplies} # items : T
+        # recipes_index = {r: i for i, r in enumerate(recipes)}
+        # def dfs(r):
+        #     if r in can_cook:
+        #         return can_cook[r]
 
-            if r not in recipes_index:
-                return False
+        #     if r not in recipes_index: 
+        #         return False
 
-            can_cook[r] = False
+        #     can_cook[r] = False  # for circular
 
-            for ingre in ingredients[recipes_index[r]]:
-                if not dfs(ingre):
-                    return False
+        #     for ingre in ingredients[recipes_index[r]]:
+        #         if not dfs(ingre):
+        #             return False
 
-            can_cook[r] = True
-            return can_cook[r]
+        #     can_cook[r] = True
+        #     return can_cook[r]
 
+        # res = []
+        # for r in recipes:
+        #     if dfs(r):
+        #         res.append(r)
+
+        # return res
+
+
+        indeg = defaultdict(int) # item -> indegree for each item 
+        graph = defaultdict(list) # ingredient -> recipes'
         res = []
-        for r in recipes:
-            if dfs(r):
-                res.append(r)
 
+        for i, r in enumerate(recipes):
+            for ingre in ingredients[i]:
+                graph[ingre].append(r)
+
+            indeg[r] = len(ingredients[i])
+
+
+        queue = deque(supplies)
+        while queue:
+            cur_item = queue.popleft()
+
+            if cur_item in recipes:
+                res.append(cur_item)
+
+            for r in graph[cur_item]:
+                indeg[r] -= 1
+
+                if indeg[r] == 0:
+                    queue.append(r)
+        
         return res
+
+
+
+
+
+
+
+
 
 
 
