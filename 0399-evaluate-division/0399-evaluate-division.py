@@ -1,35 +1,59 @@
 class Solution:
     def calcEquation(self, equations: List[List[str]], values: List[float], queries: List[List[str]]) -> List[float]:
-        # a / b = 2.0
-        # b / c = 3.0
         
-        # a/ c = ? 6 (a/b)*(b/c)
-        # b / a = ? 0.5 (1 / (a/b))
-        # a / a = ? 1
-        
-        # edge cases
-        # a / e = -1
-        # x / x = ? -1
-        
-        # use {a: {b: a/b, c: a/c} ; b: {a: b/a, c: b/c} ; c: {a: c/a, b: a/b}}
-        
-        graph = defaultdict(dict)
-        # {}
-        # [["a","b"],["b","c"]]
-        for i, (u,v) in enumerate(equations):
-            graph[u][v]=values[i] # u/v
-            graph[v][u]=1/values[i] # v/u
-            
-        # a, b ,c -> ab, bc, ac
-            
-        for i in graph:
-            graph[i][i] = 1
-            for j, k in combinations(graph[i], 2):
-                if j not in graph[k]:
-                    graph[k][j] = graph[i][j]/graph[i][k]   # (i/j) / (i/k)
-                    graph[j][k] = 1/graph[k][j]
-        
-        return [graph[u][v] if u in graph and v in graph[u] else -1 for u,v in queries]
-                
-        
-        
+        # a/b = 2
+        # b/c = 3
+        # a/c = 2 * 3 = 6
+
+        # a --> b --> c # weighted directed graph
+        #   2     3
+
+        # {a : (b, div val)
+        #  b: [(a, 1/div val), (c, div val)}
+        #  c: [(b, 1/div val)]}
+
+        # queue 
+        # while queue
+        #   pop out the cur ele with div val
+        #   mark the cur ele as visited
+        #   check if we reach the target
+        #       return w
+        #   go to nei 
+        #       if nei not visited
+        #       add it to queue
+
+        hashmap = defaultdict(list)
+        for i, eq in enumerate(equations):
+            src, target = eq
+            hashmap[src].append([target, values[i]])
+            hashmap[target].append([src, 1/values[i]])
+
+        def bfs(src, target):
+            if src not in hashmap or target not in hashmap:
+                return -1
+            visited = set()
+            queue = deque()
+            queue.append((src, 1))
+
+            while queue:
+                n, w = queue.popleft()
+                visited.add(n)
+                if n == target:
+                    return w
+
+                for nei in hashmap[n]:
+                    cur, val = nei
+                    if cur not in visited:
+                        queue.append((cur, w * val))
+
+            return -1
+        res = []
+        for src, target in queries:
+            res.append(bfs(src, target))
+
+        return res
+
+
+
+
+
