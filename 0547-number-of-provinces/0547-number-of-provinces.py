@@ -1,45 +1,28 @@
 class Solution:
     def findCircleNum(self, isConnected: List[List[int]]) -> int:
-        # dfs 
-        # make a undirected graph
-        # isConnected = [[1,1,0]
-        #                [1,1,0]
-        #                [0,0,1]]
-        # output = 2
-        
-        # isConnected = [[1,0,0]
-        #                [0,1,0]
-        #                [0,0,1]]
-        # output = 3
-        
-        # use set to collect all nodes visited.
-        # use a nested for loop, iterate through all elements
-        # if current index is not visited, then we need to call dfs
-        
-        # one city is always connected to itself, so it will have at most n provices
-        # so we increse the number by one, each time we check with this city, and then try to find all adjacent cities, and mark them as visited
-        
-        def dfs(i):
-            visited.add(i)
-            
-            for j in range(rows):
-                if j not in visited and isConnected[i][j] == 1:
-                    dfs(j)
-        
-        
-        rows = len(isConnected)
-        cols = len(isConnected[0])
-        province = 0
+        # adj_lst = defaultdict(set) # {nodes -> connected nodes}
         visited = set()
-        
-        for i in range(rows):
+
+        # for i in range(len(isConnected)):
+        #     for j in range(len(isConnected)):
+        #         if i != j:
+        #             adj_lst[i].add(j)
+        #             adj_lst[j].add(i)
+
+        count = 0
+        queue = deque()
+        for i in range(len(isConnected)):
             if i not in visited:
-                province += 1
-                dfs(i)
+                queue.append(i)
+
+                while queue:
+                    cur_node = queue.popleft()
+                    visited.add(cur_node)
+
+                    for j in range(len(isConnected[cur_node])):
+                        if j != cur_node and j not in visited and isConnected[cur_node][j] == 1:
+                            queue.append(j)
                 
-                    
-        # isConnected[r][c] = isConnected[c][r], we only have n cities
-        
-        return province
-        
-        
+                count += 1
+
+        return count 
