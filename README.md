@@ -557,6 +557,7 @@ All leetCode problems done will be documented here.
 | [0721-accounts-merge](https://github.com/kyileiaye2021/LeetCode/tree/master/0721-accounts-merge) |
 | [0733-flood-fill](https://github.com/kyileiaye2021/LeetCode/tree/master/0733-flood-fill) |
 | [0801-is-graph-bipartite](https://github.com/kyileiaye2021/LeetCode/tree/master/0801-is-graph-bipartite) |
+| [0802-find-eventual-safe-states](https://github.com/kyileiaye2021/LeetCode/tree/master/0802-find-eventual-safe-states) |
 | [0820-find-eventual-safe-states](https://github.com/kyileiaye2021/LeetCode/tree/master/0820-find-eventual-safe-states) |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [0871-keys-and-rooms](https://github.com/kyileiaye2021/LeetCode/tree/master/0871-keys-and-rooms) |
@@ -600,6 +601,7 @@ All leetCode problems done will be documented here.
 | [0733-flood-fill](https://github.com/kyileiaye2021/LeetCode/tree/master/0733-flood-fill) |
 | [0753-open-the-lock](https://github.com/kyileiaye2021/LeetCode/tree/master/0753-open-the-lock) |
 | [0801-is-graph-bipartite](https://github.com/kyileiaye2021/LeetCode/tree/master/0801-is-graph-bipartite) |
+| [0802-find-eventual-safe-states](https://github.com/kyileiaye2021/LeetCode/tree/master/0802-find-eventual-safe-states) |
 | [0820-find-eventual-safe-states](https://github.com/kyileiaye2021/LeetCode/tree/master/0820-find-eventual-safe-states) |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [0871-keys-and-rooms](https://github.com/kyileiaye2021/LeetCode/tree/master/0871-keys-and-rooms) |
@@ -853,6 +855,7 @@ All leetCode problems done will be documented here.
 | [0207-course-schedule](https://github.com/kyileiaye2021/LeetCode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0210-course-schedule-ii) |
 | [0310-minimum-height-trees](https://github.com/kyileiaye2021/LeetCode/tree/master/0310-minimum-height-trees) |
+| [0802-find-eventual-safe-states](https://github.com/kyileiaye2021/LeetCode/tree/master/0802-find-eventual-safe-states) |
 | [0820-find-eventual-safe-states](https://github.com/kyileiaye2021/LeetCode/tree/master/0820-find-eventual-safe-states) |
 | [1558-course-schedule-iv](https://github.com/kyileiaye2021/LeetCode/tree/master/1558-course-schedule-iv) |
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/kyileiaye2021/LeetCode/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
@@ -935,5 +938,6 @@ All leetCode problems done will be documented here.
 | [0207-course-schedule](https://github.com/kyileiaye2021/LeetCode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0210-course-schedule-ii) |
 | [0547-number-of-provinces](https://github.com/kyileiaye2021/LeetCode/tree/master/0547-number-of-provinces) |
+| [0802-find-eventual-safe-states](https://github.com/kyileiaye2021/LeetCode/tree/master/0802-find-eventual-safe-states) |
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/kyileiaye2021/LeetCode/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
 <!---LeetCode Topics End-->
