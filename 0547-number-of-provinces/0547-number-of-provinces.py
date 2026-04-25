@@ -22,6 +22,7 @@ class Solution:
                     for j in range(len(isConnected[cur_node])):
                         if j != cur_node and j not in visited and isConnected[cur_node][j] == 1:
                             queue.append(j)
+                            visited.add(j)
                 
                 count += 1
 
