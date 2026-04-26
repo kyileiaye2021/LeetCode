@@ -148,6 +148,7 @@ All leetCode problems done will be documented here.
 | [0045-jump-game-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0045-jump-game-ii) |
 | [0053-maximum-subarray](https://github.com/kyileiaye2021/LeetCode/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/kyileiaye2021/LeetCode/tree/master/0055-jump-game) |
+| [0062-unique-paths](https://github.com/kyileiaye2021/LeetCode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/kyileiaye2021/LeetCode/tree/master/0070-climbing-stairs) |
 | [0091-decode-ways](https://github.com/kyileiaye2021/LeetCode/tree/master/0091-decode-ways) |
 | [0118-pascals-triangle](https://github.com/kyileiaye2021/LeetCode/tree/master/0118-pascals-triangle) |
@@ -422,6 +423,7 @@ All leetCode problems done will be documented here.
 | [0002-add-two-numbers](https://github.com/kyileiaye2021/LeetCode/tree/master/0002-add-two-numbers) |
 | [0013-roman-to-integer](https://github.com/kyileiaye2021/LeetCode/tree/master/0013-roman-to-integer) |
 | [0048-rotate-image](https://github.com/kyileiaye2021/LeetCode/tree/master/0048-rotate-image) |
+| [0062-unique-paths](https://github.com/kyileiaye2021/LeetCode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/kyileiaye2021/LeetCode/tree/master/0070-climbing-stairs) |
 | [0189-rotate-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0189-rotate-array) |
 | [0202-happy-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0202-happy-number) |
@@ -954,4 +956,8 @@ All leetCode problems done will be documented here.
 | [0547-number-of-provinces](https://github.com/kyileiaye2021/LeetCode/tree/master/0547-number-of-provinces) |
 | [0802-find-eventual-safe-states](https://github.com/kyileiaye2021/LeetCode/tree/master/0802-find-eventual-safe-states) |
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/kyileiaye2021/LeetCode/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
+## Combinatorics
+|  |
+| ------- |
+| [0062-unique-paths](https://github.com/kyileiaye2021/LeetCode/tree/master/0062-unique-paths) |
 <!---LeetCode Topics End-->
