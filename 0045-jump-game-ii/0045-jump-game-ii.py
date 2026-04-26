@@ -1,16 +1,20 @@
 class Solution:
     def jump(self, nums: List[int]) -> int:
-        count= 0
-        l = r = 0
-        
-        while r < len(nums) - 1: # need to stop at the last index
-            farthest = 0
+
+        # bfs
+        res = 0
+        l = 0
+        r = 0
+
+        while r < len(nums) - 1:
+            # find the furthest we can reach from the curr point
+            furthest = 0
+
             for i in range(l, r + 1):
-                farthest = max(farthest ,i + nums[i])
+                furthest = max(furthest, nums[i] + i)
             
             l = r + 1
-            r = farthest
-            count += 1
-            
-        return count
-
+            r = furthest
+            res += 1
+        return res
+        
