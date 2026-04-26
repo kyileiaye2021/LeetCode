@@ -98,6 +98,7 @@ All leetCode problems done will be documented here.
 | [0721-accounts-merge](https://github.com/kyileiaye2021/LeetCode/tree/master/0721-accounts-merge) |
 | [0724-find-pivot-index](https://github.com/kyileiaye2021/LeetCode/tree/master/0724-find-pivot-index) |
 | [0733-flood-fill](https://github.com/kyileiaye2021/LeetCode/tree/master/0733-flood-fill) |
+| [0746-min-cost-climbing-stairs](https://github.com/kyileiaye2021/LeetCode/tree/master/0746-min-cost-climbing-stairs) |
 | [0747-min-cost-climbing-stairs](https://github.com/kyileiaye2021/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 | [0753-open-the-lock](https://github.com/kyileiaye2021/LeetCode/tree/master/0753-open-the-lock) |
 | [0792-binary-search](https://github.com/kyileiaye2021/LeetCode/tree/master/0792-binary-search) |
@@ -165,6 +166,7 @@ All leetCode problems done will be documented here.
 | [0435-non-overlapping-intervals](https://github.com/kyileiaye2021/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0518-coin-change-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0518-coin-change-ii) |
 | [0647-palindromic-substrings](https://github.com/kyileiaye2021/LeetCode/tree/master/0647-palindromic-substrings) |
+| [0746-min-cost-climbing-stairs](https://github.com/kyileiaye2021/LeetCode/tree/master/0746-min-cost-climbing-stairs) |
 | [0747-min-cost-climbing-stairs](https://github.com/kyileiaye2021/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 | [1063-best-sightseeing-pair](https://github.com/kyileiaye2021/LeetCode/tree/master/1063-best-sightseeing-pair) |
 | [1143-longest-common-subsequence](https://github.com/kyileiaye2021/LeetCode/tree/master/1143-longest-common-subsequence) |
