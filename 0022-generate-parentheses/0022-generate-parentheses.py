@@ -1,45 +1,35 @@
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
-        # if open == n and close == n:
-        #   add curr str to res
-        # if open < n:
-        #   if we go left, add '(' to curr str
-        #       increment open
-        # remove the added '(' from curr str
-        # decrement open
-        # if open > close:
-        #   if we go right, add ')' to curr str
-        #       increment close
-        open = close = 0
-        res = []
-        cur_str = []
 
-        def recur(open, close):
-            # base case
+        # dfs(open, close)
+        # base case
+        # if open > n
+        #   return (don't expand)
+        # if close > opening parenthesis num
+        #   return (don't expand)
+        # if open == n and close num
+        #   put the curr parenthesis str to the res arr
+        # dfs(open + 1, close) # add opening parenthesis
+        # backtrack --> pop the curr '(' from res
+        # dfs(open, close) # add closing parenthesis
+        res = []
+        def dfs(open, close, curr):
+
             if open == n and close == n:
-                res.append(''.join(cur_str))
+                cur_paren = ''.join(curr)
+                res.append(cur_paren)
                 return
 
-            # left 
             if open < n:
-                cur_str.append('(')
-                recur(open + 1, close)
-                # backtrack
-                cur_str.pop()
+                curr.append('(')
+                dfs(open + 1, close, curr)   
+                curr.pop() # backtrack
 
-            # right
             if close < open:
-                cur_str.append(')')
-                recur(open, close + 1)
-                cur_str.pop()
+                curr.append(')')
+                dfs(open, close + 1, curr)     
+                curr.pop()
 
-        recur(open, close)
+        dfs(0,0,[])
         return res
-
-
-
-        
-
-    
-
         
