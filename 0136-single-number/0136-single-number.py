@@ -1,10 +1,23 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
 
-        # XOR => results in 0 if the two operators are the same
-        # XOR all ele and total is gonna to the res
-        res = nums[0]
-        for i in range(1, len(nums)):
-            res ^= nums[i]
+        # [4,4,2]
+        # output: 2
+
+        # [1,2,2]
+        # output: 1
+
+        # [7,6,6,1,1]
+        # output: 7
+        # hashmap : O(n) space
+        # sort and traverse : O(nlogn) time
+        # bucket sort like storing the count at each index : O(n) space
+
+        res = 0
+
+        for n in nums:
+            res ^= n
 
         return res
+
+        
