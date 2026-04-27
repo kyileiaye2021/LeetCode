@@ -3,52 +3,35 @@ class Solution:
         """
         Do not return anything, modify matrix in-place instead.
         """
+        # creating tl, tr, bl, br
+        # keep track of bl value
+        # while br > 0
+        #   iterate thru the row with br
+        #       add br to bl
+        #       decrement br by 1
+        #       add tr to bl
+        #       decrement tr by 1
+        #       add tl to tr
+        #       increment tl by 1
+        #   decrement br by 1
 
-        l = 0
-        r = len(matrix[0]) - 1
-
+        l = 0 
+        r = len(matrix) - 1
         while l < r:
-            for i in range(r - l):
-                top = l
-                bottom = r
+            t = l
+            b = r
 
-                bottom_right = matrix[bottom][r - i]
+            # rotate starting from outside
+            for i in range(r-l):
+                topLeft = matrix[t][l + i]
 
-                # mv top right to bottom right
-                matrix[bottom][r - i] = matrix[top + i][r]
+                matrix[t][l + i] = matrix[b - i][l]
 
-                # mv top left to top right
-                matrix[top + i][r] = matrix[top][l + i]
+                matrix[b - i][l] = matrix[b][r - i]
 
-                # mv bottom left to top left
-                matrix[top][l + i] = matrix[bottom - i][l]
+                matrix[b][r - i] = matrix[t + i][r]
 
-                # mv bottom right to bottom left
-                matrix[bottom - i][l] = bottom_right
-
+                matrix[t + i][r] = topLeft
+            
             l += 1
             r -= 1
-
-        # while l < r:
-
-        #     for i in range(r - l):
-        #         top = l
-        #         bottom = r
-
-        #         top_left = matrix[top][l + i]
-
-        #         # move bottom left to top left
-        #         matrix[top][l + i] = matrix[bottom - i][l]
-
-        #         # move bottom right to bottom left
-        #         matrix[bottom - i][l] = matrix[bottom][r - i]
-
-        #         # move top right to bottom right
-        #         matrix[bottom][r - i] = matrix[top + i][r]
-
-        #         # move top left to top right
-        #         matrix[top + i][r] = top_left
-
-        #     l += 1
-        #     r -= 1
-            
