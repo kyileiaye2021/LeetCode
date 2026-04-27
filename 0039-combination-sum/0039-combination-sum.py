@@ -1,29 +1,30 @@
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
-        # recur
+        # dfs(i)
+        # if i >= len(candidates)
+        #   add curr list to res list
+        # add curr ele to the list
+        # increment the cur sum
+        # dfs(i) # include
+        # backtrack and pop the curr ele
+        # decrement cur sum
+        # dfs(i + 1) # exclude  
+
         res = []
-        cur_lst = []
-        cur_sum = 0
 
-        def recur(i, cur_lst, cur_sum):
-
-            if cur_sum == target:
-                res.append(cur_lst.copy())
+        def dfs(i, cur, total):
+            if target == total:
+                res.append(cur.copy())
+                return 
+            if i >= len(candidates) or total > target:
                 return
 
-            if cur_sum > target:
-                return
+            cur.append(candidates[i])
+            dfs(i, cur, total + candidates[i])
 
-            for j in range(i, len(candidates)):
-                cur_lst.append(candidates[j])
-                cur_sum += candidates[j]
-                recur(j, cur_lst, cur_sum)
-                cur_lst.pop()
-                cur_sum -= candidates[j]
+            cur.pop()
 
-                # recur(j + 1, cur_lst, cur_sum)
-                # cur_lst.pop()
-                # cur_sum -= candidates[i]
+            dfs(i + 1, cur, total)
 
-        recur(0, cur_lst, cur_sum) 
+        dfs(0, [], 0)
         return res
