@@ -1,27 +1,61 @@
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
-        # nums = [1,1,2]
-        # output: 2, nums = [1,2,_]
+        
+        # happy cases
+        # [1,1,2]
+        # [1,2, _]
 
-        # nums = [0,0,1,1,1,1,2,]
-        # output: 3, [0,1,2,_]
+        # [1,2,3]
+        # [1,2,3]
 
-        # two pointer
+        # [1,2,3,3]
+        # [1,2,3,_]
 
-        # i, j index 0
-        # iterate thry the nums upto 2nd to last ele with j
-        #   if j ele is != j + 1 ele
-        #       move j ele to i
-        #       move i by 1
-        #   move j by 1
+        # [1,1,1,2,2,2,3,3,3]
+        # [1,2,3,_,_,_,_,_,_]
 
-        i, j = 1, 1
-        while j < len(nums):
-            if nums[j] != nums[j - 1]:
-                nums[i] = nums[j]
-                i += 1
-            j += 1
+        # edge cases
+        # [1,1,1,1]
+        # [1,_,_,_]
 
-        return i
+        # [1]
+        # [1]
+
+        # []
+        # []
+
+        # 2 pointers
+        # l,r
+        # l = 0
+        # r = l + 1
+        # until r reaches the end
+        # keep moving r until the l and r ele are the same
+        # if l and r ele not same
+        #   move r pointer ele to l + 1 place
+        #   move l to r
+        #   move r to l + 1
+        # return first k ele of the list
+
+        if len(nums) == 0:
+            return []
+
+        l = 0
+        r = l + 1
+        k = l + 1
+
+        while r < len(nums):
+            if nums[r] == nums[l]:
+                r += 1
+            
+            else:
+                nums[k] = nums[r]
+                k += 1
+                l = r
+                r = l + 1
+
+        return k
+
+
+        
 
         
