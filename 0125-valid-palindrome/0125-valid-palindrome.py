@@ -1,45 +1,31 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        # happy case
-        # input: s = 'A man, nama'
-        # output: True amannama
 
-        # input: s = 'Bar'
-        # output: False
+        # ignore whitespaces and non-alphanumeric 
+        # if 2 pointers is non-alphanumeric chars, move that pointer
 
-        # edge case
-        # input: s = ""
-        # output: True
+        # if 2 pinter ele == the same
+        # move both pointers inwards
+        # stop when l and r are =
 
-        # input: s = "a"
-        # output: False
+        l = 0
+        r = len(s) - 1
 
-        # i, j
-        # while i is less than j
-        #   if i ele is a whitespace or special char:
-        #       increment i by 1
-        #   elif j ele is a whitespace or special char:
-        #       decrement j by 1
-        #   check if the i char is the same as j char
-        #       increment i by 1
-        #       decrement j by 1
-        #   if they are not same 
-        #       return False
+        while l < r:
+            while l < r and not s[l].isalnum():
+                l += 1
+            
+            while r > l and not s[r].isalnum():
+                r -= 1
 
-        # time - O(logn)
-        # space - O(1)
-
-        i, j = 0, len(s)-1
-        while i <= j: 
-            if not s[i].isalnum(): # if the ele is not alnum
-                i += 1
-            elif not s[j].isalnum():
-                j -= 1
+            if s[l].lower() == s[r].lower():
+                l += 1
+                r -= 1
+            
             else:
-                if s[i].lower() == s[j].lower():
-                    i += 1
-                    j -= 1
-                else:
-                    return False
+                return False
 
         return True
+
+            
+        
