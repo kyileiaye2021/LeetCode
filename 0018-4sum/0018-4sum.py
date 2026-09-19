@@ -119,7 +119,7 @@ class Solution:
                         r -= 1
                         while l < r and nums[r] == nums[r + 1]:
                             r -= 1
-                return 
+                
 
             else:
                 while idx < len(nums) - k + 1:
