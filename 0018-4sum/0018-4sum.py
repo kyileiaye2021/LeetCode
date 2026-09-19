@@ -46,46 +46,92 @@ class Solution:
         #   whilie i ele == i - 1 ele
         #       i + = 1
 
+        # nums.sort()
+        # res = []
+
+        # i = 0
+        # while i < len(nums) - 3:
+        #     j = i + 1
+        #     while j < len(nums) - 2:
+        #         l = j + 1
+        #         r = len(nums) - 1
+
+        #         while l < r:
+        #             curr_sum = nums[l] + nums[r] + nums[j] + nums[i]
+
+        #             if curr_sum == target:
+        #                 res.append([nums[l], nums[r], nums[i], nums[j]])
+        #                 l += 1
+        #                 while l < r and nums[l] == nums[l - 1]:
+        #                     l += 1
+        #                 r -= 1
+        #                 while l < r and nums[r] == nums[r + 1]:
+        #                     r -= 1
+
+        #             elif curr_sum > target:
+        #                 r -= 1
+        #                 while l < r and nums[r] == nums[r + 1]:
+        #                     r -= 1
+
+        #             else:
+        #                 l += 1
+        #                 while l < r and nums[l] == nums[l - 1]:
+        #                     l += 1
+
+        #         j += 1
+        #         while j < len(nums) and nums[j] == nums[j - 1]:
+        #             j += 1
+
+        #     i += 1
+        #     while i < len(nums) and nums[i] == nums[i - 1]:
+        #         i += 1
+
+        # return res
+
         nums.sort()
         res = []
+        quad = []
 
-        i = 0
-        while i < len(nums) - 3:
-            j = i + 1
-            while j < len(nums) - 2:
-                l = j + 1
+        def recur_sum(k, idx, target):
+
+            # base case
+            if k == 2:
+                # 2 sum
+                l = idx
                 r = len(nums) - 1
 
                 while l < r:
-                    curr_sum = nums[l] + nums[r] + nums[j] + nums[i]
-
-                    if curr_sum == target:
-                        res.append([nums[l], nums[r], nums[i], nums[j]])
+                    if nums[l] + nums[r] < target:
                         l += 1
                         while l < r and nums[l] == nums[l - 1]:
                             l += 1
-                        r -= 1
-                        while l < r and nums[r] == nums[r + 1]:
-                            r -= 1
 
-                    elif curr_sum > target:
+                    elif nums[l] + nums[r] > target:
                         r -= 1
                         while l < r and nums[r] == nums[r + 1]:
                             r -= 1
 
                     else:
-                        l += 1
+                        res.append(quad + [nums[l], nums[r]])
+                        l += 1 
                         while l < r and nums[l] == nums[l - 1]:
                             l += 1
+                        r -= 1
+                        while l < r and nums[r] == nums[r + 1]:
+                            r -= 1
+                return 
 
-                j += 1
-                while j < len(nums) and nums[j] == nums[j - 1]:
-                    j += 1
+            else:
+                while idx < len(nums) - k + 1:
+                    quad.append(nums[idx])
+                    recur_sum(k - 1, idx + 1, target - nums[idx])
+                    quad.pop()
 
-            i += 1
-            while i < len(nums) and nums[i] == nums[i - 1]:
-                i += 1
-
+                    idx += 1
+                    while idx < len(nums) and nums[idx] == nums[idx - 1]:
+                        idx += 1
+            
+        recur_sum(4, 0, target)
         return res
 
 
