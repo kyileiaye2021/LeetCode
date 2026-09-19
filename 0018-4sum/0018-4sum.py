@@ -1,49 +1,92 @@
 class Solution:
-    def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
-        # based on three sum
-        # we used two pointer approach with O(n^2)
+    def fourSum(self, nums: list[int], target: int) -> list[list[int]]:
+        # happy cases
+        # nums = [1,0,-1,0,-2,2], target = 0
+        # [[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]
 
-        # [-2,-1,0,0,1,2]
-        # two pointer with (O(n^3))
+        # nums = [-1,0,1,0,8,-8,8,-8], target = 0
+        # [[-1,0,1,0],[8,8,-8,-8], [8,-8,0,0], [8,-8,-1,1]]
 
-        # res list
-        # sort the array first 
-        # iterate thru the list
-        #   a + b + c + d = target
-        #   diff = target - d
-        #   iterate thru the list 
-        #       target = diff - curr val
-        #       l, r two pointers
-        #       if the l, r ele adding up greater than the target,
-        #           shift the r one
-        #       elif it is less than the target,
-        #           shift the l one
-        #       else:
-        #           create a list and add it to the res if it is not already in the res list
+        # nums = [1,2,3,4], target = 10
+        # [[1,2,3,4]]
+
+        # edge cases
+        # nums = [2,2,2,2,2], target = 8
+        # [[2,2,2,2]]
+
+        # nums = [2,2,2,2,2], target = 10
+        # []
+
+        # nums = [2,2,2], target = 8
+        # []
+
+        # sort the nums 
+        # iterate thru nums with i upto len(nums) - 3 
+        #   negage curr ith ele (target)
+        #   iterate thru nums with j (i + 1) - 2
+        #       l = j + 1, r = last ele
+        #       while l < r
+        #           curr sum = l ele + r ele + curr i ele
+        #           if curr sum == target
+        #               add that [curr i ele, curr j ele, l ele, r ele ] to the res
+        #               l and r pointer by 1
+        #               while l ele == l -1 ele, increment l by 1
+        #               while r lele == r + 1 ele, decrement r by 1
+        #           if curr sum < target:
+        #               increment l by 1
+        #               while l ele == l -1 ele, increment l by 1
+        #           if curr sum > target
+        #               decrement r by 1
+        #               while r lele == r + 1 ele, decrement r by 1
+        #       j += 1
+        #       while j elel == j - 1 ele
+        #           j += 1
+
+        #   i += 1
+        #   whilie i ele == i - 1 ele
+        #       i + = 1
+
+        nums.sort()
         res = []
-        nums = sorted(nums)
-        for i in range(len(nums)):
-            three_sum = target - nums[i]
 
-            for j in range(i + 1, len(nums)):
-
-                two_sum = three_sum - nums[j]
-
-                l,r = j + 1, len(nums)-1
+        i = 0
+        while i < len(nums) - 3:
+            j = i + 1
+            while j < len(nums) - 2:
+                l = j + 1
+                r = len(nums) - 1
 
                 while l < r:
+                    curr_sum = nums[l] + nums[r] + nums[j] + nums[i]
 
-                    if nums[l] + nums[r] > two_sum:
-                        r -= 1
-                    
-                    elif nums[l] + nums[r] < two_sum:
+                    if curr_sum == target:
+                        res.append([nums[l], nums[r], nums[i], nums[j]])
                         l += 1
+                        while l < r and nums[l] == nums[l - 1]:
+                            l += 1
+                        r -= 1
+                        while l < r and nums[r] == nums[r + 1]:
+                            r -= 1
+
+                    elif curr_sum > target:
+                        r -= 1
+                        while l < r and nums[r] == nums[r + 1]:
+                            r -= 1
 
                     else:
-                        curr_lst = [nums[l], nums[r], nums[j], nums[i]]
-                        if curr_lst not in res:
-                            res.append(curr_lst)
-
                         l += 1
-                        r -= 1
+                        while l < r and nums[l] == nums[l - 1]:
+                            l += 1
+
+                j += 1
+                while j < len(nums) and nums[j] == nums[j - 1]:
+                    j += 1
+
+            i += 1
+            while i < len(nums) and nums[i] == nums[i - 1]:
+                i += 1
+
         return res
+
+
+
