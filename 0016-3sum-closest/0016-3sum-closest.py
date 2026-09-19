@@ -1,64 +1,89 @@
 class Solution:
-    def threeSumClosest(self, nums: List[int], target: int) -> int:
-        # largest ele smaller than target
-        # smallest ele greater than target
+    def threeSumClosest(self, nums: list[int], target: int) -> int:
 
-        # [-4, -1, -1, 1, 2]
-        # target = 1
-        # -4 -> total closet -1
-        # -1 -> total 2
-        # 1 
+        # happy cases
+        # nums = [-1,2,1,-4], target = 1
+        # -1, 2,1 = 0
+        # -1, 2, -4 = -3
+        # -1, 1, -4 = -4
+        # 2, 1, -4 = -1
+        # [-1, 2, 1] = 2
 
-        # sort the arr
-        # iterate thu the arr
-        #   curr ele 
-        #   l ele , r ele
-        #   if total < target
-        #       l += 1
-        #   elif total > target:
-        #       r += 1
-        #   elif total == target
-        #       l += 1
-        #       r -= 1
-        # find the diff between target and total
-        #       update the most closet diff
-        # return the most closet diff sum
+        # nums = [-1, 1, 2, 3], target = 4
+        # [-1, 1, 2] = 2
+
+        # nums = [-1, 1, -1, 1], target = 3
+        # [-1, 1, -1] = -1
+        # [1, -1, 1] = 1
+        # 1
+
+        # edge cases
+        # nums = [-1, 4, 3], t = 6
+        # 6
+
+        # nums = [0,0,0], t = 3
+        # 0
+
+        # sorting , 2 pointer 
+        # min dist = inf
+        # iteate thru the ele starting from i
+        #   l and r
+        #   while l < r
+        #       if l ele + r ele + curr i ele == target, return target
+        #       if curr sum = l ele + r ele + curr i ele > target, move r to left
+        #           target - curr sum < min dist
+        #           update min dist 
+        #           if r ele is still the same, move r to left
+        #       curr sum = l ele + r ele + curr i ele 
+        #           update min dist if target - curr sum < min dist
+        #           if curr sum < target, mover l to right
+        #           if l ele is still the same, move l to right
+        #  i += 1
+        #  if prev i ele == curr i ele 
+        #  i += 1
+    
+        # return min dist
 
         nums.sort()
-        closet_sum = float("inf")
-        closet_diff = float("inf")
-        for i in range(len(nums)):
-            if i > 0 and nums[i] == nums[i - 1]:
-                continue
+        min_dist = float('inf')
+        res = 0
 
-            curr = nums[i]
+        i = 0
+        while i < len(nums):
             l = i + 1
             r = len(nums) - 1
-
             while l < r:
-                total = nums[l] + nums[r] + curr
-                diff = abs(total - target)
-                if diff < closet_diff:
-                    closet_diff = diff
-                    closet_sum = total
-                
+                curr_sum = nums[l] + nums[r] + nums[i]
+                curr_dist = abs(target - curr_sum)
+                if min_dist > curr_dist:
+                    min_dist = curr_dist
+                    res = curr_sum
 
-                if total < target:
+                if curr_sum == target:
+                    return target
+
+                elif curr_sum < target:
                     l += 1
-
-                elif total > target:
-                    r -= 1
-
-                else:
-                    l += 1
-                    r -= 1
-
-                    while l < len(nums) and nums[l] == nums[l - 1]:
+                    while l < r and nums[l] == nums[l - 1]:
                         l += 1
 
-        return closet_sum
-        # -4, -1, 1, 2
+                else:
+                    r -= 1
+                    while r > l and nums[r] == nums[r + 1]:
+                        r -= 1
 
-        # -4 -> -1 closet sum -1 closet diff 2
-        # -1 -> closet sum 2 closet diff 1
+            i += 1
+            while i < len(nums) and nums[i] == nums[i - 1]:
+                i += 1
+
+        return res
+
+
+
+
+
+
+
+
+
 
