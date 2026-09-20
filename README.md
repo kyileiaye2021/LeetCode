@@ -978,4 +978,8 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/kyileiaye2021/LeetCode/tree/master/0062-unique-paths) |
+## Floyd's Cycle Finding Algorithm
+|  |
+| ------- |
+| [0202-happy-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0202-happy-number) |
 <!---LeetCode Topics End-->
