@@ -15,14 +15,12 @@ class Solution:
 
         while True:
             visited.add(num)
-            curr_total = helper(num)
-            if curr_total == 1:
+            num = helper(num)
+            if num == 1:
                 return True
 
-            if curr_total in visited:
+            if num in visited:
                 return False
-            
-            num = curr_total
 
         return False
 
