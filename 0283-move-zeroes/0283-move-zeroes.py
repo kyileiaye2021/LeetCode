@@ -1,31 +1,49 @@
 class Solution:
-    def moveZeroes(self, nums: List[int]) -> None:
+    def moveZeroes(self, nums: list[int]) -> None:
         """
         Do not return anything, modify nums in-place instead.
         """
 
-        # we maintain the index i at positions 0
-        # j will go to next elements 
-        # if j ele is not 0
-        #   put j ele to i
-        #   i += 1
+        # happy cases
+        # [0,1,0,3,12]
+        # [1,3,12,0,0]
+
+        # [-1,2,0,3]
+        # [-1,2,3,0]
+
+        # [9,2]
+        # [9,2]
+
+        # edge cases
+        # [0,0,0]
+        # [0,0,0]
+
+        # [1,0]
+        # [1,0]
+
+        # 2 pointers
+        # i , j
+        # iterate thru the ele with j
+        #   if j ele is not 0
+        #       i ele = j ele
+        #       i += 1
         #   j += 1
-        # else: j += 1
-        # make all ele 0 from i to j
+        # start form i
+        #   iterate thru remaining ele and change to 0
         
-        i = 0
-        j = 0
+
+        i, j = 0, 0
         while j < len(nums):
             if nums[j] != 0:
                 nums[i] = nums[j]
                 i += 1
 
             j += 1
-        
-        for k in range(i, len(nums)):
-            nums[k] = 0
 
-        
+        while i < len(nums):
+            nums[i] = 0
+            i += 1
+
 
 
         
