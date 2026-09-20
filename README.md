@@ -141,6 +141,7 @@ All leetCode problems done will be documented here.
 | [2542-maximum-subsequence-score](https://github.com/kyileiaye2021/LeetCode/tree/master/2542-maximum-subsequence-score) |
 | [2747-count-zero-request-servers](https://github.com/kyileiaye2021/LeetCode/tree/master/2747-count-zero-request-servers) |
 | [3639-zero-array-transformation-i](https://github.com/kyileiaye2021/LeetCode/tree/master/3639-zero-array-transformation-i) |
+| [3731-find-missing-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/3731-find-missing-elements) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -293,6 +294,7 @@ All leetCode problems done will be documented here.
 | [1798-max-number-of-k-sum-pairs](https://github.com/kyileiaye2021/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/kyileiaye2021/LeetCode/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
 | [2747-count-zero-request-servers](https://github.com/kyileiaye2021/LeetCode/tree/master/2747-count-zero-request-servers) |
+| [3731-find-missing-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/3731-find-missing-elements) |
 ## Sorting
 |  |
 | ------- |
@@ -333,6 +335,7 @@ All leetCode problems done will be documented here.
 | [1798-max-number-of-k-sum-pairs](https://github.com/kyileiaye2021/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [2542-maximum-subsequence-score](https://github.com/kyileiaye2021/LeetCode/tree/master/2542-maximum-subsequence-score) |
 | [2747-count-zero-request-servers](https://github.com/kyileiaye2021/LeetCode/tree/master/2747-count-zero-request-servers) |
+| [3731-find-missing-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/3731-find-missing-elements) |
 ## String
 |  |
 | ------- |
