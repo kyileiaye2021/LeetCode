@@ -140,6 +140,7 @@ All leetCode problems done will be documented here.
 | [2358-number-of-ways-to-split-array](https://github.com/kyileiaye2021/LeetCode/tree/master/2358-number-of-ways-to-split-array) |
 | [2542-maximum-subsequence-score](https://github.com/kyileiaye2021/LeetCode/tree/master/2542-maximum-subsequence-score) |
 | [2747-count-zero-request-servers](https://github.com/kyileiaye2021/LeetCode/tree/master/2747-count-zero-request-servers) |
+| [2965-find-missing-and-repeated-values](https://github.com/kyileiaye2021/LeetCode/tree/master/2965-find-missing-and-repeated-values) |
 | [3639-zero-array-transformation-i](https://github.com/kyileiaye2021/LeetCode/tree/master/3639-zero-array-transformation-i) |
 | [3731-find-missing-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/3731-find-missing-elements) |
 ## Dynamic Programming
@@ -295,6 +296,7 @@ All leetCode problems done will be documented here.
 | [1798-max-number-of-k-sum-pairs](https://github.com/kyileiaye2021/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [2115-find-all-possible-recipes-from-given-supplies](https://github.com/kyileiaye2021/LeetCode/tree/master/2115-find-all-possible-recipes-from-given-supplies) |
 | [2747-count-zero-request-servers](https://github.com/kyileiaye2021/LeetCode/tree/master/2747-count-zero-request-servers) |
+| [2965-find-missing-and-repeated-values](https://github.com/kyileiaye2021/LeetCode/tree/master/2965-find-missing-and-repeated-values) |
 | [3731-find-missing-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/3731-find-missing-elements) |
 ## Sorting
 |  |
@@ -452,6 +454,7 @@ All leetCode problems done will be documented here.
 | [0973-k-closest-points-to-origin](https://github.com/kyileiaye2021/LeetCode/tree/master/0973-k-closest-points-to-origin) |
 | [1236-n-th-tribonacci-number](https://github.com/kyileiaye2021/LeetCode/tree/master/1236-n-th-tribonacci-number) |
 | [1524-number-of-sub-arrays-with-odd-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
+| [2965-find-missing-and-repeated-values](https://github.com/kyileiaye2021/LeetCode/tree/master/2965-find-missing-and-repeated-values) |
 ## Queue
 |  |
 | ------- |
@@ -763,6 +766,7 @@ All leetCode problems done will be documented here.
 | [2022-convert-1d-array-into-2d-array](https://github.com/kyileiaye2021/LeetCode/tree/master/2022-convert-1d-array-into-2d-array) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/kyileiaye2021/LeetCode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 | [2067-maximum-number-of-points-with-cost](https://github.com/kyileiaye2021/LeetCode/tree/master/2067-maximum-number-of-points-with-cost) |
+| [2965-find-missing-and-repeated-values](https://github.com/kyileiaye2021/LeetCode/tree/master/2965-find-missing-and-repeated-values) |
 ## Union Find
 |  |
 | ------- |
