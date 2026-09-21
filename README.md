@@ -130,6 +130,7 @@ All leetCode problems done will be documented here.
 | [1552-magnetic-force-between-two-balls](https://github.com/kyileiaye2021/LeetCode/tree/master/1552-magnetic-force-between-two-balls) |
 | [1603-running-sum-of-1d-array](https://github.com/kyileiaye2021/LeetCode/tree/master/1603-running-sum-of-1d-array) |
 | [1642-furthest-building-you-can-reach](https://github.com/kyileiaye2021/LeetCode/tree/master/1642-furthest-building-you-can-reach) |
+| [1752-check-if-array-is-sorted-and-rotated](https://github.com/kyileiaye2021/LeetCode/tree/master/1752-check-if-array-is-sorted-and-rotated) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/kyileiaye2021/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [1833-find-the-highest-altitude](https://github.com/kyileiaye2021/LeetCode/tree/master/1833-find-the-highest-altitude) |
 | [1861-rotating-the-box](https://github.com/kyileiaye2021/LeetCode/tree/master/1861-rotating-the-box) |
