@@ -344,6 +344,7 @@ All leetCode problems done will be documented here.
 | [1798-max-number-of-k-sum-pairs](https://github.com/kyileiaye2021/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [2542-maximum-subsequence-score](https://github.com/kyileiaye2021/LeetCode/tree/master/2542-maximum-subsequence-score) |
 | [2747-count-zero-request-servers](https://github.com/kyileiaye2021/LeetCode/tree/master/2747-count-zero-request-servers) |
+| [3536-maximum-product-of-two-digits](https://github.com/kyileiaye2021/LeetCode/tree/master/3536-maximum-product-of-two-digits) |
 | [3731-find-missing-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/3731-find-missing-elements) |
 ## String
 |  |
@@ -461,6 +462,7 @@ All leetCode problems done will be documented here.
 | [1236-n-th-tribonacci-number](https://github.com/kyileiaye2021/LeetCode/tree/master/1236-n-th-tribonacci-number) |
 | [1524-number-of-sub-arrays-with-odd-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
 | [2965-find-missing-and-repeated-values](https://github.com/kyileiaye2021/LeetCode/tree/master/2965-find-missing-and-repeated-values) |
+| [3536-maximum-product-of-two-digits](https://github.com/kyileiaye2021/LeetCode/tree/master/3536-maximum-product-of-two-digits) |
 ## Queue
 |  |
 | ------- |
