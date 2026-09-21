@@ -91,6 +91,7 @@ All leetCode problems done will be documented here.
 | [0560-subarray-sum-equals-k](https://github.com/kyileiaye2021/LeetCode/tree/master/0560-subarray-sum-equals-k) |
 | [0599-minimum-index-sum-of-two-lists](https://github.com/kyileiaye2021/LeetCode/tree/master/0599-minimum-index-sum-of-two-lists) |
 | [0621-task-scheduler](https://github.com/kyileiaye2021/LeetCode/tree/master/0621-task-scheduler) |
+| [0628-maximum-product-of-three-numbers](https://github.com/kyileiaye2021/LeetCode/tree/master/0628-maximum-product-of-three-numbers) |
 | [0643-maximum-average-subarray-i](https://github.com/kyileiaye2021/LeetCode/tree/master/0643-maximum-average-subarray-i) |
 | [0658-find-k-closest-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0692-top-k-frequent-words](https://github.com/kyileiaye2021/LeetCode/tree/master/0692-top-k-frequent-words) |
@@ -327,6 +328,7 @@ All leetCode problems done will be documented here.
 | [0442-find-all-duplicates-in-an-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0539-minimum-time-difference](https://github.com/kyileiaye2021/LeetCode/tree/master/0539-minimum-time-difference) |
 | [0621-task-scheduler](https://github.com/kyileiaye2021/LeetCode/tree/master/0621-task-scheduler) |
+| [0628-maximum-product-of-three-numbers](https://github.com/kyileiaye2021/LeetCode/tree/master/0628-maximum-product-of-three-numbers) |
 | [0658-find-k-closest-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0658-find-k-closest-elements) |
 | [0692-top-k-frequent-words](https://github.com/kyileiaye2021/LeetCode/tree/master/0692-top-k-frequent-words) |
 | [0721-accounts-merge](https://github.com/kyileiaye2021/LeetCode/tree/master/0721-accounts-merge) |
@@ -452,6 +454,7 @@ All leetCode problems done will be documented here.
 | [0279-perfect-squares](https://github.com/kyileiaye2021/LeetCode/tree/master/0279-perfect-squares) |
 | [0380-insert-delete-getrandom-o1](https://github.com/kyileiaye2021/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0539-minimum-time-difference](https://github.com/kyileiaye2021/LeetCode/tree/master/0539-minimum-time-difference) |
+| [0628-maximum-product-of-three-numbers](https://github.com/kyileiaye2021/LeetCode/tree/master/0628-maximum-product-of-three-numbers) |
 | [0912-random-pick-with-weight](https://github.com/kyileiaye2021/LeetCode/tree/master/0912-random-pick-with-weight) |
 | [0973-k-closest-points-to-origin](https://github.com/kyileiaye2021/LeetCode/tree/master/0973-k-closest-points-to-origin) |
 | [1236-n-th-tribonacci-number](https://github.com/kyileiaye2021/LeetCode/tree/master/1236-n-th-tribonacci-number) |
