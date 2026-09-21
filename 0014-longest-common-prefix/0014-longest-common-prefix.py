@@ -1,43 +1,19 @@
 class Solution:
-    def longestCommonPrefix(self, strs: List[str]) -> str:
-        
-        # Happy case
-        # input: strs = ["ab", "abc", "abd"]
-        # output: "ab"
+    def longestCommonPrefix(self, strs: list[str]) -> str:
+        # res 
+        # iterate thru the chars in first ele
+        #   iterate thru the strs
+        #       if curr char of first ele != the curr char of s or s is out of bound
+        #           return res
+        #   add curr char of first ele to res
+        # return res
 
-        # input: strs = ["abc", "abd", "ace"]
-        # output: "a"
+        res = ""
+        for i in range(len(strs[0])):
+            for s in strs:
+                if i == len(s) or s[i] != strs[0][i]:
+                    return res
 
-        # Edge case
-        # input: str = ["ab", "cd", "de"]
-        # output: ""
+            res += strs[0][i]
 
-        # input: str = ["abc"]
-        # output: ""
-
-        # input: str = ["ab", "ab"]
-        # output: "ab"
-
-        # two pointers
-        # initialize common to first ele 
-        # iterate thru the list
-        #   l,r both at 0
-        #   l pointing to first ele in common
-        #   r pointing to first ele in curr str
-        #   until one of the pointers reaches the end
-        #       check if the curr pointer vals are not the same
-        #           break the loop
-        #   update the common str with common[:l]
-        # return common
-    
-        common = strs[0]
-        for s in strs:
-            l,r = 0, 0
-            while l < len(common) and r < len(s):
-                if common[l] != s[r]:
-                    break
-                l += 1
-                r += 1
-            common = common[:l]
-
-        return common
+        return res
