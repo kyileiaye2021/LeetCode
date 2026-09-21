@@ -275,6 +275,7 @@ All leetCode problems done will be documented here.
 | [0380-insert-delete-getrandom-o1](https://github.com/kyileiaye2021/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
 | [0383-ransom-note](https://github.com/kyileiaye2021/LeetCode/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0387-first-unique-character-in-a-string) |
+| [0389-find-the-difference](https://github.com/kyileiaye2021/LeetCode/tree/master/0389-find-the-difference) |
 | [0424-longest-repeating-character-replacement](https://github.com/kyileiaye2021/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
@@ -318,6 +319,7 @@ All leetCode problems done will be documented here.
 | [0347-top-k-frequent-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0347-top-k-frequent-elements) |
 | [0349-intersection-of-two-arrays](https://github.com/kyileiaye2021/LeetCode/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0389-find-the-difference](https://github.com/kyileiaye2021/LeetCode/tree/master/0389-find-the-difference) |
 | [0435-non-overlapping-intervals](https://github.com/kyileiaye2021/LeetCode/tree/master/0435-non-overlapping-intervals) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0539-minimum-time-difference](https://github.com/kyileiaye2021/LeetCode/tree/master/0539-minimum-time-difference) |
@@ -367,6 +369,7 @@ All leetCode problems done will be documented here.
 | [0344-reverse-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0344-reverse-string) |
 | [0383-ransom-note](https://github.com/kyileiaye2021/LeetCode/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0387-first-unique-character-in-a-string) |
+| [0389-find-the-difference](https://github.com/kyileiaye2021/LeetCode/tree/master/0389-find-the-difference) |
 | [0392-is-subsequence](https://github.com/kyileiaye2021/LeetCode/tree/master/0392-is-subsequence) |
 | [0399-evaluate-division](https://github.com/kyileiaye2021/LeetCode/tree/master/0399-evaluate-division) |
 | [0402-remove-k-digits](https://github.com/kyileiaye2021/LeetCode/tree/master/0402-remove-k-digits) |
@@ -910,6 +913,7 @@ All leetCode problems done will be documented here.
 | [0268-missing-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0338-counting-bits](https://github.com/kyileiaye2021/LeetCode/tree/master/0338-counting-bits) |
+| [0389-find-the-difference](https://github.com/kyileiaye2021/LeetCode/tree/master/0389-find-the-difference) |
 | [0784-letter-case-permutation](https://github.com/kyileiaye2021/LeetCode/tree/master/0784-letter-case-permutation) |
 ## Rolling Hash
 |  |
