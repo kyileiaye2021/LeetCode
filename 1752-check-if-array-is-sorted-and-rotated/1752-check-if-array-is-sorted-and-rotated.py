@@ -1,32 +1,36 @@
 class Solution:
     def check(self, nums: list[int]) -> bool:
+        # happy cases
+        # [1,2,3,4,5]
+        # true
 
-        # the first is < last
-        # just check if all elements are sorted
+        # [3,4,5,1,2]
+        # true
 
-        # else
-        # find the position where the rotated pos begin
+        # [2, 3,1,4]
+        # false
 
-        # starting from that position, find if the elements are sorted
-        N = len(nums)
-        count = 1
+        # [2,2,2,2]
+        # true
 
-        if N == 1:
+        # [5,2,2,2]
+        # true
+
+        j = 1
+        n = 1
+        if len(nums) == 1:
             return True
-        
-        for i in range(1, 2 * N):
-            if nums[i % N] >= nums[(i - 1) % N]:
-                count += 1
-            
+        while j < 2 * len(nums):
+            if nums[j % len(nums)] >= nums[(j - 1) % len(nums)]:
+                n += 1
+
             else:
-                count = 1
+                i = j
+                n = 1
 
-            if count == N:
+            if n == len(nums):
                 return True
-        
+            
+            j += 1
         return False
-            
-            
 
-
-    
