@@ -112,6 +112,7 @@ All leetCode problems done will be documented here.
 | [0912-random-pick-with-weight](https://github.com/kyileiaye2021/LeetCode/tree/master/0912-random-pick-with-weight) |
 | [0917-boats-to-save-people](https://github.com/kyileiaye2021/LeetCode/tree/master/0917-boats-to-save-people) |
 | [0973-k-closest-points-to-origin](https://github.com/kyileiaye2021/LeetCode/tree/master/0973-k-closest-points-to-origin) |
+| [0974-subarray-sums-divisible-by-k](https://github.com/kyileiaye2021/LeetCode/tree/master/0974-subarray-sums-divisible-by-k) |
 | [0977-squares-of-a-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0977-squares-of-a-sorted-array) |
 | [0994-rotting-oranges](https://github.com/kyileiaye2021/LeetCode/tree/master/0994-rotting-oranges) |
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/kyileiaye2021/LeetCode/tree/master/1011-capacity-to-ship-packages-within-d-days) |
@@ -299,6 +300,7 @@ All leetCode problems done will be documented here.
 | [0767-reorganize-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0767-reorganize-string) |
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [0904-fruit-into-baskets](https://github.com/kyileiaye2021/LeetCode/tree/master/0904-fruit-into-baskets) |
+| [0974-subarray-sums-divisible-by-k](https://github.com/kyileiaye2021/LeetCode/tree/master/0974-subarray-sums-divisible-by-k) |
 | [1039-find-the-town-judge](https://github.com/kyileiaye2021/LeetCode/tree/master/1039-find-the-town-judge) |
 | [1044-find-common-characters](https://github.com/kyileiaye2021/LeetCode/tree/master/1044-find-common-characters) |
 | [1481-least-number-of-unique-integers-after-k-removals](https://github.com/kyileiaye2021/LeetCode/tree/master/1481-least-number-of-unique-integers-after-k-removals) |
@@ -757,6 +759,7 @@ All leetCode problems done will be documented here.
 | [0713-subarray-product-less-than-k](https://github.com/kyileiaye2021/LeetCode/tree/master/0713-subarray-product-less-than-k) |
 | [0724-find-pivot-index](https://github.com/kyileiaye2021/LeetCode/tree/master/0724-find-pivot-index) |
 | [0912-random-pick-with-weight](https://github.com/kyileiaye2021/LeetCode/tree/master/0912-random-pick-with-weight) |
+| [0974-subarray-sums-divisible-by-k](https://github.com/kyileiaye2021/LeetCode/tree/master/0974-subarray-sums-divisible-by-k) |
 | [1206-corporate-flight-bookings](https://github.com/kyileiaye2021/LeetCode/tree/master/1206-corporate-flight-bookings) |
 | [1524-number-of-sub-arrays-with-odd-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/1524-number-of-sub-arrays-with-odd-sum) |
 | [1603-running-sum-of-1d-array](https://github.com/kyileiaye2021/LeetCode/tree/master/1603-running-sum-of-1d-array) |
