@@ -133,6 +133,7 @@ All leetCode problems done will be documented here.
 | [1552-magnetic-force-between-two-balls](https://github.com/kyileiaye2021/LeetCode/tree/master/1552-magnetic-force-between-two-balls) |
 | [1603-running-sum-of-1d-array](https://github.com/kyileiaye2021/LeetCode/tree/master/1603-running-sum-of-1d-array) |
 | [1642-furthest-building-you-can-reach](https://github.com/kyileiaye2021/LeetCode/tree/master/1642-furthest-building-you-can-reach) |
+| [1672-richest-customer-wealth](https://github.com/kyileiaye2021/LeetCode/tree/master/1672-richest-customer-wealth) |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/kyileiaye2021/LeetCode/tree/master/1752-check-if-array-is-sorted-and-rotated) |
 | [1798-max-number-of-k-sum-pairs](https://github.com/kyileiaye2021/LeetCode/tree/master/1798-max-number-of-k-sum-pairs) |
 | [1833-find-the-highest-altitude](https://github.com/kyileiaye2021/LeetCode/tree/master/1833-find-the-highest-altitude) |
@@ -781,6 +782,7 @@ All leetCode problems done will be documented here.
 | [1036-rotting-oranges](https://github.com/kyileiaye2021/LeetCode/tree/master/1036-rotting-oranges) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/kyileiaye2021/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1260-shift-2d-grid](https://github.com/kyileiaye2021/LeetCode/tree/master/1260-shift-2d-grid) |
+| [1672-richest-customer-wealth](https://github.com/kyileiaye2021/LeetCode/tree/master/1672-richest-customer-wealth) |
 | [1861-rotating-the-box](https://github.com/kyileiaye2021/LeetCode/tree/master/1861-rotating-the-box) |
 | [2022-convert-1d-array-into-2d-array](https://github.com/kyileiaye2021/LeetCode/tree/master/2022-convert-1d-array-into-2d-array) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/kyileiaye2021/LeetCode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
