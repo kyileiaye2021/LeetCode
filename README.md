@@ -123,6 +123,7 @@ All leetCode problems done will be documented here.
 | [1089-duplicate-zeros](https://github.com/kyileiaye2021/LeetCode/tree/master/1089-duplicate-zeros) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/kyileiaye2021/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
 | [1206-corporate-flight-bookings](https://github.com/kyileiaye2021/LeetCode/tree/master/1206-corporate-flight-bookings) |
+| [1260-shift-2d-grid](https://github.com/kyileiaye2021/LeetCode/tree/master/1260-shift-2d-grid) |
 | [1283-find-the-smallest-divisor-given-a-threshold](https://github.com/kyileiaye2021/LeetCode/tree/master/1283-find-the-smallest-divisor-given-a-threshold) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/kyileiaye2021/LeetCode/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [1481-least-number-of-unique-integers-after-k-removals](https://github.com/kyileiaye2021/LeetCode/tree/master/1481-least-number-of-unique-integers-after-k-removals) |
@@ -779,6 +780,7 @@ All leetCode problems done will be documented here.
 | [0994-rotting-oranges](https://github.com/kyileiaye2021/LeetCode/tree/master/0994-rotting-oranges) |
 | [1036-rotting-oranges](https://github.com/kyileiaye2021/LeetCode/tree/master/1036-rotting-oranges) |
 | [1171-shortest-path-in-binary-matrix](https://github.com/kyileiaye2021/LeetCode/tree/master/1171-shortest-path-in-binary-matrix) |
+| [1260-shift-2d-grid](https://github.com/kyileiaye2021/LeetCode/tree/master/1260-shift-2d-grid) |
 | [1861-rotating-the-box](https://github.com/kyileiaye2021/LeetCode/tree/master/1861-rotating-the-box) |
 | [2022-convert-1d-array-into-2d-array](https://github.com/kyileiaye2021/LeetCode/tree/master/2022-convert-1d-array-into-2d-array) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/kyileiaye2021/LeetCode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
@@ -967,6 +969,7 @@ All leetCode problems done will be documented here.
 | ------- |
 | [0054-spiral-matrix](https://github.com/kyileiaye2021/LeetCode/tree/master/0054-spiral-matrix) |
 | [0844-backspace-string-compare](https://github.com/kyileiaye2021/LeetCode/tree/master/0844-backspace-string-compare) |
+| [1260-shift-2d-grid](https://github.com/kyileiaye2021/LeetCode/tree/master/1260-shift-2d-grid) |
 | [1929-concatenation-of-array](https://github.com/kyileiaye2021/LeetCode/tree/master/1929-concatenation-of-array) |
 | [2022-convert-1d-array-into-2d-array](https://github.com/kyileiaye2021/LeetCode/tree/master/2022-convert-1d-array-into-2d-array) |
 ## Doubly-Linked List
