@@ -151,6 +151,7 @@ All leetCode problems done will be documented here.
 | [2747-count-zero-request-servers](https://github.com/kyileiaye2021/LeetCode/tree/master/2747-count-zero-request-servers) |
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/kyileiaye2021/LeetCode/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 | [2965-find-missing-and-repeated-values](https://github.com/kyileiaye2021/LeetCode/tree/master/2965-find-missing-and-repeated-values) |
+| [3026-maximum-good-subarray-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/3026-maximum-good-subarray-sum) |
 | [3639-zero-array-transformation-i](https://github.com/kyileiaye2021/LeetCode/tree/master/3639-zero-array-transformation-i) |
 | [3731-find-missing-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/3731-find-missing-elements) |
 ## Dynamic Programming
@@ -309,6 +310,7 @@ All leetCode problems done will be documented here.
 | [2747-count-zero-request-servers](https://github.com/kyileiaye2021/LeetCode/tree/master/2747-count-zero-request-servers) |
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/kyileiaye2021/LeetCode/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 | [2965-find-missing-and-repeated-values](https://github.com/kyileiaye2021/LeetCode/tree/master/2965-find-missing-and-repeated-values) |
+| [3026-maximum-good-subarray-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/3026-maximum-good-subarray-sum) |
 | [3090-maximum-length-substring-with-two-occurrences](https://github.com/kyileiaye2021/LeetCode/tree/master/3090-maximum-length-substring-with-two-occurrences) |
 | [3731-find-missing-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/3731-find-missing-elements) |
 ## Sorting
@@ -766,6 +768,7 @@ All leetCode problems done will be documented here.
 | [1833-find-the-highest-altitude](https://github.com/kyileiaye2021/LeetCode/tree/master/1833-find-the-highest-altitude) |
 | [2102-find-the-middle-index-in-array](https://github.com/kyileiaye2021/LeetCode/tree/master/2102-find-the-middle-index-in-array) |
 | [2358-number-of-ways-to-split-array](https://github.com/kyileiaye2021/LeetCode/tree/master/2358-number-of-ways-to-split-array) |
+| [3026-maximum-good-subarray-sum](https://github.com/kyileiaye2021/LeetCode/tree/master/3026-maximum-good-subarray-sum) |
 | [3639-zero-array-transformation-i](https://github.com/kyileiaye2021/LeetCode/tree/master/3639-zero-array-transformation-i) |
 ## Matrix
 |  |
