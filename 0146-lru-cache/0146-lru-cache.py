@@ -1,51 +1,60 @@
-class ListNode:
-    def __init__(self, key, value, prev=None, next=None):
+class ListNode():
+    def __init__(self, key=0, val=0, prev=None, next=None):
         self.key = key
-        self.value = value
+        self.val = val
         self.prev = prev
         self.next = next
 
 class LRUCache:
 
     def __init__(self, capacity: int):
-        self.cap = capacity
-        self.cache = {} # map key to nodes
-        self.left = ListNode(0,0) #lru
-        self.right = ListNode(0,0) #mru
-        self.left.next, self.right.prev = self.right, self.left
-    
-    def remove(self, node): # removing node from the list
+        self.lru = ListNode()
+        self.mru = ListNode()
+        self.lru.next = self.mru
+        self.mru.prev = self.lru
+        self.capacity = capacity
+        self.hashmap = {}
+
+    def remove(self, node): # remove from the list
         prev, nxt = node.prev, node.next
         prev.next, nxt.prev = nxt, prev
 
-    def insert(self, node): # inserting the node at right
-        prev, nxt = self.right.prev, self.right
-        prev.next, node.prev = node, prev
-        nxt.prev, node.next = node, nxt
+    def insert(self, node): # insert the node at the right
+        prev, nxt = self.mru.prev, self.mru
+        prev.next = nxt.prev = node
+        node.next = nxt
+        node.prev = prev
 
     def get(self, key: int) -> int:
-        if key in self.cache:
-            # update the lru
-            # remove from the list
-            # add it at the right
-            self.remove(self.cache[key])
-            self.insert(self.cache[key])
-            return self.cache[key].value
+
+        if key in self.hashmap:
+            # update the node as mru
+            self.remove(self.hashmap[key])
+            self.insert(self.hashmap[key])
+            return self.hashmap[key].val
 
         return -1
-
-    def put(self, key: int, value: int) -> None:
-        if key in self.cache:
-            self.remove(self.cache[key])
         
-        new_node = ListNode(key, value)
-        self.insert(new_node)
-        self.cache[key] = new_node
+    def put(self, key: int, value: int) -> None:
+        # if key is already in hashmap: update teh value in hashmap and remove the node and update the node as mru
+        if key in self.hashmap:
+            self.remove(self.hashmap[key])
+    
+        # if key is not in hashmap
+        self.hashmap[key] = ListNode(key, value)
+        self.insert(self.hashmap[key])
 
-        if len(self.cache) > self.cap:
-            lru = self.left.next
-            self.remove(lru)
-            del self.cache[lru.key]
+        # if the len exceeds capacity, remove lru 
+        if len(self.hashmap) > self.capacity:
+            lru_node = self.lru.next
+            self.remove(lru_node)
+            del self.hashmap[lru_node.key]
+        
+        
+
+
+
+        
 
 
 # Your LRUCache object will be instantiated and called as such:
