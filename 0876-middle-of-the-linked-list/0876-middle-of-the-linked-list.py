@@ -6,11 +6,15 @@
 class Solution:
     def middleNode(self, head: ListNode | None) -> ListNode | None:
 
-        slow = fast = head
-        while fast and fast.next:
-            slow = slow.next
-            fast = fast.next.next
+        if not head:
+            return None 
 
-        return slow
-        
+        def recur(slow, fast):
+            if not fast or not fast.next:
+                return slow
+
+            return recur(slow.next, fast.next.next)
+
+        return recur(head,head)
+
         
