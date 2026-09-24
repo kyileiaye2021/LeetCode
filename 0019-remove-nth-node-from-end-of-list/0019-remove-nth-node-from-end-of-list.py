@@ -4,42 +4,39 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+    def removeNthFromEnd(self, head: ListNode | None, n: int) -> ListNode | None:
+        
+        # head = [1,2,3,4,5], n = 2
+        # [1,2,3,5]
 
-        # head = 1,2,3,4,5, n = 2
-        # output: [1,2,3,5]
+        # head = [1], n = 1
+        # []
+
+        # head = [1,2], n = 1
+        # [1]
 
         # head = [1,2,3], n = 3
-        # output: [2,3]
+        # [2,3]
+        curr = head
+        total = 0
+        while curr:
+            total += 1
+            curr = curr.next
 
-        # head = [1,2,3], n = 1
-        # output: [1,2]
+        i = total - n
 
-        # head = [1],  n = 1
-        # output: []
+        print(i)
 
-        # fast and slower pointer
-        # 1, 2, 3, 4, n = 2
-        # 
-        # dummy node
-        # d -> 1 -> 2 -> 3
+        dummy = ListNode()
+        dummy.next = head
 
-        dummy = ListNode(0, head)
-        slow = dummy
-        fast = dummy
+        curr = dummy
 
-        for _ in range(n):
-            fast = fast.next
+        for j in range(1, i + 1):
+            curr = curr.next
 
-        while fast and fast.next:
-            slow = slow.next
-            fast = fast.next
-
-        slow.next = slow.next.next
+        curr.next = curr.next.next
         return dummy.next
 
 
 
-
-
-        
