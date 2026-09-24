@@ -17,26 +17,23 @@ class Solution:
 
         # head = [1,2,3], n = 3
         # [2,3]
-        curr = head
-        total = 0
-        while curr:
-            total += 1
-            curr = curr.next
-
-        i = total - n
-
-        print(i)
-
+    
         dummy = ListNode()
         dummy.next = head
 
-        curr = dummy
+        s = f = dummy
 
-        for j in range(1, i + 1):
-            curr = curr.next
+        for i in range(n):
+            f = f.next
 
-        curr.next = curr.next.next
+        while f.next:
+            s = s.next
+            f = f.next
+        
+        s.next = s.next.next
+
         return dummy.next
 
 
+        
 
