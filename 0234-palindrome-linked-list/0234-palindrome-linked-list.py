@@ -4,36 +4,22 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    def isPalindrome(self, head: Optional[ListNode]) -> bool:
-
-        # 1 -> 2 -> 1 -> 2 -> 1
-        # 1 -> 2 -> 1
-        # 1 -> 2
+    def isPalindrome(self, head: ListNode | None) -> bool:
         
-        dummy = ListNode(0)
-        dummy.next = head
-        slow = dummy
-        fast = dummy
+        l = head
+        r = head
+        def recur_palindrome(r):
+            nonlocal l
+            # base case
+            if not r:
+                return True
 
-        while fast and fast.next:
-            slow = slow.next
-            fast = fast.next.next
-
-        temp = slow.next
-        slow.next = None
-
-        prev = None
-        while temp:
-            next_node = temp.next
-            temp.next = prev
-            prev = temp
-            temp = next_node
-
-        while head and prev:
-            if head.val != prev.val:
+            if not recur_palindrome(r.next):
                 return False
-            head = head.next
-            prev = prev.next
-        
-        return True
-        
+
+            if l.val != r.val:
+                return False
+            l = l.next
+            return True
+
+        return recur_palindrome(r)
