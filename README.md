@@ -1040,8 +1040,13 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0202-happy-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0202-happy-number) |
+| [0287-find-the-duplicate-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0287-find-the-duplicate-number) |
 ## Newton's Method
 |  |
 | ------- |
 | [0069-sqrtx](https://github.com/kyileiaye2021/LeetCode/tree/master/0069-sqrtx) |
+## Pigeonhole Principle
+|  |
+| ------- |
+| [0287-find-the-duplicate-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0287-find-the-duplicate-number) |
 <!---LeetCode Topics End-->
