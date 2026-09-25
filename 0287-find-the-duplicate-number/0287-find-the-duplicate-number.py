@@ -1,16 +1,26 @@
 class Solution:
-    def findDuplicate(self, nums: List[int]) -> int:
-        # hash set
-        # O(N) space
-        
-        # brute force
-        # O(n^2) time
+    def findDuplicate(self, nums: list[int]) -> int:
+        # sort the arr - O(nlogn)
 
-        # sorting and check the continuous ele
-        # O(nlogn) time
-        
-        slow = nums[0]
-        fast = nums[0]
+        # set - O(n) space
+
+        # slow and fast pointer
+        # slow = 0
+        # fast = 0
+
+        # while True:
+        #   slow = arr[slow]
+        #   fast = arr[arr[fast]]
+        #   if slow == fast:
+        #       return nums[slow]
+        # slow = 0
+        # while slow != fast:
+        #   slow = arr[slow]
+        #   fast = arr[fast]
+        # return slow
+
+        slow = 0
+        fast = 0
 
         while True:
             slow = nums[slow]
@@ -18,14 +28,9 @@ class Solution:
             if slow == fast:
                 break
 
-        print(fast)
-        temp = nums[0]
-
-        while temp != fast:
-            temp = nums[temp]
+        slow = 0
+        while slow != fast:
+            slow = nums[slow]
             fast = nums[fast]
-        
-        return temp
 
-
-    
+        return slow
