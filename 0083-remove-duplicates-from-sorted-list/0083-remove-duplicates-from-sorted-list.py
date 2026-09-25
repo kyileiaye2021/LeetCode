@@ -4,52 +4,14 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        # happy cases
-        # input: [1,1,3,5]
-        # output: [1,3,5]
-
-        # input: [1,3,3,6,7]
-        # output: [1,3,6,7]
-
-        # input: [1,3,3,4,8,8,9]
-        # output: [1,3,4,8,9]
-
-        # edge cases
-        # input: []
-        # output: []
-
-        # input: [2]
-        # output: [2]
-
-        # input: [1,1,1,1]
-        # output: [1]
+    def deleteDuplicates(self, head: ListNode | None) -> ListNode | None:
         
-        # input: [4,5,6,9]
-        # output: [4,5,6,9]
+        curr = head
+        while curr and curr.next:
+            if curr.val == curr.next.val:
+                curr.next = curr.next.next
 
-        # Set and traversal approach
-        # if the list is none,
-        #   return none
-        # create a hashset
-        # temp pointer pointing to the head node
-        # traverse the list until the next of temp is none
-        #   check if the temp.next is already visited
-        #       set the temp.next = temp.next.next
-        #   else: add the next node data in the set
-        #   set the temp to temp.next
-        # return head
-
-        if not head:
-            return None
-
-        temp = head
-        while temp.next:
-            if temp.val == temp.next.val:
-                temp.next = temp.next.next
-            else:
-                temp = temp.next
-
+            else: 
+                curr = curr.next
+                
         return head
-
-            
