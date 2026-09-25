@@ -4,33 +4,56 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
-        # create a circular linked list while keeping track of the len
-        if not head:
+    def rotateRight(self, head: ListNode | None, k: int) -> ListNode | None:
+        # happy cases
+        # head = [1,2,3,4,5], k = 2
+        # output: [4,5,1,2,3]
+
+        # head = [0,1,2], k = 4
+        # Output: [2,0,1]
+
+        # edge cases
+        # head = [], k = 3
+        # output: []
+
+        # head = [5], k = 4
+        # output: [5]
+
+        if not head or not head.next:
             return head
-            
-        list_len = 1
-        curr = head
 
-        while curr.next:
-            list_len += 1
-            curr = curr.next
+        dummy = ListNode()
+        dummy.next = head
 
-        curr.next = head
+        # find the len of the list
+        cur = head
+        length = 0
+        while cur:
+            length +=1
+            cur = cur.next
 
-        # len to iterate  = list len - (k % list len) 
-        len_to_iterate = list_len - (k % list_len)
+        # get the modified k
+        k = k % length
+        if k == 0: # no rotation needed
+            return dummy.next
 
-        # iterate the list 
-        for i in range(len_to_iterate):
-            curr = curr.next
+        # slow fast pointer
+        # for k times, we move fast pointer first 
+        # after that, move slow and fast the same time
+        # new head = slow.next
+        # slow.next = None
+        # fast.next = dummy.next
 
-        # keep track of the next node of the last node
-        res_head = curr.next
+        slow = fast = dummy
+        for i in range(k):
+            fast = fast.next
 
-        # we have to connect the last node to null
-        curr.next = None
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next
 
-        return res_head
+        new_head = slow.next
+        slow.next = None
+        fast.next = dummy.next
 
-        
+        return new_head
