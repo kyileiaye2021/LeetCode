@@ -4,31 +4,25 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    def oddEvenList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        if not head:
-            return head
-            
-        sec_list = ListNode(0)
-        temp = sec_list
-
-        first = head
-        second = first.next
-
-        while second and second.next:
-            temp.next = second
-            temp = temp.next
-
-            first.next = second.next
-            second = second.next.next
-            first = first.next
-
-        temp.next = second
-        if second:
-            first.next = None
-
+    def oddEvenList(self, head: ListNode | None) -> ListNode | None:
+        n = 1
+        dum_odd = ListNode()
+        dum_even = ListNode()
+        curr_odd = dum_odd
+        curr_even = dum_even
         curr = head
-        while curr.next:
-            curr = curr.next
 
-        curr.next = sec_list.next
-        return head
+        while curr:
+            if n % 2 == 0:
+                curr_even.next = curr
+                curr_even = curr_even.next
+            else:
+                curr_odd.next = curr
+                curr_odd = curr_odd.next
+
+            curr = curr.next
+            n += 1
+        curr_even.next = None
+        curr_odd.next = dum_even.next 
+        return dum_odd.next
+                
