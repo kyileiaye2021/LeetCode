@@ -4,49 +4,82 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    def merge(self, left, right):
-        l1 = left
-        l2 = right
-        res = ListNode(0)
-        temp = res
-
-        while l1 and l2:
-            if l1.val < l2.val:
-                temp.next = l1
-                l1 = l1.next
-            else:
-                temp.next = l2
-                l2 = l2.next
-            temp = temp.next
-
-        if l1:
-            temp.next = l1
+    def sortList(self, head: ListNode | None) -> ListNode | None:
         
-        if l2:
-            temp.next = l2
-        return res.next
+        # split the list into 2 lists a and b until there are no nodes in the list
+
+        # def merge(list1, list2):
+        # h1 = list1, h2 = list2
+        # dummy = ListNode()
+        # curr = dummy
+        # while h1 and h2:
+        #   if h1.val < h2.val:
+        #       curr.next = h1
+        #       curr = curr.next
+        #       h1 = h1.next
+        #   else:
+        #       curr.next = h2
+        #       curr = curr.next
+        #       h2 = h2.next
+        # return dummy.next 
 
 
-    def sortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        
-        if not head or not head.next:
-            return head
+        # recur(head)
+        # base case
+        #   if not head and head.next:
+        #       return head
+        #   slow = head
+        #   fast = head.next
+        #   while fast and fast.next:
+        #       slow = slow.next
+        #       fast = fast.next.next
+        #   head2 = slow.next
+        #   slow.next = None
+        #   list1 = recur(head)
+        #   list2 = recur(head2)
+        #   return merge(list1, list2)
 
-        slow = head
-        fast = head.next
-        
-        while fast and fast.next:
-            fast = fast.next.next
-            slow = slow.next
+        def merge(list1, list2):
+            dummy = ListNode()
+            curr = dummy
+            h1 = list1
+            h2 = list2
 
-        right = slow.next
-        slow.next = None
-        left = head
+            while h1 and h2:
+                if h1.val < h2.val:
+                    curr.next = h1
+                    h1 = h1.next
+                else:
+                    curr.next = h2
+                    h2 = h2.next
+                curr = curr.next
 
-        left = self.sortList(left)
-        right = self.sortList(right)
-        return self.merge(left, right)
+            if h1:
+                curr.next = h1
 
-        
+            if h2:
+                curr.next = h2
 
-        
+            return dummy.next
+
+        def recur_split(head):
+            # base case
+            if not head or not head.next:
+                return head
+
+            # recursive case
+            slow = head
+            fast = head.next
+            while fast and fast.next:
+                slow = slow.next
+                fast = fast.next.next
+
+            head2 = slow.next
+            slow.next = None
+
+            list1 = recur_split(head)
+            list2 = recur_split(head2)
+            return merge(list1, list2)
+
+        return recur_split(head)
+
