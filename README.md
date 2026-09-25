@@ -501,6 +501,7 @@ All leetCode problems done will be documented here.
 | ------- |
 | [0020-valid-parentheses](https://github.com/kyileiaye2021/LeetCode/tree/master/0020-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/kyileiaye2021/LeetCode/tree/master/0042-trapping-rain-water) |
+| [0094-binary-tree-inorder-traversal](https://github.com/kyileiaye2021/LeetCode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0143-reorder-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0143-reorder-list) |
 | [0155-min-stack](https://github.com/kyileiaye2021/LeetCode/tree/master/0155-min-stack) |
 | [0234-palindrome-linked-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0234-palindrome-linked-list) |
@@ -559,6 +560,7 @@ All leetCode problems done will be documented here.
 ## Tree
 |  |
 | ------- |
+| [0094-binary-tree-inorder-traversal](https://github.com/kyileiaye2021/LeetCode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0098-validate-binary-search-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0101-symmetric-tree) |
@@ -594,6 +596,7 @@ All leetCode problems done will be documented here.
 ## Depth-First Search
 |  |
 | ------- |
+| [0094-binary-tree-inorder-traversal](https://github.com/kyileiaye2021/LeetCode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0098-validate-binary-search-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0101-symmetric-tree) |
@@ -688,6 +691,7 @@ All leetCode problems done will be documented here.
 ## Binary Tree
 |  |
 | ------- |
+| [0094-binary-tree-inorder-traversal](https://github.com/kyileiaye2021/LeetCode/tree/master/0094-binary-tree-inorder-traversal) |
 | [0098-validate-binary-search-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0098-validate-binary-search-tree) |
 | [0100-same-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0101-symmetric-tree) |
