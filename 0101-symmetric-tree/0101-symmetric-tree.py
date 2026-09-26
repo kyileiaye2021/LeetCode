@@ -5,25 +5,33 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def dfs(self, left_sub, right_sub):
-        if not left_sub and not right_sub:
-            return True
+    def isSymmetric(self, root: TreeNode | None) -> bool:
 
-        if not left_sub or not right_sub:
-            return False
-        
-        if left_sub.val != right_sub.val:
-            return False
-
-        return self.dfs(left_sub.right, right_sub.left) and self.dfs(left_sub.left, right_sub.right)
-
-    def isSymmetric(self, root: Optional[TreeNode]) -> bool:
         # base case
-        # if the root is none
-        #   return true
-        # if one of the children is none
-        #   return false
-        if not root or (not root.left and not root.right):
-            return True
+        # return true when root == None
 
-        return self.dfs(root.left, root.right)
+        # recursive case
+        # if curr.left val != curr.right val
+        #   return false
+
+        # call left sub tree and right sub tree
+        # return true if both left and right return true
+
+        def recur_symmetric(left_node, right_node):
+            if not left_node and not right_node:
+                return True
+
+            if not left_node:
+                return False
+
+            if not right_node:
+                return False
+
+            if left_node.val != right_node.val:
+                return False
+
+            return recur_symmetric(left_node.left, right_node.right) and recur_symmetric(left_node.right, right_node.left)
+        return recur_symmetric(root.left, root.right)
+
+
+        
