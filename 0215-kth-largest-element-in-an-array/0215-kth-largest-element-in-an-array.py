@@ -1,20 +1,22 @@
 class Solution:
-    def findKthLargest(self, nums: List[int], k: int) -> int:
-        # nums = [3,2,1,5,6,4], k = 2
-        # 5
+    def findKthLargest(self, nums: list[int], k: int) -> int:
+        # minheap
+        # iteraete thru nums
+        #   add curr n to min heap
+        #   if min heap size > k
+        #       pop min heap
+        # return min heap first ele
+        # O(nlogk) time, O(k) space
 
-        # nums = [3,2,3,1,2,4,5,5,6], k = 4
-        # [6,5,5,4,3,3,2,2,1], 4
+        min_heap = []
+        for n in nums:
+            heapq.heappush(min_heap, n)
+            if len(min_heap) > k:
+                heapq.heappop(min_heap)
 
-        # sort the arr --> O(nlogn)
-        # bucket sort --> O(n)
-        # maxheap --> O(klogn)
+        return min_heap[0]
 
-        hq = [-n for n in nums]
-        heapq.heapify(hq)
-
-        res = 0
-        for _ in range(k):
-            res = -heapq.heappop(hq)
-
-        return res
+        # convert all elements to - nums 
+        # heapify it
+        # for k times, heappop the max heap
+        # O(n + klogn) time, O(n) space
