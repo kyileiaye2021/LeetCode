@@ -403,6 +403,7 @@ All leetCode problems done will be documented here.
 | [0387-first-unique-character-in-a-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0387-first-unique-character-in-a-string) |
 | [0389-find-the-difference](https://github.com/kyileiaye2021/LeetCode/tree/master/0389-find-the-difference) |
 | [0392-is-subsequence](https://github.com/kyileiaye2021/LeetCode/tree/master/0392-is-subsequence) |
+| [0394-decode-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0394-decode-string) |
 | [0399-evaluate-division](https://github.com/kyileiaye2021/LeetCode/tree/master/0399-evaluate-division) |
 | [0402-remove-k-digits](https://github.com/kyileiaye2021/LeetCode/tree/master/0402-remove-k-digits) |
 | [0424-longest-repeating-character-replacement](https://github.com/kyileiaye2021/LeetCode/tree/master/0424-longest-repeating-character-replacement) |
@@ -516,6 +517,7 @@ All leetCode problems done will be documented here.
 | [0155-min-stack](https://github.com/kyileiaye2021/LeetCode/tree/master/0155-min-stack) |
 | [0232-implement-queue-using-stacks](https://github.com/kyileiaye2021/LeetCode/tree/master/0232-implement-queue-using-stacks) |
 | [0234-palindrome-linked-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0234-palindrome-linked-list) |
+| [0394-decode-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0394-decode-string) |
 | [0402-remove-k-digits](https://github.com/kyileiaye2021/LeetCode/tree/master/0402-remove-k-digits) |
 | [0496-next-greater-element-i](https://github.com/kyileiaye2021/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0503-next-greater-element-ii) |
@@ -574,6 +576,7 @@ All leetCode problems done will be documented here.
 | [0203-remove-linked-list-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0203-remove-linked-list-elements) |
 | [0206-reverse-linked-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0206-reverse-linked-list) |
 | [0234-palindrome-linked-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0234-palindrome-linked-list) |
+| [0394-decode-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0394-decode-string) |
 ## Tree
 |  |
 | ------- |
