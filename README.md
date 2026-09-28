@@ -424,6 +424,7 @@ All leetCode problems done will be documented here.
 | [1021-remove-outermost-parentheses](https://github.com/kyileiaye2021/LeetCode/tree/master/1021-remove-outermost-parentheses) |
 | [1044-find-common-characters](https://github.com/kyileiaye2021/LeetCode/tree/master/1044-find-common-characters) |
 | [1047-remove-all-adjacent-duplicates-in-string](https://github.com/kyileiaye2021/LeetCode/tree/master/1047-remove-all-adjacent-duplicates-in-string) |
+| [1081-smallest-subsequence-of-distinct-characters](https://github.com/kyileiaye2021/LeetCode/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/kyileiaye2021/LeetCode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [1143-longest-common-subsequence](https://github.com/kyileiaye2021/LeetCode/tree/master/1143-longest-common-subsequence) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/kyileiaye2021/LeetCode/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
@@ -523,6 +524,7 @@ All leetCode problems done will be documented here.
 | [0853-car-fleet](https://github.com/kyileiaye2021/LeetCode/tree/master/0853-car-fleet) |
 | [1021-remove-outermost-parentheses](https://github.com/kyileiaye2021/LeetCode/tree/master/1021-remove-outermost-parentheses) |
 | [1047-remove-all-adjacent-duplicates-in-string](https://github.com/kyileiaye2021/LeetCode/tree/master/1047-remove-all-adjacent-duplicates-in-string) |
+| [1081-smallest-subsequence-of-distinct-characters](https://github.com/kyileiaye2021/LeetCode/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/kyileiaye2021/LeetCode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
 | [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/kyileiaye2021/LeetCode/tree/master/2116-check-if-a-parentheses-string-can-be-valid) |
 | [2236-maximum-twin-sum-of-a-linked-list](https://github.com/kyileiaye2021/LeetCode/tree/master/2236-maximum-twin-sum-of-a-linked-list) |
@@ -861,6 +863,7 @@ All leetCode problems done will be documented here.
 | [0680-valid-palindrome-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0680-valid-palindrome-ii) |
 | [0767-reorganize-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0767-reorganize-string) |
 | [0917-boats-to-save-people](https://github.com/kyileiaye2021/LeetCode/tree/master/0917-boats-to-save-people) |
+| [1081-smallest-subsequence-of-distinct-characters](https://github.com/kyileiaye2021/LeetCode/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1481-least-number-of-unique-integers-after-k-removals](https://github.com/kyileiaye2021/LeetCode/tree/master/1481-least-number-of-unique-integers-after-k-removals) |
 | [1642-furthest-building-you-can-reach](https://github.com/kyileiaye2021/LeetCode/tree/master/1642-furthest-building-you-can-reach) |
 | [2116-check-if-a-parentheses-string-can-be-valid](https://github.com/kyileiaye2021/LeetCode/tree/master/2116-check-if-a-parentheses-string-can-be-valid) |
@@ -1011,6 +1014,7 @@ All leetCode problems done will be documented here.
 | [0496-next-greater-element-i](https://github.com/kyileiaye2021/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0503-next-greater-element-ii) |
 | [0853-car-fleet](https://github.com/kyileiaye2021/LeetCode/tree/master/0853-car-fleet) |
+| [1081-smallest-subsequence-of-distinct-characters](https://github.com/kyileiaye2021/LeetCode/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 ## Merge Sort
 |  |
 | ------- |
