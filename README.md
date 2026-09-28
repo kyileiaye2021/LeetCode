@@ -92,6 +92,7 @@ All leetCode problems done will be documented here.
 | [0442-find-all-duplicates-in-an-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0442-find-all-duplicates-in-an-array) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0496-next-greater-element-i](https://github.com/kyileiaye2021/LeetCode/tree/master/0496-next-greater-element-i) |
+| [0503-next-greater-element-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0503-next-greater-element-ii) |
 | [0518-coin-change-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0518-coin-change-ii) |
 | [0539-minimum-time-difference](https://github.com/kyileiaye2021/LeetCode/tree/master/0539-minimum-time-difference) |
 | [0540-single-element-in-a-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0540-single-element-in-a-sorted-array) |
@@ -514,6 +515,7 @@ All leetCode problems done will be documented here.
 | [0234-palindrome-linked-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0234-palindrome-linked-list) |
 | [0402-remove-k-digits](https://github.com/kyileiaye2021/LeetCode/tree/master/0402-remove-k-digits) |
 | [0496-next-greater-element-i](https://github.com/kyileiaye2021/LeetCode/tree/master/0496-next-greater-element-i) |
+| [0503-next-greater-element-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0503-next-greater-element-ii) |
 | [0678-valid-parenthesis-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0678-valid-parenthesis-string) |
 | [0844-backspace-string-compare](https://github.com/kyileiaye2021/LeetCode/tree/master/0844-backspace-string-compare) |
 | [1021-remove-outermost-parentheses](https://github.com/kyileiaye2021/LeetCode/tree/master/1021-remove-outermost-parentheses) |
@@ -1004,6 +1006,7 @@ All leetCode problems done will be documented here.
 | [0042-trapping-rain-water](https://github.com/kyileiaye2021/LeetCode/tree/master/0042-trapping-rain-water) |
 | [0402-remove-k-digits](https://github.com/kyileiaye2021/LeetCode/tree/master/0402-remove-k-digits) |
 | [0496-next-greater-element-i](https://github.com/kyileiaye2021/LeetCode/tree/master/0496-next-greater-element-i) |
+| [0503-next-greater-element-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0503-next-greater-element-ii) |
 ## Merge Sort
 |  |
 | ------- |
