@@ -112,6 +112,7 @@ All leetCode problems done will be documented here.
 | [0747-min-cost-climbing-stairs](https://github.com/kyileiaye2021/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 | [0753-open-the-lock](https://github.com/kyileiaye2021/LeetCode/tree/master/0753-open-the-lock) |
 | [0792-binary-search](https://github.com/kyileiaye2021/LeetCode/tree/master/0792-binary-search) |
+| [0853-car-fleet](https://github.com/kyileiaye2021/LeetCode/tree/master/0853-car-fleet) |
 | [0875-koko-eating-bananas](https://github.com/kyileiaye2021/LeetCode/tree/master/0875-koko-eating-bananas) |
 | [0904-fruit-into-baskets](https://github.com/kyileiaye2021/LeetCode/tree/master/0904-fruit-into-baskets) |
 | [0907-koko-eating-bananas](https://github.com/kyileiaye2021/LeetCode/tree/master/0907-koko-eating-bananas) |
@@ -356,6 +357,7 @@ All leetCode problems done will be documented here.
 | [0692-top-k-frequent-words](https://github.com/kyileiaye2021/LeetCode/tree/master/0692-top-k-frequent-words) |
 | [0721-accounts-merge](https://github.com/kyileiaye2021/LeetCode/tree/master/0721-accounts-merge) |
 | [0767-reorganize-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0767-reorganize-string) |
+| [0853-car-fleet](https://github.com/kyileiaye2021/LeetCode/tree/master/0853-car-fleet) |
 | [0917-boats-to-save-people](https://github.com/kyileiaye2021/LeetCode/tree/master/0917-boats-to-save-people) |
 | [0973-k-closest-points-to-origin](https://github.com/kyileiaye2021/LeetCode/tree/master/0973-k-closest-points-to-origin) |
 | [0977-squares-of-a-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0977-squares-of-a-sorted-array) |
@@ -518,6 +520,7 @@ All leetCode problems done will be documented here.
 | [0503-next-greater-element-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0503-next-greater-element-ii) |
 | [0678-valid-parenthesis-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0678-valid-parenthesis-string) |
 | [0844-backspace-string-compare](https://github.com/kyileiaye2021/LeetCode/tree/master/0844-backspace-string-compare) |
+| [0853-car-fleet](https://github.com/kyileiaye2021/LeetCode/tree/master/0853-car-fleet) |
 | [1021-remove-outermost-parentheses](https://github.com/kyileiaye2021/LeetCode/tree/master/1021-remove-outermost-parentheses) |
 | [1047-remove-all-adjacent-duplicates-in-string](https://github.com/kyileiaye2021/LeetCode/tree/master/1047-remove-all-adjacent-duplicates-in-string) |
 | [1128-remove-all-adjacent-duplicates-in-string](https://github.com/kyileiaye2021/LeetCode/tree/master/1128-remove-all-adjacent-duplicates-in-string) |
@@ -1007,6 +1010,7 @@ All leetCode problems done will be documented here.
 | [0402-remove-k-digits](https://github.com/kyileiaye2021/LeetCode/tree/master/0402-remove-k-digits) |
 | [0496-next-greater-element-i](https://github.com/kyileiaye2021/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0503-next-greater-element-ii) |
+| [0853-car-fleet](https://github.com/kyileiaye2021/LeetCode/tree/master/0853-car-fleet) |
 ## Merge Sort
 |  |
 | ------- |
