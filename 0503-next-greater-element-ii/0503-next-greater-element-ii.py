@@ -13,15 +13,15 @@ class Solution:
 
         N = len(nums)
         new_nums = nums + nums
-        res = [-1] * len(new_nums)
+        res = [-1] * N
         stack = []
 
         for i, n in enumerate(new_nums):
             while stack and stack[-1][0] < n:
                 ele, idx = stack.pop()
                 res[idx] = n
+            
+            if i < N:
+                stack.append((n, i))
 
-            stack.append((n, i))
-
-        return res[:N]
-        
+        return res
