@@ -135,6 +135,7 @@ All leetCode problems done will be documented here.
 | [1206-corporate-flight-bookings](https://github.com/kyileiaye2021/LeetCode/tree/master/1206-corporate-flight-bookings) |
 | [1260-shift-2d-grid](https://github.com/kyileiaye2021/LeetCode/tree/master/1260-shift-2d-grid) |
 | [1283-find-the-smallest-divisor-given-a-threshold](https://github.com/kyileiaye2021/LeetCode/tree/master/1283-find-the-smallest-divisor-given-a-threshold) |
+| [1288-remove-covered-intervals](https://github.com/kyileiaye2021/LeetCode/tree/master/1288-remove-covered-intervals) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/kyileiaye2021/LeetCode/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [1481-least-number-of-unique-integers-after-k-removals](https://github.com/kyileiaye2021/LeetCode/tree/master/1481-least-number-of-unique-integers-after-k-removals) |
 | [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/kyileiaye2021/LeetCode/tree/master/1482-minimum-number-of-days-to-make-m-bouquets) |
@@ -366,6 +367,7 @@ All leetCode problems done will be documented here.
 | [0977-squares-of-a-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0977-squares-of-a-sorted-array) |
 | [1019-squares-of-a-sorted-array](https://github.com/kyileiaye2021/LeetCode/tree/master/1019-squares-of-a-sorted-array) |
 | [1094-car-pooling](https://github.com/kyileiaye2021/LeetCode/tree/master/1094-car-pooling) |
+| [1288-remove-covered-intervals](https://github.com/kyileiaye2021/LeetCode/tree/master/1288-remove-covered-intervals) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/kyileiaye2021/LeetCode/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [1481-least-number-of-unique-integers-after-k-removals](https://github.com/kyileiaye2021/LeetCode/tree/master/1481-least-number-of-unique-integers-after-k-removals) |
 | [1552-magnetic-force-between-two-balls](https://github.com/kyileiaye2021/LeetCode/tree/master/1552-magnetic-force-between-two-balls) |
