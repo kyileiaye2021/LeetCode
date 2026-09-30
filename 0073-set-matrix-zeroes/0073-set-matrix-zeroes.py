@@ -1,75 +1,57 @@
 class Solution:
-    def setZeroes(self, matrix: List[List[int]]) -> None:
+    def setZeroes(self, matrix: list[list[int]]) -> None:
         """
         Do not return anything, modify matrix in-place instead.
         """
-        # iterate thru the ele and keep track of the positions where the ele is 0
-        # row set
-        # col set
 
-        # iterate thru the rows
-        #   if the curr row is in row set
-        #       iterate thru the cols
-        #           make all col ele 0
+        ROWS = len(matrix)
+        COLS = len(matrix[0])
+        rowZero = False # will determine the first row should be 0 or not
 
-        # iterate thru the col
-        #   if the curr col is in col set
-        #       iterate thru the row
-        #           make all row ele 0
+        # the first row and col will trace which row/col will be zero
 
-        # row_set = set()
-        # col_set = set()
+        for r in range(ROWS):
+            for c in range(COLS):
+                if matrix[r][c] == 0:
+                    matrix[0][c] = 0
 
-        # for i in range(len(matrix)):
-        #     for j in range(len(matrix[0])):
-        #         if matrix[i][j] == 0:
-        #             row_set.add(i)
-        #             col_set.add(j)
+                    if r > 0:
+                        matrix[r][0] = 0
+                    else:
+                        rowZero = True
 
-        # for i in row_set:
-        #     for j in range(len(matrix[0])):
-        #         matrix[i][j] = 0
-        
-        # for j in col_set:
-        #     for i in range(len(matrix)):
-        #         matrix[i][j] = 0
+        # setting zero in cols and rows according to first row and first col
+        for r in range(1, ROWS):
+            for c in range(1, COLS):
+                if matrix[0][c] == 0 or matrix[r][0] == 0:
+                    matrix[r][c] = 0
 
-        # print(matrix)
+    
+        # setting zero in first col if the first cell = 0
+        if matrix[0][0] == 0:
+            for r in range(ROWS):
+                matrix[r][0] = 0
+            
+        # setting zero in first row if rowZero = True
+        if rowZero:
+            for c in range(COLS):
+                matrix[0][c] = 0
 
-        # set the flags for first row and first col
-        first_row_flag = True
-        first_col_flag = True
-        for j in range(len(matrix[0])):
-            if matrix[0][j] == 0:
-                first_row_flag = False
+        # itearte thru the matrix
+        #   if curr matrix[i][j] == 0:
+        #       curr[0][j]=0
+        #       curr[i][0] = 0
 
-        for i in range(len(matrix)):
-            if matrix[i][0] == 0:
-                first_col_flag = False
- 
-        # mark which rows and cols marked to be 0 in first row and col
-        for i in range(1, len(matrix)):
-            for j in range(1, len(matrix[0])):
-                if matrix[i][j] == 0:
-                    matrix[i][0] = 0
-                    matrix[0][j] = 0
+        # iterate thru the first row (j) from second col
+        #   if the curr [0][j] == 0
+        #       iterate thru the row from second row [i]
+        #           curr[i][j] = 0
 
-        # mark all rows and cols as 0 if they need to be 0
-        for i in range(1, len(matrix)):
-            if matrix[i][0] == 0:
-                for j in range(1, len(matrix[0])):
-                    matrix[i][j] = 0
+        # iterate thru the first col(i) from second row
+        #   if curr[i][0] == 0
+        #       iterate thru the col from second col
+        #           curr[i][j] = 0
 
-        for j in range(1, len(matrix[0])):
-            if matrix[0][j] == 0:
-                for i in range(1, len(matrix)):
-                    matrix[i][j] = 0
- 
-        # mark the first row and first col as 0 if they need to be 0
-        if not first_row_flag:
-            for j in range(len(matrix[0])):
-                matrix[0][j] = 0
-
-        if not first_col_flag:
-            for i in range(len(matrix)):
-                matrix[i][0] = 0
+        # if curr[0][0] == 0:
+        #   iterate thru the first row and set val = 0
+        #   iterate thru the second col and set val = 0
