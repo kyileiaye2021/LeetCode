@@ -497,6 +497,7 @@ All leetCode problems done will be documented here.
 | [0070-climbing-stairs](https://github.com/kyileiaye2021/LeetCode/tree/master/0070-climbing-stairs) |
 | [0189-rotate-array](https://github.com/kyileiaye2021/LeetCode/tree/master/0189-rotate-array) |
 | [0202-happy-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0202-happy-number) |
+| [0231-power-of-two](https://github.com/kyileiaye2021/LeetCode/tree/master/0231-power-of-two) |
 | [0268-missing-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0268-missing-number) |
 | [0279-perfect-squares](https://github.com/kyileiaye2021/LeetCode/tree/master/0279-perfect-squares) |
 | [0380-insert-delete-getrandom-o1](https://github.com/kyileiaye2021/LeetCode/tree/master/0380-insert-delete-getrandom-o1) |
@@ -584,6 +585,7 @@ All leetCode problems done will be documented here.
 | [0143-reorder-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0143-reorder-list) |
 | [0203-remove-linked-list-elements](https://github.com/kyileiaye2021/LeetCode/tree/master/0203-remove-linked-list-elements) |
 | [0206-reverse-linked-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0206-reverse-linked-list) |
+| [0231-power-of-two](https://github.com/kyileiaye2021/LeetCode/tree/master/0231-power-of-two) |
 | [0234-palindrome-linked-list](https://github.com/kyileiaye2021/LeetCode/tree/master/0234-palindrome-linked-list) |
 | [0394-decode-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0394-decode-string) |
 ## Tree
@@ -1002,6 +1004,7 @@ All leetCode problems done will be documented here.
 | [0190-reverse-bits](https://github.com/kyileiaye2021/LeetCode/tree/master/0190-reverse-bits) |
 | [0191-number-of-1-bits](https://github.com/kyileiaye2021/LeetCode/tree/master/0191-number-of-1-bits) |
 | [0222-count-complete-tree-nodes](https://github.com/kyileiaye2021/LeetCode/tree/master/0222-count-complete-tree-nodes) |
+| [0231-power-of-two](https://github.com/kyileiaye2021/LeetCode/tree/master/0231-power-of-two) |
 | [0268-missing-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/kyileiaye2021/LeetCode/tree/master/0287-find-the-duplicate-number) |
 | [0338-counting-bits](https://github.com/kyileiaye2021/LeetCode/tree/master/0338-counting-bits) |
