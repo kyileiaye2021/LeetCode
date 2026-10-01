@@ -16,19 +16,31 @@ class Solution:
 
         # for i in range(len(nums)):
         #   recur(i, [])
-        memo = [0] * len(nums)
-        def dfs(i):
-            if memo[i] > 1:
-                return memo[i]
-            best = 1
-            for j in range(i + 1, len(nums)):
-                if nums[j] > nums[i]:
-                    best = max(best, 1 + dfs(j))
-            memo[i] = best
-            return memo[i]
+        # memo = [0] * len(nums)
+        # def dfs(i):
+        #     if memo[i] > 1:
+        #         return memo[i]
+        #     best = 1
+        #     for j in range(i + 1, len(nums)):
+        #         if nums[j] > nums[i]:
+        #             best = max(best, 1 + dfs(j))
+        #     memo[i] = best
+        #     return memo[i]
         
-        max_res = 0
-        for i in range(len(nums)):
-            max_res = max(max_res, dfs(i))
+        # max_res = 0
+        # for i in range(len(nums)):
+        #     max_res = max(max_res, dfs(i))
 
-        return max_res
+        # return max_res
+
+
+
+        # lis[i] = max(1, 1 + lis[j])
+
+        lis = [1] * len(nums)
+        for i in range(len(nums) - 1, -1, -1):
+            for j in range(i + 1, len(nums)):
+                if nums[i] < nums[j]:
+                    lis[i] = max(lis[i], 1 + lis[j])
+
+        return max(lis)
