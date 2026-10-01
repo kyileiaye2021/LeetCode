@@ -1,34 +1,28 @@
 class Solution:
-    def maxProduct(self, nums: List[int]) -> int:
-        # max product => to maintain the max product of sub arr
-        # curr product => 1
+    def maxProduct(self, nums: list[int]) -> int:
+        # prefix (keep track of both max and min)
+        # largest product = max(nums)
+
         # iterate thru the nums
-        #   multiply curr product with curr nums
-        #   update max product if curr product is > max product
-        #   check if curr product becomes neg
-        #       reset curr product to 1
-        # return max product
-        # max_product = float('-inf')
-        # curr_product = 1
-        # for n in nums:
-        #     curr_product = curr_product * n
-        #     max_product = max(max_product, curr_product, n)
-        # return max_product
+        #   product of current n and max
+        #   product of current n and min
+        #   update max and min
+        #   if curr n == 0 reset max and min to 1
+        #   update largest product so far
 
-        currMin = 1
-        currMax = 1
-        max_product = max(nums)
+        res = max(nums)
+        curMax = 1
+        curMin = 1
 
-        for i in range(len(nums)):
-            if nums[i] == 0:
-                currMin = 1
-                currMax = 1
-                continue
+        for n in nums:
+            if n == 0:
+                curMax = 1
+                curMin = 1
+
+            tmp = curMax
+            curMax = max(curMax * n, curMin * n, n)
+            curMin = min(tmp * n, curMin * n, n)
+            res = max(res, curMax, curMin)
+
+        return res
             
-            temp = currMax
-            currMax = max(currMax * nums[i], currMin * nums[i], nums[i])
-            currMin = min(temp * nums[i], currMin * nums[i], nums[i])
-
-            max_product = max(max_product, currMax)
-
-        return max_product
