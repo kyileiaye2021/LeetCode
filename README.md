@@ -1118,4 +1118,8 @@ All leetCode problems done will be documented here.
 |  |
 | ------- |
 | [0322-coin-change](https://github.com/kyileiaye2021/LeetCode/tree/master/0322-coin-change) |
+## Longest Increasing Subsequence
+|  |
+| ------- |
+| [0300-longest-increasing-subsequence](https://github.com/kyileiaye2021/LeetCode/tree/master/0300-longest-increasing-subsequence) |
 <!---LeetCode Topics End-->
