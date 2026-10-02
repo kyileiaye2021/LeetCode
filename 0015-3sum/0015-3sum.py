@@ -1,31 +1,38 @@
 class Solution:
     def threeSum(self, nums: list[int]) -> list[list[int]]:
-        # 3 triplets -> distinct
-        # nested loops -> O(n^3)
+
+        res = []
+        if len(nums) < 3:
+            return res
 
         nums.sort()
-        # iterate thru the ele 
-        res = []
-        for i in range(len(nums)):
+
+        for i in range(len(nums) - 2):
             if i > 0 and nums[i] == nums[i - 1]:
                 continue
-            cur_ele = nums[i]
-
             l = i + 1
             r = len(nums) - 1
 
             while l < r:
-                if cur_ele + nums[l] + nums[r] > 0:
-                    r -= 1
-
-                elif cur_ele + nums[l] + nums[r] < 0:
+                sum = nums[i] + nums[l] + nums[r] 
+                if sum == 0:
+                    res.append([nums[i], nums[l], nums[r]])
                     l += 1
+                    while l < r and nums[l] == nums[l - 1]:
+                        l += 1
+                    r -= 1
+                    while r > l and nums[r] == nums[r + 1]:
+                        r -= 1
+
+                elif sum < 0:
+                    l += 1
+                    while l < r and nums[l] == nums[l - 1]:
+                        l += 1
 
                 else:
-                    res.append([cur_ele, nums[l], nums[r]])
-                    l += 1
-                    while l < len(nums) and nums[l] == nums[l - 1]:
-                        l += 1
+                    r -= 1
+                    while r > l and nums[r] == nums[r + 1]:
+                        r -= 1
 
         return res
 
