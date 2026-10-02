@@ -1,26 +1,39 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
+        # happy cases
+        # 'abcabc', 3
 
-        # sliding window 2 pointers
-        # set in window to check duplicates
+        # 'abba', 2
 
-        # l , r
+        # 'abc', 3
 
-        l = 0
+        # edge cases
+        # 'bbbb', 1
+
+        # '', 0
+
+        # 'kle8 9', 6
+
+        # sliding window
+        # O(n) time
+        # O(n) space
+
         visited = set()
         max_window = 0
-        for r in range(len(s)):
+        l = r = 0
+        while r < len(s):
+
             while s[r] in visited:
                 visited.remove(s[l])
                 l += 1
-
+            
             visited.add(s[r])
             cur_window = r - l + 1
-            max_window = max(cur_window, max_window)
+            max_window = max(max_window, cur_window)
+            r += 1
 
         return max_window
-                
-            
-
 
         
+
+
