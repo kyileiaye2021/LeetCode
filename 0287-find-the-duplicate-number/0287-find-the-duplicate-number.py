@@ -1,36 +1,31 @@
 class Solution:
     def findDuplicate(self, nums: list[int]) -> int:
-        # sort the arr - O(nlogn)
+        # set O(n) space
+        # hashmap
+        # sort O(nlogn) time
+        # slow and fast  pointer and detect the cycle
 
-        # set - O(n) space
+        # slow, fast = first ele
+        # while true
+        #   slow = nums[slow]
+        #   fast = nums[nums[fast]]
+        #   if slow == fast
+        #       break
+        # slow = first ele
+        # keep moving slow and fast 1 time until they meet
 
-        # slow and fast pointer
-        # slow = 0
-        # fast = 0
-
-        # while True:
-        #   slow = arr[slow]
-        #   fast = arr[arr[fast]]
-        #   if slow == fast:
-        #       return nums[slow]
-        # slow = 0
-        # while slow != fast:
-        #   slow = arr[slow]
-        #   fast = arr[fast]
-        # return slow
-
-        slow = 0
-        fast = 0
-
+        slow = fast = nums[0]
         while True:
             slow = nums[slow]
             fast = nums[nums[fast]]
             if slow == fast:
                 break
 
-        slow = 0
+        slow = nums[0]
         while slow != fast:
             slow = nums[slow]
             fast = nums[fast]
-
+        
         return slow
+
+        
