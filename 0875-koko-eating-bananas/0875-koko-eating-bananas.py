@@ -1,26 +1,22 @@
 class Solution:
-    def minEatingSpeed(self, piles: List[int], h: int) -> int:
+    def minEatingSpeed(self, piles: list[int], h: int) -> int:
+        # binary search
+        
+        l = 1
+        r = max(piles)
         res = 0
-        low = 1
-        high = max(piles)
+        while l <= r:
+            rate = l + ((r - l) // 2)
+            total = 0
+            for p in piles:
+                total += math.ceil(p / rate)
 
-        while low <= high:
-            mid = (low + high) // 2
-
-            time = 0
-            for b in piles:
-                time += math.ceil(b / mid)
-            
-            if time > h:
-                low = mid + 1
-            
+            if total > h:
+                l = rate + 1
             else:
-                res = mid
-                high = mid - 1
-
-            # else:
-            #     return mid
+                res = rate
+                r = rate - 1
 
         return res
 
-        
+            
