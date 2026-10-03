@@ -1,51 +1,35 @@
 class Solution:
-    def maxArea(self, height: List[int]) -> int:
-
+    def maxArea(self, height: list[int]) -> int:
         # happy cases
-        # [1,8,6,2,5,4,8,3,7]
-        # 49
+        # [2,4,2,3,8,4]
+        # 16
 
-        # [1,1]
+        # edge cases
+        # [1,1,1,1] 
+        # 3
+
+        # [1, 1]
         # 1
 
-        # [1,0,1]
-        # 2
-
-        # [0,0]
-        # 0
-
-        # [0, 1, 0]
-        # 0
-
-        # [1,1,1]
+        # [0, 1, 5, 0]
         # 1
 
-        # brute force - O(n^2)
-        # two pointers - 
-        # l and r 
-        # calculate the area
+        # nested for loop - O(n^2)
+        # 2 pointer 
         
-        l = 0
-        r = len(height) - 1
+        l, r = 0, len(height) - 1
         max_area = 0
 
         while l < r:
-            area = min(height[l], height[r]) * (r - l)
-            max_area = max(max_area, area)
+            hei = min(height[l], height[r])
+            leng = r - l 
+            area = hei * leng
+            max_area = max(area, max_area)
 
-            if height[l] > height[r]:
+            if height[l] < height[r]:
+                l += 1
+            else:
                 r -= 1
 
-            else:
-                l += 1
-
-            
         return max_area
 
-            
-
-
-
-
-        
-        
