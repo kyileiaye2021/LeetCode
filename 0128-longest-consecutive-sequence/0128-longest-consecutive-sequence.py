@@ -1,19 +1,43 @@
 class Solution:
-    def longestConsecutive(self, nums: List[int]) -> int:
-        max_len = 0
-        nums = set(nums)
-        for n in nums:
-            # start of subseq
-            if n - 1 not in nums:
-                cur_len = 1
-                start = n
-                while start + 1 in nums:
-                    cur_len += 1
-                    start = start + 1
+    def longestConsecutive(self, nums: list[int]) -> int:
+        # edge cases
+        # [8, 2, 0, 6]
+        # 1
 
-                max_len = max(cur_len, max_len)
+        # [0,0,0,0]
+        # 1
+
+        # []
+        # 0
+
+        # [9,9,7,7]
+        # 1
+
+        # convert nums to set
+        # iteraet thru the nums
+        #   check if n - 1 is in nums
+        #       continue
+        #   cur_len = 1
+        #   tmp = n
+        #   while tmp + 1 in nums
+        #       cur_len += 1
+        #       tmp += 1
+        #   max_len = max(max len, cur len)
+        # return max len
+
+        nums = set(nums)
+        max_len = 0
+
+        for n in nums:
+            if n - 1 in nums:
+                continue
+
+            cur_len = 1
+            tmp = n
+            while tmp + 1 in nums:
+                cur_len += 1
+                tmp += 1
+
+            max_len = max(max_len, cur_len)
 
         return max_len
-
-
-        
