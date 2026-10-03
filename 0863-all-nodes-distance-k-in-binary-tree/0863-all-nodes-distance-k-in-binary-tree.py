@@ -7,99 +7,51 @@
 
 class Solution:
     def distanceK(self, root: TreeNode, target: TreeNode, k: int) -> List[int]:
-        # DFS
-        # create parent graph with dfs
-        # 
-        if not root:
-            return []
+       
+        # need to go up and down k dist from target
+        # undirected graph from node 5
+        # create a hashmap
+        # add node 5 to queue
+        #   pop its nei for k times
+
         parent = {}
-        def create_graph(root, parent_node=None):
+        dq = collections.deque()
+        
+        def dfs(root, p):
             if not root:
-                return
+                return 
 
-            parent[root] = parent_node
-            create_graph(root.left, root)
-            create_graph(root.right, root)
-        
-        create_graph(root)
-
-        # print(parent)
-        visited = set()
-        res = []
-
-        def dfs(root, k):
-            # base case
-            if root in visited or not root:
-                return
+            if root == target:
+                dq.append(root)
             
-            visited.add(root)
-            if k == 0:
-                res.append(root.val)
+            parent[root] = p
+            dfs(root.left, root)
+            dfs(root.right, root)
 
-            # recursive case
-            dfs(root.left, k - 1)
-            dfs(root.right, k - 1)
-            dfs(parent[root], k - 1)
+        dfs(root, None)
+        visited = set()
 
-        dfs(target, k)
-        return res
+        i = 0
+        while dq and i < k:
+            dq_len = len(dq)
+            for _ in range(dq_len):
+                cur_node = dq.popleft()
+                visited.add(cur_node)
+                if cur_node.left and cur_node.left not in visited:
+                    dq.append(cur_node.left)
+                if cur_node.right and cur_node.right not in visited:
+                    dq.append(cur_node.right)
+                if parent[cur_node] and parent[cur_node] not in visited:
+                    dq.append(parent[cur_node])
+            i += 1
 
-        # # first we have to create a map that maps to children to their parent
-        # # queue to iterate all nodes and add their parent-child relationship
-        # # visited
-        # # queue and add the target node
-        # # while k > 0 and queuE isn't empty
-        # #   iterate thru the queue len
-        # #       check if there is left child of the curr node
-        # #           if it's not in the visited
-        # #               add it to the queue
-        # #       if there is right child
-        # #           if it's not in the visited
-        # #               add it to the queue
-        # #       if there is parent
-        # #           if it's not in the visited
-        # #               add it to the queue
-        # # return list(queue)
-
-
-        # queue = deque() #{child node val: parent node}
-        # queue.append(root)
-        # parent = defaultdict()
-
-        # while queue:
-        #     for _ in range(len(queue)):
-        #         curr = queue.popleft()
-                
-        #         if curr.left:
-        #             parent[curr.left] = curr
-        #             queue.append(curr.left)
-
-        #         if curr.right:
-        #             parent[curr.right] = curr
-        #             queue.append(curr.right)
-                
+        return [node.val for node in dq]
         
-        # queue = deque() 
-        # queue.append(target)
-        # visited = set()
 
-        # while k > 0 and queue:
-        #     for _ in range(len(queue)):
-        #         curr = queue.popleft()
-        #         visited.add(curr)
 
-        #         if curr.left and curr.left not in visited:
-        #             queue.append(curr.left)
-                
-        #         if curr.right and curr.right not in visited:
-        #             queue.append(curr.right)
-                
-        #         if curr in parent and parent[curr] not in visited:
-        #             queue.append(parent[curr])
 
-        #     k -= 1
 
-        # res = []
-        # while queue:
-        #     res.append(queue.popleft().val)
-        # return res
+
+
+
+
