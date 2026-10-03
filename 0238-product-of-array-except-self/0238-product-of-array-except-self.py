@@ -1,40 +1,45 @@
 class Solution:
-    def productExceptSelf(self, nums: List[int]) -> List[int]:
-        # nums: [1,2,3,4]
-        # res: [1, 1, 2, 6]
-        # postfix = 1
-        # postfix * nums[i+1] * res[i]
-        # postfix = postfix * nums[i+1]
-        # [24,12,8,6]
-        # postfix: [24,12, 4, 1]
-        # iterate thru the prefix and postfix
-        #   multiply at each position
+    def productExceptSelf(self, nums: list[int]) -> list[int]:
         
-        # prefix = [1] * len(nums)
-        # for i in range(1, len(prefix)):
-        #     prefix[i] = prefix[i - 1] * nums[i - 1]
+        # happy cases
+        # nums = [1,2,3,4]
+        # [24,12,8,6]
 
-        # postfix = [1] * len(nums)
-        # for i in range(len(postfix) - 2, -1, -1):
-        #     postfix[i] = postfix[i + 1] * nums[i + 1]
+        # # nums = [-1,1,0,-3,3]
+        # [0,0,9,0,0]
 
-        # res = []
-        # for i, n in enumerate(prefix):
-        #     res.append(n * postfix[i])
-        # return res
-        res = []
+        # edge cases
+        # nums = [4,5]
+        # [5, 4]
+
+        # nums = [1,1]
+        # [1,1]
+
+        # brute force 
+        # nested for loop
+        # O(n^2) time
+
+        # prefix and postfix products O(n) time
+        # O(n) space
+
+        # prefix 
+        # postfix
+
+        pre = 1
+        pos = 1
         res = [1] * len(nums)
-        for i in range(1, len(res)):
-            res[i] = res[i - 1] * nums[i - 1]
 
-        postfix = 1
-        for i in range(len(res) - 2, -1, -1):
-            res[i] = postfix * res[i] * nums[i + 1]
-            postfix *= nums[i + 1]
+        for i in range(len(nums)):
+            res[i] = pre
+            pre = pre * nums[i]
+
+        for i in range(len(nums) - 1, -1, -1):
+            res[i] = res[i] * pos
+            pos = pos * nums[i]
 
         return res
 
+
+
         
-
-
-
+        
