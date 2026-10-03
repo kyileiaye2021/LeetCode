@@ -316,6 +316,7 @@ All leetCode problems done will be documented here.
 | [0863-all-nodes-distance-k-in-binary-tree](https://github.com/kyileiaye2021/LeetCode/tree/master/0863-all-nodes-distance-k-in-binary-tree) |
 | [0904-fruit-into-baskets](https://github.com/kyileiaye2021/LeetCode/tree/master/0904-fruit-into-baskets) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/kyileiaye2021/LeetCode/tree/master/0974-subarray-sums-divisible-by-k) |
+| [0981-time-based-key-value-store](https://github.com/kyileiaye2021/LeetCode/tree/master/0981-time-based-key-value-store) |
 | [1039-find-the-town-judge](https://github.com/kyileiaye2021/LeetCode/tree/master/1039-find-the-town-judge) |
 | [1044-find-common-characters](https://github.com/kyileiaye2021/LeetCode/tree/master/1044-find-common-characters) |
 | [1481-least-number-of-unique-integers-after-k-removals](https://github.com/kyileiaye2021/LeetCode/tree/master/1481-least-number-of-unique-integers-after-k-removals) |
@@ -428,6 +429,7 @@ All leetCode problems done will be documented here.
 | [0784-letter-case-permutation](https://github.com/kyileiaye2021/LeetCode/tree/master/0784-letter-case-permutation) |
 | [0793-swap-adjacent-in-lr-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0793-swap-adjacent-in-lr-string) |
 | [0844-backspace-string-compare](https://github.com/kyileiaye2021/LeetCode/tree/master/0844-backspace-string-compare) |
+| [0981-time-based-key-value-store](https://github.com/kyileiaye2021/LeetCode/tree/master/0981-time-based-key-value-store) |
 | [1021-remove-outermost-parentheses](https://github.com/kyileiaye2021/LeetCode/tree/master/1021-remove-outermost-parentheses) |
 | [1044-find-common-characters](https://github.com/kyileiaye2021/LeetCode/tree/master/1044-find-common-characters) |
 | [1047-remove-all-adjacent-duplicates-in-string](https://github.com/kyileiaye2021/LeetCode/tree/master/1047-remove-all-adjacent-duplicates-in-string) |
@@ -479,6 +481,7 @@ All leetCode problems done will be documented here.
 | [0875-koko-eating-bananas](https://github.com/kyileiaye2021/LeetCode/tree/master/0875-koko-eating-bananas) |
 | [0907-koko-eating-bananas](https://github.com/kyileiaye2021/LeetCode/tree/master/0907-koko-eating-bananas) |
 | [0912-random-pick-with-weight](https://github.com/kyileiaye2021/LeetCode/tree/master/0912-random-pick-with-weight) |
+| [0981-time-based-key-value-store](https://github.com/kyileiaye2021/LeetCode/tree/master/0981-time-based-key-value-store) |
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/kyileiaye2021/LeetCode/tree/master/1011-capacity-to-ship-packages-within-d-days) |
 | [1283-find-the-smallest-divisor-given-a-threshold](https://github.com/kyileiaye2021/LeetCode/tree/master/1283-find-the-smallest-divisor-given-a-threshold) |
 | [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/kyileiaye2021/LeetCode/tree/master/1482-minimum-number-of-days-to-make-m-bouquets) |
@@ -902,6 +905,7 @@ All leetCode problems done will be documented here.
 | [0460-lfu-cache](https://github.com/kyileiaye2021/LeetCode/tree/master/0460-lfu-cache) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/kyileiaye2021/LeetCode/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0969-number-of-recent-calls](https://github.com/kyileiaye2021/LeetCode/tree/master/0969-number-of-recent-calls) |
+| [0981-time-based-key-value-store](https://github.com/kyileiaye2021/LeetCode/tree/master/0981-time-based-key-value-store) |
 | [1845-seat-reservation-manager](https://github.com/kyileiaye2021/LeetCode/tree/master/1845-seat-reservation-manager) |
 | [2352-design-an-atm-machine](https://github.com/kyileiaye2021/LeetCode/tree/master/2352-design-an-atm-machine) |
 ## Sliding Window
