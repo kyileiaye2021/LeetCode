@@ -6,54 +6,35 @@
 #         self.right = right
 class Solution:
     def zigzagLevelOrder(self, root: TreeNode | None) -> list[list[int]]:
-        
         # bfs
-        # if root is none
-        #   return none
-        # deque 
-        # res = 
-        # add root to deque
-        # pop until dq is empty
-        #   len(curr dq)
-        #   curr list = []
-        #   iterate thru the len of curr dq
-        #       pop curr node and add it to curr list
-        #       if curr node has left child : add it to queue
-        #       if curr node has right child: add it to queue
-        #   add curr list to res list
-        # return res
-
-        res = []
-        if not root:
-            return res
-
         dq = collections.deque()
+        if not root:
+            return []
+
         dq.append(root)
-
-        left_to_right = True
+        res = []
+        alternate = False
         while dq:
-            curr_len = len(dq)
-            curr_lst = []
+            dq_len = len(dq)
+            cur_lst = []
+            for _ in range(dq_len):
+                if not alternate:
+                    curNode = dq.popleft()
+                    cur_lst.append(curNode.val)
+                    if curNode.left:
+                        dq.append(curNode.left)
+                    if curNode.right:
+                        dq.append(curNode.right)
 
-            for _ in range(curr_len):
-                if left_to_right:
-                    curr_node = dq.popleft()
-                    if curr_node.left:
-                        dq.append(curr_node.left)
-                    if curr_node.right:
-                        dq.append(curr_node.right)
-                    
-                else:
-                    curr_node = dq.pop()
-                    if curr_node.right:
-                        dq.appendleft(curr_node.right)
-                    if curr_node.left:
-                        dq.appendleft(curr_node.left)
-
-                curr_lst.append(curr_node.val)
-        
-            res.append(curr_lst)
-            left_to_right = False if left_to_right else True
+                if alternate: 
+                    curNode = dq.pop()
+                    cur_lst.append(curNode.val)
+                    if curNode.right:
+                        dq.appendleft(curNode.right)
+                    if curNode.left:
+                        dq.appendleft(curNode.left)
+            res.append(cur_lst)
+            alternate = True if not alternate else False
 
         return res
-                
+
