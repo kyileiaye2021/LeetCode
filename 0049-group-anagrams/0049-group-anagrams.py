@@ -1,51 +1,41 @@
 class Solution:
-    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        # happy cases
-        # input: ["a", "a", "b"]
-        # output: [["a", "a"], ["b"]]
+    def groupAnagrams(self, strs: list[str]) -> list[list[str]]:
+        # [0] * 26
+        # aa = [2,0,0,...]
 
-        # edge cases
-        # input: [""]
-        # output: [[""]]
+        # hashmap {[0,0,0..] : ['eat', 'ate', ...]}
+        # iterate thru the strs
+        #   create a list of size 26
+        #   iterate thru chars
+        #       increment the corresponding index
+        #       ord(curr char); a : 0, b - 1
+        #   if the list not in hashmap
+        #       add the list to hashmap with cur str
+        #   else 
+        #       append the cur str to list
+        # res
+        # iterate thru the values of the hashmap
+        #   add the list values to res list
 
-        # nested for + hashmap O(n^2)
-        # hashmap {{'e': 1, 'a': 1, 't': 1}: [eat, ate, tea]
-        #           {'b':1, 'a':1, 't':1}: ["bat"]
-        #           {'t':1, 'a':1, 'n':1}: ["nat", "tan"]}
-        
-        # a-z chars : 26 chars --> 10001....
-        main_hashmap = {}
+        group = {}
+
         for s in strs:
-            # temp list with 26 0s (0-25)
-            temp_lst = [0] * 26
-
-            # iterate thru the s
+            cur_list = [0] * 26
             for c in s:
-
-            #   get the index of cur char in temp list
                 idx = ord(c) - ord('a')
+                cur_list[idx] += 1
 
-            #   put 1 at that position
-                temp_lst[idx] += 1
+            cur_list = tuple(cur_list)
 
-            # hashed_str = combine temp list into a str
-            hashed_str = ''.join(str(temp_lst))
-
-            # add the s to main_hashmap with hashed_str  {hashed_str: [s]}
-            if hashed_str not in main_hashmap:
-                main_hashmap[hashed_str] = [s]
+            if cur_list not in group:
+                group[cur_list] = [s]
             else:
-                main_hashmap[hashed_str].append(s)
+                group[cur_list].append(s)
 
+            
         res = []
-        for hashed_str, group in main_hashmap.items():
-            res.append(group)
+        for g in group.values():
+            res.append(g)
 
         return res
 
-
-
-
-
-
-       
