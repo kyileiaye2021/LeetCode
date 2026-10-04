@@ -1,29 +1,24 @@
 class Solution:
     def findMinArrowShots(self, points: list[list[int]]) -> int:
-        
-        # sort points by start
-        # prevEnd = first interval end time
-        # numShot = 0
-        # iterate thru sorted points
-        #   check if curr interval is overlapped with prev interval
-        #       get min val between prevEnd and curr interval endtime and set prevend
-        #   else
-        #       set prevend to curr interval endtime
-        #       numShot +=1
-        # return numShot
+        # sort by end time
+        # iterate thru points
+        #   check if the curr interval isn't overlapped with prev
+        #       res += 1
+        #   
 
-        # Note: a new arrow is used only when the curr interval doesn't overlap
+        res = 1
 
-        points.sort(key=lambda x: x[0])
-        prevEnd = points[0][1]
-        numShot = 1
+        points.sort(key=lambda x: x[1])
+        prev_end = points[0][1]
+        for i in range(len(points)):
+            start, end = points[i]
 
-        for start, end in points[1:]:
-            if start <= prevEnd:
-                prevEnd = min(prevEnd, end)
-
+            if start <= prev_end:
+                prev_end = min(end, prev_end)
             else:
-                numShot += 1
-                prevEnd = end
+                res += 1
+                prev_end = end
 
-        return numShot
+        return res
+            
+
