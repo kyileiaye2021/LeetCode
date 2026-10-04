@@ -1,35 +1,39 @@
 class Solution:
-    def generateParenthesis(self, n: int) -> List[str]:
+    def generateParenthesis(self, n: int) -> list[str]:
+        # start from empty
+        # open = 0
 
-        # dfs(open, close)
-        # base case
-        # if open > n
-        #   return (don't expand)
-        # if close > opening parenthesis num
-        #   return (don't expand)
-        # if open == n and close num
-        #   put the curr parenthesis str to the res arr
-        # dfs(open + 1, close) # add opening parenthesis
-        # backtrack --> pop the curr '(' from res
-        # dfs(open, close) # add closing parenthesis
+        # recur()
+        # if open == n and close == n:
+        #   create a cur list copy and add it to res
+
+        # go to left -> '('
+        # open += 1
+        # pop the curr ele
+        # open -= 1
+        # go to right -> ')'
+        # while open == n and close < n:
+        #   go to right -> ')'
+
+        cur_lst = []
         res = []
-        def dfs(open, close, curr):
 
+        def recur(open, close):
             if open == n and close == n:
-                cur_paren = ''.join(curr)
-                res.append(cur_paren)
-                return
+                res.append(''.join(cur_lst))
 
             if open < n:
-                curr.append('(')
-                dfs(open + 1, close, curr)   
-                curr.pop() # backtrack
+                cur_lst.append('(')
+                recur(open + 1, close)
+                cur_lst.pop()
 
             if close < open:
-                curr.append(')')
-                dfs(open, close + 1, curr)     
-                curr.pop()
+                cur_lst.append(')')
+                recur(open, close + 1)
+                cur_lst.pop()
 
-        dfs(0,0,[])
+        recur(0, 0)
         return res
-        
+
+
+
