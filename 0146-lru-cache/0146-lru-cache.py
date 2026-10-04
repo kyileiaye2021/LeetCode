@@ -1,5 +1,5 @@
-class ListNode():
-    def __init__(self, key=0, val=0, prev=None, next=None):
+class ListNode:
+    def __init__(self, key=0, val = 0, prev =None, next =None):
         self.key = key
         self.val = val
         self.prev = prev
@@ -8,51 +8,45 @@ class ListNode():
 class LRUCache:
 
     def __init__(self, capacity: int):
+        self.capacity = capacity
+        self.hashmap = {}
         self.lru = ListNode()
         self.mru = ListNode()
         self.lru.next = self.mru
         self.mru.prev = self.lru
-        self.capacity = capacity
-        self.hashmap = {}
+        
+    def insert(self, node):
+        prev_node = self.mru.prev
+        node.next = self.mru
+        self.mru.prev = node
+        node.prev = prev_node
+        prev_node.next = node
 
-    def remove(self, node): # remove from the list
-        prev, nxt = node.prev, node.next
-        prev.next, nxt.prev = nxt, prev
-
-    def insert(self, node): # insert the node at the right
-        prev, nxt = self.mru.prev, self.mru
-        prev.next = nxt.prev = node
-        node.next = nxt
-        node.prev = prev
+    def remove(self, node):
+        next_node = node.next
+        prev_node = node.prev
+        prev_node.next = next_node
+        next_node.prev = prev_node
 
     def get(self, key: int) -> int:
-
         if key in self.hashmap:
-            # update the node as mru
-            self.remove(self.hashmap[key])
-            self.insert(self.hashmap[key])
+            # calling get with the key, we need to make that key recent
+            self.remove(self.hashmap[key]) # remove from linked list
+            self.insert(self.hashmap[key]) # add to linked list 
             return self.hashmap[key].val
-
         return -1
-        
+
     def put(self, key: int, value: int) -> None:
-        # if key is already in hashmap: update teh value in hashmap and remove the node and update the node as mru
         if key in self.hashmap:
             self.remove(self.hashmap[key])
-    
-        # if key is not in hashmap
+
         self.hashmap[key] = ListNode(key, value)
         self.insert(self.hashmap[key])
 
-        # if the len exceeds capacity, remove lru 
         if len(self.hashmap) > self.capacity:
-            lru_node = self.lru.next
-            self.remove(lru_node)
-            del self.hashmap[lru_node.key]
-        
-        
-
-
+                lru_node = self.lru.next
+                self.remove(lru_node) # remove the lru cache
+                del self.hashmap[lru_node.key]
 
         
 
