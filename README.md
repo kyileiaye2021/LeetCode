@@ -109,6 +109,7 @@ All leetCode problems done will be documented here.
 | [0721-accounts-merge](https://github.com/kyileiaye2021/LeetCode/tree/master/0721-accounts-merge) |
 | [0724-find-pivot-index](https://github.com/kyileiaye2021/LeetCode/tree/master/0724-find-pivot-index) |
 | [0733-flood-fill](https://github.com/kyileiaye2021/LeetCode/tree/master/0733-flood-fill) |
+| [0739-daily-temperatures](https://github.com/kyileiaye2021/LeetCode/tree/master/0739-daily-temperatures) |
 | [0746-min-cost-climbing-stairs](https://github.com/kyileiaye2021/LeetCode/tree/master/0746-min-cost-climbing-stairs) |
 | [0747-min-cost-climbing-stairs](https://github.com/kyileiaye2021/LeetCode/tree/master/0747-min-cost-climbing-stairs) |
 | [0753-open-the-lock](https://github.com/kyileiaye2021/LeetCode/tree/master/0753-open-the-lock) |
@@ -534,6 +535,7 @@ All leetCode problems done will be documented here.
 | [0496-next-greater-element-i](https://github.com/kyileiaye2021/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0503-next-greater-element-ii) |
 | [0678-valid-parenthesis-string](https://github.com/kyileiaye2021/LeetCode/tree/master/0678-valid-parenthesis-string) |
+| [0739-daily-temperatures](https://github.com/kyileiaye2021/LeetCode/tree/master/0739-daily-temperatures) |
 | [0844-backspace-string-compare](https://github.com/kyileiaye2021/LeetCode/tree/master/0844-backspace-string-compare) |
 | [0853-car-fleet](https://github.com/kyileiaye2021/LeetCode/tree/master/0853-car-fleet) |
 | [1021-remove-outermost-parentheses](https://github.com/kyileiaye2021/LeetCode/tree/master/1021-remove-outermost-parentheses) |
@@ -1035,6 +1037,7 @@ All leetCode problems done will be documented here.
 | [0402-remove-k-digits](https://github.com/kyileiaye2021/LeetCode/tree/master/0402-remove-k-digits) |
 | [0496-next-greater-element-i](https://github.com/kyileiaye2021/LeetCode/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/kyileiaye2021/LeetCode/tree/master/0503-next-greater-element-ii) |
+| [0739-daily-temperatures](https://github.com/kyileiaye2021/LeetCode/tree/master/0739-daily-temperatures) |
 | [0853-car-fleet](https://github.com/kyileiaye2021/LeetCode/tree/master/0853-car-fleet) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/kyileiaye2021/LeetCode/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 ## Merge Sort
