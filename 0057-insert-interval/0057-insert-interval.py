@@ -1,45 +1,31 @@
 class Solution:
-    def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
-        # brute force
-        # add new interval
-        # last end = first end time
-        # res list # O(n) time 
-        # iterate thru the intervals
-        #   check if last end >= cur s time
-        #       update last item in res list
-        #       prev_s, prev_e = res_lst[-1]
-        #       res_lst[-1][1] = e
-        #       last end = e
-        #   else:add the curr interval to res lst
-        # return res
-
-        # store new interval in the max heap
-        # iterate thru the intervals
-        #   if curr end > new interval s:
-        #       if curr s < new interval e:
-        #           new interval s = min(cur_s, s)
-        #           new interval e = max(cur_e, e)
-        #       else
-        #           add (s, e) in the res
-        #   else: add (s, e) in the res
-        # return res
+    def insert(self, intervals: list[list[int]], newInterval: list[int]) -> list[list[int]]:
+        # res
+        # res.append(intervals[0])
+        # iterate thu the intervals
+        #   check if the newInterval start < curr end
+        #   new interval start and end
+        #   add it to res
+        #   else
+        #       add it to res
 
         res = []
-        for i, [cur_s, cur_e] in enumerate(intervals):
-            if cur_e >= newInterval[0]:
-                if cur_s <= newInterval[1]:  # overlapped
-                    newInterval[0] = min(cur_s, newInterval[0])
-                    newInterval[1] = max(cur_e, newInterval[1])
+        new_start = newInterval[0]
+        new_end = newInterval[1]
 
-                else: # new interval is added and everything after that is added
-                    res.append([newInterval[0], newInterval[1]])
-                    return res + intervals[i:]
+        for i in range(len(intervals)):
+            start, end = intervals[i]
+            if end < new_start: # curr interval before new start
+                res.append([start, end])
 
-            else: # new interval is added 
-                res.append([cur_s, cur_e])
-        
-        res.append([newInterval[0], newInterval[1]])
+            elif start > new_end:
+                res.append([new_start, new_end])
+                return res + intervals[i :]
+
+            else:
+                new_start = min(start, new_start)
+                new_end = max(end, new_end)
+
+        res.append([new_start, new_end])
         return res
 
-
-        
