@@ -1114,6 +1114,7 @@ All leetCode problems done will be documented here.
 ## Bracket Sequences
 |  |
 | ------- |
+| [0022-generate-parentheses](https://github.com/kyileiaye2021/LeetCode/tree/master/0022-generate-parentheses) |
 | [1021-remove-outermost-parentheses](https://github.com/kyileiaye2021/LeetCode/tree/master/1021-remove-outermost-parentheses) |
 ## Knapsack Problem
 |  |
