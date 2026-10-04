@@ -5,92 +5,66 @@
 #         self.next = next
 class Solution:
     def addTwoNumbers(self, l1: ListNode | None, l2: ListNode | None) -> ListNode | None:
+        
+        # happy cases
         # 2, 4, 3
         # 5, 6, 4
-        # 7, 0, 8
+        # 7, 0  8
 
-        # 9, 9, 9
-        # 9, 9, 9, 9
-        # 8, 9, 9, 0, 1
+        # edge cases
+        # 0
+        # 0
+        # 0
 
-        # 1
-        # 0, 1
-        # 1, 1
+        # 9, 9
+        # 9
+        # 8 0 1
 
-        # recur(i, j, carry)
+        # recur(l1, l2, carry)
         # base case
-        # if not i and not j and carry = 0:
+        # if not l1 and not l2 
         #   return None
 
-        # recursive step
-        # if not i:
-        #   i val = 0 else i val = i.val
-        # if not j
-        #   j val = 0 else j val = j.val
-        # total = i val + jval + carry
-        # new node = ListNode(total % 10)
-        # new carry = total // 10
-        # new_node.next = recur(i.next, j.next, new carry)
-        # return new node
+        # recursive case
+        # l1 val = 0, l2 val = 0
+        # if l1:
+        #   l1 val = l1.val
+        # if l2:
+        #   l2 val = l2.val
+        # new val = l1 val + l2 val + carry
+        # carry = new val % 10
+        # create a new node with new val
+        # if not l2:
+        #   new val.next = recur(l1.next, None, carry)
+        # if not l1:
+        #   new val.next = recur(None, l2.next, carry)
+        # return new val
 
-        def recur(i, j, carry):
-            if not i and not j and carry == 0:
+        # return recur(l1, l2, 0)
+
+        def recur(l1, l2, carry):
+            if not l1 and not l2 and carry == 0:
                 return None
 
-            i_val = i.val if i else 0
-            j_val = j.val if j else 0
+            l1_val = 0
+            l2_val = 0
 
-            total = i_val + j_val + carry
-            new_node = ListNode(total % 10)
-            new_carry = total // 10
+            if l1:
+                l1_val = l1.val
 
-            next_i = i.next if i else None
-            next_j = j.next if j else None
+            if l2:
+                l2_val = l2.val
 
-            new_node.next = recur(next_i, next_j, new_carry)
+            new_val = (l1_val + l2_val + carry) % 10
+            carry = (l1_val + l2_val + carry) // 10
+
+            new_node = ListNode(new_val)
+            l1_next = l1.next if l1 else None
+            l2_next = l2.next if l2 else None
+
+            new_node.next = recur(l1_next, l2_next, carry)
             return new_node
 
-        i = l1
-        j = l2
-        carry = 0
-        return recur(i, j, carry)
-
-        # i = l1
-        # j = l2
-        # carry = 0
-        # dummy = ListNode()
-        # curr = dummy
-
-        # while i and j:
-        #     new_node_val = (i.val + j.val + carry) % 10
-        #     carry = (i.val + j.val + carry) // 10
-        #     new_node = ListNode(new_node_val)
-        #     curr.next = new_node
-        #     curr = curr.next
-        #     i = i.next
-        #     j = j.next
-
-        # while i:
-        #     new_node_val = (i.val + carry) % 10
-        #     carry = (i.val + carry) // 10
-        #     new_node = ListNode(new_node_val)
-        #     curr.next = new_node
-        #     curr = curr.next
-        #     i = i.next
-
-        # while j:
-        #     new_node_val = (j.val + carry) % 10
-        #     carry = (j.val + carry) // 10
-        #     new_node = ListNode(new_node_val)
-        #     curr.next = new_node
-        #     curr = curr.next
-        #     j = j.next
-
-        # if carry > 0:
-        #     new_node = ListNode(carry)
-        #     curr.next = new_node
-
-
-        # return dummy.next
+        return recur(l1, l2, 0)
 
 
