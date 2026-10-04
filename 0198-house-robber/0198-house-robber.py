@@ -1,18 +1,14 @@
 class Solution:
-    def rob(self, nums: List[int]) -> int:
-
-        if len(nums) == 1:
-            return nums[-1]
+    def rob(self, nums: list[int]) -> int:
+        if not nums:
+            return 0
+        if len(nums) < 2:
+            return nums[0]
         first = nums[0]
-        second = max(first, nums[1])
-
-
+        second = max(nums[1], first)
+        
         for i in range(2, len(nums)):
-            temp = first
-            first = second
-            if nums[i] + temp > second:
-                second = nums[i] + temp
-            
-        
+            tmp = second
+            second = max(first + nums[i], second)
+            first = tmp
         return second
-        
