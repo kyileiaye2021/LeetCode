@@ -1,28 +1,25 @@
 class Solution:
     def myPow(self, x: float, n: int) -> float:
-        # if n < 0: 
-        #     x = 1 / x
-        #     n = -1 * n
-        # res = 1
-        # for i in range(1, n + 1):
-        #     res = res * x
+        # x = 2, n = 5
+        # x^2 * x^2 * x^1
+        
+        # n = 5
+        # n = n // 2 =2; rem = 1
+        # n = n // 2 = 1; rem = 0
 
-        # return res
+        inverse = n < 0
+        n = abs(n)
+        
+        res = 1
+        while n:
+            rem = n % 2 # 1
+            if rem % 2:
+                res = res * x # 32
+            n = n // 2 # 0
+            x = x * x # 256
 
-        def helper(x, n):
-
+        return res if not inverse else 1/res
+        # def recur_pow(rem, n, x):
             # base case
-            if x == 0:
-                return 0
 
-            if n == 0:
-                return 1
-
-            # recursive case
-            res = helper(x, n // 2)
-            res = res * res
-            return x * res if n % 2 else res
-
-        res = helper(x, abs(n)) 
-        return res if n >= 0 else 1 / res
-
+            # recursive
