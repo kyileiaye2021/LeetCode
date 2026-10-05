@@ -4,14 +4,29 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    def helper(self, head):
-        if not head or not head.next:
-            return head
-        revHead = self.helper(head.next)
-        head.next.next = head
-        head.next = None
-        return revHead
+    def reverseList(self, head: ListNode | None) -> ListNode | None:
+        
+        # def recur(head, prev)
+        # base case
+        # if head is None
+        #   return prev
 
-    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        return self.helper(head)
+        # recursive case
+        #   next node = head.next
+        #   head.next = prev
+        #   return recur(next node, head)
+
+        # return recur(head, None)
+
+        def reverse(head, prev):
+            # base case
+            if not head:
+                return prev
+
+            # recursive case
+            next_node = head.next
+            head.next = prev
+            return reverse(next_node, head)
+
+        return reverse(head, None)
         
