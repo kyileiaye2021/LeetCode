@@ -7,19 +7,31 @@ class Solution:
         # n = n // 2 =2; rem = 1
         # n = n // 2 = 1; rem = 0
 
-        inverse = n < 0
-        n = abs(n)
+        # inverse = n < 0
+        # n = abs(n)
         
-        res = 1
-        while n:
-            rem = n % 2 # 1
-            if rem % 2:
-                res = res * x # 32
-            n = n // 2 # 0
-            x = x * x # 256
+        # res = 1
+        # while n:
+        #     rem = n % 2 # 1
+        #     if rem % 2:
+        #         res = res * x # 32
+        #     n = n // 2 # 0
+        #     x = x * x # 256
 
-        return res if not inverse else 1/res
-        # def recur_pow(rem, n, x):
+        # return res if not inverse else 1/res
+
+
+        def recur_pow(x, n, res):
             # base case
-
+            if n == 0:
+                return res
+            
             # recursive
+            if n % 2:
+                res = res * x
+            return recur_pow(x * x, n // 2, res)
+
+        inverse = n < 0
+        res = recur_pow(x, abs(n), 1)
+        return res if not inverse else 1/res
+
