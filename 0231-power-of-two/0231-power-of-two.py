@@ -1,24 +1,44 @@
 class Solution:
     def isPowerOfTwo(self, n: int) -> bool:
-        # while n > 1:
-        #   res = n // 2
-        #   if res % 2:
-        #       return False
+        
+        # 16
+        # 16 // 2 == 8; rem = 0
+        # 8 // 2 = 4; rem = 0
+        # 4 // 2 = 2; rem = 0
+        # 2 // 2 = 1; rem = 0
+        # 1 // 2 = 0; rem = 1
+
+        # 20
+        # 20 // 2 = 10; rem = 0
+        # 10 // 2 = 5; rem = 0
+        # 5 // 2 = 2; rem = 1 # res = odd num
+        # 2 // 2 = 1; rem = 0
+        # 1 // 2 = 0; rem = 1
+
+        # 3 
+        # 3 // 2 = 1; rem = 1
+        # 1 // 2 = 0; rem = 1
+
+        # while n != 1:
+        #     rem = n % 2
+        #     n = n // 2
+        #     if rem % 2:  
+        #         return False
+
         # return True
 
-        # trick: n & (n - 1) remove the lowest bit
-        # n           = 101100
-        # n - 1       = 101011
-        # n & (n - 1) = 101000   → the lowest 1 bit is gone
-        # power of 2 only has 1 set bit (removing that makes the final res bits = all 0s)
-        
-        # if n <= 0:
-        #     return False
+        if n == 0:
+            return False
 
-        # while n % 2 == 0:
-        #     n //= 2
-        
-        # return n == 1
+        def recur_power(n, rem):
+            # base case
+            if rem % 2:
+                return False
 
-        return n > 0 and (n & (n - 1) == 0)
+            if n == 1: 
+                return True
 
+            # recursive case
+            return recur_power(n // 2, n % 2)
+
+        return recur_power(n, 0)
